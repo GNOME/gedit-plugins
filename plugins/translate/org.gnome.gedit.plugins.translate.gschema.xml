@@ -8,7 +8,11 @@
       </description>
     </key>
    <key name="language-pair" type="s">
-      <default>'eng|spa'</default>
+      <!-- Translators: You can adjust the default pair for users in your locale.
+      http://wiki.apertium.org/wiki/List_of_language_pairs has a list of valid pairs.
+      Remember to keep formatting as-is, or things will break! Use ASCII quotation
+      marks and | as the delimiter. -->
+      <default l10n="messages">'eng|spa'</default>
       <summary>Language pair used</summary>
       <description>
         Language pair used to translate from one language to another
