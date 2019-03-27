@@ -42,25 +42,25 @@ class TestApertium(unittest.TestCase):
         self.assertEqual('Hauries d\'haver-hi rebut una còpia', translated)
         mock_urlopen.assert_called_with("https://www.apertium.org/apy/translate?langpair=eng|cat&markUnknown=no&q=You+should+have+received+a+copy")
 
-    def test__get_remote_language_names_and_pairs_localized(self):
+    def test_fetch_remote_language_names_and_pairs_localized(self):
         mockObject = Apertium()
         mockObject._get_user_locale = Mock(return_value='ca')
         mockObject._get_remote_language_pairs = Mock(return_value=[['es'], ['en'], ['es', 'en'], ['es|en']])
         mockObject._get_remote_language_names = Mock(return_value={'es': 'Espanyol', 'en': 'Anglès'})
 
-        mockObject._get_remote_language_names_and_pairs()
+        mockObject._fetch_remote_language_names_and_pairs()
         self.assertEqual({'en': 'Anglès', 'es': 'Espanyol'}, Apertium.g_locales_names)
         self.assertEqual(['Espanyol -> Anglès'], Apertium.g_language_names)
         self.assertEqual(['es|en'], Apertium.g_language_codes)
 
-    def test__get_remote_language_names_and_pairs_non_localized(self):
+    def test_fetch_remote_language_names_and_pairs_non_localized(self):
         mockObject = Apertium()
         mockObject._get_user_locale = Mock(return_value='ca_ES')
         mockObject._get_remote_language_pairs = Mock(return_value=[['ca'], ['en'], ['ca', 'en'], ['ca|en']])
         mockObject._get_remote_language_names = Mock(return_value={'es': 'Espanyol', 'en': 'Anglès'})
         mockObject._add_missing_locale_names_in_english = Mock(return_value={'ca': 'Català', 'en': 'English'})
 
-        mockObject._get_remote_language_names_and_pairs()
+        mockObject._fetch_remote_language_names_and_pairs()
         self.assertEqual({'en': 'English', 'ca': 'Català'}, Apertium.g_locales_names)
         self.assertEqual(['Català -> English'], Apertium.g_language_names)
         self.assertEqual(['ca|en'], Apertium.g_language_codes)
