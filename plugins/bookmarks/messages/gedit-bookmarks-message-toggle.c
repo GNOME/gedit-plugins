@@ -24,8 +24,6 @@
 #include <gedit/gedit-view.h>
 #include "gedit-bookmarks-message-toggle.h"
 
-#define GEDIT_BOOKMARKS_MESSAGE_TOGGLE_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_BOOKMARKS_MESSAGE_TOGGLE, GeditBookmarksMessageTogglePrivate))
-
 enum
 {
 	PROP_0,
@@ -143,11 +141,10 @@ gedit_bookmarks_message_toggle_class_init (GeditBookmarksMessageToggleClass *kla
 	                                                      G_PARAM_CONSTRUCT |
 	                                                      G_PARAM_STATIC_STRINGS));
 
-	g_type_class_add_private (object_class, sizeof (GeditBookmarksMessageTogglePrivate));
 }
 
 static void
 gedit_bookmarks_message_toggle_init (GeditBookmarksMessageToggle *message)
 {
-	message->priv = GEDIT_BOOKMARKS_MESSAGE_TOGGLE_GET_PRIVATE (message);
+	message->priv = gedit_bookmarks_message_toggle_get_instance_private (message);
 }
