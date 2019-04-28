@@ -24,8 +24,6 @@
 #include <gedit/gedit-view.h>
 #include "gedit-bookmarks-message-add.h"
 
-#define GEDIT_BOOKMARKS_MESSAGE_ADD_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_BOOKMARKS_MESSAGE_ADD, GeditBookmarksMessageAddPrivate))
-
 enum
 {
 	PROP_0,
@@ -142,12 +140,10 @@ gedit_bookmarks_message_add_class_init (GeditBookmarksMessageAddClass *klass)
 	                                                      G_PARAM_READWRITE |
 	                                                      G_PARAM_CONSTRUCT |
 	                                                      G_PARAM_STATIC_STRINGS));
-
-	g_type_class_add_private (object_class, sizeof (GeditBookmarksMessageAddPrivate));
 }
 
 static void
 gedit_bookmarks_message_add_init (GeditBookmarksMessageAdd *message)
 {
-	message->priv = GEDIT_BOOKMARKS_MESSAGE_ADD_GET_PRIVATE (message);
+	message->priv = gedit_bookmarks_message_add_get_instance_private (message);
 }
