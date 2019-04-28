@@ -43,6 +43,14 @@ static void gedit_window_activatable_iface_init (GeditWindowActivatableInterface
 static void gedit_view_activatable_iface_init (GeditViewActivatableInterface *iface);
 static void peas_gtk_configurable_iface_init (PeasGtkConfigurableInterface *iface);
 
+struct _GeditWordCompletionPluginPrivate
+{
+	GtkWidget *window;
+	GeditView *view;
+	GtkSourceCompletionProvider *provider;
+};
+
+
 G_DEFINE_DYNAMIC_TYPE_EXTENDED (GeditWordCompletionPlugin,
                                 gedit_word_completion_plugin,
                                 PEAS_TYPE_EXTENSION_BASE,
@@ -52,14 +60,8 @@ G_DEFINE_DYNAMIC_TYPE_EXTENDED (GeditWordCompletionPlugin,
                                 G_IMPLEMENT_INTERFACE_DYNAMIC (GEDIT_TYPE_VIEW_ACTIVATABLE,
                                                                gedit_view_activatable_iface_init)
                                 G_IMPLEMENT_INTERFACE_DYNAMIC (PEAS_GTK_TYPE_CONFIGURABLE,
-                                                               peas_gtk_configurable_iface_init))
-
-struct _GeditWordCompletionPluginPrivate
-{
-	GtkWidget *window;
-	GeditView *view;
-	GtkSourceCompletionProvider *provider;
-};
+                                                               peas_gtk_configurable_iface_init)
+								G_ADD_PRIVATE_DYNAMIC (GeditWordCompletionPlugin))
 
 enum
 {
@@ -73,9 +75,7 @@ gedit_word_completion_plugin_init (GeditWordCompletionPlugin *plugin)
 {
 	gedit_debug_message (DEBUG_PLUGINS, "GeditWordCompletionPlugin initializing");
 
-	plugin->priv = G_TYPE_INSTANCE_GET_PRIVATE (plugin,
-	                                            GEDIT_TYPE_WORD_COMPLETION_PLUGIN,
-	                                            GeditWordCompletionPluginPrivate);
+	plugin->priv = gedit_word_completion_plugin_get_instance_private (plugin);
 }
 
 static void
@@ -273,7 +273,6 @@ gedit_word_completion_view_deactivate (GeditViewActivatable *activatable)
 {
 	GeditWordCompletionPluginPrivate *priv;
 	GtkSourceCompletion *completion;
-	GtkSourceCompletionProvider *provider;
 	GtkTextBuffer *buf;
 
 	gedit_debug (DEBUG_PLUGINS);
@@ -348,8 +347,6 @@ gedit_word_completion_plugin_class_init (GeditWordCompletionPluginClass *klass)
 
 	g_object_class_override_property (object_class, PROP_WINDOW, "window");
 	g_object_class_override_property (object_class, PROP_VIEW, "view");
-
-	g_type_class_add_private (klass, sizeof (GeditWordCompletionPluginPrivate));
 }
 
 static void
