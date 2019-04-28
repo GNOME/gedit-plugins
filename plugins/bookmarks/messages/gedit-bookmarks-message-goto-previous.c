@@ -24,8 +24,6 @@
 #include <gedit/gedit-view.h>
 #include "gedit-bookmarks-message-goto-previous.h"
 
-#define GEDIT_BOOKMARKS_MESSAGE_GOTO_PREVIOUS_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_BOOKMARKS_MESSAGE_GOTO_PREVIOUS, GeditBookmarksMessageGotoPreviousPrivate))
-
 enum
 {
 	PROP_0,
@@ -40,7 +38,7 @@ struct _GeditBookmarksMessageGotoPreviousPrivate
 	GtkTextIter *iter;
 };
 
-G_DEFINE_TYPE (GeditBookmarksMessageGotoPrevious, gedit_bookmarks_message_goto_previous, GEDIT_TYPE_MESSAGE)
+G_DEFINE_TYPE_WITH_PRIVATE (GeditBookmarksMessageGotoPrevious, gedit_bookmarks_message_goto_previous, GEDIT_TYPE_MESSAGE)
 
 static void
 gedit_bookmarks_message_goto_previous_finalize (GObject *obj)
@@ -143,11 +141,10 @@ gedit_bookmarks_message_goto_previous_class_init (GeditBookmarksMessageGotoPrevi
 	                                                      G_PARAM_CONSTRUCT |
 	                                                      G_PARAM_STATIC_STRINGS));
 
-	g_type_class_add_private (object_class, sizeof (GeditBookmarksMessageGotoPreviousPrivate));
 }
 
 static void
 gedit_bookmarks_message_goto_previous_init (GeditBookmarksMessageGotoPrevious *message)
 {
-	message->priv = GEDIT_BOOKMARKS_MESSAGE_GOTO_PREVIOUS_GET_PRIVATE (message);
+	message->priv = gedit_bookmarks_message_goto_previous_get_instance_private (message);
 }
