@@ -69,7 +69,8 @@ G_DEFINE_DYNAMIC_TYPE_EXTENDED (GeditZeitgeistPlugin,
                                 G_IMPLEMENT_INTERFACE_DYNAMIC (GEDIT_TYPE_VIEW_ACTIVATABLE,
                                                                gedit_view_activatable_iface_init)
                                 G_IMPLEMENT_INTERFACE_DYNAMIC (GEDIT_TYPE_APP_ACTIVATABLE,
-                                                               gedit_app_activatable_iface_init))
+                                                               gedit_app_activatable_iface_init)
+				G_ADD_PRIVATE_DYNAMIC (GeditZeitgeistPlugin))
 
 static ZeitgeistLog *zg_log = NULL;
 static ZeitgeistDataSourceRegistry *zg_dsr = NULL;
@@ -79,9 +80,7 @@ gedit_zeitgeist_plugin_init (GeditZeitgeistPlugin *plugin)
 {
 	gedit_debug_message (DEBUG_PLUGINS, "GeditZeitgeistPlugin initializing");
 
-	plugin->priv = G_TYPE_INSTANCE_GET_PRIVATE (plugin,
-	                                            GEDIT_TYPE_ZEITGEIST_PLUGIN,
-	                                            GeditZeitgeistPluginPrivate);
+	plugin->priv = gedit_zeitgeist_plugin_get_instance_private (plugin);
 }
 
 static void
@@ -311,8 +310,6 @@ gedit_zeitgeist_plugin_class_init (GeditZeitgeistPluginClass *klass)
 
 	g_object_class_override_property (object_class, PROP_VIEW, "view");
 	g_object_class_override_property (object_class, PROP_APP, "app");
-
-	g_type_class_add_private (klass, sizeof (GeditZeitgeistPluginPrivate));
 }
 
 static void
