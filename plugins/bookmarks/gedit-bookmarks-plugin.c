@@ -35,11 +35,6 @@
 #include <gedit/gedit-window-activatable.h>
 #include <gedit/gedit-document.h>
 
-#define GEDIT_BOOKMARKS_PLUGIN_GET_PRIVATE(object) \
-				(G_TYPE_INSTANCE_GET_PRIVATE ((object),	\
-				GEDIT_TYPE_BOOKMARKS_PLUGIN,		\
-				GeditBookmarksPluginPrivate))
-
 #define BOOKMARK_CATEGORY "GeditBookmarksPluginBookmark"
 #define BOOKMARK_PRIORITY 1
 
@@ -104,13 +99,6 @@ static void toggle_bookmark (GtkSourceBuffer *buffer, GtkTextIter *iter);
 
 static void gedit_window_activatable_iface_init (GeditWindowActivatableInterface *iface);
 
-G_DEFINE_DYNAMIC_TYPE_EXTENDED (GeditBookmarksPlugin,
-				gedit_bookmarks_plugin,
-				PEAS_TYPE_EXTENSION_BASE,
-				0,
-				G_IMPLEMENT_INTERFACE_DYNAMIC (GEDIT_TYPE_WINDOW_ACTIVATABLE,
-							       gedit_window_activatable_iface_init))
-
 struct _GeditBookmarksPluginPrivate
 {
 	GeditWindow *window;
@@ -119,6 +107,14 @@ struct _GeditBookmarksPluginPrivate
 	GSimpleAction *action_next;
 	GSimpleAction *action_prev;
 };
+
+G_DEFINE_DYNAMIC_TYPE_EXTENDED (GeditBookmarksPlugin,
+				gedit_bookmarks_plugin,
+				PEAS_TYPE_EXTENSION_BASE,
+				0,
+				G_IMPLEMENT_INTERFACE_DYNAMIC (GEDIT_TYPE_WINDOW_ACTIVATABLE,
+							       gedit_window_activatable_iface_init)
+				G_ADD_PRIVATE_DYNAMIC (GeditBookmarksPlugin))
 
 enum
 {
@@ -131,7 +127,7 @@ gedit_bookmarks_plugin_init (GeditBookmarksPlugin *plugin)
 {
 	gedit_debug_message (DEBUG_PLUGINS, "GeditBookmarksPlugin initializing");
 
-	plugin->priv = GEDIT_BOOKMARKS_PLUGIN_GET_PRIVATE (plugin);
+	plugin->priv = gedit_bookmarks_plugin_get_instance_private (plugin);
 }
 
 static void
@@ -844,7 +840,6 @@ gedit_bookmarks_plugin_class_init (GeditBookmarksPluginClass *klass)
 
 	g_object_class_override_property (object_class, PROP_WINDOW, "window");
 
-	g_type_class_add_private (klass, sizeof (GeditBookmarksPluginPrivate));
 }
 
 static void
