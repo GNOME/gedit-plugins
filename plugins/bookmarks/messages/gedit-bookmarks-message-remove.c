@@ -24,8 +24,6 @@
 #include <gedit/gedit-view.h>
 #include "gedit-bookmarks-message-remove.h"
 
-#define GEDIT_BOOKMARKS_MESSAGE_REMOVE_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_BOOKMARKS_MESSAGE_REMOVE, GeditBookmarksMessageRemovePrivate))
-
 enum
 {
 	PROP_0,
@@ -40,7 +38,7 @@ struct _GeditBookmarksMessageRemovePrivate
 	GtkTextIter *iter;
 };
 
-G_DEFINE_TYPE (GeditBookmarksMessageRemove, gedit_bookmarks_message_remove, GEDIT_TYPE_MESSAGE)
+G_DEFINE_TYPE_WITH_PRIVATE (GeditBookmarksMessageRemove, gedit_bookmarks_message_remove, GEDIT_TYPE_MESSAGE)
 
 static void
 gedit_bookmarks_message_remove_finalize (GObject *obj)
@@ -142,12 +140,10 @@ gedit_bookmarks_message_remove_class_init (GeditBookmarksMessageRemoveClass *kla
 	                                                      G_PARAM_READWRITE |
 	                                                      G_PARAM_CONSTRUCT |
 	                                                      G_PARAM_STATIC_STRINGS));
-
-	g_type_class_add_private (object_class, sizeof (GeditBookmarksMessageRemovePrivate));
 }
 
 static void
 gedit_bookmarks_message_remove_init (GeditBookmarksMessageRemove *message)
 {
-	message->priv = GEDIT_BOOKMARKS_MESSAGE_REMOVE_GET_PRIVATE (message);
+	message->priv = gedit_bookmarks_message_remove_get_instance_private (message);
 }
