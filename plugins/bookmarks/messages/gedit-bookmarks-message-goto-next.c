@@ -24,8 +24,6 @@
 #include <gedit/gedit-view.h>
 #include "gedit-bookmarks-message-goto-next.h"
 
-#define GEDIT_BOOKMARKS_MESSAGE_GOTO_NEXT_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_BOOKMARKS_MESSAGE_GOTO_NEXT, GeditBookmarksMessageGotoNextPrivate))
-
 enum
 {
 	PROP_0,
@@ -40,7 +38,7 @@ struct _GeditBookmarksMessageGotoNextPrivate
 	GtkTextIter *iter;
 };
 
-G_DEFINE_TYPE (GeditBookmarksMessageGotoNext, gedit_bookmarks_message_goto_next, GEDIT_TYPE_MESSAGE)
+G_DEFINE_TYPE_WITH_PRIVATE (GeditBookmarksMessageGotoNext, gedit_bookmarks_message_goto_next, GEDIT_TYPE_MESSAGE)
 
 static void
 gedit_bookmarks_message_goto_next_finalize (GObject *obj)
@@ -143,11 +141,10 @@ gedit_bookmarks_message_goto_next_class_init (GeditBookmarksMessageGotoNextClass
 	                                                      G_PARAM_CONSTRUCT |
 	                                                      G_PARAM_STATIC_STRINGS));
 
-	g_type_class_add_private (object_class, sizeof (GeditBookmarksMessageGotoNextPrivate));
 }
 
 static void
 gedit_bookmarks_message_goto_next_init (GeditBookmarksMessageGotoNext *message)
 {
-	message->priv = GEDIT_BOOKMARKS_MESSAGE_GOTO_NEXT_GET_PRIVATE (message);
+	message->priv = gedit_bookmarks_message_goto_next_get_instance_private (message);
 }
