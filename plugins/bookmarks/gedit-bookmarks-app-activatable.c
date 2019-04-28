@@ -132,10 +132,13 @@ gedit_bookmarks_app_activatable_activate (GeditAppActivatable *activatable)
 	GeditBookmarksAppActivatable *app_activatable = GEDIT_BOOKMARKS_APP_ACTIVATABLE (activatable);
 	GeditBookmarksAppActivatablePrivate *priv = gedit_bookmarks_app_activatable_get_instance_private (app_activatable);
 	GMenuItem *item;
+	const gchar *toggle_accel[] = {"<Primary><Alt>B", NULL};
+	const gchar *next_others_accel[] = {"<Primary>B", NULL};
+	const gchar *prev_accel[] = {"<Primary><Shift>B", NULL};
 
-	gtk_application_add_accelerator (GTK_APPLICATION (priv->app), "<Primary><Alt>B", "win.bookmark-toggle", NULL);
-	gtk_application_add_accelerator (GTK_APPLICATION (priv->app), "<Primary>B", "win.bookmark-next", NULL);
-	gtk_application_add_accelerator (GTK_APPLICATION (priv->app), "<Primary><Shift>B", "win.bookmark-prev", NULL);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (priv->app), "win.bookmark-toggle", toggle_accel);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (priv->app), "win.bookmark-next", next_others_accel);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (priv->app), "win.bookmark-prev", prev_accel);
 
 	priv->menu_ext = gedit_app_activatable_extend_menu (activatable, "search-section");
 	item = g_menu_item_new (_("Toggle Bookmark"), "win.bookmark-toggle");
