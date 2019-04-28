@@ -159,10 +159,11 @@ gedit_bookmarks_app_activatable_deactivate (GeditAppActivatable *activatable)
 {
 	GeditBookmarksAppActivatable *app_activatable = GEDIT_BOOKMARKS_APP_ACTIVATABLE (activatable);
 	GeditBookmarksAppActivatablePrivate *priv = gedit_bookmarks_app_activatable_get_instance_private (app_activatable);
+	const gchar *accels[] = { NULL };
 
-	gtk_application_remove_accelerator (GTK_APPLICATION (priv->app), "win.bookmark-toggle", NULL);
-	gtk_application_remove_accelerator (GTK_APPLICATION (priv->app), "win.bookmark-next", NULL);
-	gtk_application_remove_accelerator (GTK_APPLICATION (priv->app), "win.bookmark-prev", NULL);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (priv->app), "win.bookmark-toggle", accels);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (priv->app), "win.bookmark-next", accels);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (priv->app), "win.bookmark-prev", accels);
 
 	g_clear_object (&priv->menu_ext);
 }
