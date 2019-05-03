@@ -76,6 +76,8 @@ class TranslateWindowActivatable(GObject.Object, Gedit.WindowActivatable, PeasGt
         bottom.add_titled(g_console, "GeditTranslateConsolePanel", _('Translate Console'))
      
     def do_deactivate(self):
+        bottom = self.window.get_bottom_panel()
+        bottom.remove(g_console)
         self.window.remove_action("translate")
 
     def do_update_state(self):
@@ -123,14 +125,18 @@ class TranslateViewActivatable(GObject.Object, Gedit.ViewActivatable):
     view = GObject.Property(type=Gedit.View)
 
     def __init__(self):
+        self.popup_handler_id = 0
         GObject.Object.__init__(self)
         self._settings = Settings()
 
     def do_activate(self):
         self.view.translate_view_activatable = self
-        self.view.connect('populate-popup', self.populate_popup)
+        self.popup_handler_id = self.view.connect('populate-popup', self.populate_popup)
 
     def do_deactivate(self):
+        if self.popup_handler_id != 0:
+            self.view.disconnect(self.popup_handler_id)
+            self.popup_handler_id = 0
         delattr(self.view, "translate_view_activatable")
 
     def _get_language_pair_name(self):
