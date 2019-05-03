@@ -17,14 +17,11 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-import sys
-
 import gi
 gi.require_version('Gedit', '3.0')
 gi.require_version('Pango', '1.0')
-gi.require_version('Gtk', '3.0')
 gi.require_version('Gucharmap', '2.90')
-from gi.repository import GObject, Gio, Pango, Gtk, Gedit, Gucharmap
+from gi.repository import GObject, Gio, Pango, Gedit, Gucharmap
 from .panel import CharmapPanel
 from gpdefs import *
 
