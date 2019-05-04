@@ -103,6 +103,11 @@ class Yandex(Service):
             if len(self._key) == 0:
                 return
 
+            if (len(Yandex.g_locales_names) > 0 and
+               len(Yandex.g_language_names) > 0 and
+               len(Yandex.g_language_codes) > 0):
+                    return
+
             url = "{0}/getLangs?ui=en&key={1}".format(self.SERVER, self._key)
             response = urllib.request.urlopen(url)
             payload = json.loads(response.read().decode("utf-8"))
