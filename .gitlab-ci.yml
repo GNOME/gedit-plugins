@@ -12,6 +12,6 @@ build:
     - apt-get install python3 python3-dbus python-dbus-dev python3-gi -y
 
   script:
-    - mkdir meson && meson
+    - mkdir meson && cd meson
     - meson configure
     - meson distcheck
