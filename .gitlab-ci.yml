@@ -13,6 +13,6 @@ build:
     - apt-get install meson ninja-build -y
 
   script:
-    - meson builddir
-    - ninja -C buildir dist
+    - meson _build
+    - ninja -C _build dist
 
