@@ -24,7 +24,7 @@ import collections
 import tempfile
 from xml.etree import ElementTree as ET
 
-from gi.repository import Gtk, GdkPixbuf, Gdk, GtkSource, Gio, GLib
+from gi.repository import Gtk, GdkPixbuf, Gdk, GtkSource, Gio, GLib, Pango
 
 from .languages import samples
 
@@ -57,7 +57,7 @@ class Props:
     self.foreground = gtkStyle.props.foreground
     self.italic = gtkStyle.props.italic
     self.bold = gtkStyle.props.bold
-    self.underline = gtkStyle.props.underline
+    self.underline = gtkStyle.props.pango_underline == Pango.Underline.NONE
     self.strikethrough = gtkStyle.props.strikethrough
     
     # here we make sure every color starts with a hash
@@ -566,12 +566,12 @@ class GUI:
     if data == self.colorbuttonBackground:
       color = data.get_color()
       self.dictAllStyles[self.selectedStyleId].background = ('#%02x%02x%02x' %
-        (color.red * cScale, color.green * cScale, color.blue * cScale))
+        (int(color.red * cScale), int(color.green * cScale), int(color.blue * cScale)))
     
     elif data == self.colorbuttonForeground:
       color = data.get_color()
       self.dictAllStyles[self.selectedStyleId].foreground = ('#%02x%02x%02x' %
-        (color.red * cScale, color.green * cScale, color.blue * cScale))
+        (int(color.red * cScale), int(color.green * cScale), int(color.blue * cScale)))
     
     elif data == self.togglebuttonBold:
       self.dictAllStyles[self.selectedStyleId].bold = data.get_active()

@@ -124,10 +124,11 @@ class ResultPanel : Overlay {
             var path = val0.get_string ();
             var hits = val1.get_int ();
 
+            var hits_text = ngettext ("hit", "hits", hits);
             (cell as CellRendererText).markup = "<b>%s</b> (%d %s)".printf (
                     get_relative_path (path, root),
                     hits,
-                    (hits == 1) ? "hit" : "hits");
+                    hits_text);
         } else {
             Value val0, val1;
 
