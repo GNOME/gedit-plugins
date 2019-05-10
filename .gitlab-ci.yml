@@ -1,0 +1,18 @@
+image: ubuntu:devel
+
+build:
+  stage: build
+  before_script:
+    - export DEBIAN_FRONTEND=noninteractive
+    - apt-get update -y
+    - apt-get install intltool yelp-tools gnome-pkg-tools libdbus-1-dev -y
+    - apt-get install libgit2-glib-1.0-dev libglib2.0-dev libgtk-3-dev -y
+    - apt-get install libgtksourceview-4-dev libgucharmap-2-90-dev libpeas-dev -y
+    - apt-get install valac libvte-2.91-dev libzeitgeist-2.0-dev gedit-dev -y
+    - apt-get install python3 python3-dbus python-dbus-dev python3-gi appstream -y
+    - apt-get install meson ninja-build -y
+
+  script:
+    - meson _build
+    - ninja -C _build dist
+
