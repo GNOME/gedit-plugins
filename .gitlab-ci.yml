@@ -10,7 +10,7 @@ build:
     - apt-get install libgtksourceview-4-dev libgucharmap-2-90-dev libpeas-dev -y
     - apt-get install valac libvte-2.91-dev libzeitgeist-2.0-dev gedit-dev -y
     - apt-get install python3 python3-dbus python-dbus-dev python3-gi appstream -y
-    - apt-get libtool-bin autotools-dev automake intltool -y
+    - apt-get install libtool-bin autotools-dev automake intltool -y
 
   script:
     - ./autogen.sh
