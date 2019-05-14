@@ -16,3 +16,11 @@ build:
     - meson _build
     - ninja -C _build dist
 
+flake8:
+  stage: check
+  script:
+    - apt-get install python3-flake8 -y
+    - cd plugins
+    - flake8 --select=F --ignore=F401
+
+
