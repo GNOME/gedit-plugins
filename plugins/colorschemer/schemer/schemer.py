@@ -28,6 +28,14 @@ from gi.repository import Gtk, GdkPixbuf, Gdk, GtkSource, Gio, GLib, Pango
 
 from .languages import samples
 
+try:
+    import gettext
+    gettext.bindtextdomain('gedit-plugins')
+    gettext.textdomain('gedit-plugins')
+    _ = gettext.gettext
+except:
+    _ = lambda s: s
+
 
 # Holds style properties for a GtkSourceStyle element
 class Props:
