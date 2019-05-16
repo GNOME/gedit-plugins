@@ -28,7 +28,6 @@ from .services.apertium import Apertium
 from .translateview import TranslateView
 from .preferences import Preferences
 from .settings import Settings
-from gpdefs import *
 
 try:
     import gettext

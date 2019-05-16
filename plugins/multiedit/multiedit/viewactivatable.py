@@ -26,7 +26,6 @@ import sys
 from gi.repository import GLib, GObject, Pango, PangoCairo, Gdk, Gtk, Gedit
 
 from .signals import Signals
-from gpdefs import *
 
 try:
     import gettext
