@@ -26,7 +26,6 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('Gucharmap', '2.90')
 from gi.repository import GObject, Gio, Pango, Gtk, Gedit, Gucharmap
 from .panel import CharmapPanel
-from gpdefs import *
 
 try:
     import gettext

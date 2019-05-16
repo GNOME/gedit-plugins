@@ -28,8 +28,6 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('Vte', '2.91')
 from gi.repository import GObject, GLib, Gio, Pango, Gdk, Gtk, Gedit, Vte
 
-from gpdefs import *
-
 try:
     import gettext
     gettext.bindtextdomain('gedit-plugins')

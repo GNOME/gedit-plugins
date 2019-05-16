@@ -25,7 +25,6 @@ import gi
 gi.require_version('Gtk', '3.0')
 gi.require_version('GtkSource', '4')
 from gi.repository import GObject, Gio, Gtk, GtkSource, Gedit
-from gpdefs import *
 
 try:
     import gettext

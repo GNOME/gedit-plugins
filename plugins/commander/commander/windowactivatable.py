@@ -22,7 +22,6 @@
 from gi.repository import GLib, GObject, Gio, Gtk, Gedit
 from entry import Entry
 from info import Info
-from gpdefs import *
 
 class CommanderWindowActivatable(GObject.Object, Gedit.WindowActivatable):
 

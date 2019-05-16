@@ -26,7 +26,6 @@ import dbus.mainloop.glib
 import logging
 import os
 import re
-from gpdefs import *
 
 try:
     import gettext

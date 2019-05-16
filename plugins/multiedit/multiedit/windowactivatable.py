@@ -23,8 +23,6 @@ from gi.repository import GLib, GObject, Gio, Gedit
 
 from .viewactivatable import MultiEditViewActivatable
 
-from gpdefs import *
-
 
 class MultiEditWindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
