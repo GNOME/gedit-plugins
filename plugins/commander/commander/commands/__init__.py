@@ -23,7 +23,7 @@ from gi.repository import GLib, GObject, Gio
 
 import sys, bisect, types, shlex, re, os, traceback
 
-from . import module, method, result, exceptions, metamodule
+from . import module, method, result, exceptions, metamodule, completion
 
 from commands.accel_group import AccelGroup
 from commands.accel_group import Accelerator
