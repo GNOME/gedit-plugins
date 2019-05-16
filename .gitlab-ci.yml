@@ -31,5 +31,5 @@ check:
 
   script:
     - cd plugins
-    - flake8 --select=F --ignore=F401,F403,F811,F405,F821,F841
+    - flake8 --select=F --ignore=F401,F403,F811,F821,F841
 
