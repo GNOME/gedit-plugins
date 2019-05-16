@@ -2,7 +2,7 @@ image: ubuntu:devel
 
 stages:
     - build
-    - check
+    - static_analysis
 
 
 build:
@@ -21,7 +21,7 @@ build:
     - meson _build
     - ninja -C _build dist
 
-check:
+static_analysis:
   stage: build
   before_script:
     - export DEBIAN_FRONTEND=noninteractive
