@@ -22,7 +22,7 @@ build:
     - ninja -C _build dist
 
 check:
-  stage: check
+  stage: build
   before_script:
     - export DEBIAN_FRONTEND=noninteractive
     - apt-get update -y
