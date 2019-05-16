@@ -6,6 +6,7 @@ stages:
     
 before_script:
     - export DEBIAN_FRONTEND=noninteractive
+    - apt-get update -y
     - apt-get install python3 python3-pip 
 
 build:
