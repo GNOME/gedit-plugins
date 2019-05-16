@@ -19,7 +19,6 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor,
 #  Boston, MA 02110-1301, USA.
 
-import os
 from gi.repository import GLib, GObject, Gio
 
 import sys, bisect, types, shlex, re, os, traceback
