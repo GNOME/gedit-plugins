@@ -55,5 +55,5 @@ class AppActivatable(GObject.Object, Gedit.AppActivatable):
     self.menu_ext = None
 
   def open_dialog(self, action, parameter, data=None):
-    schemer.GUI(Gedit.App, os.path.join(self.plugin_info.get_data_dir(), 'ui'))
+    GUI(Gedit.App, os.path.join(self.plugin_info.get_data_dir(), 'ui'))
 
