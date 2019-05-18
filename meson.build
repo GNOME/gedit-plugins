@@ -1,6 +1,6 @@
 project(
   'gedit-plugins', 'c',
-  version: '3.32.0',
+  version: '3.32.2',
   meson_version: '>=0.49.0',
   license: 'GPL2'
 )

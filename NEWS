@@ -1,4 +1,14 @@
 ====================
+gedit-plugins 3.32.2
+====================
+- Fix ColorSchemer plugin for GTKSourceView 4 (Jordi)
+- Cache language names per session to prevent unnecessary web requests
+  by Translate plugin (Jordi)
+- Fix enabling and disabling the Translate plugin (Jordi)
+
+Contributors: Jordi Mas
+
+====================
 gedit-plugins 3.32.0
 ====================
 

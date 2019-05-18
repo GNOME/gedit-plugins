@@ -14,14 +14,15 @@
 # Leandro Machacón <leandroman@gemail.com>, 2010.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010.
 # Gustavo Jasso Ahuja <gjasso@gmail.com>, 2012.
+# Rodrigo Lledó <rodhos92@gmail.com>, 2019.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gedit-plugins/issues\n"
-"POT-Creation-Date: 2019-05-11 11:14+0000\n"
-"PO-Revision-Date: 2019-05-13 15:20+0200\n"
+"POT-Creation-Date: 2019-05-16 16:00+0000\n"
+"PO-Revision-Date: 2019-05-17 10:19+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -142,6 +143,44 @@ msgstr "Editor de esquemas de color del código fuente"
 #: plugins/colorschemer/gedit-colorschemer.metainfo.xml.in:7
 msgid "Create and edit the color scheme used for syntax highlighting"
 msgstr "Crear y editar el esquema de color usado para el resaltado de sintaxis"
+
+#: plugins/colorschemer/schemer/schemer.py:271
+#: plugins/colorschemer/schemer/schemer.py:318
+msgid "There was a problem saving the scheme"
+msgstr "Hubo un problema al guardar el esquema"
+
+#: plugins/colorschemer/schemer/schemer.py:272
+msgid ""
+"You have choosen to create a new scheme\n"
+"but the Name or ID you are using is being used already.\n"
+"\n"
+"Please be sure to choose a Name and ID that are not already in use.\n"
+msgstr ""
+"Ha elegido crear un esquema nuevo\n"
+"pero el Nombre o ID que está usando ya está en uso.\n"
+"\n"
+"Asegúrese de elegir un Nombre e ID que no esté en uso.\n"
+
+#: plugins/colorschemer/schemer/schemer.py:319
+msgid ""
+"You do not have permission to overwrite the scheme you have choosen.\n"
+"Instead a copy will be created.\n"
+"\n"
+"Please be sure to choose a Name and ID that are not already in use.\n"
+msgstr ""
+"No tiene permiso para sobrescribir el esquema que ha elegido.\n"
+"Se creará una copia en su lugar.\n"
+"\n"
+"Asegúrese de elegir un Nombre e ID que no esté en uso.\n"
+
+#. there must have been some conflict, since it opened the wrong file
+#: plugins/colorschemer/schemer/schemer.py:378
+msgid "There was a problem opening the file"
+msgstr "Hubo un problema al abrir el archivo"
+
+#: plugins/colorschemer/schemer/schemer.py:379
+msgid "You appear to have schemes with the same IDs in different directories\n"
+msgstr "Parece que tiene esquemas con los mismos ID en carpetas diferentes\n"
 
 #: plugins/colorschemer/schemer.ui:137 plugins/colorschemer/schemer.ui:138
 msgid "Bold"
@@ -322,7 +361,6 @@ msgid "Find in Files…"
 msgstr "Buscar en archivos…"
 
 #: plugins/findinfiles/result-panel.vala:127
-#| msgid "Git"
 msgid "hit"
 msgid_plural "hits"
 msgstr[0] "coincidencia"
@@ -392,7 +430,7 @@ msgid "Edit document in multiple places at once"
 msgstr "Editar el documento en múltiples ubicaciones a la vez"
 
 #: plugins/multiedit/multiedit/appactivatable.py:44
-#: plugins/multiedit/multiedit/viewactivatable.py:1351
+#: plugins/multiedit/multiedit/viewactivatable.py:1352
 msgid "Multi Edit Mode"
 msgstr "Modo multiedición"
 
@@ -400,59 +438,59 @@ msgstr "Modo multiedición"
 msgid "Multi Edit"
 msgstr "Multiedición"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:317
+#: plugins/multiedit/multiedit/viewactivatable.py:318
 msgid "Added edit point…"
 msgstr "Punto de edición añadido…"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:659
+#: plugins/multiedit/multiedit/viewactivatable.py:660
 msgid "Column Mode…"
 msgstr "Modo columna…"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:777
+#: plugins/multiedit/multiedit/viewactivatable.py:778
 msgid "Removed edit point…"
 msgstr "Punto de edición eliminado…"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:943
+#: plugins/multiedit/multiedit/viewactivatable.py:944
 msgid "Cancelled column mode…"
 msgstr "Modo columna cancelado…"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1306
+#: plugins/multiedit/multiedit/viewactivatable.py:1307
 msgid "Enter column edit mode using selection"
 msgstr "Entrar en el modo de edición de columna usando la selección"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1307
+#: plugins/multiedit/multiedit/viewactivatable.py:1308
 msgid "Enter <b>smart</b> column edit mode using selection"
 msgstr ""
 "Entrar en el modo de edición de columna <b>inteligente</b> usando la "
 "selección"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1308
+#: plugins/multiedit/multiedit/viewactivatable.py:1309
 msgid "<b>Smart</b> column align mode using selection"
 msgstr "Modo de alineación de columna <b>inteligente</b> usando la selección"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1309
+#: plugins/multiedit/multiedit/viewactivatable.py:1310
 msgid "<b>Smart</b> column align mode with additional space using selection"
 msgstr ""
 "Modo de alineación de columna <b>inteligente</b> con espacio adicional "
 "usando la selección"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1311
+#: plugins/multiedit/multiedit/viewactivatable.py:1312
 msgid "Toggle edit point"
 msgstr "Conmutar el modo edición"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1312
+#: plugins/multiedit/multiedit/viewactivatable.py:1313
 msgid "Add edit point at beginning of line/selection"
 msgstr "Punto de edición añadido al principio de la selección de línea"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1313
+#: plugins/multiedit/multiedit/viewactivatable.py:1314
 msgid "Add edit point at end of line/selection"
 msgstr "Punto de edición añadido al final de la selección de línea"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1314
+#: plugins/multiedit/multiedit/viewactivatable.py:1315
 msgid "Align edit points"
 msgstr "Alinear puntos de edición"
 
-#: plugins/multiedit/multiedit/viewactivatable.py:1315
+#: plugins/multiedit/multiedit/viewactivatable.py:1316
 msgid "Align edit points with additional space"
 msgstr "Alinear los puntos de edición con espacio adicional"
 
