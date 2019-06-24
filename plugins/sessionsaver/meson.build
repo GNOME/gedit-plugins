@@ -1,10 +1,22 @@
 install_subdir(
   'sessionsaver',
+  exclude_directories: ['ui'],
   install_dir: join_paths(
     pkglibdir,
     'plugins',
   )
 )
+
+install_data(
+  'sessionsaver/ui/sessionsaver.ui',
+  install_dir: join_paths(
+    pkgdatadir,
+    'plugins',
+    'sessionsaver',
+    'ui',
+  )
+)
+
 
 sessionsaver_plugin_in = configure_file(
   input: 'sessionsaver.plugin.desktop.in.in',
