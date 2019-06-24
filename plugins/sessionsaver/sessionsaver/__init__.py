@@ -47,6 +47,9 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
         item = Gio.MenuItem.new(_("_Manage saved sessions..."), "win.managedsession")
         self.menu_ext.prepend_menu_item(item)
 
+        item = Gio.MenuItem.new(_("_Save session"), "win.savesession")
+        self.menu_ext.prepend_menu_item(item)
+
     def do_deactivate(self):
         self.menu_ext = None
 
@@ -66,6 +69,10 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
         action = Gio.SimpleAction(name="managedsession")
         action.connect('activate', lambda a, p: self.on_manage_sessions_action())
         self.window.add_action(action)
+
+        action = Gio.SimpleAction(name="savesession")
+        action.connect('activate', lambda a, p: self.on_save_session_action())
+        self.window.add_action(action)
         return
      
     def do_deactivate(self):
@@ -79,5 +86,8 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
         dialog = SessionManagerDialog(self, self.sessions)
         dialog.run()
 
-
+    def on_save_session_action(self):
+        print("on_save_session_action\n")
+        dialog = SaveSessionDialog(self.window, self, self.sessions)
+        dialog.run()
 

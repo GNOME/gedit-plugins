@@ -67,8 +67,6 @@ class Dialog(object):
         self.ui.set_translation_domain(GETTEXT_PACKAGE)
 
         self.ui.add_from_file(os.path.join(datadir, 'ui', self.UI_FILE))
-#        self._ui_path = os.path.join(datadir, 'ui', 'preferences.ui')
-#        self.ui.add_from_file(os.path.join(datadir, self.UI_FILE))
         self.dialog = self.ui.get_object(main_widget)
         self.dialog.connect('delete-event', self.on_delete_event)
 
@@ -116,7 +114,7 @@ class SaveSessionDialog(Dialog):
             self.sessions.add(Session(name, files))
             self.sessions.save()
             self.sessionsaver.sessions = self.sessions
-            self.sessionsaver._update_session_menu()
+#            self.sessionsaver._update_session_menu()
         self.destroy()
 
 class SessionManagerDialog(Dialog):
@@ -160,7 +158,7 @@ class SessionManagerDialog(Dialog):
     def on_delete_button_clicked(self, button):
         session = self.get_current_session()
         self.sessions.remove(session)
-        self.plugin._update_session_menu()
+#        self.plugin._update_session_menu()
 
     def on_close_button_clicked(self, button):
         self.sessions.save()
