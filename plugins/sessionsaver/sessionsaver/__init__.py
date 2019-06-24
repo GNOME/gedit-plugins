@@ -47,13 +47,25 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
         item = Gio.MenuItem.new(_("_Manage saved sessions..."), "win.managedsession")
         self.menu_ext.prepend_menu_item(item)
 
-        item = Gio.MenuItem.new(_("_Save session"), "win.savesession")
+        item = Gio.MenuItem.new(_("_Save session..."), "win.savesession")
         self.menu_ext.prepend_menu_item(item)
+        self._insert_session_menu()
+
 
     def do_deactivate(self):
         self.menu_ext = None
 
 
+    def _insert_session_menu(self):
+        print("_insert_session_menu\n")
+
+        self.sessions = XMLSessionStore()
+        for i, session in enumerate(self.sessions):
+            action_name = 'SessionSaver%X' % i
+            session_id = 'win.session_%u'.format(i)
+            item = Gio.MenuItem.new(_("Recover '%s' session") % session.name, session_id)
+            self.menu_ext.prepend_menu_item(item)
+    
        
 class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, PeasGtk.Configurable):
 
@@ -73,8 +85,20 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
         action = Gio.SimpleAction(name="savesession")
         action.connect('activate', lambda a, p: self.on_save_session_action())
         self.window.add_action(action)
+
+        self.sessions = XMLSessionStore()
+        for i, session in enumerate(self.sessions):
+            action_name = 'SessionSaver%X' % i
+            session_id = 'session_%u'.format(i)
+            action = Gio.SimpleAction(name=session_id)
+            action.connect('activate', self.capture_menu_action, self.window)
+            self.window.add_action(action)
+
+    def capture_menu_action(self, action, parameter, window):
+        print("capture_menu_action\n")
         return
-     
+
+
     def do_deactivate(self):
         return
 
