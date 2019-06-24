@@ -1,0 +1,10 @@
+[Plugin]
+Loader=python3
+Module=sessionsaver
+IAge=3
+Name=Session Saver
+Description=Save and restore your working sessions
+Authors=Steve Frécinaux
+Copyright=Copyright © 2006 Steve Frécinaux
+Website=http://www.gedit.org
+Version=@VERSION@

@@ -91,6 +91,7 @@ all_plugins = {
   'git': {'language': 'python'},
   'joinlines': {'language': 'python'},
   'multiedit': {'language': 'python'},
+  'sessionsaver': {'language': 'python'},
   'smartspaces': {'language': 'python'},
   'terminal': {'language': 'python'},
   'textsize': {'language': 'python'},
