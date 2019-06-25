@@ -5,7 +5,6 @@
 
 from gi.repository import GObject, Gtk, Gedit
 import os.path
-import gettext
 from gpdefs import GETTEXT_PACKAGE
 from .store import Session
 
