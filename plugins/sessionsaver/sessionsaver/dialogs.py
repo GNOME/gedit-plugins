@@ -6,13 +6,15 @@
 from gi.repository import GObject, Gtk, Gedit
 import os.path
 import gettext
-
+from gpdefs import GETTEXT_PACKAGE
 from .store import Session
 
+
 try:
-    from .gpdefs import *
-    gettext.bindtextdomain(GETTEXT_PACKAGE, GP_LOCALEDIR)
-    _ = lambda s: gettext.dgettext(GETTEXT_PACKAGE, s);
+    import gettext
+    gettext.bindtextdomain('gedit-plugins')
+    gettext.textdomain('gedit-plugins')
+    _ = gettext.gettext
 except:
     _ = lambda s: s
 
