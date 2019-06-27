@@ -90,13 +90,13 @@ class Dialog(object):
         self.__del__()
 
 class SaveSessionDialog(Dialog):
-    def __init__(self, window, plugin, sessions):
+    def __init__(self, window, on_ok, sessions, data_dir):
         super(SaveSessionDialog, self).__init__('save-session-dialog',
-                                                plugin.plugin_info.get_data_dir(),
+                                                data_dir,
                                                 window)
-        self.plugin = plugin
+
+        self.on_ok = on_ok
         self.sessions = sessions
-        self.sessionsaver = plugin
 
         model = SessionModel(sessions)
 
@@ -114,7 +114,8 @@ class SaveSessionDialog(Dialog):
             name = self['session-name'].get_child().get_text()
             self.sessions.add(Session(name, files))
             self.sessions.save()
-            self.sessionsaver.sessions = self.sessions
+            self.on_ok()
+#            self.sessionsaver.sessions = self.sessions
 #            self.sessionsaver._update_session_menu()
         self.destroy()
 

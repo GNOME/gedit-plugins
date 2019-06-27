@@ -39,29 +39,27 @@ except:
 class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
 
     app = GObject.Property(type=Gedit.App)
+    __instance = None
 
     def __init__(self):
         GObject.Object.__init__(self)
-        self.n_sessions = 0
-
-        global app_activable
-        app_activable = self
+        SessionSaverAppActivatable.__instance = self
         print("SessionSaverAppActivatable.__init__\n")
 
-    def do_activate(self):
-        self.menu_ext = self.extend_menu("tools-section")
-        item = Gio.MenuItem.new(_("_Manage saved sessions..."), "win.managedsession")
-        self.menu_ext.prepend_menu_item(item)
+    @classmethod
+    def get_instance(cls):
+        return cls.__instance
 
-        item = Gio.MenuItem.new(_("_Save session..."), "win.savesession")
-        self.menu_ext.prepend_menu_item(item)
+    def do_activate(self):
         self._insert_session_menu()
 
     def do_deactivate(self):
         self.menu_ext = None
 
     def _insert_session_menu(self):
-        print("_insert_session_menu\n")
+        print("SessionSaverAppActivatable._insert_session_menu\n")
+
+        self.menu_ext = self.extend_menu("tools-section")
 
         self.sessions = XMLSessionStore()
         n_sessions = len(self.sessions)
@@ -70,14 +68,16 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
             item = Gio.MenuItem.new(_("Recover '%s' session") % session.name, session_id)
             self.menu_ext.prepend_menu_item(item)
 
+        item = Gio.MenuItem.new(_("_Manage saved sessions..."), "win.managedsession")
+        self.menu_ext.prepend_menu_item(item)
+
+        item = Gio.MenuItem.new(_("_Save session..."), "win.savesession")
+        self.menu_ext.prepend_menu_item(item)
+
     def _remove_session_menu(self):
         self.menu_ext.remove_items()
-        for i in range(self.n_sessions):
-            session_id = 'win.session_%u'.format(i)
-            print("_remove_session_menu. remove %s".format(session_id))
-            self.app.remove_accelerator(session_id, None)
 
-    def _update_session_menu(self):
+    def update_session_menu(self):
         self._remove_session_menu()
         self._insert_session_menu()
     
@@ -90,43 +90,74 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
     def __init__(self):
         GObject.Object.__init__(self)
         print("SessionSaverWindowActivatable.__init__\n")
+        self.n_sessions = 0
         self.sessions = XMLSessionStore()
 
     def do_activate(self):
+        self._insert_menus()
+
+    def _insert_menus(self):
+        print("SessionSaverWindowActivatable._insert_menus")
         action = Gio.SimpleAction(name="managedsession")
-        action.connect('activate', lambda a, p: self.on_manage_sessions_action())
+        action.connect('activate', lambda a, p: self._on_manage_sessions_action())
         self.window.add_action(action)
 
         action = Gio.SimpleAction(name="savesession")
-        action.connect('activate', lambda a, p: self.on_save_session_action())
+        action.connect('activate', lambda a, p: self._on_save_session_action())
         self.window.add_action(action)
 
         self.sessions = XMLSessionStore()
+        n_sessions = len(self.sessions)
         for i, session in enumerate(self.sessions):
             session_id = 'session_%u'.format(i)
+            print(session_id)
             action = Gio.SimpleAction(name=session_id)
-            action.connect('activate', self.session_menu_action, session)
+            action.connect('activate', self._session_menu_action, session)
             self.window.add_action(action)
 
-    def session_menu_action(self, action, parameter, session):
-        print("session_menu_action")
+    def _remove_menus(self):
+        print("SessionSaverWindowActivatable._remove_menus")
+        self.app.remove_action("managedsession")
+        self.app.remove_action("savesession")
+
+        for i in range(self.n_sessions):
+            session_id = 'win.session_%u'.format(i)
+            print("SessionSaverWindowActivatable._remove_session_menu. remove %s".format(session_id))
+            self.app.remove_action(session_id)
+
+    def _session_menu_action(self, action, parameter, session):
+        name = session.name
+        print(name)
+        msg = "SessionSaverWindowActivatable._session_menu_action"
+        print(msg)
         self._load_session(session)
 
     def do_deactivate(self):
+        self._remove_menus()
         return
 
     def do_update_state(self):
         return
 
-    def on_manage_sessions_action(self):
+    def _on_manage_sessions_action(self):
         print("on_manage_sessions_action\n")
         dialog = SessionManagerDialog(app_activable, self.sessions)
         dialog.run()
 
-    def on_save_session_action(self):
+    def _on_save_session_action(self):
         print("on_save_session_action\n")
-        dialog = SaveSessionDialog(self.window, app_activable, self.sessions)
-        dialog.run()
+        data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
+        dialog = SaveSessionDialog(self.window, self.on_save_session_dialog_ok, self.sessions, data_dir)
+        if dialog.run():
+            self.sessions = XMLSessionStore()
+            print("on_save_session_action Ok")
+
+        print("on_save_session_action end")
+
+    def on_save_session_dialog_ok(self):
+        print("on_save_session_dialog_ok")
+        SessionSaverAppActivatable.get_instance().update_session_menu()
+        self._insert_menus()
 
     def _load_session(self, session):
         # Note: a session has to stand on its own window.
