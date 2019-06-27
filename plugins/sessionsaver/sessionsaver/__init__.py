@@ -51,17 +51,14 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
         self.menu_ext.prepend_menu_item(item)
         self._insert_session_menu()
 
-
     def do_deactivate(self):
         self.menu_ext = None
-
 
     def _insert_session_menu(self):
         print("_insert_session_menu\n")
 
         self.sessions = XMLSessionStore()
         for i, session in enumerate(self.sessions):
-            action_name = 'SessionSaver%X' % i
             session_id = 'win.session_%u'.format(i)
             item = Gio.MenuItem.new(_("Recover '%s' session") % session.name, session_id)
             self.menu_ext.prepend_menu_item(item)
@@ -88,16 +85,14 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
 
         self.sessions = XMLSessionStore()
         for i, session in enumerate(self.sessions):
-            action_name = 'SessionSaver%X' % i
             session_id = 'session_%u'.format(i)
             action = Gio.SimpleAction(name=session_id)
-            action.connect('activate', self.capture_menu_action, self.window)
+            action.connect('activate', self.session_menu_action, session)
             self.window.add_action(action)
 
-    def capture_menu_action(self, action, parameter, window):
-        print("capture_menu_action\n")
-        return
-
+    def session_menu_action(self, action, parameter, session):
+        print("session_menu_action")
+        self._load_session(session)
 
     def do_deactivate(self):
         return
@@ -114,4 +109,18 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
         print("on_save_session_action\n")
         dialog = SaveSessionDialog(self.window, self, self.sessions)
         dialog.run()
+
+    def _load_session(self, session):
+        # Note: a session has to stand on its own window.
+        tab = self.window.get_active_tab()
+        if tab is not None and \
+           not (tab.get_document().is_untouched() and \
+                tab.get_state() == Gedit.TabState.STATE_NORMAL):
+            # Create a new gedit window
+            window = Gedit.App.get_default().create_window(None)
+            window.show()
+        else:
+            window = self.window
+
+        Gedit.commands_load_locations(window, session.files, None, 0, 0)
 
