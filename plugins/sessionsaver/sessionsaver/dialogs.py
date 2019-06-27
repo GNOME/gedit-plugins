@@ -114,14 +114,18 @@ class SaveSessionDialog(Dialog):
             name = self['session-name'].get_child().get_text()
             self.sessions.add(Session(name, files))
             self.sessions.save()
-            self.on_ok()
+            self.on_updated_sessions()
         self.destroy()
 
 class SessionManagerDialog(Dialog):
-    def __init__(self, plugin, sessions):
-        super(SessionManagerDialog, self).__init__('session-manager-dialog', plugin.plugin_info.get_data_dir())
-        self.plugin = plugin
+    def __init__(self, window, on_updated_sessions, sessions, data_dir):
+        super(SessionManagerDialog, self).__init__('session-manager-dialog',
+                                                data_dir,
+                                                window)
+
+        self.on_updated_sessions = on_updated_sessions
         self.sessions = sessions
+        self.sessions_updated = False
 
         model = SessionModel(sessions)
 
@@ -141,7 +145,7 @@ class SessionManagerDialog(Dialog):
 
     def on_delete_event(self, dialog, event):
         dialog.hide()
-        self.sessions.save()
+        self._should_save_sessions()
         return True
 
     def get_current_session(self):
@@ -158,10 +162,21 @@ class SessionManagerDialog(Dialog):
     def on_delete_button_clicked(self, button):
         session = self.get_current_session()
         self.sessions.remove(session)
-        self.plugin._update_session_menu()
+        self.sessions_updated = True
+        self._should_save_sessions()
+
+    def _should_save_sessions(self):
+        if self.sessions_updated == False:
+            return
+
+        self.sessions.save()
+        self.on_updated_sessions()
+        self.sessions_updated = False
+        print(" _should_save_sessions saved")
 
     def on_close_button_clicked(self, button):
-        self.sessions.save()
+        self._should_save_sessions()
         self.destroy()
+
 
 # ex:ts=4:et:

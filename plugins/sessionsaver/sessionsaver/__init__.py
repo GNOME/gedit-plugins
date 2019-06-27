@@ -136,17 +136,18 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
 
     def _on_manage_sessions_action(self):
         print("on_manage_sessions_action\n")
-        dialog = SessionManagerDialog(app_activable, self.sessions)
+        data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
+        dialog = SessionManagerDialog(self.window, self.on_updated_sessions, self.sessions, data_dir)
         dialog.run()
 
     def _on_save_session_action(self):
         print("on_save_session_action\n")
         data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
-        dialog = SaveSessionDialog(self.window, self.on_save_session_dialog_ok, self.sessions, data_dir)
+        dialog = SaveSessionDialog(self.window, self.on_updated_sessions, self.sessions, data_dir)
         dialog.run()
 
-    def on_save_session_dialog_ok(self):
-        print("on_save_session_dialog_ok")
+    def on_updated_sessions(self):
+        print("on_updated_sessions")
         SessionSaverAppActivatable.get_instance().update_session_menu()
         self._insert_menus()
 
