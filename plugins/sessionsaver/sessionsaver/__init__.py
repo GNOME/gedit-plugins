@@ -64,7 +64,7 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
         self.sessions = XMLSessionStore()
         n_sessions = len(self.sessions)
         for i, session in enumerate(self.sessions):
-            session_id = 'win.session_%u'.format(i)
+            session_id = 'win.session_{0}'.format(i)
             item = Gio.MenuItem.new(_("Recover '{0}' session").format(session.name), session_id)
             self.menu_ext.prepend_menu_item(item)
 
@@ -121,7 +121,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
         self.app.remove_action("savesession")
 
         for i in range(self.n_sessions):
-            session_id = 'win.session_{0}'.format(i)
+            session_id = 'session_{0}'.format(i)
             print("SessionSaverWindowActivatable._remove_session_menu. remove {0}".format(session_id))
             self.app.remove_action(session_id)
 
