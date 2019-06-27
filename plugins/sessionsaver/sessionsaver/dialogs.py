@@ -159,7 +159,7 @@ class SessionManagerDialog(Dialog):
     def on_delete_button_clicked(self, button):
         session = self.get_current_session()
         self.sessions.remove(session)
-#        self.plugin._update_session_menu()
+        self.plugin._update_session_menu()
 
     def on_close_button_clicked(self, button):
         self.sessions.save()
