@@ -115,8 +115,6 @@ class SaveSessionDialog(Dialog):
             self.sessions.add(Session(name, files))
             self.sessions.save()
             self.on_ok()
-#            self.sessionsaver.sessions = self.sessions
-#            self.sessionsaver._update_session_menu()
         self.destroy()
 
 class SessionManagerDialog(Dialog):

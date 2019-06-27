@@ -62,7 +62,6 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
         self.menu_ext = self.extend_menu("tools-section")
 
         self.sessions = XMLSessionStore()
-        n_sessions = len(self.sessions)
         for i, session in enumerate(self.sessions):
             session_id = 'win.session_{0}'.format(i)
             item = Gio.MenuItem.new(_("Recover '{0}' session").format(session.name), session_id)
@@ -110,7 +109,6 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
         n_sessions = len(self.sessions)
         for i, session in enumerate(self.sessions):
             session_id = 'session_{0}'.format(i)
-            print(session_id)
             action = Gio.SimpleAction(name=session_id)
             action.connect('activate', self._session_menu_action, session)
             self.window.add_action(action)
@@ -126,10 +124,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
             self.window.remove_action(session_id)
 
     def _session_menu_action(self, action, parameter, session):
-        name = session.name
-        print(name)
-        msg = "SessionSaverWindowActivatable._session_menu_action"
-        print(msg)
+        print("SessionSaverWindowActivatable._session_menu_action {0}".format(session.name))
         self._load_session(session)
 
     def do_deactivate(self):
@@ -148,11 +143,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
         print("on_save_session_action\n")
         data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
         dialog = SaveSessionDialog(self.window, self.on_save_session_dialog_ok, self.sessions, data_dir)
-        if dialog.run():
-            self.sessions = XMLSessionStore()
-            print("on_save_session_action Ok")
-
-        print("on_save_session_action end")
+        dialog.run()
 
     def on_save_session_dialog_ok(self):
         print("on_save_session_dialog_ok")
@@ -172,5 +163,3 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, Pea
             window = self.window
 
         Gedit.commands_load_locations(window, session.files, None, 0, 0)
-
-
