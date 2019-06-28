@@ -95,18 +95,24 @@ class SaveSessionDialog(Dialog):
 
         model = SessionModel(sessions)
 
-        combobox = self['session-name']
-        combobox.set_model(model)
-        combobox.set_entry_text_column(1)
+        self.combobox = self['session-name']
+        self.combobox.set_model(model)
+        self.combobox.set_entry_text_column(1)
+        self.combobox.connect("changed", self.on_name_combo_changed)
 
         self.dialog.connect('response', self.on_response)
+        self['save_button'].set_sensitive(False)
+
+    def on_name_combo_changed(self, combo):
+        name = self.combobox.get_child().get_text()
+        self['save_button'].set_sensitive(len(name) > 0)
 
     def on_response(self, dialog, response_id):
         if response_id == Gtk.ResponseType.OK:
             files = [doc.get_location()
                         for doc in self.parent.get_documents()
                         if doc.get_location() is not None]
-            name = self['session-name'].get_child().get_text()
+            name = self.combobox.get_child().get_text()
             self.sessions.add(Session(name, files))
             self.sessions.save()
             self.on_updated_sessions()
