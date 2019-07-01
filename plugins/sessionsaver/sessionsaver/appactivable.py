@@ -18,7 +18,7 @@
 #  Boston, MA 02110-1301, USA.
 
 from gi.repository import GObject, Gio, Gedit
-from .store import XMLSessionStore
+from .xmlsessionstore import XMLSessionStore
 
 try:
     import gettext

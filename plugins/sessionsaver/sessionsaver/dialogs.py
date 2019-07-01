@@ -6,7 +6,7 @@
 from gi.repository import GObject, Gtk, Gedit
 import os.path
 from gpdefs import GETTEXT_PACKAGE
-from .store import Session
+from .session import Session
 
 
 try:

@@ -22,80 +22,9 @@
 
 import os.path
 from xml.parsers import expat
-from gi.repository import GObject, GLib, Gio
-
-class Session(object):
-    def __init__(self, name, files = None):
-        super(Session, self).__init__()
-        self.name = name
-        if files is None:
-            files = []
-        self.files = files
-
-    def __lt__(self, session):
-        return (self.name.lower() < session.name.lower())
-
-    def add_file(self, filename):
-        self.files.append(Gio.file_new_for_uri(filename))
-
-class SessionStore(GObject.Object):
-    __gsignals__ = {
-        "session-added":    (GObject.SIGNAL_RUN_LAST, GObject.TYPE_NONE,
-                             (GObject.TYPE_PYOBJECT,)),
-        "session-changed":  (GObject.SIGNAL_RUN_LAST, GObject.TYPE_NONE,
-                             (GObject.TYPE_PYOBJECT,)),
-        "session-removed":  (GObject.SIGNAL_RUN_LAST, GObject.TYPE_NONE,
-                            (GObject.TYPE_PYOBJECT,))
-    }
-
-    _instance = None
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = GObject.Object.__new__(cls)
-        return cls._instance
-
-    def __init__(self):
-        super(SessionStore, self).__init__()
-        self._sessions = []
-
-    def __iter__(self):
-        return iter(self._sessions)
-
-    def __getitem__(self, index):
-        return self._sessions[index]
-
-    def __getslice__(self, i, j):
-        return self._sessions[i:j]
-
-    def __len__(self):
-        return len(self._sessions)
-
-    def do_session_added(self, session):
-        self._sessions.append(session)
-        self._sessions.sort()
-
-    def do_session_changed(self, session):
-        index = self._sessions.index(session)
-        self._sessions[index] = session
-
-    def add(self, session):
-        assert isinstance(session, Session)
-
-        if session in self:
-            self.emit('session-changed', session)
-        else:
-            self.emit('session-added', session)
-
-    def do_session_removed(self, session):
-        self._sessions.remove(session)
-
-    def remove(self, session):
-        assert isinstance(session, Session)
-        if session in self:
-            self.emit('session-removed', session)
-
-    def index(self, session):
-        return self._sessions.index(session)
+from gi.repository import GLib
+from .sessionstore import SessionStore
+from .session import Session
 
 class XMLSessionStore(SessionStore):
     def __init__(self):

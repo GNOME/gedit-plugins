@@ -19,7 +19,7 @@
 
 from gi.repository import GObject, Gio, Gedit
 from .dialogs import SaveSessionDialog, SessionManagerDialog
-from .store import XMLSessionStore
+from .xmlsessionstore import XMLSessionStore
 from .appactivable import SessionSaverAppActivatable
 
 try:
