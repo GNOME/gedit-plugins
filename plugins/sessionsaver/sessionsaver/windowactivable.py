@@ -93,7 +93,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
     def _on_manage_sessions_action(self):
         print("on_manage_sessions_action\n")
         data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
-        dialog = SessionManagerDialog(self.window, self.on_updated_sessions, self.sessions, data_dir)
+        dialog = SessionManagerDialog(self.window, self.on_updated_sessions, self.load_session, self.sessions, data_dir)
         dialog.run()
 
     def _on_save_session_action(self):
@@ -107,7 +107,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
         SessionSaverAppActivatable.get_instance().update_session_menu()
         self._insert_menus()
 
-    def _load_session(self, session):
+    def load_session(self, session):
         # Note: a session has to stand on its own window.
         tab = self.window.get_active_tab()
         if tab is not None and \

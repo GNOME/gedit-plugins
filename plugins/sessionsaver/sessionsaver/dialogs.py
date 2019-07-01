@@ -119,12 +119,13 @@ class SaveSessionDialog(Dialog):
         self.destroy()
 
 class SessionManagerDialog(Dialog):
-    def __init__(self, window, on_updated_sessions, sessions, data_dir):
+    def __init__(self, window, on_updated_sessions, on_load_session, sessions, data_dir):
         super(SessionManagerDialog, self).__init__('session-manager-dialog',
                                                 data_dir,
                                                 window)
 
         self.on_updated_sessions = on_updated_sessions
+        self.on_load_session = on_load_session
         self.sessions = sessions
         self.sessions_updated = False
 
@@ -158,7 +159,7 @@ class SessionManagerDialog(Dialog):
     def on_open_button_clicked(self, button):
         session = self.get_current_session()
         if session is not None:
-            self.plugin._load_session(session)
+            self.on_load_session(session)
 
     def on_delete_button_clicked(self, button):
         session = self.get_current_session()
