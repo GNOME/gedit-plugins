@@ -28,5 +28,13 @@ class TestSession(unittest.TestCase):
         session.add_file('file')
         self.assertEqual(1, len(session.files))
 
+    def test_compare_objects(self):
+        session_a = Session("session_A")
+        session_b = Session("session_B")
+        self.assertTrue(session_a < session_b)
+        self.assertTrue(session_b > session_a)
+        self.assertTrue(session_a != session_b)
+
+
 if __name__ == '__main__':
     unittest.main()
