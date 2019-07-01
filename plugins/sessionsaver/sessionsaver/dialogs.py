@@ -85,12 +85,12 @@ class Dialog(object):
         self.__del__()
 
 class SaveSessionDialog(Dialog):
-    def __init__(self, window, on_ok, sessions, data_dir):
+    def __init__(self, window, on_updated_sessions, sessions, data_dir):
         super(SaveSessionDialog, self).__init__('save-session-dialog',
                                                 data_dir,
                                                 window)
 
-        self.on_ok = on_ok
+        self.on_updated_sessions = on_updated_sessions
         self.sessions = sessions
 
         model = SessionModel(sessions)
