@@ -81,7 +81,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
     def _session_menu_action(self, action, parameter, session):
         print("SessionSaverWindowActivatable._session_menu_action {0}".format(session.name))
-        self._load_session(session)
+        self.load_session(session)
 
     def do_deactivate(self):
         self._remove_menus()
