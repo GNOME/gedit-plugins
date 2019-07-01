@@ -17,16 +17,10 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor,
 #  Boston, MA 02110-1301, USA.
 
-import gi
 from gi.repository import GObject, Gio, Gedit
 from .dialogs import SaveSessionDialog, SessionManagerDialog
 from .store import XMLSessionStore
 from .appactivable import SessionSaverAppActivatable
-
-gi.require_version('Gtk', '3.0')
-gi.require_version('GtkSource', '4')
-gi.require_version('PeasGtk', '1.0')
-
 
 try:
     import gettext

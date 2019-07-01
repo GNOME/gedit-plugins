@@ -17,5 +17,10 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor,
 #  Boston, MA 02110-1301, USA.
 
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('GtkSource', '4')
+gi.require_version('PeasGtk', '1.0')
+
 from .appactivable import SessionSaverAppActivatable
 from .windowactivable import SessionSaverWindowActivatable
