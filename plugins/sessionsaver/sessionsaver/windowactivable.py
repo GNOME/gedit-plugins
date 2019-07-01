@@ -105,6 +105,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
     def on_updated_sessions(self):
         print("on_updated_sessions")
         SessionSaverAppActivatable.get_instance().update_session_menu()
+        self._remove_menus()
         self._insert_menus()
 
     def load_session(self, session):
