@@ -18,7 +18,7 @@
 #  Boston, MA 02110-1301, USA.
 
 import gi
-from gi.repository import GObject, Gio, Gedit, PeasGtk
+from gi.repository import GObject, Gio, Gedit
 from .dialogs import SaveSessionDialog, SessionManagerDialog
 from .store import XMLSessionStore
 from .appactivable import SessionSaverAppActivatable
@@ -37,7 +37,7 @@ except:
     _ = lambda s: s
 
 
-class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable, PeasGtk.Configurable):
+class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
     __gtype_name__ = "SessionSaverWindowActivatable"
     window = GObject.Property(type=Gedit.Window)
