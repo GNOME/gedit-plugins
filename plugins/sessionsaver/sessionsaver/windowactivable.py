@@ -44,7 +44,6 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
     def __init__(self):
         GObject.Object.__init__(self)
-        print("SessionSaverWindowActivatable.__init__\n")
         self.sessions = XMLSessionStore()
         self.n_sessions = 0
 
@@ -52,7 +51,6 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
         self._insert_menus()
 
     def _insert_menus(self):
-        print("SessionSaverWindowActivatable._insert_menus")
         action = Gio.SimpleAction(name="managedsession")
         action.connect('activate', lambda a, p: self._on_manage_sessions_action())
         self.window.add_action(action)
@@ -70,17 +68,14 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
             self.window.add_action(action)
 
     def _remove_menus(self):
-        print("SessionSaverWindowActivatable._remove_menus")
         self.window.remove_action("managedsession")
         self.window.remove_action("savesession")
 
         for i in range(self.n_sessions):
             session_id = 'session_{0}'.format(i)
-            print("SessionSaverWindowActivatable._remove_session_menu. remove {0}".format(session_id))
             self.window.remove_action(session_id)
 
     def _session_menu_action(self, action, parameter, session):
-        print("SessionSaverWindowActivatable._session_menu_action {0}".format(session.name))
         self.load_session(session)
 
     def do_deactivate(self):
@@ -91,19 +86,16 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
         return
 
     def _on_manage_sessions_action(self):
-        print("on_manage_sessions_action\n")
         data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
         dialog = SessionManagerDialog(self.window, self.on_updated_sessions, self.load_session, self.sessions, data_dir)
         dialog.run()
 
     def _on_save_session_action(self):
-        print("on_save_session_action\n")
         data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
         dialog = SaveSessionDialog(self.window, self.on_updated_sessions, self.sessions, data_dir)
         dialog.run()
 
     def on_updated_sessions(self):
-        print("on_updated_sessions")
         SessionSaverAppActivatable.get_instance().update_session_menu()
         self._remove_menus()
         self._insert_menus()

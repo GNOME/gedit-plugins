@@ -38,7 +38,6 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
     def __init__(self):
         GObject.Object.__init__(self)
         SessionSaverAppActivatable.__instance = self
-        print("SessionSaverAppActivatable.__init__\n")
 
     @classmethod
     def get_instance(cls):
@@ -51,8 +50,6 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
         self.menu_ext = None
 
     def _insert_session_menu(self):
-        print("SessionSaverAppActivatable._insert_session_menu\n")
-
         self.menu_ext = self.extend_menu("tools-section")
 
         item = Gio.MenuItem.new(_("_Manage saved sessions..."), "win.managedsession")
