@@ -17,6 +17,7 @@ install_data(
   )
 )
 
+subdir('tests')
 
 sessionsaver_plugin_in = configure_file(
   input: 'sessionsaver.plugin.desktop.in.in',
