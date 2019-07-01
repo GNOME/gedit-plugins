@@ -165,7 +165,6 @@ class SessionManagerDialog(Dialog):
         session = self.get_current_session()
         self.sessions.remove(session)
         self.sessions_updated = True
-        self._should_save_sessions()
 
     def _should_save_sessions(self):
         if self.sessions_updated == False:
