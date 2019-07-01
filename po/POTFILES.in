@@ -42,6 +42,11 @@ plugins/multiedit/gedit-multiedit.metainfo.xml.in
 plugins/multiedit/multiedit/appactivatable.py
 plugins/multiedit/multiedit.plugin.desktop.in.in
 plugins/multiedit/multiedit/viewactivatable.py
+plugins/sessionsaver/sessionsaver/appactivable.py
+plugins/sessionsaver/sessionsaver/dialogs.py
+plugins/sessionsaver/sessionsaver.plugin.desktop.in.in
+plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui
+plugins/sessionsaver/sessionsaver/windowactivable.py
 plugins/smartspaces/gedit-smartspaces.metainfo.xml.in
 plugins/smartspaces/smartspaces.plugin.desktop.in.in
 plugins/terminal/gedit-terminal.metainfo.xml.in
