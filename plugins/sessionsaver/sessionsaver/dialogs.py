@@ -173,7 +173,6 @@ class SessionManagerDialog(Dialog):
         self.sessions.save()
         self.on_updated_sessions()
         self.sessions_updated = False
-        print(" _should_save_sessions saved")
 
     def on_close_button_clicked(self, button):
         self._should_save_sessions()
