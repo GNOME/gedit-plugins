@@ -20,21 +20,15 @@
 
 import unittest
 from store.session import Session
+from store.sessionstore import SessionStore
 
-class TestSession(unittest.TestCase):
+class TestSessionStore(unittest.TestCase):
 
-    def test_add_file(self):
+    def test_add(self):
         session = Session("session_A")
-        session.add_file('file')
-        self.assertEqual(1, len(session.files))
-
-    def test_compare_objects(self):
-        session_a = Session("session_A")
-        session_b = Session("session_B")
-        self.assertTrue(session_a < session_b)
-        self.assertTrue(session_b > session_a)
-        self.assertTrue(session_a != session_b)
-
+        store = SessionStore()
+        store.add(session)
+        self.assertEqual(1, len(store))
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,6 @@
 sessionsaver_tests = {
   'session': files('testsession.py'),
+  'sessionstore': files('testsessionstore.py'),
 }
 
 sessionsaver_srcdir = join_paths(
