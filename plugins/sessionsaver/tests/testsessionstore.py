@@ -30,5 +30,30 @@ class TestSessionStore(unittest.TestCase):
         store.add(session)
         self.assertEqual(1, len(store))
 
+    def test_add_same_object_update(self):
+        session = Session("session_A")
+        store = SessionStore()
+        store.add(session)
+        session.name = 'Session B'
+        store.add(session)
+        self.assertEqual(1, len(store))
+        self.assertEqual('Session B', store[0].name)
+
+    def test_add_equal_object(self):
+        session_a = Session("session_A")
+        session_b = Session("session_A")
+        store = SessionStore()
+        store.add(session_a)
+        store.add(session_b)
+        self.assertEqual(2, len(store))
+
+    def test_remove(self):
+        session = Session("session_A")
+        store = SessionStore()
+        store.add(session)
+        store.remove(session)
+        self.assertEqual(0, len(store))
+
+
 if __name__ == '__main__':
     unittest.main()
