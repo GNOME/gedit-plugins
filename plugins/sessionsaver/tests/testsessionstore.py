@@ -24,6 +24,20 @@ from store.sessionstore import SessionStore
 
 class TestSessionStore(unittest.TestCase):
 
+    def test_new_two_objects(self):
+        session_a = Session("session_A")
+        store_a = SessionStore()
+        store_a.add(session_a)
+
+        session_b = Session("session_B")
+        session_c = Session("session_C")
+        store_b = SessionStore()
+        store_b.add(session_b)
+        store_b.add(session_c)
+
+        self.assertEqual(1, len(store_a))
+        self.assertEqual(2, len(store_b))
+
     def test_add(self):
         session = Session("session_A")
         store = SessionStore()
