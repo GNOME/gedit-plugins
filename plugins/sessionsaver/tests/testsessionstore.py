@@ -59,7 +59,7 @@ class TestSessionStore(unittest.TestCase):
         store = SessionStore()
         store.add(session_a)
         store.add(session_b)
-        self.assertEqual(2, len(store))
+        self.assertEqual(1, len(store))
 
     def test_remove(self):
         session = Session("session_A")
@@ -67,7 +67,6 @@ class TestSessionStore(unittest.TestCase):
         store.add(session)
         store.remove(session)
         self.assertEqual(0, len(store))
-
 
 if __name__ == '__main__':
     unittest.main()

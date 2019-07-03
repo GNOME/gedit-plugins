@@ -33,6 +33,9 @@ class Session(object):
     def __lt__(self, session):
         return (self.name.lower() < session.name.lower())
 
+    def __eq__(self, session):
+        return (self.name.lower() == session.name.lower())
+
     def add_file(self, filename):
         self.files.append(Gio.file_new_for_uri(filename))
 
