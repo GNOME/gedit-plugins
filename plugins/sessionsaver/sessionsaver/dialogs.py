@@ -85,11 +85,12 @@ class Dialog(object):
         self.__del__()
 
 class SaveSessionDialog(Dialog):
-    def __init__(self, window, on_updated_sessions, sessions, data_dir):
+    def __init__(self, window, sessions, current_session, on_updated_sessions, data_dir):
         super(SaveSessionDialog, self).__init__('save-session-dialog',
                                                 data_dir,
                                                 window)
 
+        self.NAME_COLUMN = 1
         self.on_updated_sessions = on_updated_sessions
         self.sessions = sessions
 
@@ -97,14 +98,28 @@ class SaveSessionDialog(Dialog):
 
         self.combobox = self['session-name']
         self.combobox.set_model(model)
-        self.combobox.set_entry_text_column(1)
+        self.combobox.set_entry_text_column(self.NAME_COLUMN)
         self.combobox.connect("changed", self.on_name_combo_changed)
 
+        if current_session is None:
+            self.on_name_combo_changed(self.combobox)
+        else:
+            self._set_combobox_active_by_name(current_session)
+
         self.dialog.connect('response', self.on_response)
-        self['save_button'].set_sensitive(False)
+
+    def _set_combobox_active_by_name(self, option_name):
+        model = self.combobox.get_model()
+        piter = model.get_iter_first()
+        while piter is not None:
+            if model.get_value(piter, self.NAME_COLUMN) == option_name:
+                self.combobox.set_active_iter(piter)
+                return True
+            piter = model.iter_next(piter)
+        return False
 
     def on_name_combo_changed(self, combo):
-        name = self.combobox.get_child().get_text()
+        name = combo.get_child().get_text()
         self['save_button'].set_sensitive(len(name) > 0)
 
     def on_response(self, dialog, response_id):

@@ -40,6 +40,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
         GObject.Object.__init__(self)
         self.sessions = XMLSessionStore()
         self.n_sessions = 0
+        self.current_session = None
 
     def do_activate(self):
         self._insert_menus()
@@ -86,7 +87,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
     def _on_save_session_action(self):
         data_dir = SessionSaverAppActivatable.get_instance().plugin_info.get_data_dir()
-        dialog = SaveSessionDialog(self.window, self.on_updated_sessions, self.sessions, data_dir)
+        dialog = SaveSessionDialog(self.window, self.sessions, self.current_session, self.on_updated_sessions, data_dir)
         dialog.run()
 
     def on_updated_sessions(self):
@@ -107,3 +108,4 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
             window = self.window
 
         Gedit.commands_load_locations(window, session.files, None, 0, 0)
+        self.current_session = session.name
