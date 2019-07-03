@@ -38,11 +38,19 @@ class TestSessionStore(unittest.TestCase):
         self.assertEqual(1, len(store_a))
         self.assertEqual(2, len(store_b))
 
+    def on_session_added(self, store, session):
+        self.added_called = True
+
     def test_add(self):
+        self.added_called = False
         session = Session("session_A")
         store = SessionStore()
+        store.connect_after('session-added', self.on_session_added)
         store.add(session)
+
         self.assertEqual(1, len(store))
+        self.assertTrue(self.added_called)
+
 
     def test_add_same_object_update(self):
         session = Session("session_A")
