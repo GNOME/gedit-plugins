@@ -1,0 +1,83 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      type="topic" style="task"
+      id="plugin-session-saver">
+
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="1.0" date="2018-03-04" status="review"/>
+
+    <credit type="author">
+      <name>Jordi Mas i Hernàndez</name>
+      <email its:translate="no">jmas@softcatala.org</email>
+    </credit>
+
+    <include href="legal-plugins.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+
+    <desc>Save and restore your working sessions</desc>
+  </info>
+
+  <title>Session Saver</title>
+
+  <p>The <app>Session Saver</app> plugin allows you to save your current open documents and open them again.</p>
+
+  <section id="enable-session-saver">
+    <title>Enable Session Saver Plugin</title>
+
+    <steps>
+      <title>To enable Session Saver plugin:</title>
+      <item>
+        <p>Select <guiseq><gui style="menu">gedit</gui>
+        <gui style="menuitem">Preferences</gui>
+        <gui style="tab">Plugins</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Select <gui style="menuitem">Session Saver</gui> to enable the
+        plugin.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="enable-session-saver">
+    <title>Save a session</title>
+      <p>Save all your open files to be able to open them later.</p>
+    <steps>
+      <title>To save a session:</title>
+      <item>
+        <p>Select <guiseq><gui style="menu">gedit</gui>
+        <gui style="menuitem">Tools</gui>
+        <gui style="tab">Save Session...</gui></guiseq>.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="open-session-saver">
+    <title>Open a session</title>
+      <p>Open all the files from an already saved session.</p>
+    <steps>
+      <title>To open a session:</title>
+      <item>
+        <p>Select <guiseq><gui style="menu">gedit</gui>
+        <gui style="menuitem">Tools</gui></guiseq></p>
+      </item>
+      <item>
+        <p>Select one of the saved sessions from the menu.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="manage-session-saver">
+    <title>Manage Sessions</title>
+      <p>Open and delete your already saved sessions</p>
+    <steps>
+      <title>Manage sessions</title>
+        <item>
+          <p>Select <guiseq><gui style="menu">gedit</gui>
+          <gui style="menuitem">Tools</gui>
+          <gui style="tab">Manage Saved Sessions...</gui></guiseq></p>
+        </item>
+    </steps>
+  </section>
+
+</page>

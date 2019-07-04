@@ -10,6 +10,7 @@ gedit_help_sources = [
   'join-split-lines.page',
   'legal-plugins.xml',
   'multi-edit.page',
+  'session-saver.page',
   'terminal.page',
   'text-size.page',
   'translate.page',
