@@ -52,16 +52,16 @@ class SessionSaverAppActivatable(GObject.Object, Gedit.AppActivatable):
     def _insert_session_menu(self):
         self.menu_ext = self.extend_menu("tools-section")
 
-        item = Gio.MenuItem.new(_("_Manage saved sessions..."), "win.managedsession")
+        item = Gio.MenuItem.new(_("_Manage Saved Sessions..."), "win.managedsession")
         self.menu_ext.append_menu_item(item)
 
-        item = Gio.MenuItem.new(_("_Save session..."), "win.savesession")
+        item = Gio.MenuItem.new(_("_Save Session..."), "win.savesession")
         self.menu_ext.append_menu_item(item)
 
         self.sessions = XMLSessionStore()
         for i, session in enumerate(self.sessions):
             session_id = 'win.session_{0}'.format(i)
-            item = Gio.MenuItem.new(_("Recover '{0}' session").format(session.name), session_id)
+            item = Gio.MenuItem.new(_("Recover '{0}' Session").format(session.name), session_id)
             self.menu_ext.append_menu_item(item)
 
     def _remove_session_menu(self):
