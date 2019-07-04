@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saved-sessions>
+<session name="files">
+  <file path="file:///xmlsessionstore.py"/>
+</session>
+<session name="gspell">
+  <file path="file:///home/jordi/dev/gedit/gspell/gspell/gspellregion.c"/>
+  <file path="file:///home/jordi/dev/gedit/gspell/gspell/gspell-text-view.c"/>
+  <file path="file:///home/jordi/dev/gedit/gspell/gspell/gspell-text-buffer.c"/>
+  <file path="file:///home/jordi/dev/gedit/gspell/gspell/gspell-navigator.c"/>
+  <file path="file:///home/jordi/dev/gedit/gspell/gspell/gspell-language-chooser.c"/>
+  <file path="file:///home/jordi/dev/gedit/gspell/gspell/gspell-language-chooser-dialog.c"/>
+  <file path="file:///home/jordi/dev/gedit/gspell/gspell/gspell-language-chooser-button.c"/>
+</session>
+<session name="window-activable">
+  <file path="file:///home/jordi/dev/gedit/gedit-plugins/plugins/sessionsaver/meson.build"/>
+  <file path="file:///home/jordi/dev/gedit/gedit-plugins/plugins/sessionsaver/sessionsaver/windowactivable.py"/>
+</session>
+</saved-sessions>

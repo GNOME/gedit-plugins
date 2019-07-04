@@ -32,6 +32,11 @@ class XMLSessionStore(SessionStore):
         self.filename = os.path.join(GLib.get_user_config_dir(), 'gedit/saved-sessions.xml')
         self.load()
 
+    def __init__(self, filename):
+        super(XMLSessionStore, self).__init__()
+        self.filename = filename
+        self.load()
+
     def _escape(self, string):
         return string.replace('&', '&amp;') \
                      .replace('<', '&lt;')  \
