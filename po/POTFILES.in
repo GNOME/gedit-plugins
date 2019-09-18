@@ -49,6 +49,9 @@ plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui
 plugins/sessionsaver/sessionsaver/windowactivable.py
 plugins/smartspaces/gedit-smartspaces.metainfo.xml.in
 plugins/smartspaces/smartspaces.plugin.desktop.in.in
+plugins/synctex/gedit-synctex.metainfo.xml.in
+plugins/synctex/synctex.plugin.desktop.in.in
+plugins/synctex/synctex/synctex.py
 plugins/terminal/gedit-terminal.metainfo.xml.in
 plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml
 plugins/terminal/terminal.plugin.desktop.in.in

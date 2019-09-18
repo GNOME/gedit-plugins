@@ -93,6 +93,7 @@ all_plugins = {
   'multiedit': {'language': 'python'},
   'sessionsaver': {'language': 'python'},
   'smartspaces': {'language': 'python'},
+  'synctex': {'language': 'python'},
   'terminal': {'language': 'python'},
   'textsize': {'language': 'python'},
   'translate': {'language': 'python'},
