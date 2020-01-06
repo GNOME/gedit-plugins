@@ -62,6 +62,7 @@ all_plugins = {
   'terminal': {'language': 'python'},
   'textsize': {'language': 'python'},
   'translate': {'language': 'python'},
+  'wheelzoom': {'language': 'c'},
   'wordcompletion': {'language': 'c'},
 }
 

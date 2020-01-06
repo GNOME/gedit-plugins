@@ -1,0 +1,11 @@
+[Plugin]
+Module=wheelzoom
+IAge=3
+Name=wheelzoom
+Description=WheelZoom.
+# TRANSLATORS: Do NOT translate or transliterate this text!
+#              This is an icon file name.
+Icon=view-sort-ascending
+Authors=Javier Goday <jgoday@gmail.com>;
+Copyright=Copyright © 2020 Javier Goday
+Website=http://www.gedit.org
