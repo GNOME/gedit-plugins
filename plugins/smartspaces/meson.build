@@ -34,7 +34,6 @@ smartspaces_plugin = custom_target(
 )
 
 smartspaces_metainfo = i18n.merge_file(
-  'gedit-smartspaces.metainfo.xml',
   input: 'gedit-smartspaces.metainfo.xml.in',
   output: 'gedit-smartspaces.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

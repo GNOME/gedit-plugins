@@ -26,7 +26,6 @@ git_plugin = custom_target(
 )
 
 git_metainfo = i18n.merge_file(
-  'gedit-git.metainfo.xml',
   input: 'gedit-git.metainfo.xml.in',
   output: 'gedit-git.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

@@ -30,7 +30,6 @@ colorpicker_plugin = custom_target(
 )
 
 colorpicker_metainfo = i18n.merge_file(
-  'gedit-colorpicker.metainfo.xml',
   input: 'gedit-colorpicker.metainfo.xml.in',
   output: 'gedit-colorpicker.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

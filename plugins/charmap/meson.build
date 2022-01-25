@@ -26,7 +26,6 @@ charmap_plugin = custom_target(
 )
 
 charmap_metainfo = i18n.merge_file(
-  'gedit-charmap.metainfo.xml',
   input: 'gedit-charmap.metainfo.xml.in',
   output: 'gedit-charmap.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

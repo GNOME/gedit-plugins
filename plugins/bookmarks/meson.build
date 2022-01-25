@@ -41,7 +41,6 @@ bookmarks_plugin = custom_target(
 )
 
 bookmarks_metainfo = i18n.merge_file(
-  'gedit-bookmarks.metainfo.xml',
   input: 'gedit-bookmarks.metainfo.xml.in',
   output: 'gedit-bookmarks.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

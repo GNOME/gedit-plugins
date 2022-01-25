@@ -26,7 +26,6 @@ synctex_plugin = custom_target(
 )
 
 synctex_metainfo = i18n.merge_file(
-  'gedit-synctex.metainfo.xml',
   input: 'gedit-synctex.metainfo.xml.in',
   output: 'gedit-synctex.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

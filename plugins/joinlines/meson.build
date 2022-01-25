@@ -30,7 +30,6 @@ joinlines_plugin = custom_target(
 )
 
 joinlines_metainfo = i18n.merge_file(
-  'gedit-joinlines.metainfo.xml',
   input: 'gedit-joinlines.metainfo.xml.in',
   output: 'gedit-joinlines.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

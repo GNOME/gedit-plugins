@@ -55,7 +55,6 @@ install_data(
 )
 
 wordcompletion_metainfo = i18n.merge_file(
-  'gedit-wordcompletion.metainfo.xml',
   input: 'gedit-wordcompletion.metainfo.xml.in',
   output: 'gedit-wordcompletion.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

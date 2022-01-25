@@ -30,7 +30,6 @@ bracketcompletion_plugin = custom_target(
 )
 
 bracketcompletion_metainfo = i18n.merge_file(
-  'gedit-bracketcompletion.metainfo.xml',
   input: 'gedit-bracketcompletion.metainfo.xml.in',
   output: 'gedit-bracketcompletion.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

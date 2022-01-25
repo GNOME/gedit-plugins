@@ -38,7 +38,6 @@ install_data(
 )
 
 terminal_metainfo = i18n.merge_file(
-  'gedit-terminal.metainfo.xml',
   input: 'gedit-terminal.metainfo.xml.in',
   output: 'gedit-terminal.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),

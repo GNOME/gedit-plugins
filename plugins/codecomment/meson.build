@@ -30,7 +30,6 @@ codecomment_plugin = custom_target(
 )
 
 codecomment_metainfo = i18n.merge_file(
-  'gedit-codecomment.metainfo.xml',
   input: 'gedit-codecomment.metainfo.xml.in',
   output: 'gedit-codecomment.metainfo.xml',
   po_dir: join_paths(srcdir, 'po'),
