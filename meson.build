@@ -1,7 +1,7 @@
 project(
   'gedit-plugins', 'c',
   version: '45.alpha2',
-  meson_version: '>= 0.50'
+  meson_version: '>= 0.57'
 )
 
 gnome = import('gnome')
@@ -89,6 +89,10 @@ meson.add_install_script(
   'build-aux/meson/post_install.py',
   libdir,
   datadir
+)
+
+gnome.post_install(
+  glib_compile_schemas: true,
 )
 
 # Summary message
