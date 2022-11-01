@@ -1,3 +1,7 @@
+News in 43.1, 2022-11-03
+------------------------
+* Be able to build with Meson >= 0.61
+
 News in 43.0, 2022-11-03
 ------------------------
 * Come back to the source code of gedit-plugins a little before version 40.0,
