@@ -81,7 +81,10 @@ endif
 
 subdir('po')
 subdir('plugins')
-subdir('help')
+
+if get_option('user_documentation')
+  subdir('help')
+endif
 
 meson.add_install_script(
   'build-aux/meson/post_install.py',
@@ -97,6 +100,7 @@ summary = [
   '        gedit-plugins version @0@'.format(meson.project_version()),
   '',
   '        Prefix: @0@'.format(get_option('prefix')),
+  '        User documentation: @0@'.format(get_option('user_documentation')),
   '',
   '        Enabled plugins:'
 ]

@@ -14,3 +14,10 @@ option('plugin_synctex', type: 'boolean')
 option('plugin_terminal', type: 'boolean')
 option('plugin_textsize', type: 'boolean')
 option('plugin_wordcompletion', type: 'boolean')
+
+# For developers. Disabling the option speeds up the install.
+option(
+  'user_documentation',
+  type: 'boolean', value: true,
+  description: 'Build user documentation'
+)
