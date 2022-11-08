@@ -45,6 +45,19 @@ class GeditTerminal(Vte.Terminal):
 
     SETTINGS_SCHEMA_ID_BASE = "org.gnome.Terminal.ProfilesList"
     SETTINGS_SCHEMA_ID_FALLBACK = "org.gnome.gedit.plugins.terminal"
+    SETTING_KEY_PROFILE_USE_SYSTEM_FONT = "use-system-font"
+    SETTING_KEY_PROFILE_FONT = "font"
+    SETTING_KEY_PROFILE_USE_THEME_COLORS = "use-theme-colors"
+    SETTING_KEY_PROFILE_FOREGROUND_COLOR = "foreground-color"
+    SETTING_KEY_PROFILE_BACKGROUND_COLOR = "background-color"
+    SETTING_KEY_PROFILE_PALETTE = "palette"
+    SETTING_KEY_PROFILE_CURSOR_BLINK_MODE = "cursor-blink-mode"
+    SETTING_KEY_PROFILE_CURSOR_SHAPE = "cursor-shape"
+    SETTING_KEY_PROFILE_AUDIBLE_BELL = "audible-bell"
+    SETTING_KEY_PROFILE_SCROLL_ON_KEYSTROKE = "scroll-on-keystroke"
+    SETTING_KEY_PROFILE_SCROLL_ON_OUTPUT = "scroll-on-output"
+    SETTING_KEY_PROFILE_SCROLLBACK_UNLIMITED = "scrollback-unlimited"
+    SETTING_KEY_PROFILE_SCROLLBACK_LINES = "scrollback-lines"
 
     TARGET_URI_LIST = 200
 
@@ -89,10 +102,10 @@ class GeditTerminal(Vte.Terminal):
         return settings
 
     def get_font(self):
-        if self.profile_settings.get_boolean("use-system-font"):
+        if self.profile_settings.get_boolean(self.SETTING_KEY_PROFILE_USE_SYSTEM_FONT):
             font = self.system_settings.get_string("monospace-font-name")
         else:
-            font = self.profile_settings.get_string("font")
+            font = self.profile_settings.get_string(self.SETTING_KEY_PROFILE_FONT)
 
         return font
 
@@ -112,16 +125,16 @@ class GeditTerminal(Vte.Terminal):
         bg = context.get_background_color(Gtk.StateFlags.NORMAL)
         palette = []
 
-        if not self.profile_settings.get_boolean("use-theme-colors"):
-            fg_color = self.profile_settings.get_string("foreground-color")
+        if not self.profile_settings.get_boolean(self.SETTING_KEY_PROFILE_USE_THEME_COLORS):
+            fg_color = self.profile_settings.get_string(self.SETTING_KEY_PROFILE_FOREGROUND_COLOR)
             if fg_color != "":
                 fg = Gdk.RGBA()
                 parsed = fg.parse(fg_color)
-            bg_color = self.profile_settings.get_string("background-color")
+            bg_color = self.profile_settings.get_string(self.SETTING_KEY_PROFILE_BACKGROUND_COLOR)
             if bg_color != "":
                 bg = Gdk.RGBA()
                 parsed = bg.parse(bg_color)
-        str_colors = self.profile_settings.get_strv("palette")
+        str_colors = self.profile_settings.get_strv(self.SETTING_KEY_PROFILE_PALETTE)
         if str_colors:
             for str_color in str_colors:
                 try:
@@ -133,17 +146,17 @@ class GeditTerminal(Vte.Terminal):
                     break
 
         self.set_colors(fg, bg, palette)
-        self.set_cursor_blink_mode(self.profile_settings.get_enum("cursor-blink-mode"))
-        self.set_cursor_shape(self.profile_settings.get_enum("cursor-shape"))
-        self.set_audible_bell(self.profile_settings.get_boolean("audible-bell"))
-        self.set_scroll_on_keystroke(self.profile_settings.get_boolean("scroll-on-keystroke"))
-        self.set_scroll_on_output(self.profile_settings.get_boolean("scroll-on-output"))
+        self.set_cursor_blink_mode(self.profile_settings.get_enum(self.SETTING_KEY_PROFILE_CURSOR_BLINK_MODE))
+        self.set_cursor_shape(self.profile_settings.get_enum(self.SETTING_KEY_PROFILE_CURSOR_SHAPE))
+        self.set_audible_bell(self.profile_settings.get_boolean(self.SETTING_KEY_PROFILE_AUDIBLE_BELL))
+        self.set_scroll_on_keystroke(self.profile_settings.get_boolean(self.SETTING_KEY_PROFILE_SCROLL_ON_KEYSTROKE))
+        self.set_scroll_on_output(self.profile_settings.get_boolean(self.SETTING_KEY_PROFILE_SCROLL_ON_OUTPUT))
         self.set_audible_bell(self.defaults['audible_bell'])
 
-        if self.profile_settings.get_boolean("scrollback-unlimited"):
+        if self.profile_settings.get_boolean(self.SETTING_KEY_PROFILE_SCROLLBACK_UNLIMITED):
             lines = -1
         else:
-            lines = self.profile_settings.get_int("scrollback-lines")
+            lines = self.profile_settings.get_int(self.SETTING_KEY_PROFILE_SCROLLBACK_LINES)
         self.set_scrollback_lines(lines)
 
     def on_profile_settings_changed(self, settings, key):
