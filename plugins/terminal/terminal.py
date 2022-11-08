@@ -26,7 +26,8 @@ import gi
 gi.require_version('Gedit', '3.0')
 gi.require_version('Gtk', '3.0')
 gi.require_version('Vte', '2.91')
-from gi.repository import GObject, GLib, Gio, Pango, Gdk, Gtk, Gedit, Vte
+gi.require_version('Tepl', '6')
+from gi.repository import GObject, GLib, Gio, Pango, Gdk, Gtk, Gedit, Tepl, Vte
 
 try:
     import gettext
@@ -41,6 +42,9 @@ class GeditTerminal(Vte.Terminal):
     defaults = {
         'audible_bell'          : False,
     }
+
+    SETTINGS_SCHEMA_ID_BASE = "org.gnome.Terminal.ProfilesList"
+    SETTINGS_SCHEMA_ID_FALLBACK = "org.gnome.gedit.plugins.terminal"
 
     TARGET_URI_LIST = 200
 
@@ -73,26 +77,14 @@ class GeditTerminal(Vte.Terminal):
         else:
             Vte.Terminal.do_drag_data_received(self, drag_context, x, y, data, info, time)
 
-    def settings_try_new(self, schema):
-        schemas = Gio.Settings.list_schemas()
-        if not schemas:
-            return None
-
-        for s in schemas:
-            if s == schema:
-                return Gio.Settings.new(schema)
-
-        return None
-
     def get_profile_settings(self):
-        profiles = self.settings_try_new("org.gnome.Terminal.ProfilesList")
-
-        if profiles:
+        if Tepl.utils_can_use_gsettings_schema(self.SETTINGS_SCHEMA_ID_BASE):
+            profiles = Gio.Settings.new(self.SETTINGS_SCHEMA_ID_BASE)
             default_path = "/org/gnome/terminal/legacy/profiles:/:" + profiles.get_string("default") + "/"
             settings = Gio.Settings.new_with_path("org.gnome.Terminal.Legacy.Profile",
                                                   default_path)
         else:
-            settings = Gio.Settings.new("org.gnome.gedit.plugins.terminal")
+            settings = Gio.Settings.new(self.SETTINGS_SCHEMA_ID_FALLBACK)
 
         return settings
 
