@@ -96,10 +96,22 @@ class GeditTerminal(Vte.Terminal):
             default_path = "/org/gnome/terminal/legacy/profiles:/:" + profiles.get_string("default") + "/"
             settings = Gio.Settings.new_with_path("org.gnome.Terminal.Legacy.Profile",
                                                   default_path)
-        else:
-            settings = Gio.Settings.new(self.SETTINGS_SCHEMA_ID_FALLBACK)
+            if (Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_USE_SYSTEM_FONT) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_FONT) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_USE_THEME_COLORS) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_FOREGROUND_COLOR) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_BACKGROUND_COLOR) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_PALETTE) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_CURSOR_BLINK_MODE) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_CURSOR_SHAPE) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_AUDIBLE_BELL) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_SCROLL_ON_KEYSTROKE) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_SCROLL_ON_OUTPUT) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_SCROLLBACK_UNLIMITED) and
+                Tepl.utils_can_use_gsettings_key(settings, self.SETTING_KEY_PROFILE_SCROLLBACK_LINES)):
+                return settings
 
-        return settings
+        return Gio.Settings.new(self.SETTINGS_SCHEMA_ID_FALLBACK)
 
     def get_font(self):
         if self.profile_settings.get_boolean(self.SETTING_KEY_PROFILE_USE_SYSTEM_FONT):
