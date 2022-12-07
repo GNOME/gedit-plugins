@@ -6,13 +6,13 @@
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007, 2008, 2010, 2014, 2015.
 # Edurne Labaka <elabaka@uzei.com>, 2015.
-# Asier Sarasua Garmendia <asier.sarasua@gmail.com>, 2019.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2019, 2022.
 #
 msgid ""
 msgstr "Project-Id-Version: gedit-plugins master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gedit-plugins/issues\n"
-"POT-Creation-Date: 2019-09-20 17:17+0000\n"
-"PO-Revision-Date: 2019-09-25 10:00+0100\n"
+"POT-Creation-Date: 2022-10-25 13:50+0000\n"
+"PO-Revision-Date: 2022-12-07 10:00+0100\n"
 "Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -32,16 +32,16 @@ msgstr "Laster-markak"
 msgid "Easy document navigation with bookmarks"
 msgstr "Nabigatu modu errazean dokumentuen artean laster-markekin"
 
-#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:144
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:141
 msgid "Toggle Bookmark"
 msgstr "Txandakatu laster-markak"
 
-#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:148
-msgid "Goto Next Bookmark"
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:145
+msgid "Go to Next Bookmark"
 msgstr "Joan hurrengo laster-markara"
 
-#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:152
-msgid "Goto Previous Bookmark"
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:149
+msgid "Go to Previous Bookmark"
 msgstr "Joan aurreko laster-markara"
 
 #: plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in:6
@@ -207,8 +207,8 @@ msgid "_Foreground"
 msgstr "_Aurreko planoa"
 
 #: plugins/colorschemer/schemer.ui:341
-msgid "_Clear "
-msgstr "_Garbitu "
+msgid "_Clear"
+msgstr "_Garbitu"
 
 #: plugins/colorschemer/schemer.ui:383
 msgid "Name"
@@ -230,23 +230,8 @@ msgstr "Egilea"
 msgid "Sample"
 msgstr "Lagina"
 
-#: plugins/commander/commander/appactivatable.py:56
-msgid "Commander Mode"
-msgstr "Komandoaren modua"
-
-#: plugins/commander/commander.plugin.desktop.in.in:6
-#: plugins/commander/gedit-commander.metainfo.xml.in:6
-msgid "Commander"
-msgstr "Komando-lerroa"
-
-#: plugins/commander/commander.plugin.desktop.in.in:7
-#: plugins/commander/gedit-commander.metainfo.xml.in:7
-msgid "Command line interface for advanced editing"
-msgstr "Komando-lerroko interfazea edizio aurreratuarentzako"
-
 #
 #: plugins/drawspaces/drawspaces.plugin.desktop.in.in:5
-#: plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml:20
 msgid "Draw Spaces"
 msgstr "Marraztu zuriuneak"
 
@@ -254,125 +239,14 @@ msgstr "Marraztu zuriuneak"
 msgid "Draw spaces and tabs"
 msgstr "Marraztu zuriuneak eta tabulazioak"
 
-#: plugins/drawspaces/gedit-drawspaces-app-activatable.c:160
-#: plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml:15
-msgid "Show _White Space"
-msgstr "Erakutsi _zuriunea"
-
 #
-#: plugins/drawspaces/gedit-drawspaces-configurable.ui:57
 #: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:6
 msgid "Draw spaces"
 msgstr "Marraztu zuriuneak"
 
-#: plugins/drawspaces/gedit-drawspaces-configurable.ui:73
-msgid "Draw tabs"
-msgstr "Marraztu tabulazioak"
-
-#: plugins/drawspaces/gedit-drawspaces-configurable.ui:89
-msgid "Draw new lines"
-msgstr "Marraztu lerro berriak"
-
-#: plugins/drawspaces/gedit-drawspaces-configurable.ui:104
-msgid "Draw non-breaking spaces"
-msgstr "Marraztu zuriune zatiezinak"
-
-#: plugins/drawspaces/gedit-drawspaces-configurable.ui:119
-msgid "Draw leading spaces"
-msgstr "Marraztu hasierako zuriuneak"
-
-#: plugins/drawspaces/gedit-drawspaces-configurable.ui:134
-msgid "Draw spaces in text"
-msgstr "Marraztu zuriuneak testuan"
-
-#
-#: plugins/drawspaces/gedit-drawspaces-configurable.ui:149
-msgid "Draw trailing spaces"
-msgstr "Marraztu amaierako zuriuneak"
-
 #: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:7
 msgid "Draw Spaces and Tabs"
 msgstr "Marraztu zuriuneak eta tabulazioak"
-
-#: plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml:16
-msgid "If TRUE drawing will be enabled."
-msgstr "TRUE (egia) bada, marrazketa gaituta egongo da."
-
-#: plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml:21
-msgid "The type of spaces to be drawn."
-msgstr "Zuriune mota marrazteko."
-
-#: plugins/findinfiles/dialog.ui:7 plugins/findinfiles/dialog.vala:53
-#: plugins/findinfiles/findinfiles.plugin.desktop.in.in:5
-#: plugins/findinfiles/gedit-findinfiles.metainfo.xml.in:6
-msgid "Find in Files"
-msgstr "Bilatu fitxategietan"
-
-#: plugins/findinfiles/dialog.ui:23 plugins/findinfiles/dialog.vala:58
-#: plugins/findinfiles/result-panel.vala:63
-msgid "_Close"
-msgstr "It_xi"
-
-#: plugins/findinfiles/dialog.ui:39
-msgctxt "label of the find button"
-msgid "_Find"
-msgstr "A_urkitu"
-
-#: plugins/findinfiles/dialog.ui:72
-msgctxt "label on the left of the GtkEntry containing text to search"
-msgid "F_ind "
-msgstr "_Bilatu "
-
-#: plugins/findinfiles/dialog.ui:99
-msgid "_In "
-msgstr "_Sarrera "
-
-#: plugins/findinfiles/dialog.ui:115
-msgid "Select a _folder"
-msgstr "Hautatu ka_rpeta bat"
-
-#: plugins/findinfiles/dialog.ui:130
-msgid "_Match case"
-msgstr "_Maiuskula/minuskula"
-
-#: plugins/findinfiles/dialog.ui:146
-msgid "Match _entire word only"
-msgstr "_Hitz osoak soilik"
-
-#: plugins/findinfiles/dialog.ui:162
-msgid "Re_gular expression"
-msgstr "_Adierazpen erregularra"
-
-#: plugins/findinfiles/findinfiles.plugin.desktop.in.in:6
-msgid "Find text in all files of a folder."
-msgstr "Bilatu testua karpeta bateko fitxategi guztietan."
-
-#: plugins/findinfiles/gedit-findinfiles.metainfo.xml.in:7
-msgid "Find text in all files of a folder"
-msgstr "Bilatu testua karpeta bateko fitxategi guztietan"
-
-#: plugins/findinfiles/plugin.vala:159
-msgid "Find in Files…"
-msgstr "Bilatu fitxategietan…"
-
-#: plugins/findinfiles/result-panel.vala:127
-msgid "hit"
-msgid_plural "hits"
-msgstr[0] "bat etortze"
-msgstr[1] "bat etortze"
-
-#: plugins/findinfiles/result-panel.vala:196
-msgid "No results found"
-msgstr "Ez da emaitzarik aurkitu"
-
-#: plugins/findinfiles/result-panel.vala:207
-msgid "File"
-msgstr "Fitxategia"
-
-#. The stop button is showed in the bottom-left corner of the TreeView
-#: plugins/findinfiles/result-panel.vala:218
-msgid "Stop the search"
-msgstr "Gelditu bilaketa"
 
 #: plugins/git/gedit-git.metainfo.xml.in:6
 #: plugins/git/git.plugin.desktop.in.in:6
@@ -390,16 +264,13 @@ msgid "Highlight lines that have been changed since the last commit"
 msgstr "Azken egikaritzetik aldatutako lerroak nabarmentzen ditu"
 
 #: plugins/joinlines/gedit-joinlines.metainfo.xml.in:6
-msgid "Join lines/ Split lines"
+#: plugins/joinlines/joinlines.plugin.desktop.in.in:6
+msgid "Join/Split Lines"
 msgstr "Elkartu/Zatitu lerroak"
 
 #: plugins/joinlines/gedit-joinlines.metainfo.xml.in:7
 msgid "Join or split multiple lines through Ctrl+J and Ctrl+Shift+J"
 msgstr "Elkartu edo zatitu lerro anitz Ctrl+J eta Ctrl+Shift+J erabilita"
-
-#: plugins/joinlines/joinlines.plugin.desktop.in.in:6
-msgid "Join/Split Lines"
-msgstr "Elkartu/Zatitu lerroak"
 
 #: plugins/joinlines/joinlines.plugin.desktop.in.in:7
 msgid "Join several lines or split long ones"
@@ -522,7 +393,7 @@ msgstr "Gordetako saioak"
 
 #
 #: plugins/smartspaces/gedit-smartspaces.metainfo.xml.in:6
-#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:6
+#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:5
 msgid "Smart Spaces"
 msgstr "Tarte azkarrak"
 
@@ -530,7 +401,7 @@ msgstr "Tarte azkarrak"
 msgid "Allow to unindent like if you were using tabs while you’re using spaces"
 msgstr "Koska kentzea baimentzen du, zuriuneak erabiltzean tabulazioak erabiltzea bezala"
 
-#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:7
+#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:6
 msgid "Forget you’re not using tabulations."
 msgstr "Ahaztu tabulazioak ez zarela erabiltzen ari."
 
@@ -552,7 +423,7 @@ msgid "Forward Search"
 msgstr "Bilatu aurrerantz"
 
 #: plugins/terminal/gedit-terminal.metainfo.xml.in:6
-#: plugins/terminal/terminal.py:314
+#: plugins/terminal/terminal.py:313
 msgid "Terminal"
 msgstr "Terminala"
 
@@ -610,89 +481,81 @@ msgid ""
 msgstr "Hautatzen bada, irteera berri bat dagoenean terminala beheraino korrituko da."
 
 #: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:61
-msgid "Whether to allow bold text"
-msgstr "Testu-formatu lodia onartzen den"
-
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:62
-msgid "If true, allow applications in the terminal to make text boldface."
-msgstr "Hautatzen bada, terminaleko aplikazioek testu-formatu lodia erabili ahal izango dute."
-
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:68
 msgid "Default color of text in the terminal"
 msgstr "Terminaleko testuaren kolore lehenetsia"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:69
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:62
 msgid ""
 "Default color of text in the terminal, as a color specification (can be HTML-"
 "style hex digits, or a color name such as “red”)."
 msgstr "Terminaleko testuaren kolore lehenetsia, kolore-zehaztapen gisa (HTML estiloko digitu hamaseitarretan, edo kolore-izena emanda, adib. “red“)."
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:77
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:70
 msgid "Default color of terminal background"
 msgstr "Terminalaren atzeko planoko kolore lehenetsia"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:78
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:71
 msgid ""
 "Default color of terminal background, as a color specification (can be HTML-"
 "style hex digits, or a color name such as “red”)."
 msgstr "Atzeko planoko kolore lehenetsia, kolore-zehaztapen gisa (HTML estiloko digitu hamaseitarretan, edo kolore-izena emanda, adib. “red“)."
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:101
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:94
 msgid "Palette for terminal applications"
 msgstr "Terminaleko aplikazioentzako paleta"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:102
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:95
 msgid ""
 "Terminals have a 16-color palette that applications inside the terminal can "
 "use. This is that palette, in the form of a colon-separated list of color "
 "names. Color names should be in hex format e.g. “#FF00FF”"
 msgstr "Terminalek 16 koloreko paleta dute terminaleko aplikazioek erabiltzeko. Hau da paleta hori, kolore-izenak bi puntuz bereizita. Kolore-izenak formatu hamaseitarrean ematen dira, adib. “#FF00FF”"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:111
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:104
 msgid "Whether to use the colors from the theme for the terminal widget"
 msgstr "Terminalean gaiaren koloreak erabili behar diren ala ez"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:114
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:107
 msgid ""
 "If true, the theme color scheme used for text entry boxes will be used for "
 "the terminal, instead of colors provided by the user."
 msgstr "Hautatzen bada, testua sartzeko koadroetako gaiaren kolore-eskema bera erabiliko da terminalean, erabiltzaileak zehaztutako koloreak erabili beharrean."
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:121
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:114
 msgid "Whether to blink the cursor"
 msgstr "Kurtsorea keinuka egongo den ala ez"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:122
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:115
 msgid ""
 "The possible values are “system” to use the global cursor blinking settings, "
 "or “on” or “off” to set the mode explicitly."
 msgstr "Balio erabilgarriak: “system“, kurtsore globala ezarpen keinukariak erabiltzeko; “on” edo “off” modua esplizitoki ezartzeko."
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:129
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:122
 msgid "The cursor appearance"
 msgstr "Kurtsorearen itxura"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:130
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:123
 msgid ""
 "The possible values are “block” to use a block cursor, “ibeam” to use a "
 "vertical line cursor, or “underline” to use an underline cursor."
 msgstr "Balio erabilgarriak honakoak dira: “block” bloke formako kurtsorea, “ibeam” marra bertikal formakoa, edo “underline” azpimarra formakoa."
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:137
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:130
 msgid "Whether to use the system font"
 msgstr "Sistemaren letra-tipoa erabili edo ez"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:138
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:131
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it’s "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr "Egia bada, terminalak desktop-global letra-tipo estandarra erabiliko du tarte bakarrekoa bada (eta bestela, antzekoena den letra-tipoa)."
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:146
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:139
 msgid "Font"
 msgstr "Letra-tipoa"
 
-#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:147
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:140
 msgid "A Pango font name. Examples are “Sans 12” or “Monospace Bold 14”."
 msgstr "Pango letra-tipo baten izena. Adibidez, \"Sans 12\" edo \"Monospace Bold 14\"."
 
@@ -705,7 +568,7 @@ msgid "Embed a terminal in the bottom pane."
 msgstr "Kapsulatu terminal bat azpiko panelean."
 
 #
-#: plugins/terminal/terminal.py:335
+#: plugins/terminal/terminal.py:334
 msgid "C_hange Directory"
 msgstr "_Aldatu direktorioa"
 
@@ -734,96 +597,6 @@ msgstr "Testu _handiagoa"
 msgid "Text Size"
 msgstr "Testuaren tamaina"
 
-#: plugins/translate/gedit-translate.metainfo.xml.in:5
-#: plugins/translate/translate.plugin.desktop.in.in:6
-msgid "Translate"
-msgstr "Itzuli"
-
-#: plugins/translate/gedit-translate.metainfo.xml.in:6
-#: plugins/translate/translate.plugin.desktop.in.in:7
-msgid "Translates text into different languages"
-msgstr "Testua hizkuntza anitzetara itzultzen du"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:5
-msgid "Where translation output is shown"
-msgstr "Itzulpenaren irteera non erakutsiko den"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:6
-msgid ""
-"If true, output of the translation is inserted in the document window if not "
-"in the Output Translate Window."
-msgstr "Egia bada, itzulpenaren irteera dokumentu-leihoan txertatuko da; bestela, irteerako itzulpen-leihoan."
-
-#. Translators: You can adjust the default pair for users in your locale.
-#. http://wiki.apertium.org/wiki/List_of_language_pairs has a list of valid pairs.
-#. Remember to keep formatting as-is, or things will break! Use ASCII quotation
-#. marks and | as the delimiter.
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:15
-msgid "'eng|spa'"
-msgstr "'eng|spa'"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:16
-msgid "Language pair used"
-msgstr "Erabilitako hizkuntza-bikotea"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:17
-msgid "Language pair used to translate from one language to another"
-msgstr "Hizkuntza batetik bestera itzultzeko erabilitako hizkuntza-parea"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:23
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:24
-msgid "API key for remote web service"
-msgstr "Urruneko web zerbitzurako API gakoa"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:30
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:31
-msgid "Remote web service to use"
-msgstr "Erabiliko den urruneko web zerbitzua"
-
-#: plugins/translate/translate/__init__.py:72
-#, python-brace-format
-msgid "Translations powered by {0}"
-msgstr "Itzulpena ahalbidetu duena: {0}"
-
-#: plugins/translate/translate/__init__.py:75
-msgid "Translate Console"
-msgstr "Itzuli kontsola"
-
-#: plugins/translate/translate/__init__.py:157
-#, python-brace-format
-msgid "Translate selected text [{0}]"
-msgstr "Itzuli hautatutako testua [{0}]"
-
-#: plugins/translate/translate/preferences.py:84
-msgid "API Key"
-msgstr "API gakoa"
-
-#: plugins/translate/translate/services/yandex.py:65
-msgid ""
-"You need to obtain a free API key at <a href='https://tech.yandex.com/"
-"translate/'>https://tech.yandex.com/translate/</a>"
-msgstr "Doako API gako bat eskuratu behar duzu hemen: <a href='https://tech.yandex.com/translate/'>https://tech.yandex.com/translate/</a>"
-
-#: plugins/translate/translate/ui/preferences.ui:23
-msgid "Translation languages:"
-msgstr "Itzulpen-hizkuntzak:"
-
-#: plugins/translate/translate/ui/preferences.ui:60
-msgid "Where to output translation:"
-msgstr "Itzulpenaren irteera non izango den:"
-
-#: plugins/translate/translate/ui/preferences.ui:75
-msgid "Same document window"
-msgstr "Dokumentu-leiho berean"
-
-#: plugins/translate/translate/ui/preferences.ui:90
-msgid "Translate console (bottom panel)"
-msgstr "Itzuli kontsola (beheko panela)"
-
-#: plugins/translate/translate/ui/preferences.ui:157
-msgid "Translation service:"
-msgstr "Itzulpen-zerbitzua"
-
 #: plugins/wordcompletion/gedit-word-completion-configure.ui:18
 msgid "Interactive completion"
 msgstr "Osaketa interaktiboa"
@@ -841,7 +614,7 @@ msgid ""
 "Propose automatic completion using words already present in the document"
 msgstr "Osaketa automatikoa proposatzen du dokumentuan jadanik agertzen diren hitzak erabiliz"
 
-#: plugins/wordcompletion/gedit-word-completion-plugin.c:185
+#: plugins/wordcompletion/gedit-word-completion-plugin.c:181
 msgid "Document Words"
 msgstr "Dokumentuko hitzak"
 
@@ -869,23 +642,190 @@ msgstr "Hitz-osaketa"
 msgid "Word completion using the completion framework"
 msgstr "Osaketaren lan-markoa darabilen hitz-osaketa"
 
-#: plugins/zeitgeist/gedit-zeitgeist.metainfo.xml.in:6
-msgid "Zeitgeist Data provider"
-msgstr "Zeitgeist datu-hornitzailea"
+#~ msgid "Commander Mode"
+#~ msgstr "Komandoaren modua"
 
-#: plugins/zeitgeist/gedit-zeitgeist.metainfo.xml.in:7
-msgid ""
-"Records user activity and giving easy access to recently-used and frequently-"
-"used files"
-msgstr "Erabiltzailearen jarduerak erregistratzen ditu eta maiz erabilitako azken fitxategiei atzipen azkarra ematen die"
+#~ msgid "Commander"
+#~ msgstr "Komando-lerroa"
 
-#: plugins/zeitgeist/zeitgeist.plugin.desktop.in:5
-msgid "Zeitgeist dataprovider"
-msgstr "Zeitgeist datu-hornitzailea"
+#~ msgid "Command line interface for advanced editing"
+#~ msgstr "Komando-lerroko interfazea edizio aurreratuarentzako"
 
-#: plugins/zeitgeist/zeitgeist.plugin.desktop.in:6
-msgid "Logs access and leave event for documents used with gedit"
-msgstr "Sarbidetzak eta saio amaierak erregistratzen ditu Gedit-ekin erabilitako dokumentuentzako"
+#~ msgid "Show _White Space"
+#~ msgstr "Erakutsi _zuriunea"
+
+#~ msgid "Draw tabs"
+#~ msgstr "Marraztu tabulazioak"
+
+#~ msgid "Draw new lines"
+#~ msgstr "Marraztu lerro berriak"
+
+#~ msgid "Draw non-breaking spaces"
+#~ msgstr "Marraztu zuriune zatiezinak"
+
+#~ msgid "Draw leading spaces"
+#~ msgstr "Marraztu hasierako zuriuneak"
+
+#~ msgid "Draw spaces in text"
+#~ msgstr "Marraztu zuriuneak testuan"
+
+#
+#~ msgid "Draw trailing spaces"
+#~ msgstr "Marraztu amaierako zuriuneak"
+
+#~ msgid "If TRUE drawing will be enabled."
+#~ msgstr "TRUE (egia) bada, marrazketa gaituta egongo da."
+
+#~ msgid "The type of spaces to be drawn."
+#~ msgstr "Zuriune mota marrazteko."
+
+#~ msgid "Find in Files"
+#~ msgstr "Bilatu fitxategietan"
+
+#~ msgid "_Close"
+#~ msgstr "It_xi"
+
+#~ msgctxt "label of the find button"
+#~ msgid "_Find"
+#~ msgstr "A_urkitu"
+
+#~ msgctxt "label on the left of the GtkEntry containing text to search"
+#~ msgid "F_ind "
+#~ msgstr "_Bilatu "
+
+#~ msgid "_In "
+#~ msgstr "_Sarrera "
+
+#~ msgid "Select a _folder"
+#~ msgstr "Hautatu ka_rpeta bat"
+
+#~ msgid "_Match case"
+#~ msgstr "_Maiuskula/minuskula"
+
+#~ msgid "Match _entire word only"
+#~ msgstr "_Hitz osoak soilik"
+
+#~ msgid "Re_gular expression"
+#~ msgstr "_Adierazpen erregularra"
+
+#~ msgid "Find text in all files of a folder."
+#~ msgstr "Bilatu testua karpeta bateko fitxategi guztietan."
+
+#~ msgid "Find text in all files of a folder"
+#~ msgstr "Bilatu testua karpeta bateko fitxategi guztietan"
+
+#~ msgid "Find in Files…"
+#~ msgstr "Bilatu fitxategietan…"
+
+#~ msgid "hit"
+#~ msgid_plural "hits"
+#~ msgstr[0] "bat etortze"
+#~ msgstr[1] "bat etortze"
+
+#~ msgid "No results found"
+#~ msgstr "Ez da emaitzarik aurkitu"
+
+#~ msgid "File"
+#~ msgstr "Fitxategia"
+
+#~ msgid "Stop the search"
+#~ msgstr "Gelditu bilaketa"
+
+#~ msgid "Join lines/ Split lines"
+#~ msgstr "Elkartu/Zatitu lerroak"
+
+#~ msgid "Whether to allow bold text"
+#~ msgstr "Testu-formatu lodia onartzen den"
+
+#~ msgid "If true, allow applications in the terminal to make text boldface."
+#~ msgstr ""
+#~ "Hautatzen bada, terminaleko aplikazioek testu-formatu lodia erabili ahal "
+#~ "izango dute."
+
+#~ msgid "Translate"
+#~ msgstr "Itzuli"
+
+#~ msgid "Translates text into different languages"
+#~ msgstr "Testua hizkuntza anitzetara itzultzen du"
+
+#~ msgid "Where translation output is shown"
+#~ msgstr "Itzulpenaren irteera non erakutsiko den"
+
+#~ msgid ""
+#~ "If true, output of the translation is inserted in the document window if "
+#~ "not in the Output Translate Window."
+#~ msgstr ""
+#~ "Egia bada, itzulpenaren irteera dokumentu-leihoan txertatuko da; bestela, "
+#~ "irteerako itzulpen-leihoan."
+
+#~ msgid "'eng|spa'"
+#~ msgstr "'eng|spa'"
+
+#~ msgid "Language pair used"
+#~ msgstr "Erabilitako hizkuntza-bikotea"
+
+#~ msgid "Language pair used to translate from one language to another"
+#~ msgstr "Hizkuntza batetik bestera itzultzeko erabilitako hizkuntza-parea"
+
+#~ msgid "API key for remote web service"
+#~ msgstr "Urruneko web zerbitzurako API gakoa"
+
+#~ msgid "Remote web service to use"
+#~ msgstr "Erabiliko den urruneko web zerbitzua"
+
+#, python-brace-format
+#~ msgid "Translations powered by {0}"
+#~ msgstr "Itzulpena ahalbidetu duena: {0}"
+
+#~ msgid "Translate Console"
+#~ msgstr "Itzuli kontsola"
+
+#, python-brace-format
+#~ msgid "Translate selected text [{0}]"
+#~ msgstr "Itzuli hautatutako testua [{0}]"
+
+#~ msgid "API Key"
+#~ msgstr "API gakoa"
+
+#~ msgid ""
+#~ "You need to obtain a free API key at <a href='https://tech.yandex.com/"
+#~ "translate/'>https://tech.yandex.com/translate/</a>"
+#~ msgstr ""
+#~ "Doako API gako bat eskuratu behar duzu hemen: <a href='https://tech."
+#~ "yandex.com/translate/'>https://tech.yandex.com/translate/</a>"
+
+#~ msgid "Translation languages:"
+#~ msgstr "Itzulpen-hizkuntzak:"
+
+#~ msgid "Where to output translation:"
+#~ msgstr "Itzulpenaren irteera non izango den:"
+
+#~ msgid "Same document window"
+#~ msgstr "Dokumentu-leiho berean"
+
+#~ msgid "Translate console (bottom panel)"
+#~ msgstr "Itzuli kontsola (beheko panela)"
+
+#~ msgid "Translation service:"
+#~ msgstr "Itzulpen-zerbitzua"
+
+#~ msgid "Zeitgeist Data provider"
+#~ msgstr "Zeitgeist datu-hornitzailea"
+
+#~ msgid ""
+#~ "Records user activity and giving easy access to recently-used and "
+#~ "frequently-used files"
+#~ msgstr ""
+#~ "Erabiltzailearen jarduerak erregistratzen ditu eta maiz erabilitako azken "
+#~ "fitxategiei atzipen azkarra ematen die"
+
+#~ msgid "Zeitgeist dataprovider"
+#~ msgstr "Zeitgeist datu-hornitzailea"
+
+#~ msgid "Logs access and leave event for documents used with gedit"
+#~ msgstr ""
+#~ "Sarbidetzak eta saio amaierak erregistratzen ditu Gedit-ekin erabilitako "
+#~ "dokumentuentzako"
 
 #~ msgid "Pick _Color..."
 #~ msgstr "Hautatu _kolorea..."
