@@ -1,3 +1,9 @@
+News in 44.0, 2023-01-02
+------------------------
+* Terminal plugin: check that all external GSettings can be used before using
+  them.
+* Translation updates.
+
 News in 43.1, 2022-11-03
 ------------------------
 * Be able to build with Meson >= 0.61
