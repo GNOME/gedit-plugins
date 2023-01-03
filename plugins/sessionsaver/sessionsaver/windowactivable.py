@@ -17,7 +17,7 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor,
 #  Boston, MA 02110-1301, USA.
 
-from gi.repository import GObject, Gio, Gedit
+from gi.repository import GObject, Gio, Tepl, Gedit
 from .dialogs import SaveSessionDialog, SessionManagerDialog
 from .store.xmlsessionstore import XMLSessionStore
 from .appactivatable import SessionSaverAppActivatable
@@ -95,13 +95,23 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
         self._remove_menus()
         self._insert_menus()
 
+    def needs_new_window_to_load_session(self):
+        if len(self.window.get_documents()) > 1:
+            return True
+
+        tab = self.window.get_active_tab()
+        if tab is None:
+            return False
+
+        if (Tepl.Buffer.is_untouched(tab.get_document()) and
+            tab.get_state() == Gedit.TabState.STATE_NORMAL):
+            return False
+
+        return True
+
     def load_session(self, session):
         # Note: a session has to stand on its own window.
-        tab = self.window.get_active_tab()
-        if tab is not None and \
-           not (tab.get_document().is_untouched() and
-                tab.get_state() == Gedit.TabState.STATE_NORMAL):
-            # Create a new gedit window
+        if self.needs_new_window_to_load_session():
             window = Gedit.App.get_default().create_window(None)
             window.show()
         else:
