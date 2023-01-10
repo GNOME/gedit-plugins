@@ -20,7 +20,7 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor,
 #  Boston, MA 02110-1301, USA.
 
-from gi.repository import GObject, Pango, Gtk, Gedit, Peas, PeasGtk, Gio, Gdk
+from gi.repository import GObject, Pango, Gtk, Gedit, Peas, PeasGtk, Gio, Gdk, Tepl
 from .evince_dbus import EvinceWindowProxy
 import dbus.mainloop.glib
 import logging
@@ -176,8 +176,7 @@ class SynctexViewHelper:
         self.last_iters = None
 
     def goto_line (self, line, time):
-        self._doc.goto_line(line) 
-        self._view.scroll_to_cursor()
+        Tepl.View.goto_line(self._view, line)
         self._window.set_active_tab(Gedit.Tab.get_from_document(self._doc))
         self._highlight()
         self._window.present_with_time (time)
