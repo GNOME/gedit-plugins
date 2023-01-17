@@ -1,6 +1,6 @@
 project(
   'gedit-plugins', 'c',
-  version: '44.0',
+  version: '44.1',
   meson_version: '>= 0.50'
 )
 

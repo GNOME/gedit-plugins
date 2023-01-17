@@ -1,3 +1,7 @@
+News in 44.1, 2023-01-19
+------------------------
+* Some bug fixes.
+
 News in 44.0, 2023-01-02
 ------------------------
 * Terminal plugin: check that all external GSettings can be used before using
