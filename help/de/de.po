@@ -9,16 +9,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit help\n"
-"POT-Creation-Date: 2018-03-10 14:53+0000\n"
-"PO-Revision-Date: 2018-03-10 22:31+0100\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
-"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"POT-Creation-Date: 2022-11-23 20:07+0000\n"
+"PO-Revision-Date: 2023-01-11 21:02+0100\n"
+"Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -26,47 +26,39 @@ msgid "translator-credits"
 msgstr ""
 "Jan Arne Petersen <jap@gnome.org>, 2007\n"
 "Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013, 2016\n"
-"Christian Kirbach <Christian.Kirbach@gmail.com>, 2011, 2012, 2013, 2014"
+"Christian Kirbach <Christian.Kirbach@gmail.com>, 2011, 2012, 2013, 2014\n"
+"Jürgen Benvenuti <gastornis@posteo.org>, 2023"
 
 #. (itstool) path: credit/name
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:12
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bracket-comp.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:11
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:12
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:12
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:11
+#: C/bookmarks.page:13 C/bracket-comp.page:12 C/character-map.page:13
+#: C/code-comment.page:12 C/color-picker.page:12 C/draw-spaces.page:12
+#: C/join-split-lines.page:12 C/multi-edit.page:12 C/terminal.page:13
+#: C/text-size.page:13 C/word-completion.page:12
 msgid "Jim Campbell"
 msgstr "Jim Campbell"
 
 #. (itstool) path: credit/name
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:16
+#: C/bookmarks.page:17
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
 #. (itstool) path: credit/years
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:18
+#: C/bookmarks.page:19
 msgid "2014"
 msgstr "2014"
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:21
+#: C/bookmarks.page:22
 msgid "Record commonly-referenced locations with bookmarks."
 msgstr "Speichern häufig verwendeter Stellen in Lesezeichen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:24
+#: C/bookmarks.page:25
 msgid "Bookmarks"
 msgstr "Lesezeichen"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:26
+#: C/bookmarks.page:27
 msgid ""
 "<app>gedit</app> bookmarks allow you to highlight important lines of text "
 "within your document or program, making them easier to find. You can also "
@@ -77,19 +69,39 @@ msgstr ""
 "finden zu können. Sie können auch innerhalb der Lesezeichen hin- und "
 "herblättern, wodurch die Navigation im Dokument etwas beschleunigt wird."
 
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:31
+#. (itstool) path: steps/title
+#: C/bookmarks.page:33 C/bracket-comp.page:25 C/character-map.page:37
+#: C/code-comment.page:30 C/color-picker.page:26 C/draw-spaces.page:27
+#: C/git.page:26 C/join-split-lines.page:25 C/multi-edit.page:26
+#: C/session-saver.page:30 C/terminal.page:37 C/text-size.page:36
+#: C/word-completion.page:35
+msgid "To enable the plugin:"
+msgstr "So aktivieren Sie die Erweiterung:"
+
+#. (itstool) path: item/p
+#: C/bookmarks.page:35 C/bracket-comp.page:27 C/character-map.page:39
+#: C/code-comment.page:32 C/color-picker.page:28 C/draw-spaces.page:29
+#: C/git.page:28 C/join-split-lines.page:27 C/multi-edit.page:28
+#: C/session-saver.page:32 C/terminal.page:39 C/text-size.page:38
+#: C/word-completion.page:37
 msgid ""
-"To enable the bookmark plugin, select <guiseq><gui style=\"menu\">gedit</"
-"gui> <gui style=\"menuitem\">Preferences</gui><gui>Plugins</gui> "
-"<gui>Bookmarks</gui></guiseq>."
+"Press the menu button in the top-right corner of the window and select "
+"<guiseq><gui style=\"menuitem\">Preferences</gui> <gui style=\"tab"
+"\">Plugins</gui></guiseq>."
 msgstr ""
-"Um das Lesezeichen-Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
-"\">Bearbeiten</gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
-"gui><gui>Lesezeichen</gui></guiseq>."
+"Klicken Sie auf den Menüknopf in der rechten oberen Ecke des Fensters und "
+"wählen Sie <guiseq><gui style=\"menuitem\">Einstellungen</gui><gui style="
+"\"tab\">Erweiterungen</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/bookmarks.page:40
+msgid "Select <gui style=\"menuitem\">Bookmarks</gui> to enable the plugin."
+msgstr ""
+"Wählen Sie <gui style=\"menuitem\">Lesezeichen</gui>, um die Erweiterung zu "
+"aktivieren."
 
 #. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:36
+#: C/bookmarks.page:45
 msgid ""
 "Bookmarks are inserted and removed by completing the same action. To insert "
 "or remove bookmarks:"
@@ -98,14 +110,14 @@ msgstr ""
 "fügen Sie Lesezeichen hinzu oder entfernen Sie sie:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:39
+#: C/bookmarks.page:48
 msgid "Navigate to the line where you want to insert or remove the bookmark."
 msgstr ""
 "Navigieren Sie zu der Zeile, wo Sie ein Lesezeichen hinzufügen oder eines "
 "entfernen wollen."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:43
+#: C/bookmarks.page:52
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>Alt</key><key>B</key></keyseq>, or open "
 "the menu in the top-right corner and select <gui style=\"menuitem\">Toggle "
@@ -116,12 +128,12 @@ msgstr ""
 "\"menuitem\">Lesezeichen ein-/ausschalten</gui>."
 
 #. (itstool) path: list/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:50
+#: C/bookmarks.page:59
 msgid "To move between bookmarks:"
 msgstr "So bewegen Sie sich zwischen Lesezeichen:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:52
+#: C/bookmarks.page:61
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>B</key></keyseq> to move to the next "
 "bookmark."
@@ -130,7 +142,7 @@ msgstr ""
 "Lesezeichen zu springen."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:56
+#: C/bookmarks.page:65
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>Shift</key><key>B</key></keyseq> to move "
 "to the previous bookmark."
@@ -139,7 +151,7 @@ msgstr ""
 "keyseq>, um zum vorigen Lesezeichen zu springen."
 
 #. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bookmarks.page:62
+#: C/bookmarks.page:71
 msgid ""
 "If you prefer to use the mouse, you can open the menu in the top-right "
 "corner and select <gui style=\"menuitem\">Go to Next Bookmark</gui> or <gui "
@@ -150,90 +162,87 @@ msgstr ""
 "style=\"menuitem\">Zum vorherigen Lesezeichen gehen</gui> wählen."
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bracket-comp.page:15
+#: C/bracket-comp.page:16
 msgid "Auto-complete closing brackets."
 msgstr "Klammernpaare automatisch vervollständigen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bracket-comp.page:18
+#: C/bracket-comp.page:19
 msgid "Bracket Completion"
 msgstr "Klammern schließen"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bracket-comp.page:20
+#: C/bracket-comp.page:21
 msgid ""
 "The <app>Bracket Completion</app> plugin will auto-complete closing brackets "
 "for curly braces, parentheses and square brackets."
 msgstr ""
-"Das Plugin <app>Klammer-Vervollständigung</app> schließt automatisch "
+"Die Erweiterung <app>Klammern schließen</app> schließt automatisch "
 "unvollständige Blöcke mit geschweiften, runden und eckigen Klammern."
 
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bracket-comp.page:23
+#. (itstool) path: item/p
+#: C/bracket-comp.page:32
 msgid ""
-"To enable the plugin, select <guiseq><gui style=\"menu\">gedit</gui> <gui "
-"style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Bracket "
-"Completion</gui></guiseq>."
+"Select <gui style=\"menuitem\">Bracket Completion</gui> to enable the plugin."
 msgstr ""
-"Um das Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
-"\">Bearbeiten</gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
-"gui><gui>Klammer-Vervollständigung</gui></guiseq>."
+"Wählen Sie <gui style=\"menuitem\">Klammern schließen</gui>, um die "
+"Erweiterung zu aktivieren."
 
 #. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/bracket-comp.page:28
+#: C/bracket-comp.page:38
 msgid "This plugin does not automatically insert closing HTML or XML tags."
 msgstr ""
-"Dieses Plugin fügt schließende HTML- oder XML-Tags nicht automatisch ein."
+"Diese Erweiterung fügt schließende HTML- oder XML-Tags nicht automatisch ein."
 
 #. (itstool) path: credit/name
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:15
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:15
+#: C/character-map.page:17 C/word-completion.page:16
 msgid "Paul Weaver"
 msgstr "Paul Weaver"
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:19
+#: C/character-map.page:21
 msgid "Insert special characters just by clicking on them."
 msgstr "Sonderzeichen durch einfaches Anklicken einfügen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:22
+#: C/character-map.page:24
 msgid "Character Map"
 msgstr "Zeichentabelle"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:31
+#: C/character-map.page:33
 msgid ""
 "The <app>Character Map</app> plugin enables you to insert characters into "
-"your document that you may not be able to type easily using your keyboard. "
-"To enable this plugin, select <guiseq><gui style=\"menu\">gedit</gui> <gui "
-"style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Character Map</"
-"gui></guiseq>."
+"your document that you may not be able to type easily using your keyboard."
 msgstr ""
-"Das <app>Zeichentabelle</app>-Plugin ermöglicht Ihnen das Einfügen von "
+"Die <app>Zeichentabelle</app>-Erweiterung ermöglicht Ihnen das Einfügen von "
 "Zeichen in Ihr Dokument, die Sie möglicherweise nicht einfach mit der "
-"Tastatur einfügen könnten. Um dieses Plugin zu aktivieren, wählen Sie "
-"<guiseq><gui style=\"menu\">gedit</gui><gui style=\"menuitem"
-"\">Einstellungen</gui><gui>Plugins</gui><gui>Zeichentabelle</gui></guiseq>."
+"Tastatur einfügen könnten."
+
+#. (itstool) path: item/p
+#: C/character-map.page:44
+msgid ""
+"Select <gui style=\"menuitem\">Character Map</gui> to enable the plugin."
+msgstr ""
+"Wählen Sie <gui style=\"menuitem\">Zeichentabelle</gui>, um die Erweiterung "
+"zu aktivieren."
 
 #. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:38
+#: C/character-map.page:49
 msgid "Using Character Map"
 msgstr "Die Zeichentabelle verwenden"
 
 #. (itstool) path: section/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:40
+#: C/character-map.page:51
 msgid ""
 "Once the plugin is enabled, you can add characters from the <gui style=\"tab"
-"\">Character Map</gui> tab of the side panel (<guiseq><gui>View</"
-"gui><gui>Side Panel</gui></guiseq>)."
+"\">Character Map</gui> view of the side panel."
 msgstr ""
-"Sobald das Plugin aktiviert ist, können Sie Zeichen aus dem Reiter <gui "
-"style=\"tab\">Zeichentabelle</gui> der Seitenleiste einfügen "
-"(<guiseq><gui>Ansicht</gui><gui>Seitenleiste</gui></guiseq>)."
+"Sobald die Erweiterung aktiviert ist, können Sie Zeichen aus dem Reiter <gui "
+"style=\"tab\">Zeichentabelle</gui> der Seitenleiste einfügen."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:46
+#: C/character-map.page:56
 msgid ""
 "Place the cursor at the point in your document at which you would like your "
 "special character."
@@ -242,37 +251,43 @@ msgstr ""
 "Sonderzeichen einfügen wollen."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:50
+#: C/character-map.page:60
 msgid ""
-"Open the side panel by selecting <guiseq><gui>View</gui> <gui>Side Panel</"
-"gui></guiseq>, or by pressing <key>F9</key>."
+"Open the side panel by pressing the menu button in the top-right corner of "
+"the window and selecting <guiseq><gui>View</gui> <gui>Side Panel</gui></"
+"guiseq>, or by pressing <key>F9</key>."
 msgstr ""
-"Um die Seitenleiste zu aktivieren, wählen Sie <guiseq><gui>Ansicht</"
+"Um die Seitenleiste zu aktivieren, klicken Sie auf den Menüknopf in der "
+"oberen rechten Ecke des Fensters und wählen Sie <guiseq><gui>Ansicht</"
 "gui><gui>Seitenleiste</gui></guiseq> oder drücken Sie <key>F9</key>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:54
-msgid "Select the <gui>Character Map</gui> tab in the side panel."
-msgstr "Wählen Sie den Reiter <gui>Zeichentabelle</gui> in der Seitenleiste."
+#: C/character-map.page:65
+msgid ""
+"Select <gui>Character Map</gui> from the drop-down list at the top of the "
+"side panel."
+msgstr ""
+"Wählen Sie <gui>Zeichentabelle</gui> aus der Auswahlliste oben in der "
+"Seitenleiste."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:57
+#: C/character-map.page:69
 msgid ""
 "If necessary, choose the character set to which your character belongs from "
-"the list at the top of the <gui style=\"tab\">Character Map</gui> tab (for "
-"example, Arabic)."
+"the list at the top of the <gui>Character Map</gui> side panel (for example, "
+"Arabic)."
 msgstr ""
-"Wenn nötig, wählen Sie in der Liste oben im Reiter <gui style=\"tab"
-"\">Zeichentabelle</gui> den Zeichensatz aus, der Ihr Sonderzeichen enthält "
+"Wenn nötig, wählen Sie in der Liste oben in der <gui>Zeichentabelle</gui>-"
+"Seitenleiste den Zeichensatz aus, der Ihr Sonderzeichen enthält "
 "(beispielsweise Arabisch)."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:62
+#: C/character-map.page:74
 msgid "Double click your desired character to insert it."
 msgstr "Doppelklicken Sie auf das gewünschte Zeichen, um es einzufügen."
 
 #. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/character-map.page:67
+#: C/character-map.page:79
 msgid ""
 "You must click on the editing view of your document to continue editing "
 "normally."
@@ -281,18 +296,18 @@ msgstr ""
 "Dokument normal weiter bearbeiten zu können."
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:15
+#: C/code-comment.page:16
 msgid "Comment-out or uncomment a block of code."
 msgstr ""
-"Einen markierten Quelltextabsatz auskommentieren oder wieder unkommentieren."
+"Einen markierten Quelltextabsatz auskommentieren oder wieder entkommentieren."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:18
+#: C/code-comment.page:19
 msgid "Code comment"
 msgstr "Quelltextkommentar"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:20
+#: C/code-comment.page:21
 msgid ""
 "Code comments are portions of text that make it easier for people to "
 "understand a program's code, but they don't affect how a program works. "
@@ -304,26 +319,28 @@ msgstr ""
 "Sonderzeichen abgegrenzt."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:25
+#: C/code-comment.page:26
 msgid ""
 "The <app>code comment</app> plugin makes it easier to quickly create or "
-"remove code comments. To enable the code comment plugin, select <guiseq><gui "
-"style=\"menu\">gedit</gui><gui style=\"menuitem\">Preferences</gui> "
-"<gui>Plugins</gui><gui>Code comment</gui></guiseq>."
+"remove code comments."
 msgstr ""
-"Das <app>Quelltextkommentar</app>-Plugin erleichtert Ihnen die Erstellung "
-"oder Entfernung von Quelltextkommentaren. Um das Quelltextkommentar-Plugin "
-"zu aktivieren, wählen Sie <guiseq><gui style=\"menu\">Bearbeiten</gui><gui "
-"style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
-"gui><gui>Quelltextkommentar</gui></guiseq>."
+"Die Erweiterung <app>Quelltextkommentar</app> erleichtert es, schnell Code-"
+"Kommentare zu erstellen oder zu entfernen."
+
+#. (itstool) path: item/p
+#: C/code-comment.page:37
+msgid "Select <gui style=\"menuitem\">Code comment</gui> to enable the plugin."
+msgstr ""
+"Wählen Sie <gui style=\"menuitem\">Quelltextkommentar</gui>, um die "
+"Erweiterung zu aktivieren."
 
 #. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:31
+#: C/code-comment.page:42
 msgid "To create or remove a comment:"
 msgstr "So erzeugen oder entfernen Sie einen Kommentar:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:33
+#: C/code-comment.page:44
 msgid ""
 "Highlight the portion of text where you want to add or remove a comment."
 msgstr ""
@@ -331,28 +348,29 @@ msgstr ""
 "entfernen wollen."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:37
+#: C/code-comment.page:48
 msgid ""
-"To add a comment, click <guiseq><gui style=\"menu\">gedit</gui> <gui>Comment "
-"Code</gui></guiseq>, or press <keyseq><key>Ctrl</key> <key>M</key></keyseq>."
+"To add a comment, right click and select <gui style=\"menuitem\">Comment "
+"Code</gui>, or press <keyseq><key>Ctrl</key><key>M</key></keyseq>."
 msgstr ""
-"Um einen Kommentar hinzuzufügen, klicken Sie auf <guiseq><gui style=\"menu"
-"\">Bearbeiten</gui><gui>Quelltext kommentieren</gui></guiseq> oder drücken "
+"Um einen Kommentar hinzuzufügen, klicken Sie mit der rechten Maustaste und "
+"wählen Sie <gui style=\"menuitem\">Quelltext kommentieren</gui> oder drücken "
 "Sie <keyseq><key>Strg</key><key>M</key></keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:42
+#: C/code-comment.page:52
 msgid ""
-"To remove a comment, click <guiseq><gui style=\"menu\">gedit</gui> "
-"<gui>Uncomment Code</gui></guiseq>, or press <keyseq><key>Shift</key> "
-"<key>Ctrl</key><key>M</key></keyseq>."
+"To remove a comment, right click and select <gui style=\"menuitem"
+"\">Uncomment Code</gui>, or press <keyseq><key>Shift</key> <key>Ctrl</"
+"key><key>M</key></keyseq>."
 msgstr ""
-"Um einen Kommentar zu entfernen, klicken Sie auf <guiseq><gui style=\"menu"
-"\">Bearbeiten</gui><gui>Quelltext unkommentieren</gui></guiseq> oder drücken "
-"Sie <keyseq><key>Strg</key><key>Umschalttaste</key><key>M</key></keyseq>."
+"Um einen Kommentar zu entfernen, klicken Sie mit der rechten Maustaste und "
+"wählen Sie <gui style=\"menuitem\">Quelltext entkommentieren</gui> oder "
+"drücken Sie <keyseq><key>Strg</key><key>Umschalttaste</key><key>M</key></"
+"keyseq>."
 
 #. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/code-comment.page:49
+#: C/code-comment.page:59
 msgid ""
 "<app>gedit</app> will automatically use the correct style of comment based "
 "on the language or syntax of the file. If <app>gedit</app> doesn't identify "
@@ -365,46 +383,42 @@ msgstr ""
 "der <gui>Statusleiste</gui> unten auswählen."
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:15
+#: C/color-picker.page:16
 msgid "Pick a color from a dialog and insert its hexadecimal representation."
 msgstr ""
 "Eine Farbe in einem Dialog auswählen und deren Hexadezimaldarstellung "
 "einfügen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:18
+#: C/color-picker.page:19
 msgid "Color Picker"
 msgstr "Farbwähler"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:20
+#: C/color-picker.page:21
 msgid ""
 "The <app>Color Picker</app> plugin helps you to insert the character codes "
 "that represent a certain color. This can make it easier to choose and use "
 "the correct color in your programs."
 msgstr ""
-"Das <app>Farbwähler</app>-Plugin hilft Ihnen dabei, Zeichencodes einzufügen, "
-"die eine bestimmte Farbe darstellen. Dadurch wird die richtige Auswahl der "
-"korrekten Farbe in Ihren Programmen erleichtert."
+"Die <app>Farbwähler</app>-Erweiterung hilft Ihnen dabei, Zeichencodes "
+"einzufügen, die eine bestimmte Farbe darstellen. Dadurch wird die richtige "
+"Auswahl der korrekten Farbe in Ihren Programmen erleichtert."
 
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:24
-msgid ""
-"To enable the color picker plugin, select <guiseq><gui style=\"menu\">gedit</"
-"gui><gui style=\"menuitem\">Preferences</gui> <gui>Plugins</gui><gui>Color "
-"Picker</gui></guiseq>."
+#. (itstool) path: item/p
+#: C/color-picker.page:33
+msgid "Select <gui style=\"menuitem\">Color Picker</gui> to enable the plugin."
 msgstr ""
-"Um das Farbwähler-Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
-"\">gedit</gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
-"gui><gui>Farbwähler</gui></guiseq>."
+"Wählen Sie <gui style=\"menuitem\">Farbwähler</gui>, um die Erweiterung zu "
+"aktivieren."
 
 #. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:29
+#: C/color-picker.page:38
 msgid "To open and use the color picker:"
 msgstr "So öffnen und verwenden Sie den Farbwähler:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:31
+#: C/color-picker.page:40
 msgid ""
 "Place your cursor at the point in your document where you want to insert the "
 "color code."
@@ -413,404 +427,129 @@ msgstr ""
 "Farbcode einfügen wollen."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:35
+#: C/color-picker.page:44
 msgid ""
-"Select <guiseq><gui>Tools</gui><gui>Pick Color…</gui></guiseq>. The color "
-"picker dialog will appear."
+"Press the menu button in the top-right corner of the window and select "
+"<guiseq><gui style=\"menuitem\">Tools</gui> <gui style=\"menuitem\">Pick "
+"Color…</gui></guiseq>."
 msgstr ""
-"Wählen Sie <guiseq><gui>Werkzeuge</gui><gui>Farbe wählen …</gui></guiseq>. "
-"Der Farbwähler-Dialog wird geöffnet."
+"Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und "
+"wählen Sie <guiseq><gui style=\"menuitem\">Werkzeuge</gui> <gui style="
+"\"menuitem\">Farbe auswählen …</gui></guiseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:39
+#: C/color-picker.page:49
 msgid "Click on the desired color in the color picker window."
 msgstr "Klicken Sie im Farbwähler-Fenster auf die gewünschte Farbe."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:42
+#: C/color-picker.page:52
 msgid ""
 "The appropriate color code will be inserted where you had placed your cursor."
 msgstr ""
 "Der entsprechende Farbcode wird an der Position der Eingabemarke eingefügt."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:46
-msgid "To close the <app>color picker</app>, click <gui>Close</gui>."
+#: C/color-picker.page:56
+msgid "To close the <app>color picker</app>, click <gui>Cancel</gui>."
 msgstr ""
-"Um den <app>Farbwähler</app> zu schließen, klicken Sie auf <gui>Schließen</"
+"Um den <app>Farbwähler</app> zu schließen, klicken Sie auf <gui>Abbrechen</"
 "gui>."
 
 #. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:52
+#: C/color-picker.page:62
 msgid ""
-"You can make fine-grained adjustments to the color by adjusting the values "
-"for Hue, Saturation, Value, Red, Green, or Blue."
+"You can make fine-grained adjustments to the color and adjust the values for "
+"Hue, Saturation, Value, Red, Green, or Blue by right clicking on a color and "
+"selecting <gui style=\"menuitem\">Customize</gui>."
 msgstr ""
-"Sie können eine Feineinstellung der Farbe vornehmen, indem Sie die Werte für "
-"Farbton, Sättigung, Farbwert, Rot, Grün oder Blau anpassen."
-
-#. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/color-picker.page:54
-msgid ""
-"Additionally, you can save colors by right-clicking on any of the colored "
-"boxes in the color picker, and selecting <gui>Save color here</gui>. This "
-"will make it easier to insert commonly-used colors later."
-msgstr ""
-"Zusätzlich können Sie Farben speichern, indem Sie mit der rechten Maustaste "
-"auf die Farbfelder im Farbwähler klicken und <gui>Farbe hier speichern</gui> "
-"wählen. Dadurch wird das spätere Einfügen häufig verwendeter Farben "
-"erleichtert."
+"Sie können eine Feineinstellung der Farbe vornehmen und die Werte für "
+"Farbton, Sättigung, Farbwert, Rot, Grün oder Blau anpassen, indem Sie mit "
+"der rechten Maustaste auf eine Farbe klicken und <gui style=\"menuitem"
+"\">Anpassen</gui> auswählen."
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:15
-msgid "Use a command-line interface for advanced editing."
-msgstr ""
-"Eine Befehlszeilenschnittstelle für fortgeschrittene Bearbeitung verwenden."
-
-#. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:18
-msgid "Commander"
-msgstr "Commander"
-
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:20
-msgid ""
-"The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app> "
-"users that allows you to perform command-line actions on the current file. "
-"To enable the commander plugin, select <guiseq><gui style=\"menu\">gedit</"
-"gui><gui style=\"menuitem\">Preferences</gui> <gui>Plugins</"
-"gui><gui>Commander</gui></guiseq>."
-msgstr ""
-"Das <app>Commander</app>-Plugin richtet sich an fortgeschrittene Benutzer "
-"von <app>gedit</app>. Es ermöglicht Ihnen die Ausführung von "
-"Befehlszeilenaktionen für die aktuell geöffnete Datei. Um dieses Plugin zu "
-"aktivieren, wählen Sie <guiseq><gui style=\"menu\">gedit</gui><gui style="
-"\"menuitem\">Einstellungen</gui><gui>Plugins</gui><gui>Commander</gui></"
-"guiseq>."
-
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:26
-msgid ""
-"Once you have enabled the plugin, activate it by pressing <keyseq><key>Ctrl</"
-"key><key>.</key></keyseq>."
-msgstr ""
-"Sobald das Plugin eingerichtet ist, aktivieren Sie es durch Drücken von "
-"<keyseq><key>Strg</key><key>.</key></keyseq>."
-
-#. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:30
-msgid "The last key in the above key combination is a period."
-msgstr "Die letzte Taste in der genannten Tastenkombination ist ein Punkt."
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:36
-msgid "Action"
-msgstr "Aktion"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:37
-msgid "Keyboard shortcut"
-msgstr "Tastenkombination"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:42
-msgid "See an overview of available commands"
-msgstr "Alle verfügbaren Befehle auflisten"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:43
-msgid "<keyseq><key>Tab</key><key>Tab</key></keyseq>"
-msgstr "<keyseq><key>Tab</key><key>Tab</key></keyseq>"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:46
-msgid "Find a word within the current file"
-msgstr "Ein Wort in der aktuellen Datei suchen"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:48
-msgid "<key>/</key> <input>foo</input>"
-msgstr "<key>/</key> <input>bla</input>"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:49
-msgid "This will find the word <input>foo</input>."
-msgstr "Dadurch wird nach dem Wort <input>bla</input> gesucht."
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:53
-msgid "Replace a word within the current file"
-msgstr "Ein Wort in der aktuellen Datei ersetzen"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:55
-msgid "<keyseq><key>/</key><key>/</key></keyseq> <input>foo bar</input>"
-msgstr "<keyseq><key>/</key><key>/</key></keyseq> <input>bla blub</input>"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:57
-msgid "This will replace <input>foo</input> with <input>bar</input>."
-msgstr ""
-"Dadurch wird das Wort <input>bla</input> durch <input>blub</input> ersetzt."
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:62
-msgid "Move the cursor to a certain line number in your file"
-msgstr "Den Eingabecursor in eine bestimmte Zeilennummer in Ihrer Datei setzen"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:64
-msgid ""
-"go <input>[line number]</input> <em>or</em> just <key>G</key> <input>[line "
-"number]</input>"
-msgstr ""
-"go <input>[Zeilennummer]</input> <em>oder</em> einfach <key>G</key> "
-"<input>[Zeilennummer]</input>"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:69
-msgid "Toggle the bookmark indicator for the current line"
-msgstr "Den Lesezeichenindikator für die aktuelle Zeile ein- oder ausschalten"
-
-#. (itstool) path: td/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:70
-msgid "bookmark <em>or</em> just <key>B</key>"
-msgstr "bookmark <em>oder</em> einfach <key>B</key>"
-
-#. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/commander.page:76
-msgid ""
-"Some commands, such as the <app>bookmark</app> command require that the "
-"appropriate plugin be installed and activated. If you do not have the "
-"appropriate plugin installed and activated, you will receive an error "
-"message."
-msgstr ""
-"Einige Befehle, wie beispielsweise <app>bookmark</app>, setzen voraus, das "
-"das entsprechende Plugin installiert und aktiviert ist. Sollte dies nicht "
-"der Fall sein, erhalten Sie eine Fehlermeldung."
-
-#. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:15
-msgid "Display recently-used and most-used files on startup."
-msgstr "Häufig und kürzlich verwendete Dateien beim Start anzeigen."
-
-#. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:18
-msgid "Dashboard"
-msgstr "Dashboard"
-
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:20
-msgid ""
-"The <app>Dashboard</app> plugin provides quick access to your most recently-"
-"used files and most-frequently used files. To activate the <app>Dashboard</"
-"app> plugin, select <guiseq><gui style=\"menu\">gedit</gui><gui style="
-"\"menuitem\">Preferences</gui> <gui>Plugins</gui><gui>Dashboard</gui></"
-"guiseq>. You will need to restart <app>gedit</app> to activate the "
-"<app>Dashboard</app> plugin."
-msgstr ""
-"Das Plugin <app>Dashboard</app> ermöglicht schnellen Zugriff auf zuletzt und "
-"häufig verwendete Dateien. Zum Aktivieren des Plugins <app>Dashboard</app> "
-"wählen Sie <guiseq><gui style=\"menu\">gedit</gui><gui style=\"menuitem"
-"\">Einstellungen</gui><gui>Plugins</gui><gui>Dashboard</gui></guiseq>. Sie "
-"müssen danach <app>gedit</app> neu starten, um das Plugin <app>Dashboard</"
-"app> zu aktivieren."
-
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:27
-msgid ""
-"The <app>dashboard</app> also includes a <gui>Search</gui> window, allowing "
-"you to search for files that may not appear in the list of files."
-msgstr ""
-"<app>Dashboard</app> enthält ein <gui>Suchfenster</gui>, mit dem Sie nach "
-"Dateien suchen können, die gegebenenfalls nicht in der Dateiliste erscheinen."
-
-#. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:32
-msgid "Recently used files"
-msgstr "Zuletzt verwendete Dateien"
-
-#. (itstool) path: section/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:34
-msgid ""
-"The dashboard will initially display a shortcut for an <gui>empty document</"
-"gui> and seven of your most recently-used files. Click on the <gui>empty "
-"document</gui> to create a new file. Click on any of the other files to open "
-"that file."
-msgstr ""
-"Das Dashboard zeigt anfangs einen Verweis auf ein <gui>leeres Dokument</gui> "
-"und die sieben zuletzt verwendeten Dateien. Klicken Sie auf <gui>leeres "
-"Dokument</gui>, um eine neue Datei zu erstellen. Klicken Sie auf eine der "
-"anderen Dateien, um jene zu öffnen."
-
-#. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:42
-msgid "Most frequently-used files"
-msgstr "Am häufigsten verwendete Dateien"
-
-#. (itstool) path: section/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:44
-msgid ""
-"Similarly, the dashboard displays a shortcut for an <gui>empty document</"
-"gui> and seven of your most frequently-used files. Click on the <gui> empty "
-"document</gui> to create a new file. Click on any of the other files to open "
-"that file."
-msgstr ""
-"Ähnlich zeigt das Dashboard einen Verweis auf ein <gui>leeres Dokument</gui> "
-"und die sieben zuletzt verwendeten Dateien. Klicken Sie auf <gui>leeres "
-"Dokument</gui>, um eine neue Datei zu erstellen. Klicken Sie auf eine der "
-"anderen Dateien, um jene zu öffnen."
-
-#. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/dashboard.page:50
-msgid ""
-"Once activated, the <app>dashboard</app> will be displayed by default when "
-"you open <app>gedit</app>. You can also open the <app>dashboard</app> by "
-"clicking <guiseq><gui>File</gui><gui>New</gui></guiseq>, or by pressing "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq>."
-msgstr ""
-"Sobald <app>Dashboard</app> aktiviert ist, wird es normalerweise beim Start "
-"von <app>gedit</app> angezeigt. Sie können  <app>Dashboard</app> auch "
-"öffnen, indem Sie auf <guiseq><gui>Datei</gui><gui>Neu</gui></guiseq> "
-"klicken oder <keyseq><key>Strg</key><key>N</key></keyseq> drücken."
-
-#. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:15
+#: C/draw-spaces.page:16
 msgid "Show white space between words or portions of code."
 msgstr "Leerraum zwischen Wörtern und Code-Bestandteilen anzeigen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:18
+#: C/draw-spaces.page:19
 msgid "Draw Spaces"
 msgstr "Leerzeichen anzeigen"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:20
+#: C/draw-spaces.page:21
 msgid ""
 "The <app>Draw Spaces</app> plugin is a simple plugin that can mark spaces, "
 "tabs, and other types of whitespace with a small, visible marker. By making "
 "whitespace visible, you can more easily see how whitespace is used in a "
 "document, and can apply spacing strategies more consistently."
 msgstr ""
-"Das Plugin <app>Leerzeichen darstellen</app> dient zum Markieren von "
+"Die Erweiterung <app>Leerzeichen darstellen</app> dient zum Markieren von "
 "Leerzeichen und Tabulatoren sowie anderer Arten von Leerraum mit einer "
 "kleinen, sichtbaren Markierung. Indem Sie Leerraum sichtbar machen, können "
 "Sie viel leichter erkennen, wo dieser in einem Dokument verwendet wird, und "
 "können somit die Leerraumgestaltung einheitlicher handhaben."
 
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:25
-msgid ""
-"To enable this plugin, select <guiseq><gui style=\"menu\">gedit</gui> <gui "
-"style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Draw Spaces</"
-"gui></guiseq>. After you have enabled the plugin, you can set its options by "
-"highlighting the plugin and selecting <gui style=\"menuitem\">Preferences</"
-"gui>."
+#. (itstool) path: item/p
+#: C/draw-spaces.page:34
+msgid "Select <gui style=\"menuitem\">Draw Spaces</gui> to enable the plugin."
 msgstr ""
-"Um dieses Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
-"\">gedit</gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
-"gui><gui>Leerzeichen darstellen</gui></guiseq>. Sobald Sie das Plugin "
-"aktiviert haben, können Sie dessen Optionen anpassen, indem Sie es markieren "
-"und <gui style=\"menuitem\">Einstellungen</gui> wählen."
+"Wählen Sie <gui style=\"menuitem\">Leerzeichen darstellen</gui>, um die "
+"Erweiterung zu aktivieren."
 
-#. (itstool) path: list/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:32
-msgid ""
-"By default, the <app>Draw Spaces</app> plugin will mark the following types "
-"of whitespace in a file:"
+#. (itstool) path: item/p
+#: C/draw-spaces.page:37
+msgid "Press <gui style=\"button\">Preferences</gui> to set its options."
 msgstr ""
-"Standardmäßig markiert das Plugin <app>Leerzeichen darstellen</app> folgende "
-"Arten von Leerraum in einer Datei:"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:34
-msgid "Spaces"
-msgstr "Leerzeichen"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:35
-msgid "Tabs"
-msgstr "Tabulatoren"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:36
-msgid "Leading spaces"
-msgstr "Vorangestellte Leerzeichen"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:37
-msgid "Spaces in text"
-msgstr "Leerzeichen im Text"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:38
-msgid "Trailing spaces"
-msgstr "Angehängte Leerzeichen"
-
-#. (itstool) path: list/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:42
-msgid "You can also set the plugin to mark:"
-msgstr "Sie können das Plugin auch verwenden, um Folgendes zu markieren:"
-
-# Zeilenumbrüche?
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:43
-msgid "New lines"
-msgstr "Zeilenumbrüche"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:44
-msgid "Non-breaking spaces"
-msgstr "Geschützte Leerzeichen"
+"Klicken Sie auf <gui style=\"button\">Einstellungen</gui>, um deren Optionen "
+"festzulegen."
 
 #. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/draw-spaces.page:48
+#: C/draw-spaces.page:42
 msgid ""
-"Though you will be able to see the dots when you work on a file, the dots "
-"will not be visible when you print a file to paper."
+"Though you will be able to see the markers when you work on a file, the "
+"markers will not be visible when you print a file to paper."
 msgstr ""
-"Obwohl Sie nun die Punkte während der Bearbeitung einer Datei sehen können, "
-"sind diese beim Ausdrucken auf Papier nicht sichtbar."
+"Obwohl Sie die Markierungen während der Bearbeitung einer Datei sehen "
+"können, sind diese beim Ausdrucken auf Papier nicht sichtbar."
 
 #. (itstool) path: credit/name
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:11
+#: C/git.page:12
 msgid "Aleksandra Hankus"
 msgstr "Aleksandra Hankus"
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:15
+#: C/git.page:16
 msgid "Highlight lines that have been changed since the last commit."
 msgstr "Zeilen hervorheben, die seit dem letzten Commit geändert wurden."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:18
+#: C/git.page:19
 msgid "Git"
 msgstr "Git"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:20
+#: C/git.page:21
 msgid ""
-"The <app>git</app> plugin will highlight lines that have been changed since "
+"The <app>Git</app> plugin will highlight lines that have been changed since "
 "the last commit. Lines will be highlighted only on files that are already "
 "tracked by git."
 msgstr ""
-"Das <app>Git</app>-Plugin hebt Zeilen hervor, die seit dem letzten Commit "
-"geändert worden sind. Dies funktioniert nur bei Dateien, die bereits durch "
-"die Git-Versionskontrolle überwacht werden."
+"Die <app>Git</app>-Erweiterung hebt Zeilen hervor, die seit dem letzten "
+"Commit geändert worden sind. Dies funktioniert nur bei Dateien, die bereits "
+"durch die Git-Versionskontrolle überwacht werden."
 
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:24
-msgid ""
-"To enable the plugin, select <guiseq><gui style=\"menu\">gedit</gui> <gui "
-"style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Git</gui></"
-"guiseq>."
+#. (itstool) path: item/p
+#: C/git.page:33
+msgid "Select <gui style=\"menuitem\">Git</gui> to enable the plugin."
 msgstr ""
-"Um das Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu\">gedit</"
-"gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</gui><gui>Git</"
-"gui></guiseq>."
+"Wählen Sie <gui style=\"menuitem\">Git</gui>, um die Erweiterung zu "
+"aktivieren."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:28
+#: C/git.page:37
 msgid ""
 "The changes are shown in the margin of the document in three different "
 "colors:"
@@ -819,37 +558,37 @@ msgstr ""
 "angezeigt:"
 
 #. (itstool) path: item/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:32
+#: C/git.page:41
 msgid "Green"
 msgstr "Grün"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:33
+#: C/git.page:42
 msgid "Shows the new lines added to the document."
 msgstr "Zeigt die Zeilen, die neu zum Dokument hinzugefügt wurden."
 
 #. (itstool) path: item/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:36
+#: C/git.page:45
 msgid "Orange"
 msgstr "Orange"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:37
+#: C/git.page:46
 msgid "Shows the lines that have been modified in the document."
 msgstr "Zeigt die Zeilen, die im Dokument geändert wurden."
 
 #. (itstool) path: item/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:40
+#: C/git.page:49
 msgid "Red"
 msgstr "Ort"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:41
+#: C/git.page:50
 msgid "Shows the parts of the document that have been deleted."
 msgstr "Zeigt die Teile des Dokuments, die gelöscht wurden."
 
 #. (itstool) path: note/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/git.page:46
+#: C/git.page:55
 msgid ""
 "Hover the mouse pointer on the red or orange margin to view the original "
 "text in a tool tip."
@@ -858,43 +597,40 @@ msgstr ""
 "bewegen, wird der Originaltext in einer Minihilfe angezeigt."
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:15
+#: C/join-split-lines.page:16
 msgid "Join several lines of text or split long lines."
 msgstr "Textzeilen zusammenfassen oder lange Zeilen teilen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:18
+#: C/join-split-lines.page:19
 msgid "Join/Split Lines"
 msgstr "Zeilen zusammenfügen/umbrechen"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:20
+#: C/join-split-lines.page:21
 msgid ""
 "The <app>Join/Split Lines</app> plugin can join shorter lines into one "
 "longer line, or can split a long line into multiple shorter lines."
 msgstr ""
-"Das <app>Zeilen zusammenfügen/umbrechen</app>-Plugin kann kurze Zeilen zu "
-"einer längeren Zeile zusammenfassen oder längere Zeilen in kürzere Zeilen "
+"Die <app>Zeilen zusammenfügen/umbrechen</app>-Erweiterung kann kurze Zeilen "
+"zu einer längeren Zeile zusammenfassen oder längere Zeilen in kürzere Zeilen "
 "umbrechen."
 
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:23
+#. (itstool) path: item/p
+#: C/join-split-lines.page:32
 msgid ""
-"To enable this plugin, select <guiseq><gui style=\"menu\">gedit</gui> <gui "
-"style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Join/Split "
-"Lines</gui></guiseq>."
+"Select <gui style=\"menuitem\">Join/Split Lines</gui> to enable the plugin."
 msgstr ""
-"Um das Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu\">gedit</"
-"gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</gui><gui>Zeilen "
-"zusammenfügen/umbrechen</gui></guiseq>."
+"Wählen Sie <gui style=\"menuitem\">Zeilen zusammenfügen/umbrechen</gui>, um "
+"die Erweiterung zu aktivieren."
 
 #. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:28
+#: C/join-split-lines.page:37
 msgid "To join multiple lines into one longer line:"
 msgstr "So fügen Sie mehrere Zeilen zu einer längeren Zeile zusammen:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:30
+#: C/join-split-lines.page:39
 msgid ""
 "Select the lines that you want to join. To do this, you can use the mouse, "
 "or you can press <keyseq><key>Shift</key><key>Up Arrow</key> </keyseq> or "
@@ -906,38 +642,38 @@ msgstr ""
 "key><key>Pfeiltaste runter</key></keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:35
+#: C/join-split-lines.page:44
 msgid "Press <keyseq><key>Ctrl</key><key>J</key></keyseq>."
 msgstr "Drücken Sie <keyseq><key>Strg</key><key>J</key></keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:36
+#: C/join-split-lines.page:45
 msgid "The lines that you selected will be joined into one longer line."
 msgstr "Die gewählten Zeilen werden zu einer längeren Zeile zusammengefasst."
 
 #. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:41
+#: C/join-split-lines.page:50
 msgid "To split one line into multiple lines:"
 msgstr "So teilen Sie eine Zeile in mehrere Zeilen:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:43
+#: C/join-split-lines.page:52
 msgid ""
 "Select the line that you want to split by placing your cursor anywhere on "
 "that line."
 msgstr ""
-"Wählen Sie die zu teilende Zeile aus, indem Sie den Eingabecursor an einer "
+"Wählen Sie die zu teilende Zeile aus, indem Sie die Eingabemarke an einer "
 "beliebigen Stelle in dieser Zeile platzieren."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:47
+#: C/join-split-lines.page:56
 msgid "Press <keyseq><key>Ctrl</key><key>Shift</key> <key>J</key></keyseq>."
 msgstr ""
 "Drücken Sie <keyseq><key>Strg</key><key>Umschalttaste</key> <key>J</key></"
 "keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/join-split-lines.page:49
+#: C/join-split-lines.page:58
 msgid ""
 "The line will be split into multiple lines. Spaces are used to determine "
 "where it is safe to split a line, and the length of each line will not "
@@ -948,12 +684,12 @@ msgstr ""
 "jeder Zeile wird 80 Zeichen nicht überschreiten."
 
 #. (itstool) path: p/link
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/legal-plugins.xml:7
+#: C/legal-plugins.xml:7
 msgid "http://creativecommons.org/licenses/by-sa/3.0/"
 msgstr "http://creativecommons.org/licenses/by-sa/3.0/"
 
 #. (itstool) path: license/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/legal-plugins.xml:5
+#: C/legal-plugins.xml:5
 msgid ""
 "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 "
 "Unported License. To view a copy of this license, visit <_:link-1/> or send "
@@ -966,70 +702,74 @@ msgstr ""
 "Street, Suite 900, Mountain View, California, 94041, USA."
 
 #. (itstool) path: credit/years
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:13
+#: C/multi-edit.page:14
 msgid "2011"
 msgstr "2011"
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:16
+#: C/multi-edit.page:17
 msgid "Edit a document in multiple places at once."
 msgstr "Ein Dokument an mehreren Stellen gleichzeitig bearbeiten."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:19
+#: C/multi-edit.page:20
 msgid "Multi Edit"
 msgstr "Mehrfachbearbeitung"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:21
+#: C/multi-edit.page:22
 msgid ""
 "The <app>Multi Edit</app> plugin allows you to edit a document in multiple "
-"places at once. This can be helpful when performing tedious editing tasks. "
-"To enable the Multi Edit plugin, select <guiseq><gui style=\"menu\">gedit</"
-"gui> <gui>Preferences</gui><gui>Plugins</gui><gui>Multi Edit</gui></guiseq>."
+"places at once. This can be helpful when performing tedious editing tasks."
 msgstr ""
-"Das <app>Mehrfachbearbeitung</app>-Plugin ermöglicht Ihnen die Bearbeitung "
-"eines Dokuments an verschiedenen Stellen gleichzeitig. Dies kann bei "
-"ermüdenden Bearbeitungsroutinen sinnvoll sein. Um dieses Plugin zu "
-"aktivieren, wählen Sie <guiseq><gui style=\"menu\">gedit</gui><gui style="
-"\"menuitem\">Einstellungen</gui><gui>Plugins</gui><gui>Mehrfachbearbeitung</"
-"gui></guiseq>."
+"Die <app>Mehrfachbearbeitung</app>-Erweiterung ermöglicht Ihnen die "
+"Bearbeitung eines Dokuments an verschiedenen Stellen gleichzeitig. Dies kann "
+"bei ermüdenden Bearbeitungsroutinen sinnvoll sein."
+
+#. (itstool) path: item/p
+#: C/multi-edit.page:33
+msgid "Select <gui style=\"menuitem\">Multi Edit</gui> to enable the plugin."
+msgstr ""
+"Wählen Sie <gui style=\"menuitem\">Mehrfachbearbeitung</gui>, um die "
+"Erweiterung zu aktivieren."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:26
+#: C/multi-edit.page:38
 msgid ""
 "After you have enabled the plugin, turn-on Multi Edit mode by pressing "
-"<keyseq><key>Ctrl</key><key>Shift</key><key>C</key></keyseq>, or clicking "
-"<guiseq><gui style=\"menu\">gedit</gui><gui>Multi Edit Mode</gui></guiseq>. "
-"You can then select the points in your file that you would like start "
-"editing."
+"<keyseq><key>Ctrl</key><key>Shift</key><key>C</key></keyseq>, or press the "
+"menu button in the top-right corner of the window and select <guiseq><gui "
+"style=\"menuitem\">Tools</gui><gui style=\"menuitem\">Multi Edit Mode</gui></"
+"guiseq>. You can then select the points in your file that you would like "
+"start editing."
 msgstr ""
-"Nachdem Sie das Plugin aktiviert haben, schalten Sie mit der "
+"Nachdem Sie die Erweiterung aktiviert haben, schalten Sie mit der "
 "Tastenkombination <keyseq><key>Strg</key><key>Umschalttaste</key><key>C</"
-"key></keyseq> oder durch Wählen von <guiseq><gui style=\"menu\">gedit</"
-"gui><gui>Mehrfachbearbeitungsmodus</gui></guiseq> den "
-"Mehrfachbearbeitungsmodus ein. Sie können dann die Stellen in Ihrer Datei "
-"auswählen, an denen Sie mit der Bearbeitung beginnen wollen."
+"key></keyseq> den Mehrfachbearbeitungsmodus ein. Alternativ können Sie auch "
+"den Menüknopf in der rechten oberen Ecke des Fensters anklicken und "
+"<guiseq><gui style=\"menuitem\">Werkzeuge</gui><gui style=\"menuitem"
+"\">Mehrfachbearbeitungsmodus</gui></guiseq> auswählen. Sie können dann die "
+"Stellen in Ihrer Datei auswählen, an denen Sie mit der Bearbeitung beginnen "
+"wollen."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:32
+#: C/multi-edit.page:45
 msgid "To insert editing points in your file:"
 msgstr "So fügen Sie Bearbeitungspunkte in Ihre Datei ein:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:35
+#: C/multi-edit.page:48
 msgid "Place your cursor at your first desired editing point."
 msgstr ""
-"Platzieren Sie den Eingabezeiger am ersten der gewünschten "
-"Bearbeitungspunkte."
+"Platzieren Sie die Eingabemarke am ersten der gewünschten Bearbeitungspunkte."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:38
+#: C/multi-edit.page:51
 msgid "Press <keyseq><key>Ctrl</key><key>E</key></keyseq>."
 msgstr "Drücken Sie <keyseq><key>Strg</key><key>E</key></keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:41
+#: C/multi-edit.page:54
 msgid ""
 "Move to your next editing point, and press <keyseq><key>Ctrl</key> <key>E</"
 "key></keyseq> again."
@@ -1038,12 +778,12 @@ msgstr ""
 "<keyseq><key>Strg</key><key>E</key></keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:45
+#: C/multi-edit.page:58
 msgid "Continue inserting editing points, adding as many as you need."
 msgstr "Fügen Sie weitere Bearbeitungspunkte ein, so viele wie gewünscht."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:49
+#: C/multi-edit.page:62
 msgid ""
 "Once you have inserted all of your editing points, you can make your desired "
 "edits."
@@ -1052,7 +792,7 @@ msgstr ""
 "Bearbeitungen vornehmen."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/multi-edit.page:52
+#: C/multi-edit.page:65
 msgid ""
 "To remove editing points, press the <key>Esc</key> key. This will remove all "
 "of the editing points. Pressing the <key>Esc</key> key again will turn off "
@@ -1064,28 +804,214 @@ msgstr ""
 "der Editor kehrt in den Normalzustand zurück."
 
 #. (itstool) path: credit/name
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:16
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:16
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:19
+#: C/session-saver.page:12
+msgid "Jordi Mas i Hernàndez"
+msgstr "Jordi Mas i Hernàndez"
+
+#. (itstool) path: info/desc
+#: C/session-saver.page:18
+msgid "Save and restore your working sessions"
+msgstr "Ihre Arbeitssitzungen speichern und wiederherstellen"
+
+#. (itstool) path: page/title
+#: C/session-saver.page:21
+msgid "Session Saver"
+msgstr "Sitzungsspeicherung"
+
+#. (itstool) path: page/p
+#: C/session-saver.page:23
+msgid ""
+"The <app>Session Saver</app> plugin allows you to remember which documents "
+"are currently open and open the same documents again at a later time."
+msgstr ""
+"Mit der <app>Sitzungsspeicherung</app>-Erweiterung können Sie speichern, "
+"welche Dokumente gegenwärtig geöffnet sind und die gleichen Dokumente später "
+"erneut öffnen."
+
+#. (itstool) path: section/title
+#: C/session-saver.page:27
+msgid "Enable Session Saver Plugin"
+msgstr "Die Sitzungsspeicherung-Erweiterung aktivieren"
+
+#. (itstool) path: item/p
+#: C/session-saver.page:37
+msgid ""
+"Select <gui style=\"menuitem\">Session Saver</gui> to enable the plugin."
+msgstr ""
+"Wählen Sie <gui style=\"menuitem\">Sitzungsspeicherung</gui>, um die "
+"Erweiterung zu aktivieren."
+
+#. (itstool) path: section/title
+#: C/session-saver.page:45
+msgid "Save a session"
+msgstr "Eine Sitzung speichern"
+
+#. (itstool) path: section/p
+#: C/session-saver.page:46
+msgid "Save all your open files to be able to open them later."
+msgstr ""
+"Alle Ihre geöffneten Dateien speichern, um diese später wieder zu öffnen."
+
+#. (itstool) path: steps/title
+#: C/session-saver.page:48
+msgid "To save a session:"
+msgstr "So speichern Sie eine Sitzung:"
+
+#. (itstool) path: item/p
+#: C/session-saver.page:50
+msgid ""
+"Press the menu button in the top-right corner of the window and select "
+"<guiseq><gui style=\"menuitem\">Tools</gui> <gui style=\"menuitem\">Save "
+"Session…</gui></guiseq>."
+msgstr ""
+"Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und "
+"wählen Sie <guiseq><gui style=\"menuitem\">Werkzeuge</gui> <gui style="
+"\"menuitem\">Sitzung speichern …</gui></guiseq>."
+
+#. (itstool) path: section/title
+#: C/session-saver.page:58
+msgid "Open a session"
+msgstr "Eine Sitzung öffnen"
+
+#. (itstool) path: section/p
+#: C/session-saver.page:59
+msgid "Open all the files from an already saved session."
+msgstr "Alle Dateien aus einer zuvor gespeicherten Sitzung öffnen."
+
+#. (itstool) path: steps/title
+#: C/session-saver.page:61
+msgid "To open a session:"
+msgstr "So öffnen Sie eine Sitzung:"
+
+#. (itstool) path: item/p
+#: C/session-saver.page:63
+msgid ""
+"Press the menu button in the top-right corner of the window and select <gui "
+"style=\"menuitem\">Tools</gui>."
+msgstr ""
+"Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und "
+"wählen Sie <gui style=\"menuitem\">Werkzeuge</gui>."
+
+#. (itstool) path: item/p
+#: C/session-saver.page:67
+msgid "Select one of the saved sessions from the menu."
+msgstr "Wählen Sie eine der gespeicherten Sitzungen aus dem Menü."
+
+#. (itstool) path: section/title
+#: C/session-saver.page:73
+msgid "Manage Sessions"
+msgstr "Sitzungen verwalten"
+
+#. (itstool) path: section/p
+#: C/session-saver.page:74
+msgid "Open and delete your already saved sessions."
+msgstr "Ihre zuvor gespeicherten Sitzungen öffnen und löschen."
+
+#. (itstool) path: steps/title
+#: C/session-saver.page:76
+msgid "Manage sessions"
+msgstr "Sitzungen verwalten"
+
+#. (itstool) path: item/p
+#: C/session-saver.page:78
+msgid ""
+"Press the menu button in the top-right corner of the window and select "
+"<guiseq><gui style=\"menuitem\">Tools</gui> <gui style=\"menuitem\">Manage "
+"Saved Sessions…</gui></guiseq>"
+msgstr ""
+"Klicken Sie auf den Menüknopf in der rechten oberen Ecke des Fensters und "
+"wählen Sie <guiseq><gui style=\"menuitem\">Werkzeuge</gui> <gui style="
+"\"menuitem\">Gespeicherte Sitzungen verwalten …</gui></guiseq>"
+
+#. (itstool) path: info/desc
+#: C/synctex.page:20
+msgid ""
+"Quickly switch between TeX source files and rendered PDF documents in evince."
+msgstr "Schnell in Evince zwischen TeX-Quelldateien und PDF-Dateien wechseln."
+
+#. (itstool) path: page/title
+#: C/synctex.page:24
+msgid "SyncTeX"
+msgstr "SyncTeX"
+
+#. (itstool) path: page/p
+#: C/synctex.page:26
+msgid ""
+"SyncTeX is a method that enables synchronization between a TeX source file "
+"and the PDF output generated by a TeX/LaTeX compiler. This plugin allows to "
+"use SyncTeX in <app>gedit</app> to quickly switch from an opened TeX source "
+"file to a PDF document opened in <app>evince</app> and vice versa."
+msgstr ""
+"SyncTeX ist eine Methode zum Abgleich zwischen einer TeX-Quelldatei und der "
+"von einem TeX/LaTeX-Compiler erzeugten PDF-Ausgabe. Diese Erweiterung "
+"ermöglicht es, SyncTeX in <app>gedit</app> zu nutzen, um schnell zwischen "
+"einer geöffneten TeX-Quelldatei und einem in <app>evince</app> geöffneten "
+"PDF-Dokument hin und her zu wechseln."
+
+#. (itstool) path: note/p
+#: C/synctex.page:32
+msgid ""
+"To be useful, this plugin requires a TeX/LaTeX compiler and SyncTeX to be "
+"installed. Both are provided by TeX distributions such as TeX Live. Also "
+"<app>evince</app> must be installed."
+msgstr ""
+"Damit diese Erweiterung nutzbar ist, müssen ein TeX/LaTeX-Compiler und "
+"SyncTeX installiert sein. Beides wird mit TeX-Paketen wie TeX Live "
+"geliefert. Außerdem muss <app>evince</app> installiert sein."
+
+#. (itstool) path: item/p
+#: C/synctex.page:39
+msgid ""
+"Some basic information on setting up SyncTeX and compiling LaTeX documents "
+"can be found in the <link xref=\"help:evince#synctex\"><app>evince</app>-"
+"SyncTeX documentation</link>."
+msgstr ""
+"Einige grundlegende Informationen zur Einrichtung von SyncTeX und "
+"Kompilierung von LaTeX-Dokumenten finden Sie in der <link xref=\"help:"
+"evince#synctex\">SyncTeX-Dokumentation zu <app>evince</app></link>."
+
+#. (itstool) path: item/p
+#: C/synctex.page:45
+msgid ""
+"Key shortcuts and mouse controls are also documented in the <link xref="
+"\"help:evince/synctex-search\"> <app>evince</app>-SyncTeX documentation</"
+"link>."
+msgstr ""
+"Tastenkürzel und Maussteuerung sind ebenfalls in der <link xref=\"help:"
+"evince/synctex-search\">SyncTeX-Dokumentation zu <app>evince</app></link> "
+"beschrieben."
+
+#. (itstool) path: item/p
+#: C/synctex.page:50
+msgid ""
+"<link xref=\"help:gnome-latex\"> <app>Gnome-LaTeX</app></link> is an "
+"alternative text editor specifically designed for writing TeX code."
+msgstr ""
+"<link xref=\"help:gnome-latex\"> <app>Gnome-LaTeX</app></link> ist ein "
+"alternativer Texteditor, der speziell zum Schreiben von TeX-Code entworfen "
+"wurde."
+
+#. (itstool) path: credit/name
+#: C/terminal.page:17 C/text-size.page:17 C/word-completion.page:20
 msgid "Sindhu S"
 msgstr "Sindhu S"
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:22
-msgid "Add a terminal console to the bottom pane."
-msgstr "Eine Terminalkonsole am unteren Rand hinzufügen."
+#: C/terminal.page:23
+msgid "Add a terminal console to the bottom panel."
+msgstr "Eine Terminalkonsole der unteren Leiste hinzufügen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:25
+#: C/terminal.page:26
 msgid "Embedded Terminal"
 msgstr "Eingebettetes Terminal"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:27
+#: C/terminal.page:28
 msgid ""
 "<app>gedit</app> makes it possible to include an embedded version of "
 "<app>GNOME Terminal</app>, the GNOME command-line application, in the bottom "
-"pane of the <app>gedit</app> window. This will let you run scripts, install "
+"panel of the <app>gedit</app> window. This will let you run scripts, install "
 "needed software, or test your program without leaving <app>gedit</app>."
 msgstr ""
 "<app>gedit</app> kann eine eingebettete Version von <app>Gnome Terminal</"
@@ -1095,112 +1021,91 @@ msgstr ""
 "testen, ohne <app>gedit</app> zu verlassen."
 
 #. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:33
+#: C/terminal.page:34
 msgid "Enable Embedded Terminal"
 msgstr "Eingebettetes Terminal aktivieren"
 
-#. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:36
-msgid "To enable the <app>Embedded Terminal</app> plugin:"
-msgstr "So aktivieren Sie das Plugin für das <app>eingebettete Terminal</app>:"
-
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:38
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:37
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:30
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/zeitgeist-dataprovider.page:28
-msgid ""
-"Select <guiseq><gui style=\"menu\">gedit</gui> <gui style=\"menuitem"
-"\">Preferences</gui> <gui style=\"tab\">Plugins</gui></guiseq>."
-msgstr ""
-"Wählen Sie <guiseq><gui style=\"menu\">gedit</gui><gui style=\"menuitem"
-"\">Einstellungen</gui><gui>Plugins</gui></guiseq>."
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:43
+#: C/terminal.page:44
 msgid ""
 "Select <gui style=\"menuitem\">Embedded Terminal</gui> to enable the plugin."
 msgstr ""
-"Wählen Sie <gui style=\"menuitem\">Eingebettetes Terminal</gui>, um das "
-"Plugin zu aktivieren."
+"Wählen Sie <gui style=\"menuitem\">Eingebettetes Terminal</gui>, um die "
+"Erweiterung zu aktivieren."
 
 #. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:51
+#: C/terminal.page:52
 msgid "Using Embedded Terminal"
 msgstr "Eingebettetes Terminal verwenden"
 
 #. (itstool) path: section/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:53
-msgid "Once you have enabled the plugin, to add a terminal to the bottom pane:"
+#: C/terminal.page:54
+msgid ""
+"Once you have enabled the plugin, to add a terminal to the bottom panel:"
 msgstr ""
-"Sobald das Plugin aktiviert ist, können Sie folgendermaßen ein Terminal der "
-"unteren Leiste hinzufügen:"
+"Sobald die Erweiterung aktiviert ist, können Sie folgendermaßen ein Terminal "
+"der unteren Leiste hinzufügen:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/terminal.page:58
+#: C/terminal.page:59
 msgid ""
-"Select <guiseq><gui style=\"menu\">View</gui> <gui style=\"menuitem\">Bottom "
-"Pane</gui></guiseq>. Alternatively, you can press <keyseq><key>Ctrl</"
-"key><key>F9</key></keyseq>."
+"Press the menu button in the top-right corner of the window and select "
+"<guiseq><gui style=\"menu\">View</gui> <gui style=\"menuitem\">Bottom Panel</"
+"gui></guiseq>."
 msgstr ""
-"Wählen Sie <guiseq><gui style=\"menu\">Ansicht</gui><gui style=\"menuitem"
-"\">Untere Leiste</gui></guiseq> oder drücken Sie <keyseq><key>Strg</"
-"key><key>F9</key></keyseq>."
+"Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und "
+"wählen Sie <guiseq><gui style=\"menu\">Ansicht</gui> <gui style=\"menuitem"
+"\">Fußleiste</gui></guiseq>."
 
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:22
+#: C/text-size.page:23
 msgid "Increase or decrease text size."
 msgstr "Die Textgröße erhöhen oder verringern."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:25
+#: C/text-size.page:26
 msgid "Text Size"
 msgstr "Textgröße"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:27
+#: C/text-size.page:28
 msgid ""
 "The text size plugin allows you to temporarily change the text size for "
 "better readability in <app>gedit</app> without changing the program's "
 "default text size."
 msgstr ""
-"Das <app>Textgröße</app>-Plugin ermöglicht zwecks besserer Lesbarkeit das "
+"Die Textgröße-Erweiterung ermöglicht zwecks besserer Lesbarkeit das "
 "vorübergehende Ändern der Textgröße in <app>gedit</app>, ohne die "
 "vorgegebene Textgröße des Programms zu ändern."
 
 #. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:32
+#: C/text-size.page:33
 msgid "Enable Text Size Plugin"
-msgstr "Plugin für Textgröße aktivieren"
-
-#. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:35
-msgid "To enable Text Size plugin:"
-msgstr "So aktivieren Sie das Plugin für die Textgröße:"
+msgstr "Erweiterung für Textgröße aktivieren"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:42
+#: C/text-size.page:43
 msgid "Select <gui style=\"menuitem\">Text Size</gui> to enable the plugin."
 msgstr ""
-"Wählen Sie <gui style=\"menuitem\">Textgröße</gui>, um das Plugin zu "
+"Wählen Sie <gui style=\"menuitem\">Textgröße</gui>, um die Erweiterung zu "
 "aktivieren."
 
 #. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:50
+#: C/text-size.page:50
 msgid "Use the <app>Text Size</app> plugin"
-msgstr "So verwenden Sie das <app>Textgrößen</app>-Plugin:"
+msgstr "So verwenden Sie die <app>Textgrößen</app>-Erweiterung:"
 
 #. (itstool) path: section/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:52
+#: C/text-size.page:52
 msgid ""
 "Once you have enabled the plugin, do any of the following to change the text "
 "size in <app>gedit</app>:"
 msgstr ""
-"Sobald das Plugin aktiviert ist, können Sie folgendermaßen die Textgröße in "
-"<app>gedit</app> ändern:"
+"Sobald die Erweiterung aktiviert ist, können Sie folgendermaßen die "
+"Textgröße in <app>gedit</app> ändern:"
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:57
+#: C/text-size.page:57
 msgid ""
 "To <em>increase</em> the text size, press <keyseq><key>Ctrl</key><key>+</"
 "key></keyseq>."
@@ -1209,7 +1114,7 @@ msgstr ""
 "key><key>+</key></keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:61
+#: C/text-size.page:61
 msgid ""
 "To <em>decrease</em> the text size, press <keyseq><key>Ctrl</key><key>-</"
 "key></keyseq>."
@@ -1218,7 +1123,7 @@ msgstr ""
 "key><key>-</key></keyseq>."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/text-size.page:65
+#: C/text-size.page:65
 msgid ""
 "To <em>reset</em> the text size to the default size, press "
 "<keyseq><key>Ctrl</key><key>0</key></keyseq>."
@@ -1226,130 +1131,37 @@ msgstr ""
 "Um die Textgröße auf den vorgegebenen Wert <em>zurückzusetzen</em>, drücken "
 "Sie <keyseq><key>Strg</key><key>0</key></keyseq>."
 
-#. (itstool) path: credit/name
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:11
-msgid "Jordi Mas i Hernàndez"
-msgstr "Jordi Mas i Hernàndez"
-
 #. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:17
-msgid "Translate text into different languages"
-msgstr "Text in verschiedene Sprachen übersetzen"
-
-#. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:20
-msgid "Translate"
-msgstr "Übersetzen"
-
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:22
-msgid ""
-"The <app>Translate</app> plugin allows you to translate text from "
-"<app>gedit</app> using Apertium and Yandex engines."
-msgstr ""
-"Das <app>Übersetzen</app>-Plugin ermöglicht Ihnen die Übersetzung von Text "
-"in <app>gedit</app> unter Nutzung der Übersetzungs-Engines Apertium und "
-"Yandex."
-
-#. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:25
-msgid "Enabling and configuring the Translate plugin"
-msgstr "Das Übersetzen-Plugin aktivieren und einrichten"
-
-#. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:28
-msgid "To enable the <app>Translate</app> plugin:"
-msgstr "So aktivieren Sie das <gui>Übersetzen</gui>-Plugin:"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:35
-msgid "Select <gui style=\"menuitem\">Translate</gui> to enable the plugin."
-msgstr ""
-"Wählen Sie <gui style=\"menuitem\">Übersetzen</gui>, um das Plugin zu "
-"aktivieren."
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:40
-msgid ""
-"Select <gui style=\"button\">Preferences</gui> to configure the translation "
-"engine to use and a language pair."
-msgstr ""
-"Wählen Sie <gui style=\"button\">Einstellungen</gui>, um die Übersetzungs-"
-"Engine einzurichten und ein Sprachpaar zu benennen."
-
-#. (itstool) path: section/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:47
-msgid "Using the Translate plugin"
-msgstr "Das Übersetzen-Plugin verwenden"
-
-#. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:50
-msgid "To translate a text:"
-msgstr "So übersetzen Sie einen Text:"
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:52
-msgid "Select the part of text that you would like to translate."
-msgstr "Markieren Sie den Bereich des Texts, den Sie übersetzen wollen."
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:55
-msgid ""
-"Press <keyseq><key>Ctrl</key><key>K</key></keyseq> or use the context menu "
-"to translate it."
-msgstr ""
-"Drücken Sie <keyseq><key>Strg</key><key>K</key></keyseq> oder benutzen Sie "
-"das Kontextmenü, um die Übersetzung ausführen zu lassen."
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/translate.page:56
-msgid ""
-"The translation appears in the document or in the bottom panel, depending on "
-"your configuration."
-msgstr ""
-"Die Übersetzung erscheint im Dokument oder im unteren Bereich, abhängig von "
-"Ihrer Konfiguration."
-
-#. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:25
+#: C/word-completion.page:26
 msgid "Autocomplete words or portions of code as you type."
 msgstr ""
 "Wörter oder Code-Bestandteile beim Eingeben automatisch vervollständigen."
 
 #. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:28
+#: C/word-completion.page:29
 msgid "Word Completion"
 msgstr "Wortvervollständigung"
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:30
+#: C/word-completion.page:31
 msgid ""
 "The <app>Word Completion</app> plugin can speed up your editing by "
-"suggesting completions of words as you type. To enable the plugin:"
+"suggesting completions of words as you type."
 msgstr ""
-"Das <app>Wortvervollständigung</app>-Plugin beschleunigt die Bearbeitung, "
-"indem die Vervollständigung von Wörtern bereits bei der Eingabe "
-"vorgeschlagen wird. So aktivieren Sie das Plugin:"
+"Die <app>Wortvervollständigung</app>-Erweiterung beschleunigt die "
+"Bearbeitung, indem die Vervollständigung von Wörtern bereits bei der Eingabe "
+"vorgeschlagen wird."
 
 #. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:35
-msgid ""
-"Select <guiseq><gui style=\"menu\">Edit</gui> <gui style=\"menuitem"
-"\">Preferences</gui> <gui style=\"tab\">Plugins</gui></guiseq>."
-msgstr ""
-"Wählen Sie <guiseq><gui style=\"menu\">Bearbeiten</gui><gui style=\"menuitem"
-"\">Einstellungen</gui><gui style=\"tab\">Plugins</gui></guiseq>."
-
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:40
+#: C/word-completion.page:42
 msgid ""
 "Select <gui style=\"menuitem\">Word Completion</gui> to enable the plugin."
 msgstr ""
-"Wählen Sie <gui style=\"menuitem\">Wortvervollständigung</gui>, um das "
-"Plugin zu aktivieren."
+"Wählen Sie <gui style=\"menuitem\">Wortvervollständigung</gui>, um die "
+"Erweiterung zu aktivieren."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:45
+#: C/word-completion.page:47
 msgid ""
 "While editing, the <app>Word Completion</app> plugin will automatically "
 "display a pop-up list of words that begin with the letters you have already "
@@ -1357,14 +1169,14 @@ msgid ""
 "document and upon pre-defined keywords if your document is of a recognised "
 "format."
 msgstr ""
-"Das Plugin <app>Wortvervollständigung</app> zeigt automatisch während der "
-"Bearbeitung eine Einblendliste mit Wörtern an, die mit den bereits "
+"Die Erweiterung <app>Wortvervollständigung</app> zeigt automatisch während "
+"der Bearbeitung eine Einblendliste mit Wörtern an, die mit den bereits "
 "eingegebenen Buchstaben beginnen. Die vorgeschlagenen Wörter werden aus "
 "bereits in Ihrem Dokument enthaltenen Wörtern ermittelt, oder aus "
 "vordefinierten Schlüsselwörtern, falls das Dokumentformat erkannt wurde."
 
 #. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/word-completion.page:51
+#: C/word-completion.page:53
 msgid ""
 "To insert a suggested word, double-click on it in the pop-up list or press "
 "<keyseq><key>Alt</key><key>Num</key></keyseq>, where <key>Num</key> is the "
@@ -1375,44 +1187,375 @@ msgstr ""
 "keyseq>, wobei <key>Zahl</key> die Nummer ist, die neben dem gewünschten "
 "Wort angezeigt wird."
 
-#. (itstool) path: credit/name
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/zeitgeist-dataprovider.page:10
-msgid "Shobha Tyagi"
-msgstr "Shobha Tyagi"
+#~ msgid ""
+#~ "To enable the bookmark plugin, select <guiseq><gui style=\"menu\">gedit</"
+#~ "gui> <gui style=\"menuitem\">Preferences</gui><gui>Plugins</gui> "
+#~ "<gui>Bookmarks</gui></guiseq>."
+#~ msgstr ""
+#~ "Um das Lesezeichen-Plugin zu aktivieren, wählen Sie <guiseq><gui style="
+#~ "\"menu\">Bearbeiten</gui><gui style=\"menuitem\">Einstellungen</"
+#~ "gui><gui>Plugins</gui><gui>Lesezeichen</gui></guiseq>."
 
-#. (itstool) path: info/desc
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/zeitgeist-dataprovider.page:14
-msgid "Log user activity for documents which are opened in gedit"
-msgstr ""
-"Benutzeraktivität für Dokumente protokollieren, die in Gedit geöffnet sind"
+#~ msgid ""
+#~ "To enable the plugin, select <guiseq><gui style=\"menu\">gedit</gui> <gui "
+#~ "style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Bracket "
+#~ "Completion</gui></guiseq>."
+#~ msgstr ""
+#~ "Um das Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
+#~ "\">Bearbeiten</gui><gui style=\"menuitem\">Einstellungen</"
+#~ "gui><gui>Plugins</gui><gui>Klammer-Vervollständigung</gui></guiseq>."
 
-#. (itstool) path: page/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/zeitgeist-dataprovider.page:17
-msgid "Zeitgeist dataprovider"
-msgstr "Zeitgeist-Datenprovider"
+#~ msgid ""
+#~ "The <app>code comment</app> plugin makes it easier to quickly create or "
+#~ "remove code comments. To enable the code comment plugin, select "
+#~ "<guiseq><gui style=\"menu\">gedit</gui><gui style=\"menuitem"
+#~ "\">Preferences</gui> <gui>Plugins</gui><gui>Code comment</gui></guiseq>."
+#~ msgstr ""
+#~ "Das <app>Quelltextkommentar</app>-Plugin erleichtert Ihnen die Erstellung "
+#~ "oder Entfernung von Quelltextkommentaren. Um das Quelltextkommentar-"
+#~ "Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu\">Bearbeiten</"
+#~ "gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
+#~ "gui><gui>Quelltextkommentar</gui></guiseq>."
 
-#. (itstool) path: page/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/zeitgeist-dataprovider.page:19
-msgid ""
-"Zeitgeist is a service that logs user activities and events. Zeitgeist lets "
-"other applications access this information in the form of statistics and "
-"timelines.The Zeitgeist dataprovider plugin for <app>gedit</app> records "
-"user activity for documents used with gedit giving easy access to recently-"
-"used and frequently-used files."
-msgstr ""
-"Zeitgeist ist ein Dienst, der Benutzeraktivitäten und Ereignisse "
-"protokolliert. Andere Anwendungen können in Form von Statistiken und "
-"Zeitleisten auf diese Informationen zugreifen. Das Plugin "
-"<gui>Datenlieferant für Zeitgeist</gui> für <app>gedit</app> zeichnet "
-"Benutzeraktivitäten für die mit Gedit verwendeten Dokumente auf, wodurch der "
-"Zugriff auf die kürzlich und häufig genutzten Dokumente möglich ist."
+#~ msgid ""
+#~ "To enable the color picker plugin, select <guiseq><gui style=\"menu"
+#~ "\">gedit</gui><gui style=\"menuitem\">Preferences</gui> <gui>Plugins</"
+#~ "gui><gui>Color Picker</gui></guiseq>."
+#~ msgstr ""
+#~ "Um das Farbwähler-Plugin zu aktivieren, wählen Sie <guiseq><gui style="
+#~ "\"menu\">gedit</gui><gui style=\"menuitem\">Einstellungen</"
+#~ "gui><gui>Plugins</gui><gui>Farbwähler</gui></guiseq>."
 
-#. (itstool) path: steps/title
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/zeitgeist-dataprovider.page:26
-msgid "Enable Zeitgeist dataprovider"
-msgstr "Datenlieferant für Zeitgeist aktivieren"
+#~ msgid ""
+#~ "Select <guiseq><gui>Tools</gui><gui>Pick Color…</gui></guiseq>. The color "
+#~ "picker dialog will appear."
+#~ msgstr ""
+#~ "Wählen Sie <guiseq><gui>Werkzeuge</gui><gui>Farbe wählen …</gui></"
+#~ "guiseq>. Der Farbwähler-Dialog wird geöffnet."
 
-#. (itstool) path: item/p
-#: /var/www/gnomeweb/scratchdir/git/gedit-plugins/help/C/zeitgeist-dataprovider.page:33
-msgid "Select <gui style=\"menuitem\">Zeitgeist Dataprovider</gui>."
-msgstr "Wählen Sie <gui style=\"menuitem\">Datenlieferant für Zeitgeist</gui>."
+#~ msgid ""
+#~ "Additionally, you can save colors by right-clicking on any of the colored "
+#~ "boxes in the color picker, and selecting <gui>Save color here</gui>. This "
+#~ "will make it easier to insert commonly-used colors later."
+#~ msgstr ""
+#~ "Zusätzlich können Sie Farben speichern, indem Sie mit der rechten "
+#~ "Maustaste auf die Farbfelder im Farbwähler klicken und <gui>Farbe hier "
+#~ "speichern</gui> wählen. Dadurch wird das spätere Einfügen häufig "
+#~ "verwendeter Farben erleichtert."
+
+#~ msgid "Use a command-line interface for advanced editing."
+#~ msgstr ""
+#~ "Eine Befehlszeilenschnittstelle für fortgeschrittene Bearbeitung "
+#~ "verwenden."
+
+#~ msgid "Commander"
+#~ msgstr "Commander"
+
+#~ msgid ""
+#~ "The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app> "
+#~ "users that allows you to perform command-line actions on the current "
+#~ "file. To enable the commander plugin, select <guiseq><gui style=\"menu"
+#~ "\">gedit</gui><gui style=\"menuitem\">Preferences</gui> <gui>Plugins</"
+#~ "gui><gui>Commander</gui></guiseq>."
+#~ msgstr ""
+#~ "Das <app>Commander</app>-Plugin richtet sich an fortgeschrittene Benutzer "
+#~ "von <app>gedit</app>. Es ermöglicht Ihnen die Ausführung von "
+#~ "Befehlszeilenaktionen für die aktuell geöffnete Datei. Um dieses Plugin "
+#~ "zu aktivieren, wählen Sie <guiseq><gui style=\"menu\">gedit</gui><gui "
+#~ "style=\"menuitem\">Einstellungen</gui><gui>Plugins</gui><gui>Commander</"
+#~ "gui></guiseq>."
+
+#~ msgid ""
+#~ "Once you have enabled the plugin, activate it by pressing "
+#~ "<keyseq><key>Ctrl</key><key>.</key></keyseq>."
+#~ msgstr ""
+#~ "Sobald das Plugin eingerichtet ist, aktivieren Sie es durch Drücken von "
+#~ "<keyseq><key>Strg</key><key>.</key></keyseq>."
+
+#~ msgid "The last key in the above key combination is a period."
+#~ msgstr "Die letzte Taste in der genannten Tastenkombination ist ein Punkt."
+
+#~ msgid "Action"
+#~ msgstr "Aktion"
+
+#~ msgid "Keyboard shortcut"
+#~ msgstr "Tastenkombination"
+
+#~ msgid "See an overview of available commands"
+#~ msgstr "Alle verfügbaren Befehle auflisten"
+
+#~ msgid "<keyseq><key>Tab</key><key>Tab</key></keyseq>"
+#~ msgstr "<keyseq><key>Tab</key><key>Tab</key></keyseq>"
+
+#~ msgid "Find a word within the current file"
+#~ msgstr "Ein Wort in der aktuellen Datei suchen"
+
+#~ msgid "<key>/</key> <input>foo</input>"
+#~ msgstr "<key>/</key> <input>bla</input>"
+
+#~ msgid "This will find the word <input>foo</input>."
+#~ msgstr "Dadurch wird nach dem Wort <input>bla</input> gesucht."
+
+#~ msgid "Replace a word within the current file"
+#~ msgstr "Ein Wort in der aktuellen Datei ersetzen"
+
+#~ msgid "<keyseq><key>/</key><key>/</key></keyseq> <input>foo bar</input>"
+#~ msgstr "<keyseq><key>/</key><key>/</key></keyseq> <input>bla blub</input>"
+
+#~ msgid "This will replace <input>foo</input> with <input>bar</input>."
+#~ msgstr ""
+#~ "Dadurch wird das Wort <input>bla</input> durch <input>blub</input> "
+#~ "ersetzt."
+
+#~ msgid "Move the cursor to a certain line number in your file"
+#~ msgstr ""
+#~ "Den Eingabecursor in eine bestimmte Zeilennummer in Ihrer Datei setzen"
+
+#~ msgid ""
+#~ "go <input>[line number]</input> <em>or</em> just <key>G</key> "
+#~ "<input>[line number]</input>"
+#~ msgstr ""
+#~ "go <input>[Zeilennummer]</input> <em>oder</em> einfach <key>G</key> "
+#~ "<input>[Zeilennummer]</input>"
+
+#~ msgid "Toggle the bookmark indicator for the current line"
+#~ msgstr ""
+#~ "Den Lesezeichenindikator für die aktuelle Zeile ein- oder ausschalten"
+
+#~ msgid "bookmark <em>or</em> just <key>B</key>"
+#~ msgstr "bookmark <em>oder</em> einfach <key>B</key>"
+
+#~ msgid ""
+#~ "Some commands, such as the <app>bookmark</app> command require that the "
+#~ "appropriate plugin be installed and activated. If you do not have the "
+#~ "appropriate plugin installed and activated, you will receive an error "
+#~ "message."
+#~ msgstr ""
+#~ "Einige Befehle, wie beispielsweise <app>bookmark</app>, setzen voraus, "
+#~ "das das entsprechende Plugin installiert und aktiviert ist. Sollte dies "
+#~ "nicht der Fall sein, erhalten Sie eine Fehlermeldung."
+
+#~ msgid "Display recently-used and most-used files on startup."
+#~ msgstr "Häufig und kürzlich verwendete Dateien beim Start anzeigen."
+
+#~ msgid "Dashboard"
+#~ msgstr "Dashboard"
+
+#~ msgid ""
+#~ "The <app>Dashboard</app> plugin provides quick access to your most "
+#~ "recently-used files and most-frequently used files. To activate the "
+#~ "<app>Dashboard</app> plugin, select <guiseq><gui style=\"menu\">gedit</"
+#~ "gui><gui style=\"menuitem\">Preferences</gui> <gui>Plugins</"
+#~ "gui><gui>Dashboard</gui></guiseq>. You will need to restart <app>gedit</"
+#~ "app> to activate the <app>Dashboard</app> plugin."
+#~ msgstr ""
+#~ "Das Plugin <app>Dashboard</app> ermöglicht schnellen Zugriff auf zuletzt "
+#~ "und häufig verwendete Dateien. Zum Aktivieren des Plugins <app>Dashboard</"
+#~ "app> wählen Sie <guiseq><gui style=\"menu\">gedit</gui><gui style="
+#~ "\"menuitem\">Einstellungen</gui><gui>Plugins</gui><gui>Dashboard</gui></"
+#~ "guiseq>. Sie müssen danach <app>gedit</app> neu starten, um das Plugin "
+#~ "<app>Dashboard</app> zu aktivieren."
+
+#~ msgid ""
+#~ "The <app>dashboard</app> also includes a <gui>Search</gui> window, "
+#~ "allowing you to search for files that may not appear in the list of files."
+#~ msgstr ""
+#~ "<app>Dashboard</app> enthält ein <gui>Suchfenster</gui>, mit dem Sie nach "
+#~ "Dateien suchen können, die gegebenenfalls nicht in der Dateiliste "
+#~ "erscheinen."
+
+#~ msgid "Recently used files"
+#~ msgstr "Zuletzt verwendete Dateien"
+
+#~ msgid ""
+#~ "The dashboard will initially display a shortcut for an <gui>empty "
+#~ "document</gui> and seven of your most recently-used files. Click on the "
+#~ "<gui>empty document</gui> to create a new file. Click on any of the other "
+#~ "files to open that file."
+#~ msgstr ""
+#~ "Das Dashboard zeigt anfangs einen Verweis auf ein <gui>leeres Dokument</"
+#~ "gui> und die sieben zuletzt verwendeten Dateien. Klicken Sie auf "
+#~ "<gui>leeres Dokument</gui>, um eine neue Datei zu erstellen. Klicken Sie "
+#~ "auf eine der anderen Dateien, um jene zu öffnen."
+
+#~ msgid "Most frequently-used files"
+#~ msgstr "Am häufigsten verwendete Dateien"
+
+#~ msgid ""
+#~ "Similarly, the dashboard displays a shortcut for an <gui>empty document</"
+#~ "gui> and seven of your most frequently-used files. Click on the <gui> "
+#~ "empty document</gui> to create a new file. Click on any of the other "
+#~ "files to open that file."
+#~ msgstr ""
+#~ "Ähnlich zeigt das Dashboard einen Verweis auf ein <gui>leeres Dokument</"
+#~ "gui> und die sieben zuletzt verwendeten Dateien. Klicken Sie auf "
+#~ "<gui>leeres Dokument</gui>, um eine neue Datei zu erstellen. Klicken Sie "
+#~ "auf eine der anderen Dateien, um jene zu öffnen."
+
+#~ msgid ""
+#~ "Once activated, the <app>dashboard</app> will be displayed by default "
+#~ "when you open <app>gedit</app>. You can also open the <app>dashboard</"
+#~ "app> by clicking <guiseq><gui>File</gui><gui>New</gui></guiseq>, or by "
+#~ "pressing <keyseq><key>Ctrl</key><key>N</key></keyseq>."
+#~ msgstr ""
+#~ "Sobald <app>Dashboard</app> aktiviert ist, wird es normalerweise beim "
+#~ "Start von <app>gedit</app> angezeigt. Sie können  <app>Dashboard</app> "
+#~ "auch öffnen, indem Sie auf <guiseq><gui>Datei</gui><gui>Neu</gui></"
+#~ "guiseq> klicken oder <keyseq><key>Strg</key><key>N</key></keyseq> drücken."
+
+#~ msgid ""
+#~ "To enable this plugin, select <guiseq><gui style=\"menu\">gedit</gui> "
+#~ "<gui style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Draw "
+#~ "Spaces</gui></guiseq>. After you have enabled the plugin, you can set its "
+#~ "options by highlighting the plugin and selecting <gui style=\"menuitem"
+#~ "\">Preferences</gui>."
+#~ msgstr ""
+#~ "Um dieses Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
+#~ "\">gedit</gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
+#~ "gui><gui>Leerzeichen darstellen</gui></guiseq>. Sobald Sie das Plugin "
+#~ "aktiviert haben, können Sie dessen Optionen anpassen, indem Sie es "
+#~ "markieren und <gui style=\"menuitem\">Einstellungen</gui> wählen."
+
+#~ msgid ""
+#~ "By default, the <app>Draw Spaces</app> plugin will mark the following "
+#~ "types of whitespace in a file:"
+#~ msgstr ""
+#~ "Standardmäßig markiert das Plugin <app>Leerzeichen darstellen</app> "
+#~ "folgende Arten von Leerraum in einer Datei:"
+
+#~ msgid "Spaces"
+#~ msgstr "Leerzeichen"
+
+#~ msgid "Tabs"
+#~ msgstr "Tabulatoren"
+
+#~ msgid "Leading spaces"
+#~ msgstr "Vorangestellte Leerzeichen"
+
+#~ msgid "Spaces in text"
+#~ msgstr "Leerzeichen im Text"
+
+#~ msgid "Trailing spaces"
+#~ msgstr "Angehängte Leerzeichen"
+
+#~ msgid "You can also set the plugin to mark:"
+#~ msgstr "Sie können das Plugin auch verwenden, um Folgendes zu markieren:"
+
+# Zeilenumbrüche?
+#~ msgid "New lines"
+#~ msgstr "Zeilenumbrüche"
+
+#~ msgid "Non-breaking spaces"
+#~ msgstr "Geschützte Leerzeichen"
+
+#~ msgid ""
+#~ "To enable the plugin, select <guiseq><gui style=\"menu\">gedit</gui> <gui "
+#~ "style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Git</gui></"
+#~ "guiseq>."
+#~ msgstr ""
+#~ "Um das Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
+#~ "\">gedit</gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
+#~ "gui><gui>Git</gui></guiseq>."
+
+#~ msgid ""
+#~ "To enable this plugin, select <guiseq><gui style=\"menu\">gedit</gui> "
+#~ "<gui style=\"menuitem\">Preferences</gui><gui>Plugins</gui> <gui>Join/"
+#~ "Split Lines</gui></guiseq>."
+#~ msgstr ""
+#~ "Um das Plugin zu aktivieren, wählen Sie <guiseq><gui style=\"menu"
+#~ "\">gedit</gui><gui style=\"menuitem\">Einstellungen</gui><gui>Plugins</"
+#~ "gui><gui>Zeilen zusammenfügen/umbrechen</gui></guiseq>."
+
+#~ msgid "To enable the <app>Embedded Terminal</app> plugin:"
+#~ msgstr ""
+#~ "So aktivieren Sie das Plugin für das <app>eingebettete Terminal</app>:"
+
+#~ msgid ""
+#~ "Select <guiseq><gui style=\"menu\">gedit</gui> <gui style=\"menuitem"
+#~ "\">Preferences</gui> <gui style=\"tab\">Plugins</gui></guiseq>."
+#~ msgstr ""
+#~ "Wählen Sie <guiseq><gui style=\"menu\">gedit</gui><gui style=\"menuitem"
+#~ "\">Einstellungen</gui><gui>Plugins</gui></guiseq>."
+
+#~ msgid ""
+#~ "Select <guiseq><gui style=\"menu\">View</gui> <gui style=\"menuitem"
+#~ "\">Bottom Pane</gui></guiseq>. Alternatively, you can press "
+#~ "<keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+#~ msgstr ""
+#~ "Wählen Sie <guiseq><gui style=\"menu\">Ansicht</gui><gui style=\"menuitem"
+#~ "\">Untere Leiste</gui></guiseq> oder drücken Sie <keyseq><key>Strg</"
+#~ "key><key>F9</key></keyseq>."
+
+#~ msgid "Translate text into different languages"
+#~ msgstr "Text in verschiedene Sprachen übersetzen"
+
+#~ msgid "Translate"
+#~ msgstr "Übersetzen"
+
+#~ msgid ""
+#~ "The <app>Translate</app> plugin allows you to translate text from "
+#~ "<app>gedit</app> using Apertium and Yandex engines."
+#~ msgstr ""
+#~ "Das <app>Übersetzen</app>-Plugin ermöglicht Ihnen die Übersetzung von "
+#~ "Text in <app>gedit</app> unter Nutzung der Übersetzungs-Engines Apertium "
+#~ "und Yandex."
+
+#~ msgid "Enabling and configuring the Translate plugin"
+#~ msgstr "Das Übersetzen-Plugin aktivieren und einrichten"
+
+#~ msgid "To enable the <app>Translate</app> plugin:"
+#~ msgstr "So aktivieren Sie das <gui>Übersetzen</gui>-Plugin:"
+
+#~ msgid "Using the Translate plugin"
+#~ msgstr "Das Übersetzen-Plugin verwenden"
+
+#~ msgid "To translate a text:"
+#~ msgstr "So übersetzen Sie einen Text:"
+
+#~ msgid "Select the part of text that you would like to translate."
+#~ msgstr "Markieren Sie den Bereich des Texts, den Sie übersetzen wollen."
+
+#~ msgid ""
+#~ "Press <keyseq><key>Ctrl</key><key>K</key></keyseq> or use the context "
+#~ "menu to translate it."
+#~ msgstr ""
+#~ "Drücken Sie <keyseq><key>Strg</key><key>K</key></keyseq> oder benutzen "
+#~ "Sie das Kontextmenü, um die Übersetzung ausführen zu lassen."
+
+#~ msgid ""
+#~ "The translation appears in the document or in the bottom panel, depending "
+#~ "on your configuration."
+#~ msgstr ""
+#~ "Die Übersetzung erscheint im Dokument oder im unteren Bereich, abhängig "
+#~ "von Ihrer Konfiguration."
+
+#~ msgid "Shobha Tyagi"
+#~ msgstr "Shobha Tyagi"
+
+#~ msgid "Log user activity for documents which are opened in gedit"
+#~ msgstr ""
+#~ "Benutzeraktivität für Dokumente protokollieren, die in Gedit geöffnet sind"
+
+#~ msgid "Zeitgeist dataprovider"
+#~ msgstr "Zeitgeist-Datenprovider"
+
+#~ msgid ""
+#~ "Zeitgeist is a service that logs user activities and events. Zeitgeist "
+#~ "lets other applications access this information in the form of statistics "
+#~ "and timelines.The Zeitgeist dataprovider plugin for <app>gedit</app> "
+#~ "records user activity for documents used with gedit giving easy access to "
+#~ "recently-used and frequently-used files."
+#~ msgstr ""
+#~ "Zeitgeist ist ein Dienst, der Benutzeraktivitäten und Ereignisse "
+#~ "protokolliert. Andere Anwendungen können in Form von Statistiken und "
+#~ "Zeitleisten auf diese Informationen zugreifen. Das Plugin "
+#~ "<gui>Datenlieferant für Zeitgeist</gui> für <app>gedit</app> zeichnet "
+#~ "Benutzeraktivitäten für die mit Gedit verwendeten Dokumente auf, wodurch "
+#~ "der Zugriff auf die kürzlich und häufig genutzten Dokumente möglich ist."
+
+#~ msgid "Enable Zeitgeist dataprovider"
+#~ msgstr "Datenlieferant für Zeitgeist aktivieren"
+
+#~ msgid "Select <gui style=\"menuitem\">Zeitgeist Dataprovider</gui>."
+#~ msgstr ""
+#~ "Wählen Sie <gui style=\"menuitem\">Datenlieferant für Zeitgeist</gui>."
