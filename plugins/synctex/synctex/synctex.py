@@ -295,8 +295,9 @@ class SynctexWindowActivatable(GObject.Object, Gedit.WindowActivatable):
         if uri_input not in self.view_dict:
             window = self._proxy_dict[out_gfile.get_uri()][2]
 
-            tab = window.create_tab_from_location(Gio.file_new_for_uri(uri_input),
-                                                  None, source_link[0] - 1, 0, False, True)
+            tab = window.create_tab(True)
+            tab.load_file(Gio.file_new_for_uri(uri_input),
+                          None, source_link[0] - 1, 0, False)
 
             helper = self.get_helper(tab.get_view())
             helper._goto_handler = tab.get_document().connect_object("loaded", 
