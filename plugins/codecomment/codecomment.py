@@ -23,7 +23,7 @@
 
 import gi
 gi.require_version('Gtk', '3.0')
-gi.require_version('GtkSource', '4')
+gi.require_version('GtkSource', '300')
 from gi.repository import GObject, Gio, Gtk, GtkSource, Gedit
 
 try:
