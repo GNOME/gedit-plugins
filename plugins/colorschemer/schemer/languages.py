@@ -21,7 +21,7 @@
 
 
 # please keep these in alphabetical order so it is easy to follow
-# see available languages: /usr/share/gtksourceview-4/language-specs
+# see available languages: /usr/share/libgedit-gtksourceview-300/language-specs
 # or run in python >>> GtkSource.LanguageManager().get_language_ids()
 
 samples = {}
