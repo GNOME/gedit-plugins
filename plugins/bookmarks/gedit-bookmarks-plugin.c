@@ -752,15 +752,12 @@ gedit_bookmarks_plugin_update_state (GeditWindowActivatable *activatable)
 }
 
 static void
-save_bookmark_metadata (GeditView *view)
+save_bookmark_metadata (GtkTextBuffer *buf)
 {
 	GtkTextIter iter;
-	GtkTextBuffer *buf;
 	GString *string;
 	gchar *val = NULL;
 	gboolean first = TRUE;
-
-	buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (view));
 
 	gtk_text_buffer_get_start_iter (buf, &iter);
 
@@ -1052,6 +1049,8 @@ remove_bookmark (GtkSourceBuffer *buffer,
 		gtk_text_buffer_delete_mark (GTK_TEXT_BUFFER (buffer),
 		                             GTK_TEXT_MARK (bookmark));
 	}
+
+	save_bookmark_metadata (GTK_TEXT_BUFFER (buffer));
 }
 
 static void
@@ -1070,6 +1069,8 @@ add_bookmark (GtkSourceBuffer *buffer,
 						      BOOKMARK_CATEGORY,
 						      &start);
 	}
+
+	save_bookmark_metadata (GTK_TEXT_BUFFER (buffer));
 }
 
 static void
@@ -1143,13 +1144,6 @@ on_document_loaded (GeditDocument *doc,
 }
 
 static void
-on_document_saved (GeditDocument *doc,
-		   GeditView     *view)
-{
-	save_bookmark_metadata (view);
-}
-
-static void
 on_tab_added (GeditWindow          *window,
 	      GeditTab             *tab,
 	      GeditBookmarksPlugin *plugin)
@@ -1162,9 +1156,6 @@ on_tab_added (GeditWindow          *window,
 
 	g_signal_connect (doc, "loaded",
 			  G_CALLBACK (on_document_loaded),
-			  view);
-	g_signal_connect (doc, "saved",
-			  G_CALLBACK (on_document_saved),
 			  view);
 
 	enable_bookmarks (view, plugin);
@@ -1182,7 +1173,6 @@ on_tab_removed (GeditWindow          *window,
 	view = gedit_tab_get_view (tab);
 
 	g_signal_handlers_disconnect_by_func (doc, on_document_loaded, view);
-	g_signal_handlers_disconnect_by_func (doc, on_document_saved, view);
 
 	disable_bookmarks (view);
 }
