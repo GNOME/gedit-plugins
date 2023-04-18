@@ -14,11 +14,6 @@ plugins/codecomment/gedit-codecomment.metainfo.xml.in
 plugins/colorpicker/colorpicker.plugin.desktop.in.in
 plugins/colorpicker/colorpicker.py
 plugins/colorpicker/gedit-colorpicker.metainfo.xml.in
-plugins/colorschemer/colorschemer.plugin.desktop.in.in
-plugins/colorschemer/gedit-colorschemer.metainfo.xml.in
-plugins/colorschemer/schemer/__init__.py
-plugins/colorschemer/schemer/schemer.py
-plugins/colorschemer/schemer.ui
 plugins/drawspaces/drawspaces.plugin.desktop.in.in
 plugins/drawspaces/gedit-drawspaces-app-activatable.c
 plugins/drawspaces/gedit-drawspaces.metainfo.xml.in

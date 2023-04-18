@@ -5,7 +5,6 @@ plugins/bracketcompletion/bracketcompletion.plugin.desktop.in
 plugins/charmap/charmap.plugin.desktop.in
 plugins/codecomment/codecomment.plugin.desktop.in
 plugins/colorpicker/colorpicker.plugin.desktop.in
-plugins/colorschemer/colorschemer.plugin.desktop.in
 plugins/drawspaces/drawspaces.plugin.desktop.in
 plugins/git/git.plugin.desktop.in
 plugins/joinlines/joinlines.plugin.desktop.in

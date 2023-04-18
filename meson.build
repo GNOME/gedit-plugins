@@ -49,7 +49,6 @@ all_plugins = {
   'charmap': {'language': 'python'},
   'codecomment': {'language': 'python'},
   'colorpicker': {'language': 'python'},
-  'colorschemer': {'language': 'python'},
   'drawspaces': {'language': 'c'},
   'git': {'language': 'python'},
   'joinlines': {'language': 'python'},
