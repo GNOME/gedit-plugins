@@ -901,6 +901,8 @@ on_delete_range (GtkTextBuffer *buffer,
 						      BOOKMARK_CATEGORY,
 						      &start_iter);
 	}
+
+	g_print ("%s() here\n", G_STRFUNC);
 }
 
 static void
