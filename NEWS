@@ -1,3 +1,11 @@
+News in 45.0, 2023-xx-yy (not yet released)
+------------------------
+* gedit-plugins now depends on libgedit-gtksourceview instead of GtkSourceView:
+    https://github.com/gedit-technology/libgedit-gtksourceview
+    https://gedit-technology.net/
+* Remove colorschemer plugin (see the git commit for the details).
+* Adapt code to the latest gedit API.
+
 News in 44.1, 2023-01-19
 ------------------------
 * Some bug fixes.
