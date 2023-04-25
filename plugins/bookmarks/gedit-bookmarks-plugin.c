@@ -752,18 +752,18 @@ gedit_bookmarks_plugin_update_state (GeditWindowActivatable *activatable)
 }
 
 static void
-save_bookmark_metadata (GtkTextBuffer *buf)
+save_bookmark_metadata (GeditDocument *doc)
 {
 	GtkTextIter iter;
 	GString *string;
 	gchar *val = NULL;
 	gboolean first = TRUE;
 
-	gtk_text_buffer_get_start_iter (buf, &iter);
+	gtk_text_buffer_get_start_iter (GTK_TEXT_BUFFER (doc), &iter);
 
 	string = g_string_new (NULL);
 
-	while (gtk_source_buffer_forward_iter_to_source_mark (GTK_SOURCE_BUFFER (buf),
+	while (gtk_source_buffer_forward_iter_to_source_mark (GTK_SOURCE_BUFFER (doc),
 							      &iter,
 							      BOOKMARK_CATEGORY))
 	{
@@ -788,10 +788,13 @@ save_bookmark_metadata (GtkTextBuffer *buf)
 		val = NULL;
 	}
 	else
+	{
 		val = g_string_free (string, FALSE);
+	}
 
-	gedit_document_set_metadata (GEDIT_DOCUMENT (buf), METADATA_ATTR,
-				     val, NULL);
+	gedit_document_set_metadata (doc,
+				     METADATA_ATTR, val,
+				     NULL);
 
 	g_free (val);
 }
@@ -1050,7 +1053,7 @@ remove_bookmark (GtkSourceBuffer *buffer,
 		                             GTK_TEXT_MARK (bookmark));
 	}
 
-	save_bookmark_metadata (GTK_TEXT_BUFFER (buffer));
+	save_bookmark_metadata (GEDIT_DOCUMENT (buffer));
 }
 
 static void
@@ -1070,7 +1073,7 @@ add_bookmark (GtkSourceBuffer *buffer,
 						      &start);
 	}
 
-	save_bookmark_metadata (GTK_TEXT_BUFFER (buffer));
+	save_bookmark_metadata (GEDIT_DOCUMENT (buffer));
 }
 
 static void
