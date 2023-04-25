@@ -1,5 +1,5 @@
-News in 45.0, 2023-xx-yy (not yet released)
-------------------------
+News in 45.alpha, 2023-04-26
+----------------------------
 * gedit-plugins now depends on libgedit-gtksourceview instead of GtkSourceView:
     https://github.com/gedit-technology/libgedit-gtksourceview
     https://gedit-technology.net/
