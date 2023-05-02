@@ -288,34 +288,36 @@ get_bookmark_pixbuf (GeditBookmarksPlugin *plugin)
 }
 
 static void
-update_background_color (GtkSourceMarkAttributes *attrs, GtkSourceBuffer *buffer)
+update_background_color (GtkSourceMarkAttributes *attrs,
+			 GtkSourceBuffer         *buffer)
 {
-	GtkSourceStyleScheme *scheme;
-	GtkSourceStyle *style;
+	GtkSourceStyleScheme *style_scheme;
+	GtkSourceStyle *style = NULL;
+	gboolean done = FALSE;
 
-	scheme = gtk_source_buffer_get_style_scheme (buffer);
-	style = gtk_source_style_scheme_get_style (scheme, "search-match");
-
-	if (style)
+	style_scheme = gtk_source_buffer_get_style_scheme (buffer);
+	if (style_scheme != NULL)
 	{
-		gboolean bgset;
-		gchar *bg;
-
-		g_object_get (style, "background-set", &bgset, "background", &bg, NULL);
-
-		if (bgset)
-		{
-			GdkRGBA color;
-
-			gdk_rgba_parse (&color, bg);
-			gtk_source_mark_attributes_set_background (attrs, &color);
-			g_free (bg);
-
-			return;
-		}
+		style = gtk_source_style_scheme_get_style (style_scheme, "search-match");
 	}
 
-	gtk_source_mark_attributes_set_background (attrs, NULL);
+	if (style != NULL)
+	{
+		GtkSourceStyleData *style_data = gtk_source_style_get_data (style);
+
+		if (style_data->use_background_color)
+		{
+			gtk_source_mark_attributes_set_background (attrs, &style_data->background_color);
+			done = TRUE;
+		}
+
+		g_free (style_data);
+	}
+
+	if (!done)
+	{
+		gtk_source_mark_attributes_set_background (attrs, NULL);
+	}
 }
 
 static void
