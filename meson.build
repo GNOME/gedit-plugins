@@ -55,7 +55,6 @@ all_plugins = {
   'multiedit': {'language': 'python'},
   'sessionsaver': {'language': 'python'},
   'smartspaces': {'language': 'c'},
-  'synctex': {'language': 'python'},
   'terminal': {'language': 'python'},
   'textsize': {'language': 'python'},
   'wordcompletion': {'language': 'c'},

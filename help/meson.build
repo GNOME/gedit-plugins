@@ -10,7 +10,6 @@ gedit_help_sources = [
   'legal-plugins.xml',
   'multi-edit.page',
   'session-saver.page',
-  'synctex.page',
   'terminal.page',
   'text-size.page',
   'word-completion.page',
