@@ -10,7 +10,6 @@ plugins/git/git.plugin.desktop.in
 plugins/joinlines/joinlines.plugin.desktop.in
 plugins/multiedit/multiedit.plugin.desktop.in
 plugins/smartspaces/smartspaces.plugin.desktop.in
-plugins/synctex/synctex.plugin.desktop.in
 plugins/terminal/terminal.plugin.desktop.in
 plugins/textsize/textsize.plugin.desktop.in
 plugins/wordcompletion/wordcompletion.plugin.desktop.in
