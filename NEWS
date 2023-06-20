@@ -1,3 +1,8 @@
+News in 45.0, 2023-06-23
+------------------------
+* Remove synctex plugin (see the git commit for the details).
+* Some misc maintenance.
+
 News in 45.alpha, 2023-04-26
 ----------------------------
 * gedit-plugins now depends on libgedit-gtksourceview instead of GtkSourceView:
