@@ -24,7 +24,7 @@ gi.require_version('Gedit', '3.0')
 gi.require_version('Pango', '1.0')
 gi.require_version('Gtk', '3.0')
 gi.require_version('Gucharmap', '2.90')
-from gi.repository import GObject, Gio, Pango, Gtk, Gedit, Gucharmap
+from gi.repository import GObject, Gio, Pango, Gtk, Tepl, Gedit, Gucharmap
 from .panel import CharmapPanel
 
 try:
@@ -52,15 +52,18 @@ class CharmapPlugin(GObject.Object, Gedit.WindowActivatable):
         self.system_settings.connect("changed::monospace-font-name", self.font_changed)
 
         self.create_charmap_panel()
-        panel = self.window.get_side_panel()
-        panel.add_titled(self.panel, "GeditCharmapPanel", _("Character Map"))
+
+        side_panel = self.window.get_side_panel()
+        self.side_panel_item = Tepl.Panel.add(side_panel, self.panel,
+            "GeditCharmapPanel", _("Character Map"), None)
 
         statusbar = self.window.get_statusbar()
         self.context_id = statusbar.get_context_id("Character Description")
 
     def do_deactivate(self):
-        panel = self.window.get_side_panel()
-        panel.remove(self.panel)
+        side_panel = self.window.get_side_panel()
+        Tepl.Panel.remove(side_panel, self.side_panel_item)
+        self.side_panel_item = None
 
     def do_update_state(self):
         self.panel.set_sensitive(len(self.window.get_documents()) >= 1)
