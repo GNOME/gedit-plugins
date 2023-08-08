@@ -301,17 +301,10 @@ update_background_color (GtkSourceMarkAttributes *attrs,
 		style = gtk_source_style_scheme_get_style (style_scheme, "search-match");
 	}
 
-	if (style != NULL)
+	if (style != NULL && style->use_background_color)
 	{
-		GtkSourceStyleData *style_data = gtk_source_style_get_data (style);
-
-		if (style_data->use_background_color)
-		{
-			gtk_source_mark_attributes_set_background (attrs, &style_data->background_color);
-			done = TRUE;
-		}
-
-		g_free (style_data);
+		gtk_source_mark_attributes_set_background (attrs, &style->background_color);
+		done = TRUE;
 	}
 
 	if (!done)
