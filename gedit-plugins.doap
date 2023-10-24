@@ -7,9 +7,9 @@
   <name xml:lang="en">gedit-plugins</name>
   <shortdesc xml:lang="en">Collection of plugins for the gedit text editor</shortdesc>
 
-  <homepage rdf:resource="https://wiki.gnome.org/Apps/Gedit" />
+  <homepage rdf:resource="https://gedit-technology.github.io/apps/gedit/" />
   <download-page rdf:resource="https://download.gnome.org/sources/gedit-plugins/" />
-  <bug-database rdf:resource="https://wiki.gnome.org/Apps/Gedit/ReportingBugs" />
+  <bug-database rdf:resource="https://gedit-technology.github.io/apps/gedit/reporting-bugs.html" />
 
   <maintainer>
     <foaf:Person>

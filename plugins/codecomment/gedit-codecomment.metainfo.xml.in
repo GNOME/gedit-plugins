@@ -5,7 +5,7 @@
   <extends>org.gnome.gedit.desktop</extends>
   <name>Code Comment</name>
   <summary>Comment or uncomment blocks of code</summary>
-  <url type="homepage">https://wiki.gnome.org/Apps/Gedit/ShippedPlugins</url>
+  <url type="homepage">https://gedit-technology.github.io/apps/gedit/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gedit-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
