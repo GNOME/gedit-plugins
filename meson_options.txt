@@ -1,3 +1,5 @@
+# Include or exclude individual plugins.
+# By default they are all included (the default value is true).
 option('plugin_bookmarks', type: 'boolean')
 option('plugin_bracketcompletion', type: 'boolean')
 option('plugin_charmap', type: 'boolean')
