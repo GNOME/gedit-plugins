@@ -5,5 +5,5 @@ Name=Draw Spaces
 Description=Draw spaces and tabs
 Authors=Paolo Borelli <pborelli@katamail.com>;Steve Frécinaux <code@istique.net>;Ignacio Casal Quinteiro <nacho.resa@gmail.com>;Sébastien Wilmet <swilmet@gnome.org>
 Copyright=Copyright © 2006 Paolo Borelli;Copyright © 2007 Steve Frécinaux;Copyright © 2008 Ignacio Casal Quinteiro;Copyright © 2020 Sébastien Wilmet
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@

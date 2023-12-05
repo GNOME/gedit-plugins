@@ -6,5 +6,5 @@ Name=Code Comment
 Description=Comment out or uncomment a selected block of code.
 Authors=Alejandro Garcia <alex@igalia.com>;Matthew Dugan <matthew.dugan@gmail.com>
 Copyright=Copyright @ 2005-2006 Igalia, S.L.;Copyright @ 2006 Matthew Dugan
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@

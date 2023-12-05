@@ -8,5 +8,5 @@ Description=Embed a terminal in the bottom pane.
 Icon=utilities-terminal
 Authors=Paolo Borelli
 Copyright=Copyright © 2005 Paolo Borelli
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@

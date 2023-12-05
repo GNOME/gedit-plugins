@@ -5,5 +5,5 @@ Name=Bookmarks
 Description=Easy document navigation with bookmarks
 Authors=Jesse van den Kieboom <jesse@icecrew.nl>
 Copyright=Copyright @ 2009 Jesse van den Kieboom
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@

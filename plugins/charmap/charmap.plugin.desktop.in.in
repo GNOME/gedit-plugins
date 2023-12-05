@@ -8,5 +8,5 @@ Description=Insert special characters just by clicking on them.
 Icon=accessories-character-map
 Authors=Steve Frécinaux <steve@istique.net>;Ignacio Casal Quinteiro <icq@gnome.org>
 Copyright=Copyright @ 2006 Steve Frécinaux
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@

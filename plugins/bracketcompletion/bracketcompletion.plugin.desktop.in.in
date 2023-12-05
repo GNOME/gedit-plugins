@@ -6,5 +6,5 @@ Name=Bracket Completion
 Description=Automatically adds closing brackets.
 Authors=Steve Frécinaux <steve@istique.net>
 Copyright=Copyright @ 2006 Steve Frécinaux
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@

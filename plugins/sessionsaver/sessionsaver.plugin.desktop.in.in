@@ -6,5 +6,5 @@ Name=Session Saver
 Description=Save and restore your working sessions
 Authors=Steve Frécinaux;Jordi Mas i Hernàndez
 Copyright=Copyright © 2006 Steve Frécinaux;Copyright © 2019 Jordi Mas i Hernàndez
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@

@@ -6,5 +6,5 @@ Name=Multi Edit
 Description=Edit document in multiple places at once
 Authors=Jesse van den Kieboom <jessevdk@gnome.org>
 Copyright=Copyright © 2009 Jesse van den Kieboom
-Website=http://www.gedit.org
+Website=https://gedit-technology.github.io/apps/gedit/
 Version=@VERSION@
