@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit-plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gedit-plugins/issues\n"
-"POT-Creation-Date: 2023-07-15 15:49+0000\n"
-"PO-Revision-Date: 2023-10-17 01:36+0300\n"
+"POT-Creation-Date: 2023-10-18 18:43+0000\n"
+"PO-Revision-Date: 2024-02-08 01:54+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-POOTLE-MTIME: 1434875960.000000\n"
 
 #: plugins/bookmarks/bookmarks.plugin.desktop.in.in:5
@@ -63,7 +63,7 @@ msgstr "Parantez kapanışını kendiliğinden ekler."
 msgid "Automatically add a closing bracket when you insert one"
 msgstr "Parantez açtığınızda kapanışını kendiliğinden ekle"
 
-#: plugins/charmap/charmap/__init__.py:56
+#: plugins/charmap/charmap/__init__.py:58
 #: plugins/charmap/charmap.plugin.desktop.in.in:6
 msgid "Character Map"
 msgstr "Karakter Haritası"
@@ -332,7 +332,7 @@ msgid ""
 msgstr ""
 "Etrafta tutulacak geri kaydırma satır sayısı. Bu satır sayısına göre "
 "uçbirimde geri kaydırabilirsiniz; geri kaydırmaya uymayan satırlar gözden "
-"çıkarılır. Eğer sınırsız geri kaydırma seçildiyse, bu değer yoksayılır."
+"çıkarılır. Eğer sınırsız geri kaydırma seçildiyse, bu değer yok sayılır."
 
 #: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:34
 msgid "Whether an unlimited number of lines should be kept in scrollback"
