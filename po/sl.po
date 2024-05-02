@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit-plugins master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=gedit&keywords=I18N+L10N&component=Plugins\n"
-"POT-Creation-Date: 2013-10-30 07:13+0000\n"
-"PO-Revision-Date: 2013-11-02 11:45+0100\n"
-"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gedit-technology.github.io/apps/gedit/"
+"reporting-bugs.html\n"
+"POT-Creation-Date: 2024-04-28 11:25+0000\n"
+"PO-Revision-Date: 2024-05-02 13:12+0200\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -21,417 +21,323 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../plugins/bookmarks/bookmarks.plugin.desktop.in.in.h:1
+#: plugins/bookmarks/bookmarks.plugin.desktop.in.in:5
+#: plugins/bookmarks/gedit-bookmarks.metainfo.xml.in:6
 msgid "Bookmarks"
 msgstr "Zaznamki"
 
-#: ../plugins/bookmarks/bookmarks.plugin.desktop.in.in.h:2
+#: plugins/bookmarks/bookmarks.plugin.desktop.in.in:6
+#: plugins/bookmarks/gedit-bookmarks.metainfo.xml.in:7
 msgid "Easy document navigation with bookmarks"
 msgstr "Enostavno upravljanje dokumentov z zaznamki"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:201
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:141
 msgid "Toggle Bookmark"
 msgstr "Preklopi zaznamek"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:202
-msgid "Toggle bookmark status of the current line"
-msgstr "Preklopi stanje zaznamka v trenutni vrstici"
-
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:204
-msgid "Goto Next Bookmark"
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:145
+msgid "Go to Next Bookmark"
 msgstr "Pojdi na naslednji zaznamek"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:205
-msgid "Goto the next bookmark"
-msgstr "Pojdi na naslednji zaznamek"
-
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:207
-msgid "Goto Previous Bookmark"
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:149
+msgid "Go to Previous Bookmark"
 msgstr "Pojdi na predhodni zaznamek"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:208
-msgid "Goto the previous bookmark"
-msgstr "Pojdi na predhodni zaznamek"
-
-#: ../plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in.h:1
+#: plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in:6
+#: plugins/bracketcompletion/gedit-bracketcompletion.metainfo.xml.in:6
 msgid "Bracket Completion"
 msgstr "Dopolnjevanje oklepajev"
 
-#: ../plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in.h:2
+#: plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in:7
 msgid "Automatically adds closing brackets."
 msgstr "Samodejno doda zaklepaje"
 
-#. ex:et:ts=4:
-#: ../plugins/charmap/charmap/__init__.py:51
-#: ../plugins/charmap/charmap.plugin.desktop.in.in.h:1
+#: plugins/bracketcompletion/gedit-bracketcompletion.metainfo.xml.in:7
+msgid "Automatically add a closing bracket when you insert one"
+msgstr "Samodejno dodaj zaklepaj, ko vstavite oklepaj"
+
+#: plugins/charmap/charmap/__init__.py:58
+#: plugins/charmap/charmap.plugin.desktop.in.in:6
 msgid "Character Map"
 msgstr "Nabor znakov"
 
-#: ../plugins/charmap/charmap.plugin.desktop.in.in.h:2
+#: plugins/charmap/charmap.plugin.desktop.in.in:7
 msgid "Insert special characters just by clicking on them."
 msgstr "Vstavljanje posebnih znakov le s klikom nanje."
 
-#: ../plugins/codecomment/codecomment.plugin.desktop.in.in.h:1
+#: plugins/charmap/gedit-charmap.metainfo.xml.in:6
+msgid "Charmap"
+msgstr "Nabor znakov"
+
+#: plugins/charmap/gedit-charmap.metainfo.xml.in:7
+msgid "Select characters from a character map"
+msgstr "Izberite znake s palete znakov"
+
+#: plugins/codecomment/codecomment.plugin.desktop.in.in:6
+#: plugins/codecomment/gedit-codecomment.metainfo.xml.in:6
 msgid "Code Comment"
 msgstr "Opomba h kodi"
 
-#: ../plugins/codecomment/codecomment.plugin.desktop.in.in.h:2
+#: plugins/codecomment/codecomment.plugin.desktop.in.in:7
 msgid "Comment out or uncomment a selected block of code."
 msgstr "Dodaj ali odstrani opombo k izbrani kodi."
 
-#: ../plugins/codecomment/codecomment.py:88
+#: plugins/codecomment/codecomment.py:118
 msgid "Co_mment Code"
 msgstr "_Dodaj opombo"
 
-#: ../plugins/codecomment/codecomment.py:90
-msgid "Comment the selected code"
-msgstr "Dodaj opombo k izbrani kodi"
-
-#: ../plugins/codecomment/codecomment.py:94
+#: plugins/codecomment/codecomment.py:124
 msgid "U_ncomment Code"
 msgstr "_Odstrani opombo kode"
 
-#: ../plugins/codecomment/codecomment.py:96
-msgid "Uncomment the selected code"
-msgstr "Odstrani opombo k izbrani kodi"
+#: plugins/codecomment/gedit-codecomment.metainfo.xml.in:7
+msgid "Comment or uncomment blocks of code"
+msgstr "Dodaj ali odstrani opombo h kodi"
 
-#. ex:ts=4:et:
-#: ../plugins/colorpicker/colorpicker.plugin.desktop.in.in.h:1
+#: plugins/colorpicker/colorpicker.plugin.desktop.in.in:6
 msgid "Color Picker"
 msgstr "Izbirnik barv"
 
-#: ../plugins/colorpicker/colorpicker.plugin.desktop.in.in.h:2
+#: plugins/colorpicker/colorpicker.plugin.desktop.in.in:7
 msgid "Pick a color from a dialog and insert its hexadecimal representation."
 msgstr "Izberi barvo iz pogovornega okna in jo vstavi v šestnajstiškem zapisu."
 
-#: ../plugins/colorpicker/colorpicker.py:161
-msgid "Pick _Color..."
-msgstr "Izbor _barve ..."
+#: plugins/colorpicker/colorpicker.py:132
+msgid "Pick _Color…"
+msgstr "Izberite _barvo …"
 
-#: ../plugins/colorpicker/colorpicker.py:162
-msgid "Pick a color from a dialog"
-msgstr "Izbor barve v pogovornem oknu"
-
-#: ../plugins/colorpicker/colorpicker.py:178
+#: plugins/colorpicker/colorpicker.py:172
 msgid "Pick Color"
 msgstr "Izbor barve"
 
-#. ex:ts=4:et:
-#: ../plugins/colorschemer/colorschemer.plugin.desktop.in.in.h:1
-#: ../plugins/colorschemer/schemer/schemer.ui.h:1
-msgid "Color Scheme Editor"
-msgstr "Urejevalnik barvne sheme"
+#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:6
+msgid "Color picker"
+msgstr "Izbirnik barv"
 
-#: ../plugins/colorschemer/colorschemer.plugin.desktop.in.in.h:2
-msgid "Source code color scheme editor"
-msgstr "Urejevalnik shem barvnega označevanja kode"
+#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:7
+msgid "Select and insert a color from a dialog (for HTML, CSS, PHP)"
+msgstr "Izberite in vstavite barvo iz pogovornega okna (za HTML, CSS, PHP)"
 
-#: ../plugins/colorschemer/schemer/schemer.ui.h:2
-msgid "Bold"
-msgstr "Krepko"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:3
-msgid "Italic"
-msgstr "Ležeče"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:4
-msgid "Underline"
-msgstr "Podčrtano"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:5
-msgid "Strikethrough"
-msgstr "Prečrtano"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:6
-msgid "Pick the background color"
-msgstr "Izbor barve ozadja"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:7
-msgid "Pick the foreground color"
-msgstr "Izbor barve pisave"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:8
-msgid "_Background"
-msgstr "_Ozadja"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:9
-msgid "_Foreground"
-msgstr "_Pisava"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:10
-msgid "_Clear "
-msgstr "_Počisti"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:11
-msgid "Name"
-msgstr "Ime"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:12
-msgid "ID"
-msgstr "ID"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:13
-msgid "Description"
-msgstr "Opis"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:14
-msgid "Author"
-msgstr "Avtor"
-
-#: ../plugins/colorschemer/schemer/schemer.ui.h:15
-msgid "Sample"
-msgstr "Vzorec"
-
-#: ../plugins/commander/commander.plugin.desktop.in.in.h:1
-msgid "Commander"
-msgstr "Upravljalnik ukazov"
-
-#: ../plugins/commander/commander.plugin.desktop.in.in.h:2
-msgid "Command line interface for advanced editing"
-msgstr "Vmesnik ukaznega okna za napredno urejanje"
-
-#: ../plugins/commander/commander/windowactivatable.py:70
-msgid "Commander Mode"
-msgstr "Način upravljalnika ukazov"
-
-#: ../plugins/commander/commander/windowactivatable.py:71
-msgid "Start commander mode"
-msgstr "Začni v načinu upravljalnika ukazov"
-
-#: ../plugins/dashboard/dashboard/dashboard.py:117
-msgid "Empty Document"
-msgstr "Prazen dokument"
-
-#: ../plugins/dashboard/dashboard/dashboard.py:158
-msgid "Type here to search..."
-msgstr "Vnos besedila za iskanje ..."
-
-#. ex:ts=4:et:
-#: ../plugins/dashboard/dashboard.plugin.desktop.in.in.h:1
-msgid "Dashboard"
-msgstr "Nadzorna plošča"
-
-#: ../plugins/dashboard/dashboard.plugin.desktop.in.in.h:2
-msgid "A Dashboard for new tabs"
-msgstr "Nadzorna plošča novih zavihkov"
-
-#: ../plugins/drawspaces/drawspaces.plugin.desktop.in.in.h:1
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:3
+#: plugins/drawspaces/drawspaces.plugin.desktop.in.in:5
 msgid "Draw Spaces"
 msgstr "Izriši presledne znake"
 
-#: ../plugins/drawspaces/drawspaces.plugin.desktop.in.in.h:2
+#: plugins/drawspaces/drawspaces.plugin.desktop.in.in:6
 msgid "Draw spaces and tabs"
 msgstr "Izriši presledke in tabulatorje"
 
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.c:134
-msgid "Show _White Space"
-msgstr "Pokaži _presledne znake"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.c:135
-msgid "Show spaces and tabs"
-msgstr "Pokaži presledne znake in tabulatorje"
-
-#. ex:set ts=8 noet:
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:1
+#: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:6
 msgid "Draw spaces"
 msgstr "Izriši presledke"
 
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:2
-msgid "Draw tabs"
-msgstr "Izris tabulatorjev"
+#: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:7
+msgid "Draw Spaces and Tabs"
+msgstr "Izriši presledke in tabulatorje"
 
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:3
-msgid "Draw new lines"
-msgstr "Izris znakov za nove vrstice"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:4
-msgid "Draw non-breaking spaces"
-msgstr "Izriši nedeljive presledke"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:5
-msgid "Draw leading spaces"
-msgstr "Izriši presledke na začetku vrstic"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:6
-msgid "Draw spaces in text"
-msgstr "Izris preslednih znakov v besedilu"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:7
-msgid "Draw trailing spaces"
-msgstr "Izriši presledke na koncu vrstic"
-
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:1
-msgid "Enabled"
-msgstr "Omogočeno"
-
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:2
-msgid "If TRUE drawing will be enabled."
-msgstr "Izbrana možnost omogoča izrisovanje znakov."
-
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:4
-msgid "The type of spaces to be drawn."
-msgstr "Vrsta izrisanih preslednih znakov."
-
-#: ../plugins/git/git.plugin.desktop.in.in.h:1
+#: plugins/git/gedit-git.metainfo.xml.in:6
+#: plugins/git/git.plugin.desktop.in.in:6
 msgid "Git"
 msgstr "Git"
 
-#: ../plugins/git/git.plugin.desktop.in.in.h:2
+#: plugins/git/gedit-git.metainfo.xml.in:7
+msgid ""
+"Use git information to display which lines and files changed since last "
+"commit"
+msgstr ""
+"Uporabite informacije o git za prikaz, katere vrstice in datoteke so se "
+"spremenile od zadnje objave"
+
+#: plugins/git/git.plugin.desktop.in.in:7
 msgid "Highlight lines that have been changed since the last commit"
 msgstr "Poudari vrstice, ki so bile spremenjene od zadnje uveljavitve"
 
-#: ../plugins/joinlines/joinlines.plugin.desktop.in.in.h:1
+#: plugins/joinlines/gedit-joinlines.metainfo.xml.in:6
+#: plugins/joinlines/joinlines.plugin.desktop.in.in:6
 msgid "Join/Split Lines"
 msgstr "Združi/razdeli vrstice"
 
-#: ../plugins/joinlines/joinlines.plugin.desktop.in.in.h:2
+#: plugins/joinlines/gedit-joinlines.metainfo.xml.in:7
+msgid "Join or split multiple lines through Ctrl+J and Ctrl+Shift+J"
+msgstr "Združite ali razdelite več vrstic prek krmilka+J in krmilka+dvigalka+J"
+
+#: plugins/joinlines/joinlines.plugin.desktop.in.in:7
 msgid "Join several lines or split long ones"
 msgstr "Združi več vrstic ali razdeli predolge vrstice"
 
-#: ../plugins/joinlines/joinlines.py:74
+#: plugins/joinlines/joinlines.py:111
 msgid "_Join Lines"
 msgstr "_Združi vrstice"
 
-#: ../plugins/joinlines/joinlines.py:75
-msgid "Join the selected lines"
-msgstr "Združi izbrane vrstice"
-
-#: ../plugins/joinlines/joinlines.py:77
+#: plugins/joinlines/joinlines.py:117
 msgid "_Split Lines"
 msgstr "_Razdeli vrstice"
 
-#: ../plugins/joinlines/joinlines.py:78
-msgid "Split the selected lines"
-msgstr "Razdeli izbrane vrstice"
+#: plugins/multiedit/gedit-multiedit.metainfo.xml.in:6
+msgid "Multi edit"
+msgstr "Hkratno urejanje"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:301
-msgid "Added edit point..."
+#: plugins/multiedit/gedit-multiedit.metainfo.xml.in:7
+#: plugins/multiedit/multiedit.plugin.desktop.in.in:7
+msgid "Edit document in multiple places at once"
+msgstr "Uredi dokument na več mestih hkrati"
+
+#: plugins/multiedit/multiedit/appactivatable.py:44
+#: plugins/multiedit/multiedit/viewactivatable.py:1351
+msgid "Multi Edit Mode"
+msgstr "Način hkratnega urejanja"
+
+#: plugins/multiedit/multiedit.plugin.desktop.in.in:6
+msgid "Multi Edit"
+msgstr "Hkratno urejanje"
+
+#: plugins/multiedit/multiedit/viewactivatable.py:317
+msgid "Added edit point…"
 msgstr "Dodana točka urejanja ..."
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:643
-msgid "Column Mode..."
-msgstr "Stolpični način ..."
+#: plugins/multiedit/multiedit/viewactivatable.py:659
+msgid "Column Mode…"
+msgstr "Stolpčni način ..."
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:757
-msgid "Removed edit point..."
+#: plugins/multiedit/multiedit/viewactivatable.py:777
+msgid "Removed edit point…"
 msgstr "Odstranjena točka urejanja ..."
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:920
-msgid "Cancelled column mode..."
-msgstr "Preklican stolpični način ..."
+#: plugins/multiedit/multiedit/viewactivatable.py:943
+msgid "Cancelled column mode…"
+msgstr "Preklican stolpčni način ..."
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1293
+#: plugins/multiedit/multiedit/viewactivatable.py:1306
 msgid "Enter column edit mode using selection"
 msgstr "Način urejanja stolpcev z izbiro"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1294
+#: plugins/multiedit/multiedit/viewactivatable.py:1307
 msgid "Enter <b>smart</b> column edit mode using selection"
 msgstr "Uporabi <b>pametni</b> način urejanja stolpcev z izbiro"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1295
+#: plugins/multiedit/multiedit/viewactivatable.py:1308
 msgid "<b>Smart</b> column align mode using selection"
 msgstr "<b>Pametni</b> način poravnave stolpcev z uporabo izbire"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1296
+#: plugins/multiedit/multiedit/viewactivatable.py:1309
 msgid "<b>Smart</b> column align mode with additional space using selection"
 msgstr ""
 "<b>Pametni</b> način poravnave stolpcev z dodatnimi presledki z uporabo "
 "izbire"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1298
+#: plugins/multiedit/multiedit/viewactivatable.py:1311
 msgid "Toggle edit point"
 msgstr "Preklopi točko urejanja"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1299
+#: plugins/multiedit/multiedit/viewactivatable.py:1312
 msgid "Add edit point at beginning of line/selection"
 msgstr "Dodaj točko urejanja na začetek vrstice oziroma izbire"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1300
+#: plugins/multiedit/multiedit/viewactivatable.py:1313
 msgid "Add edit point at end of line/selection"
 msgstr "Dodaj točko urejanja na konec vrstice oziroma izbire"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1301
+#: plugins/multiedit/multiedit/viewactivatable.py:1314
 msgid "Align edit points"
 msgstr "Poravnaj točke urejanja"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1302
+#: plugins/multiedit/multiedit/viewactivatable.py:1315
 msgid "Align edit points with additional space"
 msgstr "Poravnaj točke urejanja z dodatnim presledkom"
 
-#: ../plugins/multiedit/multiedit/documenthelper.py:1333
-#: ../plugins/multiedit/multiedit/__init__.py:79
-msgid "Multi Edit Mode"
-msgstr "Način hkratnega urejanja"
+#: plugins/sessionsaver/sessionsaver/appactivatable.py:55
+msgid "_Manage Saved Sessions…"
+msgstr "_Upravljaj s shranjenimi sejami ..."
 
-#: ../plugins/multiedit/multiedit/__init__.py:81
-msgid "Start multi edit mode"
-msgstr "Začni način hkratnega urejanja"
+#: plugins/sessionsaver/sessionsaver/appactivatable.py:58
+msgid "_Save Session…"
+msgstr "_Shrani sejo …"
 
-#. ex:ts=4:et:
-#: ../plugins/multiedit/multiedit.plugin.desktop.in.in.h:1
-msgid "Multi Edit"
-msgstr "Hkratno urejanje"
+#: plugins/sessionsaver/sessionsaver/appactivatable.py:64
+#, python-brace-format
+msgid "Recover “{0}” Session"
+msgstr "Obnovi sejo »{0}«"
 
-#: ../plugins/multiedit/multiedit.plugin.desktop.in.in.h:2
-msgid "Edit document in multiple places at once"
-msgstr "Uredi dokument na več mestih hkrati"
+#: plugins/sessionsaver/sessionsaver/dialogs.py:153
+msgid "Session Name"
+msgstr "Ime seje"
 
-#: ../plugins/smartspaces/smartspaces.plugin.desktop.in.in.h:1
+#: plugins/sessionsaver/sessionsaver.plugin.desktop.in.in:6
+msgid "Session Saver"
+msgstr "Shranjevalnik seje"
+
+#: plugins/sessionsaver/sessionsaver.plugin.desktop.in.in:7
+msgid "Save and restore your working sessions"
+msgstr "Shranjevanje in obnavljanje delovne seje"
+
+#: plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui:8
+msgid "Save session"
+msgstr "Shrani sejo"
+
+#: plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui:76
+msgid "Session name:"
+msgstr "Ime seje:"
+
+#: plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui:120
+msgid "Saved Sessions"
+msgstr "Shranjene seje"
+
+#: plugins/smartspaces/gedit-smartspaces.metainfo.xml.in:6
+#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:5
 msgid "Smart Spaces"
 msgstr "Pametni presledki"
 
-#: ../plugins/smartspaces/smartspaces.plugin.desktop.in.in.h:2
-msgid "Forget you're not using tabulations."
-msgstr "Pozabi, da tabulatorji niso v uporabi."
+#: plugins/smartspaces/gedit-smartspaces.metainfo.xml.in:7
+msgid "Allow to unindent like if you were using tabs while you’re using spaces"
+msgstr ""
+"Dovolite preklic zamika, kot če bi med uporabo presledkov uporabljali "
+"tabulatorje"
 
-#: ../plugins/synctex/synctex.plugin.desktop.in.in.h:1
-msgid "SyncTeX"
-msgstr "SyncTeX"
+#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:6
+msgid "Forget you’re not using tabulations."
+msgstr "Pozabite, da tabulatorji niso v uporabi."
 
-#: ../plugins/synctex/synctex.plugin.desktop.in.in.h:2
-msgid "Synchronize between LaTeX and PDF with gedit and evince."
-msgstr "Usklajevanje med LaTeX in PDF datotekami s programoma gedit in evince."
+#: plugins/terminal/gedit-terminal.metainfo.xml.in:6
+#: plugins/terminal/terminal.py:341
+msgid "Terminal"
+msgstr "Terminal"
 
-#: ../plugins/synctex/synctex/synctex.py:310
-#: ../plugins/synctex/synctex/synctex.py:311
-msgid "Forward Search"
-msgstr "Iskanje naprej"
+#: plugins/terminal/gedit-terminal.metainfo.xml.in:7
+msgid "A simple terminal widget accessible from the bottom panel"
+msgstr "Preprost gradnik terminala, dostopen s spodnje plošče"
 
-#. ex:ts=4:et:
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:1
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:16
 msgid "Whether to silence terminal bell"
 msgstr "Ali naj se utišajo terminalski zvoki."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:2
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:17
 msgid ""
-"If true, don't make a noise when applications send the escape sequence for "
+"If true, don’t make a noise when applications send the escape sequence for "
 "the terminal bell."
 msgstr ""
-"Izbrana možnost onemogoči zvočne učinke, ko programi v terminal pošljejo "
+"Potrjena možnost onemogoči zvočne učinke, ko programi v terminal pošljejo "
 "ubežna zaporedja."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:3
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:24
 msgid "Number of lines to keep in scrollback"
 msgstr "Število shranjenih vrstic zgodovine drsnika"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:4
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:25
 msgid ""
 "Number of scrollback lines to keep around. You can scroll back in the "
-"terminal by this number of lines; lines that don't fit in the scrollback are "
+"terminal by this number of lines; lines that don’t fit in the scrollback are "
 "discarded. If scrollback-unlimited is true, this value is ignored."
 msgstr ""
 "Število zgodovine izpisanih vrstic terminala. Število določa koliko vrstic "
 "se ohrani, preseženo število pa se izbriše. V kolikor je izbrana možnost "
 "neomejene zgodovine, je ta možnost prezrta."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:5
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:34
 msgid "Whether an unlimited number of lines should be kept in scrollback"
 msgstr "Ali naj se ohrani neomejeno število vrstic zgodovine drsnika."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:6
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:37
 msgid ""
 "If true, scrollback lines will never be discarded. The scrollback history is "
 "stored on disk temporarily, so this may cause the system to run out of disk "
@@ -441,92 +347,69 @@ msgstr ""
 "drsnika je shranjena začasno na disku, kar lahko vpliva na prostor, v "
 "kolikor je izpisa veliko."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:7
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:46
 msgid "Whether to scroll to the bottom when a key is pressed"
 msgstr "Ali naj ob pritisku tipke izpis samodejno zdrsne na končno vrstico"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:8
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:47
 msgid "If true, pressing a key jumps the scrollbar to the bottom."
 msgstr ""
 "Izbrana možnost omogoča skok drsnika na dno ob pritisku katerekoli tipke."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:9
-msgid "Whether to scroll to the bottom when there's new output"
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:53
+msgid "Whether to scroll to the bottom when there’s new output"
 msgstr "Ali naj se prikaže zadnja vrstica novega izpisa, ko se ta pojavi."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:10
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:54
 msgid ""
-"If true, whenever there's new output the terminal will scroll to the bottom."
+"If true, whenever there’s new output the terminal will scroll to the bottom."
 msgstr ""
-"Izbrana možnost določa, da se bo kazalka postavila v zadnjo vrstico ob novem "
-"izpisu."
+"Potrjena možnost določa, da se bo kazalka postavila v zadnjo vrstico ob "
+"novem izpisu."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:11
-msgid "Whether to allow bold text"
-msgstr "Ali naj se dovoli odebeljena pisava."
-
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:12
-msgid "If true, allow applications in the terminal to make text boldface."
-msgstr ""
-"Izbrana možnost omogoča programom v terminalu izpisati besedilo krepko."
-
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:13
-msgid "Characters that are considered \"part of a word\""
-msgstr "Znaki, ki so obravnavani kot  \"deli besede\""
-
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:14
-msgid ""
-"When selecting text by word, sequences of these characters are considered "
-"single words. Ranges can be given as \"A-Z\". Literal hyphen (not expressing "
-"a range) should be the first character given."
-msgstr ""
-"Ob izbiri besedila besedo po besedi, so zaporedja znakov obravnavana kot "
-"posamezne besede. Območje je mogoče določiti z logičnim določilom \"A-Z\". "
-"Vezaj (ki ne določa območja) bi moral biti prvi podan znak."
-
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:15
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:61
 msgid "Default color of text in the terminal"
 msgstr "Privzeta barva besedila v terminalu"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:16
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:62
 msgid ""
 "Default color of text in the terminal, as a color specification (can be HTML-"
-"style hex digits, or a color name such as \"red\")."
+"style hex digits, or a color name such as “red”)."
 msgstr ""
 "Privzeta barva besedila terminala (vrednost je lahko določena v "
-"šestnajstiškem HTML zapisu ali pa z imenom, na primer \"red\" (rdeča) )."
+"šestnajstiškem zapisu HTML ali pa z imenom, npr. »red« (rdeča))."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:17
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:70
 msgid "Default color of terminal background"
 msgstr "Privzeta barva ozadja terminala"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:18
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:71
 msgid ""
 "Default color of terminal background, as a color specification (can be HTML-"
-"style hex digits, or a color name such as \"red\")."
+"style hex digits, or a color name such as “red”)."
 msgstr ""
 "Privzeta barva ozadja terminala (vrednost je lahko določena v šestnajstiškem "
-"HTML zapisu ali pa z imenom, na primer \"red\" (rdeča) )."
+"zapisu HTML ali pa z imenom, npr. »red« (rdeča))."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:19
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:94
 msgid "Palette for terminal applications"
 msgstr "Paleta barv terminalnih programov"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:20
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:95
 msgid ""
 "Terminals have a 16-color palette that applications inside the terminal can "
 "use. This is that palette, in the form of a colon-separated list of color "
-"names. Color names should be in hex format e.g. \"#FF00FF\""
+"names. Color names should be in hex format e.g. “#FF00FF”"
 msgstr ""
-"Terminali omogočajo shemo v 16 barvah, ki jih lahko uporabijo programi. To "
-"je paleta zapisana v obliki z dvopičjem ločenega seznama imen barv. Imena "
-"barv morajo biti v šestnajstiškem zapisu, na primer \"#FF00FF\"."
+"Terminali imajo 16-barvno shemo, ki jih lahko uporabijo programi v njih. To "
+"je paleta, zapisana v obliki z dvopičjem ločenega seznama imen barv. Imena "
+"barv morajo biti v šestnajstiškem zapisu, npr. »#FF00FF«."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:21
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:104
 msgid "Whether to use the colors from the theme for the terminal widget"
 msgstr "Ali naj bodo uporabljene barve teme za gradnike terminala."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:22
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:107
 msgid ""
 "If true, the theme color scheme used for text entry boxes will be used for "
 "the terminal, instead of colors provided by the user."
@@ -534,1296 +417,130 @@ msgstr ""
 "Izbrana možnost omogoča uporabo barvne teme v shemi uporabljeni za vnosna "
 "polja v terminalu, namesto barv, ki jih je nastavil uporabnik."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:23
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:114
 msgid "Whether to blink the cursor"
 msgstr "Ali naj kazalec utripa"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:24
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:115
 msgid ""
-"The possible values are \"system\" to use the global cursor blinking "
-"settings, or \"on\" or \"off\" to set the mode explicitly."
+"The possible values are “system” to use the global cursor blinking settings, "
+"or “on” or “off” to set the mode explicitly."
 msgstr ""
-"Mogoče vrednosti so \"system\" za uporabo utripajočega kazalnika, ali pa "
-"nastavitev \"on\" ali \"off\" za izrecni način delovanja."
+"Možne vrednosti so »system« za uporabo utripajočega kazalnika, ali pa "
+"nastavitev »on« (vključeno) ali »off« (izključeno) za izrecni način "
+"delovanja."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:25
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:122
 msgid "The cursor appearance"
 msgstr "Videz kazalke"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:26
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:123
 msgid ""
-"The possible values are \"block\" to use a block cursor, \"ibeam\" to use a "
-"vertical line cursor, or \"underline\" to use an underline cursor."
+"The possible values are “block” to use a block cursor, “ibeam” to use a "
+"vertical line cursor, or “underline” to use an underline cursor."
 msgstr ""
-"Mogoče vrednosti so \"block\" za uporabo pravokotne kazalke, \"ibeam\" za "
-"obliko navpičnice ali pa \"underline\" za kazalko v obliki podčrtaja."
+"Možne vrednosti so »block« za uporabo pravokotne kazalke, »ibeam« za obliko "
+"navpičnice ali pa »underline« za kazalko v obliki podčrtaja."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:27
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:130
 msgid "Whether to use the system font"
 msgstr "Ali naj se uporabi sistemska pisava"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:28
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:131
 msgid ""
-"If true, the terminal will use the desktop-global standard font if it's "
+"If true, the terminal will use the desktop-global standard font if it’s "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
-"Izbrana možnost omogoča uporabo splošne pisave monospace, ali podobne, če ta "
-"ni na voljo."
+"Potrjena možnost omogoča uporabo splošne pisave namizja, če je enakih širin "
+"(monospace), ali podobne, če ta ni na voljo."
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:29
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:139
 msgid "Font"
 msgstr "Pisava"
 
-#: ../plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml.in.in.h:30
-msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr "Ime pisave Pango. Primera sta \"Sans 12\" ali \"Monospace Bold 14\"."
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:140
+msgid "A Pango font name. Examples are “Sans 12” or “Monospace Bold 14”."
+msgstr "Ime pisave Pango. Primera sta »Sans 12« ali »Monospace Bold 14«."
 
-#: ../plugins/terminal/terminal.plugin.desktop.in.in.h:1
+#: plugins/terminal/terminal.plugin.desktop.in.in:6
 msgid "Embedded Terminal"
 msgstr "Vgrajen terminal"
 
-#: ../plugins/terminal/terminal.plugin.desktop.in.in.h:2
+#: plugins/terminal/terminal.plugin.desktop.in.in:7
 msgid "Embed a terminal in the bottom pane."
 msgstr "Vgradi terminal v spodnji pladenj"
 
-#: ../plugins/terminal/terminal.py:316
-msgid "Terminal"
-msgstr "Terminal"
-
-#: ../plugins/terminal/terminal.py:337
+#: plugins/terminal/terminal.py:362
 msgid "C_hange Directory"
 msgstr "Spremeni _mapo"
 
-#: ../plugins/textsize/textsize/__init__.py:142
-msgid "_Larger Text"
-msgstr "_Večja pisava"
-
-#: ../plugins/textsize/textsize/__init__.py:145
-msgid "S_maller Text"
-msgstr "_Manjša pisava"
-
-#: ../plugins/textsize/textsize/__init__.py:148
-msgid "_Normal size"
-msgstr "_Običajna pisava"
-
-#. ex:ts=4:et:
-#: ../plugins/textsize/textsize.plugin.desktop.in.in.h:1
-msgid "Text Size"
+#: plugins/textsize/gedit-textsize.metainfo.xml.in:6
+msgid "Text size"
 msgstr "Velikost besedila"
 
-#: ../plugins/textsize/textsize.plugin.desktop.in.in.h:2
+#: plugins/textsize/gedit-textsize.metainfo.xml.in:7
+#: plugins/textsize/textsize.plugin.desktop.in.in:7
 msgid "Easily increase and decrease the text size"
 msgstr "Enostavno prilagajanje velikosti besedila"
 
-#: ../plugins/wordcompletion/gedit-word-completion-configure.ui.h:1
+#: plugins/textsize/textsize/__init__.py:53
+msgid "_Normal size"
+msgstr "_Običajna pisava"
+
+#: plugins/textsize/textsize/__init__.py:55
+msgid "S_maller Text"
+msgstr "_Manjša pisava"
+
+#: plugins/textsize/textsize/__init__.py:57
+msgid "_Larger Text"
+msgstr "_Večja pisava"
+
+#: plugins/textsize/textsize.plugin.desktop.in.in:6
+msgid "Text Size"
+msgstr "Velikost besedila"
+
+#: plugins/wordcompletion/gedit-word-completion-configure.ui:18
 msgid "Interactive completion"
 msgstr "Odzivno zaključevanje"
 
-#: ../plugins/wordcompletion/gedit-word-completion-configure.ui.h:2
+#: plugins/wordcompletion/gedit-word-completion-configure.ui:43
 msgid "Minimum word size:"
 msgstr "Najkrajša velikost besede:"
 
-#: ../plugins/wordcompletion/gedit-word-completion-plugin.c:186
+#: plugins/wordcompletion/gedit-wordcompletion.metainfo.xml.in:6
+msgid "Word completion"
+msgstr "Dopolnjevanje besed"
+
+#: plugins/wordcompletion/gedit-wordcompletion.metainfo.xml.in:7
+msgid ""
+"Propose automatic completion using words already present in the document"
+msgstr ""
+"Predlagajte samodejno dokončanje z besedami, ki so že prisotne v dokumentu"
+
+#: plugins/wordcompletion/gedit-word-completion-plugin.c:181
 msgid "Document Words"
 msgstr "Besedilo dokumenta"
 
-#: ../plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml.in.in.h:1
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:5
 msgid "Interactive Completion"
 msgstr "Odzivno zaključevanje"
 
-#: ../plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml.in.in.h:2
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:6
 msgid "Whether to enable interactive completion."
 msgstr "Ali naj bo omogočeno odzivno zaključevanje"
 
-#: ../plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml.in.in.h:3
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:11
 msgid "Minimum Word Size"
 msgstr "Najkrajša velikost besede"
 
-#: ../plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml.in.in.h:4
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:12
 msgid "The minimum word size to complete."
 msgstr "Najkrajša velikost besede, ki se dopolnjuje."
 
-#: ../plugins/wordcompletion/wordcompletion.plugin.desktop.in.in.h:1
+#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:5
 msgid "Word Completion"
 msgstr "Dopolnjevanje besed"
 
-#: ../plugins/wordcompletion/wordcompletion.plugin.desktop.in.in.h:2
+#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:6
 msgid "Word completion using the completion framework"
 msgstr "Dopolnjevanje besed z uporabo ogrodja dopolnjevanja"
-
-#~ msgid "Git differences"
-#~ msgstr "Razlike Git"
-
-#~ msgid "X"
-#~ msgstr "X"
-
-#~ msgid "Scheme Editor"
-#~ msgstr "Urejevalnik sheme"
-
-#~ msgid "Id"
-#~ msgstr "ID"
-
-#~ msgid "Most Used"
-#~ msgstr "Največ uporabljeno"
-
-#~ msgid "Recently Used"
-#~ msgstr "Nedavno uporabljeno"
-
-#~ msgid "_Increase font size"
-#~ msgstr "Po_večaj velikost pisave"
-
-#~ msgid "_Decrease font size"
-#~ msgstr "Po_manjšaj velikost pisave"
-
-#~ msgid "_Reset font size"
-#~ msgstr "_Ponastavi velikost pisave"
-
-#~ msgid "_Insert"
-#~ msgstr "_Vstavi"
-
-#~ msgid "Session Name"
-#~ msgstr "Ime seje"
-
-#~ msgid "Recover '%s' session"
-#~ msgstr "Obnovi sejo '%s'"
-
-#~ msgid "Sa_ved sessions"
-#~ msgstr "_Shranjene seje"
-
-#~ msgid "_Save current session"
-#~ msgstr "_Shrani trenutno sejo"
-
-#~ msgid "Save the current document list as a new session"
-#~ msgstr "Shrani trenutni seznam dokumentov kot novo sejo"
-
-#~ msgid "_Manage saved sessions..."
-#~ msgstr "_Upravljanje s shranjenimi sejami ..."
-
-#~ msgid "Open the saved session manager"
-#~ msgstr "Odpri upravljalnik shranjenih sej"
-
-#~ msgid "Session Saver"
-#~ msgstr "Shranjevalnik seje"
-
-#~ msgid "Save and restore your working sessions"
-#~ msgstr "Shranjevanje in obnavljanje delovne seje"
-
-#~ msgid "Save session"
-#~ msgstr "Shrani sejo"
-
-#~ msgid "Session name:"
-#~ msgstr "Ime seje:"
-
-#~ msgid "Saved Sessions"
-#~ msgstr "Shranjene seje"
-
-#~ msgid "Tags"
-#~ msgstr "Oznake"
-
-#~ msgid "Select the group of tags you want to use"
-#~ msgstr "Izbor skupine oznak za uporabo"
-
-#~ msgid "_Preview"
-#~ msgstr "_Predogled"
-
-#~ msgid "Available Tag Lists"
-#~ msgstr "Seznam oznak, ki so na voljo"
-
-#~ msgid "XHTML 1.0 — Tags"
-#~ msgstr "XHTML 1.0 — Oznake"
-
-#~ msgid "Abbreviated form"
-#~ msgstr "Skrajšana oblika"
-
-#~ msgid "Abbreviation"
-#~ msgstr "Okrajšava"
-
-#~ msgid "Accessibility key character"
-#~ msgstr "Tipke dostopnosti"
-
-#~ msgid "Acronym"
-#~ msgstr "Kratica"
-
-#~ msgid "Align"
-#~ msgstr "Poravnaj"
-
-#~ msgid "Alignment character"
-#~ msgstr "Znak poravnave"
-
-#~ msgid "Alternative"
-#~ msgstr "Alternativna"
-
-#~ msgid "Anchor URI"
-#~ msgstr "URI sidra"
-
-#~ msgid "Anchor"
-#~ msgstr "Sidro"
-
-#~ msgid "Applet class file code (deprecated)"
-#~ msgstr "Datoteka kode razreda vstavkov (opuščeno)"
-
-#~ msgid "Associated information"
-#~ msgstr "Povezani podatki"
-
-#~ msgid "Axis related headers"
-#~ msgstr "Glave, povezane z osjo"
-
-#~ msgid "Background color (deprecated)"
-#~ msgstr "Barva ozadja (opuščeno)"
-
-#~ msgid "Background texture tile (deprecated)"
-#~ msgstr "Slika tlakovanja ozadja (opuščeno)"
-
-#~ msgid "Base font (deprecated)"
-#~ msgstr "Osnovna pisava (opuščeno)"
-
-#~ msgid "Base URI"
-#~ msgstr "Osnovni URI"
-
-#~ msgid "Border (deprecated)"
-#~ msgstr "Rob (opuščeno)"
-
-#~ msgid "Cell rowspan"
-#~ msgstr "Vrstično podaljšanje celice"
-
-#~ msgid "Center (deprecated)"
-#~ msgstr "Središče (opuščeno)"
-
-#~ msgid "Character encoding of linked resource"
-#~ msgstr "Kodiranje znakov povezanega vira"
-
-#~ msgid "Checked state"
-#~ msgstr "Označeno stanje"
-
-#~ msgid "Citation"
-#~ msgstr "Navedek"
-
-#~ msgid "Cite reason for change"
-#~ msgstr "Navedba razloga za spremembo"
-
-#~ msgid "Class implementation ID"
-#~ msgstr "ID implementacije razreda"
-
-#~ msgid "Class list"
-#~ msgstr "Seznam razredov"
-
-#~ msgid "Clear text flow control"
-#~ msgstr "Lomljenje čistega besedila"
-
-#~ msgid "Code content type"
-#~ msgstr "Koda vrste vsebine"
-
-#~ msgid "Color of selected links (deprecated)"
-#~ msgstr "Barva izbranih povezav (opuščeno)"
-
-#~ msgid "Column span"
-#~ msgstr "Dolžina stolpca"
-
-#~ msgid "Columns"
-#~ msgstr "Stolpci"
-
-#~ msgid "Comment"
-#~ msgstr "Opomba"
-
-#~ msgid "Computer code fragment"
-#~ msgstr "Odsek programske izvorne kode"
-
-#~ msgid "Content type (deprecated)"
-#~ msgstr "Vrsta vsebine (opuščeno)"
-
-#~ msgid "Coordinates"
-#~ msgstr "Koordinate"
-
-#~ msgid "Date and time of change"
-#~ msgstr "Datum in ura spremembe"
-
-#~ msgid "Declare flag"
-#~ msgstr "Deklariranje zastavice"
-
-#~ msgid "Defer attribute"
-#~ msgstr "Odloži lastnost"
-
-#~ msgid "Definition description"
-#~ msgstr "Opis definicije"
-
-#~ msgid "Definition list"
-#~ msgstr "Seznam definicij"
-
-#~ msgid "Definition term"
-#~ msgstr "Ime definicije"
-
-#~ msgid "Deleted text"
-#~ msgstr "Izbrisano besedilo"
-
-#~ msgid "Directionality"
-#~ msgstr "Usmerjenost"
-
-#~ msgid "Directionality (deprecated)"
-#~ msgstr "Usmerjenost (opuščeno)"
-
-#~ msgid "Disabled"
-#~ msgstr "Onemogočeno"
-
-#~ msgid "DIV container"
-#~ msgstr "Hranilnik DIV"
-
-#~ msgid "DIV Style container"
-#~ msgstr "Hranilnik sloga DIV"
-
-#~ msgid "Document base"
-#~ msgstr "Osnova dokumenta"
-
-#~ msgid "Document body"
-#~ msgstr "Telo dokumenta"
-
-#~ msgid "Document head"
-#~ msgstr "Glava dokumenta"
-
-#~ msgid "Element ID"
-#~ msgstr "ID predmeta"
-
-#~ msgid "Document title"
-#~ msgstr "Naziv dokumenta"
-
-#~ msgid "Document type"
-#~ msgstr "Vrsta dokumenta"
-
-#~ msgid "Emphasis"
-#~ msgstr "Poudarek"
-
-#~ msgid "Encode type"
-#~ msgstr "Vrsta kodiranja"
-
-#~ msgid "Font face (deprecated)"
-#~ msgstr "Ime pisave (opuščeno)"
-
-#~ msgid "For label"
-#~ msgstr "Za oznako"
-
-#~ msgid "Forced line break"
-#~ msgstr "Zahtevan prelom vrstice"
-
-#~ msgid "Form action handler"
-#~ msgstr "Obravnalnik dejanja obrazca"
-
-#~ msgid "Form control group"
-#~ msgstr "Nadzorna skupina obrazca"
-
-#~ msgid "Form field label text"
-#~ msgstr "Besedilo v polju oznake obrazca"
-
-#~ msgid "Form input type"
-#~ msgstr "Vrsta vnosa v obrazec"
-
-#~ msgid "Form input"
-#~ msgstr "Vnos obrazca"
-
-#~ msgid "Form method"
-#~ msgstr "Metoda obrazca"
-
-#~ msgid "Form"
-#~ msgstr "Obrazec"
-
-#~ msgid "Forward link"
-#~ msgstr "Povezava naprej"
-
-#~ msgid "Frame render parts"
-#~ msgstr "Deli izrisa okvirja"
-
-#~ msgid "Frame source"
-#~ msgstr "Izvor okvirja"
-
-#~ msgid "Frame target"
-#~ msgstr "Cilj okvirja"
-
-#~ msgid "Frame"
-#~ msgstr "Okvir"
-
-#~ msgid "Frame border"
-#~ msgstr "Rob okvirja"
-
-#~ msgid "Frameset columns"
-#~ msgstr "Stolpci nabora okvirjev"
-
-#~ msgid "Frameset rows"
-#~ msgstr "Vrstice nabora okvirjev"
-
-#~ msgid "Frameset"
-#~ msgstr "Nabor okvirjev"
-
-#~ msgid "Frame spacing"
-#~ msgstr "Razmik med okvirji"
-
-#~ msgid "Generic embedded object"
-#~ msgstr "Izvorni vgrajeni predmet"
-
-#~ msgid "Generic metainformation"
-#~ msgstr "Generični metapodatki"
-
-#~ msgid "Generic span"
-#~ msgstr "Generičen odsek"
-
-#~ msgid "Header cell IDs"
-#~ msgstr "ID-ji celice glave"
-
-#~ msgid "Heading 1"
-#~ msgstr "Naslov 1"
-
-#~ msgid "Heading 2"
-#~ msgstr "Naslov 2"
-
-#~ msgid "Heading 3"
-#~ msgstr "Naslov 3"
-
-#~ msgid "Heading 4"
-#~ msgstr "Naslov 4"
-
-#~ msgid "Heading 5"
-#~ msgstr "Naslov 5"
-
-#~ msgid "Heading 6"
-#~ msgstr "Naslov 6"
-
-#~ msgid "Height"
-#~ msgstr "Višina"
-
-#~ msgid "Horizontal rule"
-#~ msgstr "Vodoravna črta"
-
-#~ msgid "Horizontal space (deprecated)"
-#~ msgstr "Vodoravni prostor (opuščeno)"
-
-#~ msgid "HREF URI"
-#~ msgstr "URI HREF"
-
-#~ msgid "HTML root element"
-#~ msgstr "Korenski predmet HTML"
-
-#~ msgid "HTTP header name"
-#~ msgstr "Ime glave HTTP"
-
-#~ msgid "I18N BiDi override"
-#~ msgstr "Prednostni I18N BiDi"
-
-#~ msgid "Image map area"
-#~ msgstr "Področje karte slike"
-
-#~ msgid "Image map name"
-#~ msgstr "Ime karte slike"
-
-#~ msgid "Image map"
-#~ msgstr "Karta slike"
-
-#~ msgid "Image"
-#~ msgstr "Slika"
-
-#~ msgid "Inline frame"
-#~ msgstr "Vključen okvir"
-
-#~ msgid "Inserted text"
-#~ msgstr "Vstavljeno besedilo"
-
-#~ msgid "Instance definition"
-#~ msgstr "Navedba primerka"
-
-#~ msgid "Java applet (deprecated)"
-#~ msgstr "Programček java (opuščeno)"
-
-#~ msgid "Label"
-#~ msgstr "Oznaka"
-
-#~ msgid "Language code"
-#~ msgstr "Šifra jezika"
-
-#~ msgid "Link color (deprecated)"
-#~ msgstr "Barva povezave (opuščeno)"
-
-#~ msgid "List item"
-#~ msgstr "Predmet seznama"
-
-#~ msgid "List of MIME types for file upload"
-#~ msgstr "Seznam vrst MIME za pošiljanje"
-
-#~ msgid "List of supported character sets"
-#~ msgstr "Seznam podprtih naborov znakov"
-
-#~ msgid "Local change to font"
-#~ msgstr "Krajevna sprememba pisave"
-
-#~ msgid "Long description link"
-#~ msgstr "Dolg opis povezave"
-
-#~ msgid "Long quotation"
-#~ msgstr "Dolg navedek"
-
-#~ msgid "Margin pixel height"
-#~ msgstr "Višina odmika v točkah"
-
-#~ msgid "Margin pixel width"
-#~ msgstr "Širina odmika v točkah"
-
-#~ msgid "Maximum length of text field"
-#~ msgstr "Največja dolžina polja besedila"
-
-#~ msgid "Output media"
-#~ msgstr "Izhodna vrsta nosilca"
-
-#~ msgid "Media-independent link"
-#~ msgstr "Povezava, neodvisna od nosilca"
-
-#~ msgid "Menu list (deprecated)"
-#~ msgstr "Seznam menija (opuščeno)"
-
-#~ msgid "Multi-line text field"
-#~ msgstr "Večvrstično polje besedila"
-
-#~ msgid "Multiple"
-#~ msgstr "Večkratno"
-
-#~ msgid "Named property value"
-#~ msgstr "Poimenovana vrednost lastnosti"
-
-#~ msgid "No frames"
-#~ msgstr "Ni okvirjev"
-
-#~ msgid "No script"
-#~ msgstr "Ni skripte"
-
-#~ msgid "No shade (deprecated)"
-#~ msgstr "Ni senčenja (opuščeno)"
-
-#~ msgid "No URI"
-#~ msgstr "Ni naslova URI"
-
-#~ msgid "No word wrap (deprecated)"
-#~ msgstr "Ni preloma besed (opuščeno)"
-
-#~ msgid "Object applet file (deprecated)"
-#~ msgstr "Datoteka predmeta vstavka (opuščeno)"
-
-#~ msgid "Object data reference"
-#~ msgstr "Navezovanje na podatke predmeta"
-
-#~ msgid "Offset for alignment character"
-#~ msgstr "Odmik za znak poravnave"
-
-#~ msgid "OnBlur event"
-#~ msgstr "Dogodek OnBlur"
-
-#~ msgid "OnChange event"
-#~ msgstr "Dogodek OnChange"
-
-#~ msgid "OnClick event"
-#~ msgstr "Dogodek OnClick"
-
-#~ msgid "OnDblClick event"
-#~ msgstr "Dogodek OnDblClick"
-
-#~ msgid "OnFocus event"
-#~ msgstr "Dogodek OnFocus"
-
-#~ msgid "OnKeyDown event"
-#~ msgstr "Dogodek OnKezDown"
-
-#~ msgid "OnKeyPress event"
-#~ msgstr "Dogodek OnKeyPress"
-
-#~ msgid "OnKeyUp event"
-#~ msgstr "Dogodek OnKeyUp"
-
-#~ msgid "OnLoad event"
-#~ msgstr "Dogodek OnLoad"
-
-#~ msgid "OnMouseDown event"
-#~ msgstr "Dogodek OnMouseDown"
-
-#~ msgid "OnMouseMove event"
-#~ msgstr "Dogodek OnMouseMove"
-
-#~ msgid "OnMouseOut event"
-#~ msgstr "Dogodek OnMouseOut"
-
-#~ msgid "OnMouseOver event"
-#~ msgstr "Dogodek OnMouseOver"
-
-#~ msgid "OnMouseUp event"
-#~ msgstr "Dogodek OnMouseUp"
-
-#~ msgid "OnReset event"
-#~ msgstr "Dogodek OnReset"
-
-#~ msgid "OnSelect event"
-#~ msgstr "Dogodek OnSelect"
-
-#~ msgid "OnSubmit event"
-#~ msgstr "Dogodek OnSubmit"
-
-#~ msgid "OnUnload event"
-#~ msgstr "Dogodek OnUnload"
-
-#~ msgid "Option group"
-#~ msgstr "Skupina možnosti"
-
-#~ msgid "Option selector"
-#~ msgstr "Izbirnik možnosti"
-
-#~ msgid "Ordered list"
-#~ msgstr "Urejen seznam"
-
-#~ msgid "Paragraph class"
-#~ msgstr "Razred odstavka"
-
-#~ msgid "Paragraph style"
-#~ msgstr "Slog odstavka"
-
-#~ msgid "Paragraph"
-#~ msgstr "Odstavek"
-
-#~ msgid "Preformatted text"
-#~ msgstr "Predoblikovano besedilo"
-
-#~ msgid "Profile metainfo dictionary"
-#~ msgstr "Slovar metapodatkov profila"
-
-#~ msgid "Push button"
-#~ msgstr "Gumb"
-
-#~ msgid "ReadOnly text and password"
-#~ msgstr "Le berljivo besedilo in geslo"
-
-#~ msgid "Reduced spacing (deprecated)"
-#~ msgstr "Zmanjšan prazen prostor (opuščeno)"
-
-#~ msgid "Reverse link"
-#~ msgstr "Obrnjena povezava"
-
-#~ msgid "Rows"
-#~ msgstr "Vrstice"
-
-#~ msgid "Rulings between rows and columns"
-#~ msgstr "Ravnilo med vrsticami in stolpci"
-
-#~ msgid "Sample program output, scripts"
-#~ msgstr "Primer izhoda programa, skripte"
-
-#~ msgid "Scope covered by header cells"
-#~ msgstr "Območje pokrito s celicami glave"
-
-#~ msgid "Script language name"
-#~ msgstr "Ime skriptnega jezika"
-
-#~ msgid "Script statements"
-#~ msgstr "Zahteve skripta"
-
-#~ msgid "Scrollbar"
-#~ msgstr "Drsnik"
-
-#~ msgid "Selectable option"
-#~ msgstr "Izbirna možnost"
-
-#~ msgid "Selected"
-#~ msgstr "Izbrano"
-
-#~ msgid "Server-side image map"
-#~ msgstr "Karta slike na strežniku"
-
-#~ msgid "Shape"
-#~ msgstr "Oblika"
-
-#~ msgid "Short inline quotation"
-#~ msgstr "Kratek vmesni navedek"
-
-#~ msgid "Size (deprecated)"
-#~ msgstr "Velikost (opuščeno)"
-
-#~ msgid "Source"
-#~ msgstr "Izvor"
-
-#~ msgid "Space-separated archive list"
-#~ msgstr "Seznam arhiva ločen s presledki"
-
-#~ msgid "Spacing between cells"
-#~ msgstr "Prostor med celicami"
-
-#~ msgid "Spacing within cells"
-#~ msgstr "Prostor znotraj celic"
-
-#~ msgid "Span"
-#~ msgstr "Razmik"
-
-#~ msgid "Standby load message"
-#~ msgstr "Sprotno sporočilo o nalaganju"
-
-#~ msgid "Starting sequence number (deprecated)"
-#~ msgstr "Številka začetka zaporedja (opuščeno)"
-
-#~ msgid "Strike-through text style (deprecated)"
-#~ msgstr "Slog prečrtanega besedila (opuščeno)"
-
-#~ msgid "Strike-through text (deprecated)"
-#~ msgstr "Prečrtano besedilo (opuščeno)"
-
-#~ msgid "Strong emphasis"
-#~ msgstr "Močan poudarek"
-
-#~ msgid "Style info"
-#~ msgstr "Podatki o slogu"
-
-#~ msgid "Subscript"
-#~ msgstr "Podpisano"
-
-#~ msgid "Superscript"
-#~ msgstr "Nadpisano"
-
-#~ msgid "Table body"
-#~ msgstr "Telo razpredelnice"
-
-#~ msgid "Table caption"
-#~ msgstr "Naziv razpredelnice"
-
-#~ msgid "Table column group properties"
-#~ msgstr "Lastnosti skupine stolpcev razpredelnice"
-
-#~ msgid "Table column properties"
-#~ msgstr "Lastnosti stolpca razpredelnice"
-
-#~ msgid "Table data cell"
-#~ msgstr "Podatkovna celica razpredelnice"
-
-#~ msgid "Table footer"
-#~ msgstr "Noga razpredelnice"
-
-#~ msgid "Table header cell"
-#~ msgstr "Celica glave razpredelnice"
-
-#~ msgid "Table header"
-#~ msgstr "Glava razpredelnice"
-
-#~ msgid "Table row"
-#~ msgstr "Vrstica razpredelnice"
-
-#~ msgid "Table summary"
-#~ msgstr "Povzetek razpredelnice"
-
-#~ msgid "Table"
-#~ msgstr "Razpredelnica"
-
-#~ msgid "Target — Blank"
-#~ msgstr "Cilj — Prazno"
-
-#~ msgid "Target — Parent"
-#~ msgstr "Cilj — Nadrejeni predmet"
-
-#~ msgid "Target — Self"
-#~ msgstr "Cilj — Samo"
-
-#~ msgid "Target — Top"
-#~ msgstr "Cilj — Na vrhu"
-
-#~ msgid "Teletype or monospace text style"
-#~ msgstr "Enopresledni slog besedila"
-
-#~ msgid "Text color (deprecated)"
-#~ msgstr "Barva besedila (opuščeno)"
-
-#~ msgid "Text entered by user"
-#~ msgstr "Besedilo, ki ga vpiše uporabnik"
-
-#~ msgid "Title"
-#~ msgstr "Naziv"
-
-#~ msgid "Unordered list"
-#~ msgstr "Neurejen seznam"
-
-#~ msgid "Use image map"
-#~ msgstr "Uporabi karto slike"
-
-#~ msgid "Value interpretation"
-#~ msgstr "Razlaga vrednosti"
-
-#~ msgid "Value"
-#~ msgstr "Vrednost"
-
-#~ msgid "Variable or program argument"
-#~ msgstr "Spremenljivka ali argument programa"
-
-#~ msgid "Vertical cell alignment"
-#~ msgstr "Navpična poravnava celic"
-
-#~ msgid "Vertical space (deprecated)"
-#~ msgstr "Navpični prostor (opuščeno)"
-
-#~ msgid "Visited link color (deprecated)"
-#~ msgstr "Barva obiskane povezave (opuščeno)"
-
-#~ msgid "Width"
-#~ msgstr "Širina"
-
-#~ msgid "HTML — Tags"
-#~ msgstr "HTML  — Oznake"
-
-#~ msgid "Above"
-#~ msgstr "Nad"
-
-#~ msgid "Applet class file code"
-#~ msgstr "Datoteka kode razreda vstavkov"
-
-#~ msgid "Array"
-#~ msgstr "Polje"
-
-#~ msgid "Background texture tile"
-#~ msgstr "Slika tlakovanja ozadja"
-
-#~ msgid "Base font"
-#~ msgstr "Osnovna pisava"
-
-#~ msgid "Border color"
-#~ msgstr "Barva robu"
-
-#~ msgid "Border"
-#~ msgstr "Obroba"
-
-#~ msgid "Center"
-#~ msgstr "Sredinsko"
-
-#~ msgid "Checked (state)"
-#~ msgstr "Označeno (stanje)"
-
-#~ msgid "Color of selected links"
-#~ msgstr "Barva izbranih povezav"
-
-#~ msgid "Content scheme"
-#~ msgstr "Shema vsebine"
-
-#~ msgid "Content type"
-#~ msgstr "Vrsta vsebine"
-
-#~ msgid "Direction"
-#~ msgstr "Smer"
-
-#~ msgid "Directory list"
-#~ msgstr "Seznam imenikov"
-
-#~ msgid "HTML version"
-#~ msgstr "Različica HTML"
-
-#~ msgid "Embedded object"
-#~ msgstr "Vgrajen predmet"
-
-#~ msgid "Figure"
-#~ msgstr "Skica"
-
-#~ msgid "Font face"
-#~ msgstr "Ime pisave"
-
-#~ msgid "Frameborder"
-#~ msgstr "Rob okvirja"
-
-#~ msgid "Framespacing"
-#~ msgstr "Prostor med okvirji"
-
-#~ msgid "Heading"
-#~ msgstr "Naslov"
-
-#~ msgid "Horizontal space"
-#~ msgstr "Vodoravni prostor"
-
-#~ msgid "Image source"
-#~ msgstr "Vir slike"
-
-#~ msgid "Inline layer"
-#~ msgstr "Vključena plast"
-
-#~ msgid "Java applet"
-#~ msgstr "Java aplet"
-
-#~ msgid "Layer"
-#~ msgstr "Plast"
-
-#~ msgid "Link color"
-#~ msgstr "Barva povezave"
-
-#~ msgid "Listing"
-#~ msgstr "Seznam"
-
-#~ msgid "Mail link"
-#~ msgstr "Povezava na poštni naslov"
-
-#~ msgid "Marquee"
-#~ msgstr "Markiza"
-
-#~ msgid "Menu list"
-#~ msgstr "Seznam menija"
-
-#~ msgid "Multicolumn"
-#~ msgstr "Večstolpično"
-
-#~ msgid "Next ID"
-#~ msgstr "Naslednji ID"
-
-#~ msgid "No embedded objects"
-#~ msgstr "Ni vgrajenih predmetov"
-
-#~ msgid "No layers"
-#~ msgstr "Ni plasti"
-
-#~ msgid "No line break"
-#~ msgstr "Ni preloma vrstice"
-
-#~ msgid "No shade"
-#~ msgstr "Ni senčenja"
-
-#~ msgid "No word wrap"
-#~ msgstr "Ni preloma besed"
-
-#~ msgid "Note"
-#~ msgstr "Opomba"
-
-#~ msgid "Object applet file"
-#~ msgstr "Datoteka predmeta vstavka"
-
-#~ msgid "Preformatted listing"
-#~ msgstr "Predoblikovan seznam"
-
-#~ msgid "Prompt message"
-#~ msgstr "Vprašalno sporočilo"
-
-#~ msgid "Quote"
-#~ msgstr "Navedek"
-
-#~ msgid "Range"
-#~ msgstr "Območje"
-
-#~ msgid "Reduced spacing"
-#~ msgstr "Zmanjšan prazen prostor"
-
-#~ msgid "Root"
-#~ msgstr "Koren"
-
-#~ msgid "Single line prompt"
-#~ msgstr "Enovrstično vprašanje"
-
-#~ msgid "Size"
-#~ msgstr "Velikost"
-
-#~ msgid "Soft line break"
-#~ msgstr "Mehak prelom vrstice"
-
-#~ msgid "Sound"
-#~ msgstr "Zvok"
-
-#~ msgid "Spacer"
-#~ msgstr "Preslednik"
-
-#~ msgid "Square root"
-#~ msgstr "Kvadratni koren"
-
-#~ msgid "Starting sequence number"
-#~ msgstr "Številka začetka zaporedja"
-
-#~ msgid "Strike-through text style"
-#~ msgstr "Slog prečrtanega besedila"
-
-#~ msgid "Tab order position"
-#~ msgstr "Položaj zaporedja zavihkov"
-
-#~ msgid "Text color"
-#~ msgstr "Barva besedila"
-
-#~ msgid "Text"
-#~ msgstr "Besedilo"
-
-#~ msgid "Top margin in pixels"
-#~ msgstr "Vrhnji rob v točkah"
-
-#~ msgid "URL"
-#~ msgstr "Naslov URL"
-
-#~ msgid "Vertical space"
-#~ msgstr "Navpični prostor"
-
-#~ msgid "Visited link color"
-#~ msgstr "Barva obiskane povezave"
-
-#~ msgid "HTML — Special Characters"
-#~ msgstr "HTML  —  Posebni znaki"
-
-#~ msgid "Non-breaking space"
-#~ msgstr "Nedeljivi presledek"
-
-#~ msgid "Latex — Tags"
-#~ msgstr "Latex — Oznake"
-
-#~ msgid "Bibliography (cite)"
-#~ msgstr "Bibliografija (citat)"
-
-#~ msgid "Bibliography (item)"
-#~ msgstr "Bibliografija (predmet)"
-
-#~ msgid "Bibliography (shortcite)"
-#~ msgstr "Bibliografija (kratki citat)"
-
-#~ msgid "Bibliography (thebibliography)"
-#~ msgstr "Bibliografija (bibliografija)"
-
-#~ msgid "Brackets ()"
-#~ msgstr "Oklepaja ()"
-
-#~ msgid "Brackets []"
-#~ msgstr "Oklepaja []"
-
-#~ msgid "Brackets {}"
-#~ msgstr "Oklepaja {}"
-
-#~ msgid "Brackets <>"
-#~ msgstr "Oklepaja <>"
-
-#~ msgid "File input"
-#~ msgstr "Datotečni dovod"
-
-#~ msgid "Function cosine"
-#~ msgstr "Funkcija cosinus"
-
-#~ msgid "Function e^"
-#~ msgstr "Funkcija e^"
-
-#~ msgid "Function exp"
-#~ msgstr "Funkcija exp"
-
-#~ msgid "Function log"
-#~ msgstr "Funkcija log"
-
-#~ msgid "Function log10"
-#~ msgstr "Funkcija log10"
-
-#~ msgid "Function sine"
-#~ msgstr "Funkcija sine"
-
-#~ msgid "Greek alpha"
-#~ msgstr "Grška alfa"
-
-#~ msgid "Greek beta"
-#~ msgstr "Grška beta"
-
-#~ msgid "Greek epsilon"
-#~ msgstr "Grški epsilon"
-
-#~ msgid "Greek gamma"
-#~ msgstr "Grška gama"
-
-#~ msgid "Greek lambda"
-#~ msgstr "Grška lambda"
-
-#~ msgid "Greek rho"
-#~ msgstr "Grška ro"
-
-#~ msgid "Greek tau"
-#~ msgstr "Grška tau"
-
-#~ msgid "Header 0 (chapter)"
-#~ msgstr "Naslov 0 (poglavje)"
-
-#~ msgid "Header 0 (chapter*)"
-#~ msgstr "Naslov 0 (poglavje*)"
-
-#~ msgid "Header 1 (section)"
-#~ msgstr "Naslov 1 (odsek)"
-
-#~ msgid "Header 1 (section*)"
-#~ msgstr "Naslov 1 (odsek*)"
-
-#~ msgid "Header 2 (subsection)"
-#~ msgstr "Naslov 2 (pododsek)"
-
-#~ msgid "Header 2 (subsection*)"
-#~ msgstr "Naslov 2 (pododsek*)"
-
-#~ msgid "Header 3 (subsubsection)"
-#~ msgstr "Naslov 3 (podpododsek)"
-
-#~ msgid "Header 3 (subsubsection*)"
-#~ msgstr "Naslov 3 (podpododsek*)"
-
-#~ msgid "Header 4 (paragraph)"
-#~ msgstr "Naslov 4 (odstavek)"
-
-#~ msgid "Header appendix"
-#~ msgstr "Pripona glavi"
-
-#~ msgid "List enumerate"
-#~ msgstr "Oštevilčenje seznama"
-
-#~ msgid "List itemize"
-#~ msgstr "Opredmetenje seznama"
-
-#~ msgid "Item with label"
-#~ msgstr "Predmet z oznako"
-
-#~ msgid "Item"
-#~ msgstr "Predmet"
-
-#~ msgid "Maths (display)"
-#~ msgstr "Matematika (prikaz)"
-
-#~ msgid "Maths (inline)"
-#~ msgstr "Matematika (vključeno)"
-
-#~ msgid "Operator fraction"
-#~ msgstr "Operator ostanek"
-
-#~ msgid "Operator integral (display)"
-#~ msgstr "Operator integral (prikaz)"
-
-#~ msgid "Operator integral (inline)"
-#~ msgstr "Operator integral (vključeno)"
-
-#~ msgid "Operator sum (display)"
-#~ msgstr "Operator vsota (prikaz)"
-
-#~ msgid "Operator sum (inline)"
-#~ msgstr "Operator vsota (vključeno)"
-
-#~ msgid "Reference label"
-#~ msgstr "Oznaka navezave"
-
-#~ msgid "Reference ref"
-#~ msgstr "Vsebina navezave"
-
-#~ msgid "Symbol <<"
-#~ msgstr "Simbol <<"
-
-#~ msgid "Symbol <="
-#~ msgstr "Simbol <="
-
-#~ msgid "Symbol >="
-#~ msgstr "Simbol >="
-
-#~ msgid "Symbol >>"
-#~ msgstr "Simbol >>"
-
-#~ msgid "Symbol and"
-#~ msgstr "Simbol in"
-
-#~ msgid "Symbol const"
-#~ msgstr "Simbol konstante"
-
-#~ msgid "Symbol d2-by-dt2-partial"
-#~ msgstr "Simbol d2-by-dt2-partial"
-
-#~ msgid "Symbol dagger"
-#~ msgstr "Simbol bodala"
-
-#~ msgid "Symbol d-by-dt"
-#~ msgstr "Simbol d-by-dt"
-
-#~ msgid "Symbol d-by-dt-partial"
-#~ msgstr "Simbol d-by-dt-partial"
-
-#~ msgid "Symbol equiv"
-#~ msgstr "Simbol enakost"
-
-#~ msgid "Symbol en-dash --"
-#~ msgstr "Simbol pomišljaj (en-dash) --"
-
-#~ msgid "Symbol em-dash ---"
-#~ msgstr "Simbol pomišljaj (em-dash) ---"
-
-#~ msgid "Symbol infinity"
-#~ msgstr "Simbol neskončnosti"
-
-#~ msgid "Symbol mathspace ,"
-#~ msgstr "Simbol matematičnega prostora ,"
-
-#~ msgid "Symbol mathspace ."
-#~ msgstr "Simbol matematičnega prostora ."
-
-#~ msgid "Symbol mathspace _"
-#~ msgstr "Simbol matematičnega prostora _"
-
-#~ msgid "Symbol mathspace __"
-#~ msgstr "Simbol matematičnega prostora __"
-
-#~ msgid "Symbol simeq"
-#~ msgstr "Simbol simeq"
-
-#~ msgid "Symbol star"
-#~ msgstr "Simbol zvezdica"
-
-#~ msgid "Typeface bold"
-#~ msgstr "Krepka pisava"
-
-#~ msgid "Typeface type"
-#~ msgstr "Vrsta pisave"
-
-#~ msgid "Typeface italic"
-#~ msgstr "Poševna pisava"
-
-#~ msgid "Typeface slanted"
-#~ msgstr "Nagnjena pisava"
-
-#~ msgid "Unbreakable text"
-#~ msgstr "Nelomljiva pisava"
-
-#~ msgid "Footnote"
-#~ msgstr "Opomba noge"
-
-#~ msgid "Tag list"
-#~ msgstr "Seznam oznak"
-
-#~ msgid ""
-#~ "Provides a method to easily insert commonly used tags/strings into a "
-#~ "document without having to type them."
-#~ msgstr ""
-#~ "Omogoča enostavno vstavljanje pogosto uporabljenih oznak/nizov v dokument "
-#~ "brez tipkanja."
-
-#~ msgid "XSLT — Elements"
-#~ msgstr "XSLT — Predmeti"
-
-#~ msgid "XSLT — Functions"
-#~ msgstr "XSLT — Funkcije"
-
-#~ msgid "XSLT — Axes"
-#~ msgstr "XLST — Osi"
-
-#~ msgid "ancestor"
-#~ msgstr "predhodnik"
-
-#~ msgid "ancestor-or-self"
-#~ msgstr "predhodnik-ali-jaz"
-
-#~ msgid "attribute"
-#~ msgstr "atribut"
-
-#~ msgid "child"
-#~ msgstr "podrejeni predmet"
-
-#~ msgid "descendant"
-#~ msgstr "naslednik"
-
-#~ msgid "descendant-or-self"
-#~ msgstr "naslednik-ali-sam"
-
-#~ msgid "following"
-#~ msgstr "sledi"
-
-#~ msgid "following-sibling"
-#~ msgstr "sledi-brat-ali-sestra"
-
-#~ msgid "namespace"
-#~ msgstr "imenski prostor"
-
-#~ msgid "parent"
-#~ msgstr "nadrejeni predmet"
-
-#~ msgid "preceding"
-#~ msgstr "na vrsti pred"
-
-#~ msgid "preceding-sibling"
-#~ msgstr "na vrsti pred - brat-ali-sestra"
-
-#~ msgid "self"
-#~ msgstr "sam"
-
-#~ msgid "XUL — Tags"
-#~ msgstr "XUL — Oznake"
