@@ -104,7 +104,7 @@ class SessionSaverWindowActivatable(GObject.Object, Gedit.WindowActivatable):
             return False
 
         if (Tepl.Buffer.is_untouched(tab.get_document()) and
-            tab.get_state() == Gedit.TabState.STATE_NORMAL):
+            tab.get_state() == Gedit.TabState.NORMAL):
             return False
 
         return True
