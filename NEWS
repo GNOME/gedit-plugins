@@ -1,3 +1,7 @@
+News in 47.1, 2024-05-07 (stable version)
+-----------------------------------------
+* Session Saver plugin: bug fix.
+
 News in 47.0, 2024-04-27 (stable version)
 -----------------------------------------
 * Port to latest libgedit-gtksourceview API.
