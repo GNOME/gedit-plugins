@@ -6,770 +6,839 @@
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2004.
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2007, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-07 13:10+0100\n"
-"PO-Revision-Date: 2009-09-15 16:29+0530\n"
-"Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
-"Language-Team: Hindi <hindi.sf.net>\n"
+"Report-Msgid-Bugs-To: https://gedit-technology.github.io/apps/gedit/"
+"reporting-bugs.html\n"
+"POT-Creation-Date: 2024-04-28 11:25+0000\n"
+"PO-Revision-Date: 2024-04-30 23:44+0530\n"
+"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"Language-Team: Hindi\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 46.1\n"
 
-#: ../plugins/bookmarks/bookmarks.plugin.desktop.in.in.h:1
+#: plugins/bookmarks/bookmarks.plugin.desktop.in.in:5
+#: plugins/bookmarks/gedit-bookmarks.metainfo.xml.in:6
 msgid "Bookmarks"
 msgstr "पुस्तचिह्न"
 
-#: ../plugins/bookmarks/bookmarks.plugin.desktop.in.in.h:2
+#: plugins/bookmarks/bookmarks.plugin.desktop.in.in:6
+#: plugins/bookmarks/gedit-bookmarks.metainfo.xml.in:7
 msgid "Easy document navigation with bookmarks"
-msgstr ""
+msgstr "पुस्तचिह्न के साथ आसान दस्तावेज नेविगेशन"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:197
-#, fuzzy
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:141
 msgid "Toggle Bookmark"
-msgstr "पुस्तचिह्न"
+msgstr "पुस्तचिह्न टॉगल करें"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:198
-#, fuzzy
-msgid "Toggle bookmark status of the current line"
-msgstr "वर्तमान विंडो में स्थिति-पट्टी की दृश्यता दिखाएँ या छुपाये"
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:145
+msgid "Go to Next Bookmark"
+msgstr "अगले पुस्तचिह्न पर जाएं"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:200
-msgid "Goto Next Bookmark"
-msgstr ""
+#: plugins/bookmarks/gedit-bookmarks-app-activatable.c:149
+msgid "Go to Previous Bookmark"
+msgstr "पिछली पुस्तचिह्न पर जाएं"
 
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:201
-#, fuzzy
-msgid "Goto the next bookmark"
-msgstr "अगले देखे अवस्थिति पर जाएँ"
-
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:203
-#, fuzzy
-msgid "Goto Previous Bookmark"
-msgstr "पिछली अवस्थिति पर जाएँ"
-
-#: ../plugins/bookmarks/gedit-bookmarks-plugin.c:204
-#, fuzzy
-msgid "Goto the previous bookmark"
-msgstr "पिछला पृष्ठ दिखाएँ"
-
-#: ../plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in.h:1
-msgid "Automatically adds closing brackets."
-msgstr ""
-
-#: ../plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in.h:2
-#, fuzzy
+#: plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in:6
+#: plugins/bracketcompletion/gedit-bracketcompletion.metainfo.xml.in:6
 msgid "Bracket Completion"
-msgstr "बैकअप नक़ल विस्तार"
+msgstr "कोष्ठक समापन"
 
-#: ../plugins/charmap/charmap.plugin.desktop.in.in.h:1
-#: ../plugins/charmap/gedit-charmap-plugin.c:337
-#, fuzzy
+#: plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in:7
+msgid "Automatically adds closing brackets."
+msgstr "स्वचालित रूप से समापन कोष्ठक जोड़ता है।"
+
+#: plugins/bracketcompletion/gedit-bracketcompletion.metainfo.xml.in:7
+msgid "Automatically add a closing bracket when you insert one"
+msgstr "जब आप एक सम्मिलित करते हैं तो स्वचालित रूप से एक समापन ब्रैकेट जोड़ें"
+
+#: plugins/charmap/charmap/__init__.py:58
+#: plugins/charmap/charmap.plugin.desktop.in.in:6
 msgid "Character Map"
-msgstr "वर्ण कोडिंग"
+msgstr "वर्ण मानचित्र"
 
-#: ../plugins/charmap/charmap.plugin.desktop.in.in.h:2
+#: plugins/charmap/charmap.plugin.desktop.in.in:7
 msgid "Insert special characters just by clicking on them."
-msgstr ""
+msgstr "केवल उन पर क्लिक करके विशेष वर्ण सम्मिलित करें।"
 
-#: ../plugins/codecomment/codecomment.plugin.desktop.in.in.h:1
-#, fuzzy
-msgid "Code comment"
-msgstr "टिप्पणी"
+#: plugins/charmap/gedit-charmap.metainfo.xml.in:6
+msgid "Charmap"
+msgstr "वर्णमानचित्र"
 
-#: ../plugins/codecomment/codecomment.plugin.desktop.in.in.h:2
+#: plugins/charmap/gedit-charmap.metainfo.xml.in:7
+msgid "Select characters from a character map"
+msgstr "वर्ण मानचित्र से वर्ण चुनें"
+
+#: plugins/codecomment/codecomment.plugin.desktop.in.in:6
+#: plugins/codecomment/gedit-codecomment.metainfo.xml.in:6
+msgid "Code Comment"
+msgstr "कोड टिप्पणी"
+
+#: plugins/codecomment/codecomment.plugin.desktop.in.in:7
 msgid "Comment out or uncomment a selected block of code."
-msgstr ""
+msgstr "कोड के किसी चयनित ब्लॉक पर टिप्पणी करें या टिप्पणी हटाएं।"
 
-#: ../plugins/codecomment/codecomment.py:90
-#, fuzzy
+#: plugins/codecomment/codecomment.py:118
 msgid "Co_mment Code"
-msgstr "टिप्पणी"
+msgstr "कोड टिप्पणी जोड़ें (_m)"
 
-#: ../plugins/codecomment/codecomment.py:92
-#, fuzzy
-msgid "Comment the selected code"
-msgstr "चयनित पाठ मिटाएँ"
-
-#: ../plugins/codecomment/codecomment.py:96
+#: plugins/codecomment/codecomment.py:124
 msgid "U_ncomment Code"
-msgstr ""
+msgstr "कोड टिप्पणी हटाएं (_n)"
 
-#: ../plugins/codecomment/codecomment.py:98
-#, fuzzy
-msgid "Uncomment the selected code"
-msgstr "चयनित पाठ मिटाएँ"
+#: plugins/codecomment/gedit-codecomment.metainfo.xml.in:7
+msgid "Comment or uncomment blocks of code"
+msgstr "कोड के ब्लॉक पर टिप्पणी करें या टिप्पणी हटाएं"
 
-#. ex:ts=4:et:
-#: ../plugins/colorpicker/colorpicker.plugin.desktop.in.in.h:1
+#: plugins/colorpicker/colorpicker.plugin.desktop.in.in:6
 msgid "Color Picker"
-msgstr ""
+msgstr "रंग चयनकर्ता"
 
-#: ../plugins/colorpicker/colorpicker.plugin.desktop.in.in.h:2
+#: plugins/colorpicker/colorpicker.plugin.desktop.in.in:7
 msgid "Pick a color from a dialog and insert its hexadecimal representation."
-msgstr ""
+msgstr "किसी संवाद से एक रंग चुनें और उसका हेक्साडेसिमल प्रतिनिधित्व डालें।"
 
-#: ../plugins/colorpicker/colorpicker.py:77
-msgid "Pick _Color..."
-msgstr ""
+#: plugins/colorpicker/colorpicker.py:132
+msgid "Pick _Color…"
+msgstr "रंग चुनें (_C)…"
 
-#: ../plugins/colorpicker/colorpicker.py:78
-msgid "Pick a color from a dialog"
-msgstr ""
-
-#: ../plugins/colorpicker/colorpicker.py:188
-#, fuzzy
+#: plugins/colorpicker/colorpicker.py:172
 msgid "Pick Color"
-msgstr "कड़ी रंग"
+msgstr "रंग चुनें"
 
-#: ../plugins/colorpicker/colorpicker.py:195
-msgid "_Insert"
-msgstr "डालें (_I)"
+#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:6
+msgid "Color picker"
+msgstr "रंग चयनकर्ता"
 
-#. ex:ts=4:et:
-#: ../plugins/commander/commander.plugin.desktop.in.in.h:1
-msgid "Command line interface for advanced editing"
-msgstr ""
+#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:7
+msgid "Select and insert a color from a dialog (for HTML, CSS, PHP)"
+msgstr "किसी संवाद से रंग चुनें और डालें (HTML, CSS, PHP के लिए)"
 
-#: ../plugins/commander/commander.plugin.desktop.in.in.h:2
-#, fuzzy
-msgid "Commander"
-msgstr "कमांड रंग (_o):"
-
-#. ex:set ts=8 noet:
-#: ../plugins/drawspaces/drawspaces.plugin.desktop.in.in.h:1
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:1
-#, fuzzy
+#: plugins/drawspaces/drawspaces.plugin.desktop.in.in:5
 msgid "Draw Spaces"
-msgstr "खाली स्थान का प्रयोग करें"
+msgstr "रिक्त स्थान बनाएं"
 
-#: ../plugins/drawspaces/drawspaces.plugin.desktop.in.in.h:2
-msgid "Draw Spaces and Tabs"
-msgstr ""
+#: plugins/drawspaces/drawspaces.plugin.desktop.in.in:6
+msgid "Draw spaces and tabs"
+msgstr "रिक्त स्थान और टैब बनाएं"
 
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:1
-#, fuzzy
-msgid "Draw leading spaces"
-msgstr "बिना अंतराल स्थान"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:2
-msgid "Draw new lines"
-msgstr ""
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:3
-#, fuzzy
-msgid "Draw non-breaking spaces"
-msgstr "बिना अंतराल स्थान"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:4
-#, fuzzy
+#: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:6
 msgid "Draw spaces"
-msgstr "खाली स्थान डालें"
+msgstr "रिक्त स्थान बनाएं"
 
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:5
-msgid "Draw spaces in text"
+#: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:7
+msgid "Draw Spaces and Tabs"
+msgstr "रिक्त स्थान और टैब बनाएं"
+
+#: plugins/git/gedit-git.metainfo.xml.in:6
+#: plugins/git/git.plugin.desktop.in.in:6
+msgid "Git"
+msgstr "Git"
+
+#: plugins/git/gedit-git.metainfo.xml.in:7
+msgid ""
+"Use git information to display which lines and files changed since last "
+"commit"
 msgstr ""
+"यह प्रदर्शित करने के लिए git जानकारी का उपयोग करें कि अंतिम कमिट के बाद कौन सी "
+"पंक्तियां और फाइलें बदली गईं"
 
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:6
-msgid "Draw tabs"
-msgstr ""
+#: plugins/git/git.plugin.desktop.in.in:7
+msgid "Highlight lines that have been changed since the last commit"
+msgstr "पिछले कमिट के बाद से बदली गई पंक्तियों को चिन्हांकित करें"
 
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.ui.h:7
-#, fuzzy
-msgid "Draw trailing spaces"
-msgstr "ट्रैलिंग स्थान हटाएं"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.c:134
-#, fuzzy
-msgid "Show _White Space"
-msgstr "अगला पृष्ठ दिखाएँ"
-
-#: ../plugins/drawspaces/gedit-drawspaces-plugin.c:135
-#, fuzzy
-msgid "Show spaces and tabs"
-msgstr "टैब बदले खाली स्थान प्रविष्ट करें (_s)"
-
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:2
-msgid "Enabled"
-msgstr "सक्रिय"
-
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:3
-msgid "If TRUE drawing will be enabled."
-msgstr ""
-
-#: ../plugins/drawspaces/org.gnome.gedit.plugins.drawspaces.gschema.xml.in.in.h:4
-msgid "The type of spaces to be drawn."
-msgstr ""
-
-#: ../plugins/joinlines/joinlines.plugin.desktop.in.in.h:1
-msgid "Join several lines or split long ones"
-msgstr ""
-
-#: ../plugins/joinlines/joinlines.plugin.desktop.in.in.h:2
+#: plugins/joinlines/gedit-joinlines.metainfo.xml.in:6
+#: plugins/joinlines/joinlines.plugin.desktop.in.in:6
 msgid "Join/Split Lines"
-msgstr ""
+msgstr "पंक्तियों को जोड़ें/विभाजित करें"
 
-#: ../plugins/joinlines/joinlines.py:56
-#, fuzzy
+#: plugins/joinlines/gedit-joinlines.metainfo.xml.in:7
+msgid "Join or split multiple lines through Ctrl+J and Ctrl+Shift+J"
+msgstr "Ctrl+J और Ctrl+Shift+J के माध्यम से एकाधिक पंक्तियों को जोड़ें या विभाजित करें"
+
+#: plugins/joinlines/joinlines.plugin.desktop.in.in:7
+msgid "Join several lines or split long ones"
+msgstr "कई पंक्तियों को जोड़ें या लंबी पंक्तियों को विभाजित करें"
+
+#: plugins/joinlines/joinlines.py:111
 msgid "_Join Lines"
-msgstr "पंक्ति"
+msgstr "पंक्तियां जोड़ें (_J)"
 
-#: ../plugins/joinlines/joinlines.py:57
-#, fuzzy
-msgid "Join the selected lines"
-msgstr "चयनित पंक्तियों में हाशिया नहीं छोड़ें"
-
-#: ../plugins/joinlines/joinlines.py:59
+#: plugins/joinlines/joinlines.py:117
 msgid "_Split Lines"
-msgstr ""
+msgstr "पंक्तियां विभाजित करें (_S)"
 
-#: ../plugins/joinlines/joinlines.py:60
-#, fuzzy
-msgid "Split the selected lines"
-msgstr "चयनित पंक्तियों में हाशिया नहीं छोड़ें"
+#: plugins/multiedit/gedit-multiedit.metainfo.xml.in:6
+msgid "Multi edit"
+msgstr "बहुसंपादन"
 
-#. ex:ts=4:et:
-#: ../plugins/multiedit/multiedit.plugin.desktop.in.in.h:1
+#: plugins/multiedit/gedit-multiedit.metainfo.xml.in:7
+#: plugins/multiedit/multiedit.plugin.desktop.in.in:7
 msgid "Edit document in multiple places at once"
-msgstr ""
+msgstr "दस्तावेज को एक साथ कई स्थानों पर संपादित करें"
 
-#: ../plugins/multiedit/multiedit.plugin.desktop.in.in.h:2
-msgid "Multi Edit"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:301
-msgid "Added edit point..."
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:637
-msgid "Column Mode..."
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:759
-msgid "Removed edit point..."
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:922
-msgid "Cancelled column mode..."
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1260
-msgid "Enter column edit mode using selection"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1261
-msgid "Enter <b>smart</b> column edit mode using selection"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1262
-msgid "<b>Smart</b> column align mode using selection"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1263
-msgid "<b>Smart</b> column align mode with additional space using selection"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1265
-msgid "Toggle edit point"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1266
-msgid "Add edit point at beginning of line/selection"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1267
-msgid "Add edit point at end of line/selection"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1268
-msgid "Align edit points"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1269
-msgid "Align edit points with additional space"
-msgstr ""
-
-#: ../plugins/multiedit/multiedit/documenthelper.py:1305
-#: ../plugins/multiedit/multiedit/windowhelper.py:70
+#: plugins/multiedit/multiedit/appactivatable.py:44
+#: plugins/multiedit/multiedit/viewactivatable.py:1351
 msgid "Multi Edit Mode"
-msgstr ""
+msgstr "बहु संपादन मोड"
 
-#: ../plugins/multiedit/multiedit/windowhelper.py:70
-msgid "Start multi edit mode"
-msgstr ""
+#: plugins/multiedit/multiedit.plugin.desktop.in.in:6
+msgid "Multi Edit"
+msgstr "बहुसंपादन"
 
-#. ex:ts=4:et:
-#: ../plugins/textsize/textsize.plugin.desktop.in.in.h:1
-msgid "Easily increase and decrease the text size"
-msgstr ""
+#: plugins/multiedit/multiedit/viewactivatable.py:317
+msgid "Added edit point…"
+msgstr "संपादन बिंदु जोड़ा गया…"
 
-#: ../plugins/textsize/textsize.plugin.desktop.in.in.h:2
-#, fuzzy
-msgid "Text Size"
-msgstr "टैब आकार"
+#: plugins/multiedit/multiedit/viewactivatable.py:659
+msgid "Column Mode…"
+msgstr "स्तंभ मोड…"
 
-#: ../plugins/sessionsaver/__init__.py:64
-msgid "Sa_ved sessions"
-msgstr ""
+#: plugins/multiedit/multiedit/viewactivatable.py:777
+msgid "Removed edit point…"
+msgstr "संपादन बिंदु हटाया गया…"
 
-#: ../plugins/sessionsaver/__init__.py:65
-#, fuzzy
-msgid "_Save current session"
-msgstr "मौजूदा चयन बदलें"
+#: plugins/multiedit/multiedit/viewactivatable.py:943
+msgid "Cancelled column mode…"
+msgstr "रद्द किया गया स्तंभ मोड…"
 
-#: ../plugins/sessionsaver/__init__.py:65
-#, fuzzy
-msgid "Save the current document list as a new session"
-msgstr "वर्तमान दस्तावेज़ को नये विंडो में ले जाएँ"
+#: plugins/multiedit/multiedit/viewactivatable.py:1306
+msgid "Enter column edit mode using selection"
+msgstr "चयन का उपयोग करके स्तंभ संपादन मोड दर्ज करें"
 
-#: ../plugins/sessionsaver/__init__.py:66
-msgid "_Manage saved sessions..."
-msgstr ""
+#: plugins/multiedit/multiedit/viewactivatable.py:1307
+msgid "Enter <b>smart</b> column edit mode using selection"
+msgstr "चयन का उपयोग करके <b>स्मार्ट</b> स्तंभ संपादन मोड दर्ज करें"
 
-#: ../plugins/sessionsaver/__init__.py:66
-#, fuzzy
-msgid "Open the saved session manager"
-msgstr "जीएडिट मैनुअल खोलें"
+#: plugins/multiedit/multiedit/viewactivatable.py:1308
+msgid "<b>Smart</b> column align mode using selection"
+msgstr "<b>स्मार्ट</b> चयन का उपयोग करके स्तंभ संरेखण मोड"
 
-#: ../plugins/sessionsaver/__init__.py:106
-#, python-format
-msgid "Recover '%s' session"
-msgstr ""
+#: plugins/multiedit/multiedit/viewactivatable.py:1309
+msgid "<b>Smart</b> column align mode with additional space using selection"
+msgstr "<b>स्मार्ट</b> स्तंभ संरेखण मोड चयन का उपयोग करके अतिरिक्त स्थान के साथ"
 
-#: ../plugins/sessionsaver/dialogs.py:167
+#: plugins/multiedit/multiedit/viewactivatable.py:1311
+msgid "Toggle edit point"
+msgstr "संपादन बिंदु टॉगल करें"
+
+#: plugins/multiedit/multiedit/viewactivatable.py:1312
+msgid "Add edit point at beginning of line/selection"
+msgstr "पंक्ति/चयन की शुरुआत में संपादन बिंदु जोड़ें"
+
+#: plugins/multiedit/multiedit/viewactivatable.py:1313
+msgid "Add edit point at end of line/selection"
+msgstr "पंक्ति/चयन के अंत में संपादन बिंदु जोड़ें"
+
+#: plugins/multiedit/multiedit/viewactivatable.py:1314
+msgid "Align edit points"
+msgstr "संपादन बिंदु संरेखित करें"
+
+#: plugins/multiedit/multiedit/viewactivatable.py:1315
+msgid "Align edit points with additional space"
+msgstr "अतिरिक्त स्थान के साथ संपादन बिंदु संरेखित करें"
+
+#: plugins/sessionsaver/sessionsaver/appactivatable.py:55
+msgid "_Manage Saved Sessions…"
+msgstr "सहेजे गये सत्र प्रबंधित करें (_M)…"
+
+#: plugins/sessionsaver/sessionsaver/appactivatable.py:58
+msgid "_Save Session…"
+msgstr "सत्र सहेजें (_S)…"
+
+#: plugins/sessionsaver/sessionsaver/appactivatable.py:64
+#, python-brace-format
+msgid "Recover “{0}” Session"
+msgstr "“{0}” सत्र पुनर्प्राप्त करें"
+
+#: plugins/sessionsaver/sessionsaver/dialogs.py:153
 msgid "Session Name"
-msgstr ""
+msgstr "सत्र का नाम"
 
-#. ex:ts=4:et:
-#: ../plugins/sessionsaver/sessionsaver.plugin.desktop.in.in.h:1
-msgid "Save and restore your working sessions"
-msgstr ""
-
-#: ../plugins/sessionsaver/sessionsaver.plugin.desktop.in.in.h:2
+#: plugins/sessionsaver/sessionsaver.plugin.desktop.in.in:6
 msgid "Session Saver"
-msgstr ""
+msgstr "सत्र सहेजक"
 
-#: ../plugins/sessionsaver/sessionsaver.ui.h:1
+#: plugins/sessionsaver/sessionsaver.plugin.desktop.in.in:7
+msgid "Save and restore your working sessions"
+msgstr "अपने कार्य सत्र सहेजें और पुनर्स्थापित करें"
+
+#: plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui:8
 msgid "Save session"
-msgstr ""
+msgstr "सत्र सहेजें"
 
-#: ../plugins/sessionsaver/sessionsaver.ui.h:2
-msgid "Saved Sessions"
-msgstr ""
-
-#: ../plugins/sessionsaver/sessionsaver.ui.h:3
+#: plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui:76
 msgid "Session name:"
-msgstr ""
+msgstr "सत्र का नाम:"
 
-#: ../plugins/smartspaces/smartspaces.plugin.desktop.in.in.h:1
-msgid "Forget you're not using tabulations."
-msgstr ""
+#: plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui:120
+msgid "Saved Sessions"
+msgstr "सहेजे गए सत्र"
 
-#: ../plugins/smartspaces/smartspaces.plugin.desktop.in.in.h:2
-#, fuzzy
+#: plugins/smartspaces/gedit-smartspaces.metainfo.xml.in:6
+#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:5
 msgid "Smart Spaces"
-msgstr "खाली स्थान डालें"
+msgstr "स्मार्ट रिक्त स्थान"
 
-#: ../plugins/terminal/terminal.plugin.desktop.in.in.h:1
-#, fuzzy
-msgid "Embed a terminal in the bottom pane."
-msgstr "दस्तावेज़ अवस्थिति पर टर्मिनल खोलें"
+#: plugins/smartspaces/gedit-smartspaces.metainfo.xml.in:7
+msgid "Allow to unindent like if you were using tabs while you’re using spaces"
+msgstr ""
+"रिक्त स्थान का उपयोग करते समय यदि आप टैब का उपयोग कर रहे थे तो अनइंडेंट करने की अनुमति दें"
 
-#: ../plugins/terminal/terminal.plugin.desktop.in.in.h:2
-#, fuzzy
-msgid "Embedded Terminal"
-msgstr "अंतःस्थापित वस्तु"
+#: plugins/smartspaces/smartspaces.plugin.desktop.in.in:6
+msgid "Forget you’re not using tabulations."
+msgstr "भूल जाइये कि आप सारणीकरणों का उपयोग नहीं कर रहे हैं।"
 
-#: ../plugins/terminal/terminal.py:307
+#: plugins/terminal/gedit-terminal.metainfo.xml.in:6
+#: plugins/terminal/terminal.py:341
 msgid "Terminal"
-msgstr ""
+msgstr "टर्मिनल"
 
-#: ../plugins/terminal/terminal.py:329
-#, fuzzy
+#: plugins/terminal/gedit-terminal.metainfo.xml.in:7
+msgid "A simple terminal widget accessible from the bottom panel"
+msgstr "निचले फलक से पहुंच योग्य एक सरल टर्मिनल विजेट"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:16
+msgid "Whether to silence terminal bell"
+msgstr "क्या टर्मिनल घंटी को शांत करना है"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:17
+msgid ""
+"If true, don’t make a noise when applications send the escape sequence for "
+"the terminal bell."
+msgstr ""
+"यदि चयनित है, तो जब अनुप्रयोग टर्मिनल घंटी के लिए निकास अनुक्रम भेजते हैं तो शोर न करें।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:24
+msgid "Number of lines to keep in scrollback"
+msgstr "स्क्रॉलबैक में रखने के लिए पंक्तियों की संख्या"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:25
+msgid ""
+"Number of scrollback lines to keep around. You can scroll back in the "
+"terminal by this number of lines; lines that don’t fit in the scrollback are "
+"discarded. If scrollback-unlimited is true, this value is ignored."
+msgstr ""
+"आसपास रखने के लिए स्क्रॉलबैक लाइनों की संख्या। आप टर्मिनल में इस पंक्ति की संख्या से पीछे "
+"स्क्रॉल कर सकते हैं; जो पंक्तियां स्क्रॉलबैक में फ़िट नहीं होतीं उन्हें हटा दिया जाता है। यदि "
+"स्क्रॉलबैक-अनलिमिटेड चयनित है, तो इस मान को अनदेखा कर दिया जाता है।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:34
+msgid "Whether an unlimited number of lines should be kept in scrollback"
+msgstr "क्या स्क्रॉलबैक में असीमित संख्या में पंक्तियां रखी जानी चाहिए"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:37
+msgid ""
+"If true, scrollback lines will never be discarded. The scrollback history is "
+"stored on disk temporarily, so this may cause the system to run out of disk "
+"space if there is a lot of output to the terminal."
+msgstr ""
+"यदि चयनित है, तो स्क्रॉलबैक लाइनें कभी भी खारिज नहीं की जाएंगी। स्क्रॉलबैक इतिहास "
+"अस्थायी रूप से डिस्क पर संग्रहीत किया जाता है, इसलिए यदि टर्मिनल पर बहुत अधिक आउटपुट है "
+"तो इससे सिस्टम डिस्क स्थान से बाहर हो सकता है।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:46
+msgid "Whether to scroll to the bottom when a key is pressed"
+msgstr "क्या कुंजी दबाने पर नीचे तक स्क्रॉल करना है"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:47
+msgid "If true, pressing a key jumps the scrollbar to the bottom."
+msgstr "यदि चयनित है, तो कुंजी दबाने से स्क्रॉलबार नीचे की ओर चला जाता है।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:53
+msgid "Whether to scroll to the bottom when there’s new output"
+msgstr "क्या नया आउटपुट आने पर नीचे स्क्रॉल करना है"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:54
+msgid ""
+"If true, whenever there’s new output the terminal will scroll to the bottom."
+msgstr ""
+"यदि चयनित है, तो जब भी कोई नया आउटपुट आएगा तो टर्मिनल नीचे की ओर स्क्रॉल हो जाएगा।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:61
+msgid "Default color of text in the terminal"
+msgstr "टर्मिनल में पाठ का तयशुदा रंग"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:62
+msgid ""
+"Default color of text in the terminal, as a color specification (can be HTML-"
+"style hex digits, or a color name such as “red”)."
+msgstr ""
+"टर्मिनल में पाठ का तयशुदा रंग, रंग विनिर्देश के रूप में (HTML-शैली हेक्स अंक, या “लाल” जैसा "
+"रंग नाम हो सकता है)।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:70
+msgid "Default color of terminal background"
+msgstr "टर्मिनल पृष्ठभूमि का तयशुदा रंग"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:71
+msgid ""
+"Default color of terminal background, as a color specification (can be HTML-"
+"style hex digits, or a color name such as “red”)."
+msgstr ""
+"रंग विनिर्देश के रूप में टर्मिनल पृष्ठभूमि का तयशुदा रंग (HTML-शैली हेक्स अंक, या “लाल” जैसा "
+"रंग नाम हो सकता है)।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:94
+msgid "Palette for terminal applications"
+msgstr "टर्मिनल अनुप्रयोगों के लिए पैलेट"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:95
+msgid ""
+"Terminals have a 16-color palette that applications inside the terminal can "
+"use. This is that palette, in the form of a colon-separated list of color "
+"names. Color names should be in hex format e.g. “#FF00FF”"
+msgstr ""
+"टर्मिनलों में 16-रंग का पैलेट होता है जिसका उपयोग टर्मिनल के अंदर के अनुप्रयोग कर सकते हैं। "
+"यह वह पैलेट है, जो रंग नामों की कोलन-पृथक सूची के रूप में है। रंग के नाम हेक्स प्रारूप में होने "
+"चाहिए जैसे “#FF00FF”"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:104
+msgid "Whether to use the colors from the theme for the terminal widget"
+msgstr "क्या टर्मिनल विजेट के लिए थीम से रंगों का उपयोग करना है"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:107
+msgid ""
+"If true, the theme color scheme used for text entry boxes will be used for "
+"the terminal, instead of colors provided by the user."
+msgstr ""
+"यदि चयनित है, तो उपयोगकर्ता द्वारा प्रदान किए गए रंगों के बजाय, पाठ प्रविष्टि बक्से के "
+"लिए उपयोग की जाने वाली थीम रंग योजना का उपयोग टर्मिनल के लिए किया जाएगा।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:114
+msgid "Whether to blink the cursor"
+msgstr "क्या कर्सर को झपकाना है"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:115
+msgid ""
+"The possible values are “system” to use the global cursor blinking settings, "
+"or “on” or “off” to set the mode explicitly."
+msgstr ""
+"वैश्विक कर्सर झपकने की सेटिंग्स का उपयोग करने के लिए संभावित मान “सिस्टम” हैं, या मोड को "
+"स्पष्ट रूप से सेट करने के लिए “चालू” या “बंद” हैं।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:122
+msgid "The cursor appearance"
+msgstr "कर्सर की दिखावट"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:123
+msgid ""
+"The possible values are “block” to use a block cursor, “ibeam” to use a "
+"vertical line cursor, or “underline” to use an underline cursor."
+msgstr ""
+"ब्लॉक कर्सर का उपयोग करने के लिए संभावित मान “ब्लॉक”, ऊर्ध्वाधर लाइन कर्सर का उपयोग "
+"करने के लिए “आईबीम”, या अंडरलाइन कर्सर का उपयोग करने के लिए “रेखांकन” हैं।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:130
+msgid "Whether to use the system font"
+msgstr "क्या सिस्टम फॉन्ट का उपयोग करना है"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:131
+msgid ""
+"If true, the terminal will use the desktop-global standard font if it’s "
+"monospace (and the most similar font it can come up with otherwise)."
+msgstr ""
+"यदि चयनित है, तो टर्मिनल डेस्कटॉप-वैश्विक मानक फॉन्ट का उपयोग करेगा यदि यह मोनोस्पेस है "
+"(और अन्यथा यह सबसे समान फॉन्ट के साथ आ सकता है)।"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:139
+msgid "Font"
+msgstr "फॉन्ट"
+
+#: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:140
+msgid "A Pango font name. Examples are “Sans 12” or “Monospace Bold 14”."
+msgstr "एक पैंगो फॉन्ट नाम। उदाहरण “सैन्स 12” या “मोनोस्पेस बोल्ड 14” हैं।"
+
+#: plugins/terminal/terminal.plugin.desktop.in.in:6
+msgid "Embedded Terminal"
+msgstr "अंतर्निहित टर्मिनल"
+
+#: plugins/terminal/terminal.plugin.desktop.in.in:7
+msgid "Embed a terminal in the bottom pane."
+msgstr "निचले फलक में एक टर्मिनल अंतर्निहित करें।"
+
+#: plugins/terminal/terminal.py:362
 msgid "C_hange Directory"
-msgstr "में बदलें (_t):"
+msgstr "निर्देशिका बदलें (_h)"
 
-#: ../plugins/wordcompletion/gedit-word-completion-plugin.c:146
-#, fuzzy
+#: plugins/textsize/gedit-textsize.metainfo.xml.in:6
+msgid "Text size"
+msgstr "पाठ का आकार"
+
+#: plugins/textsize/gedit-textsize.metainfo.xml.in:7
+#: plugins/textsize/textsize.plugin.desktop.in.in:7
+msgid "Easily increase and decrease the text size"
+msgstr "पाठ का आकार आसानी से बढ़ाएं और घटाएं"
+
+#: plugins/textsize/textsize/__init__.py:53
+msgid "_Normal size"
+msgstr "सामान्य आकार (_N)"
+
+#: plugins/textsize/textsize/__init__.py:55
+msgid "S_maller Text"
+msgstr "छोटा पाठ (_m)"
+
+#: plugins/textsize/textsize/__init__.py:57
+msgid "_Larger Text"
+msgstr "बड़ा पाठ (_L)"
+
+#: plugins/textsize/textsize.plugin.desktop.in.in:6
+msgid "Text Size"
+msgstr "पाठ का आकार"
+
+#: plugins/wordcompletion/gedit-word-completion-configure.ui:18
+msgid "Interactive completion"
+msgstr "अंतर्क्रियात्मक समापन"
+
+#: plugins/wordcompletion/gedit-word-completion-configure.ui:43
+msgid "Minimum word size:"
+msgstr "न्यूनतम शब्द आकार:"
+
+#: plugins/wordcompletion/gedit-wordcompletion.metainfo.xml.in:6
+msgid "Word completion"
+msgstr "शब्द समापन"
+
+#: plugins/wordcompletion/gedit-wordcompletion.metainfo.xml.in:7
+msgid ""
+"Propose automatic completion using words already present in the document"
+msgstr "दस्तावेज में पहले से मौजूद शब्दों का उपयोग करके स्वचालित समापन का प्रस्ताव रखें"
+
+#: plugins/wordcompletion/gedit-word-completion-plugin.c:181
 msgid "Document Words"
-msgstr "दस्तावेज़ शरीर"
+msgstr "दस्तावेज शब्द"
 
-#: ../plugins/wordcompletion/wordcompletion.plugin.desktop.in.in.h:1
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:5
+msgid "Interactive Completion"
+msgstr "अंतर्क्रियात्मक समापन"
+
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:6
+msgid "Whether to enable interactive completion."
+msgstr "क्या अंतर्क्रियात्मक समापन सक्षम करना है।"
+
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:11
+msgid "Minimum Word Size"
+msgstr "न्यूनतम शब्द आकार"
+
+#: plugins/wordcompletion/org.gnome.gedit.plugins.wordcompletion.gschema.xml:12
+msgid "The minimum word size to complete."
+msgstr "पूर्ण करने के लिए न्यूनतम शब्द आकार।"
+
+#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:5
 msgid "Word Completion"
-msgstr ""
+msgstr "शब्द समापन"
 
-#: ../plugins/wordcompletion/wordcompletion.plugin.desktop.in.in.h:2
+#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:6
 msgid "Word completion using the completion framework"
-msgstr ""
+msgstr "समापन रूपरेखा का उपयोग करके शब्द समापन"
 
-#: ../plugins/synctex/synctex.plugin.desktop.in.in.h:1
-msgid "SyncTeX"
-msgstr ""
-
-#: ../plugins/synctex/synctex.plugin.desktop.in.in.h:2
-msgid "Synchronize between LaTeX and PDF with gedit and evince."
-msgstr ""
-
-#: ../plugins/synctex/synctex/synctex.py:280
-#: ../plugins/synctex/synctex/synctex.py:281
 #, fuzzy
-msgid "Forward Search"
-msgstr "कड़ी अग्रेषित करें"
-
-#: ../plugins/taglist/gedit-taglist-plugin.c:165
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:697
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:713
-msgid "Tags"
-msgstr "टैग्स"
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:608
-msgid "Select the group of tags you want to use"
-msgstr "आप जिस समूह टैग का उपयोग करना चाहते हैं उसका चयन करें"
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:627
-msgid "_Preview"
-msgstr "पूर्वावलोकन (_P)"
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:694
-msgid "Available Tag Lists"
-msgstr "उपलब्ध टैग सूचियाँ"
-
-#. ex:ts=8:noet:
-#: ../plugins/taglist/HTML.tags.xml.in.h:1
-msgid "Abbreviated form"
-msgstr "संक्षिप्ताक्षर प्रपत्र"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:2
-msgid "Abbreviation"
-msgstr "संक्षिप्ताक्षर"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:3
-msgid "Above"
-msgstr "ऊपर"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:4
-msgid "Accessibility key character"
-msgstr "सुगमता कुंजी वर्ण"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:5
-msgid "Acronym"
-msgstr "संक्षिप्ताक्षर"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:6
-msgid "Align"
-msgstr "पंक्तिबद्ध करें"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:7
-msgid "Alignment character"
-msgstr "संरेखित वर्ण"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:8
-msgid "Alternative"
-msgstr "वैकल्पिक"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:9
-msgid "Anchor"
-msgstr "लंगर"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:10
-msgid "Anchor URI"
-msgstr "लंगर URI"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:11
-msgid "Applet class file code"
-msgstr "एप्पलेट वर्ग फ़ाइल कोड"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:13
-msgid "Applet class file code (deprecated)"
-msgstr "एप्पलेट वर्ग फ़ाइल कोड (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:14
-msgid "Array"
-msgstr "सरणी"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:15
-msgid "Associated information"
-msgstr "संयुक्त सूचना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:16
-msgid "Author info"
-msgstr "लेखक सूचना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:17
-msgid "Axis related headers"
-msgstr "अक्ष संबंधित शीर्षिका"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:18
-msgid "Background color"
-msgstr "पृष्ठभूमि रंग"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:20
-msgid "Background color (deprecated)"
-msgstr "पृष्ठभूमि रंग (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:21
-msgid "Background texture tile"
-msgstr "पृष्ठभूमि टेक्चर टाइल"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:23
-msgid "Background texture tile (deprecated)"
-msgstr "पृष्ठभूमि टेक्चर टाइल (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:24
-msgid "Base URI"
-msgstr "आधार URI"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:25
-msgid "Base font"
-msgstr "आधार फ़ॉन्ट"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:27
-msgid "Base font (deprecated)"
-msgstr "आधार फ़ॉन्ट (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:28
-msgid "Bold"
-msgstr "गाढ़ा"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:29
-msgid "Border"
-msgstr "किनारा"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:31
-msgid "Border (deprecated)"
-msgstr "किनारा (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:32
-msgid "Border color"
-msgstr "किनारा रंग"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:33
-msgid "Cell rowspan"
-msgstr "कोष्ठ रॉउसन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:34
-msgid "Center"
-msgstr "केंद्र"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:36
-msgid "Center (deprecated)"
-msgstr "केंद्र (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:37
-msgid "Character encoding of linked resource"
-msgstr "कड़ीबद्ध संसाधन का वर्ण एन्कोडिंग"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:38
-msgid "Checked (state)"
-msgstr "जाँचा गया (स्थिति)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:39
-msgid "Checked state"
-msgstr "जाँचा गयी स्थिति"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:40
-msgid "Citation"
-msgstr "प्रशस्ति पत्र"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:41
-msgid "Cite reason for change"
-msgstr "परिवर्तन के लिए तर्क दें"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:42
-msgid "Class implementation ID"
-msgstr "वर्ग कार्यान्वयन ID"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:43
-msgid "Class list"
-msgstr "टैग सूची"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:44
-msgid "Clear text flow control"
-msgstr "पाठ त्रुटि नियंत्रण साफ करें"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:45
-msgid "Code content type"
-msgstr "कोड सामग्री प्रकार"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:46
-msgid "Color of selected links"
-msgstr "चयनित पंक्तियों का रंग"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:48
-msgid "Color of selected links (deprecated)"
-msgstr "चयनित कड़ी का रंग (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:49
-msgid "Column span"
-msgstr "स्तंभ स्पैन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:50
-msgid "Columns"
-msgstr "स्तंभ"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:51
-msgid "Comment"
-msgstr "टिप्पणी"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:52
-msgid "Computer code fragment"
-msgstr "कंप्यूटर कोड फ्रैगमेंट"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:53
-msgid "Content scheme"
-msgstr "विषय योजना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:54
-msgid "Content type"
-msgstr "विषय प्रकार"
-
-#. The "type" attribute is deprecated for the "ol" tag only,
-#. since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:57
-msgid "Content type (deprecated)"
-msgstr "विषय प्रकार (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:58
-msgid "Coordinates"
-msgstr "निर्देशांक"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:59
-msgid "DIV Style container"
-msgstr "DIV शैली धारक"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:60
-msgid "DIV container"
-msgstr "DIV धारक"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:61
-msgid "Date and time of change"
-msgstr "परिवर्तन की तिथि व समय"
-
-#. NOTE: used in "object" tag
-#: ../plugins/taglist/HTML.tags.xml.in.h:63
-msgid "Declare flag"
-msgstr "फ्लैग घोषित करें"
-
-#. Translators: DEFER is an optional attribute of the <script> tag.
-#. It indicates that the script is not going to generate any document
-#. content. The browser can continue parsing and drawing the page.
-#: ../plugins/taglist/HTML.tags.xml.in.h:67
-msgid "Defer attribute"
-msgstr "गुण अंतर करें"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:68
-msgid "Definition description"
-msgstr "परिभाषा वर्णन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:69
-msgid "Definition list"
-msgstr "परिभाषा सूची"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:70
-msgid "Definition term"
-msgstr "परिभाषा पद"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:71
-msgid "Deleted text"
-msgstr "मिटाया पाठ"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:72
-msgid "Direction"
-msgstr "दिशा"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:73
-msgid "Directionality"
-msgstr "दैशिकता"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:75
-msgid "Directionality (deprecated)"
-msgstr "दैशिकता (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:76
-msgid "Directory list"
-msgstr "निर्देशिका सूची"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:77
-msgid "Disabled"
-msgstr "निष्क्रिय"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:78
-msgid "Document base"
-msgstr "दस्तावेज़ आधार"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:79
-msgid "Document body"
-msgstr "दस्तावेज़ शरीर"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:80
-msgid "Document head"
-msgstr "दस्तावेज़ शीर्ष"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:81
-msgid "Document title"
-msgstr "दास्तावेज़ शीर्षक"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:82
-msgid "Document type"
-msgstr "दस्तावेज़ प्रकार"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:83
-msgid "Element ID"
-msgstr "तत्व ID"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:84
-msgid "Embedded object"
-msgstr "अंतःस्थापित वस्तु"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:85
-#: ../plugins/taglist/Latex.tags.xml.in.h:9
-msgid "Emphasis"
-msgstr "बलाघात"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:86
-msgid "Encode type"
-msgstr "एन्कोड प्रकार"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:87
-msgid "Figure"
-msgstr "आकृति"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:88
-msgid "Font face"
-msgstr "फ़ॉन्ट मुखरा"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:90
-msgid "Font face (deprecated)"
-msgstr "फ़ॉन्ट मुखरा (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:91
-msgid "For label"
-msgstr "लेबल के लिए"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:92
-msgid "Forced line break"
-msgstr "जबरदस्ती पंक्ति अंतराल"
+#~ msgid "Toggle bookmark status of the current line"
+#~ msgstr "वर्तमान विंडो में स्थिति-पट्टी की दृश्यता दिखाएँ या छुपाये"
+
+#, fuzzy
+#~ msgid "Goto the previous bookmark"
+#~ msgstr "पिछला पृष्ठ दिखाएँ"
+
+#, fuzzy
+#~ msgid "Comment the selected code"
+#~ msgstr "चयनित पाठ मिटाएँ"
+
+#, fuzzy
+#~ msgid "Uncomment the selected code"
+#~ msgstr "चयनित पाठ मिटाएँ"
+
+#~ msgid "_Insert"
+#~ msgstr "डालें (_I)"
+
+#, fuzzy
+#~ msgid "Commander"
+#~ msgstr "कमांड रंग (_o):"
+
+#, fuzzy
+#~ msgid "Draw leading spaces"
+#~ msgstr "बिना अंतराल स्थान"
+
+#, fuzzy
+#~ msgid "Draw non-breaking spaces"
+#~ msgstr "बिना अंतराल स्थान"
+
+#, fuzzy
+#~ msgid "Draw trailing spaces"
+#~ msgstr "ट्रैलिंग स्थान हटाएं"
+
+#, fuzzy
+#~ msgid "Show _White Space"
+#~ msgstr "अगला पृष्ठ दिखाएँ"
+
+#~ msgid "Enabled"
+#~ msgstr "सक्रिय"
+
+#, fuzzy
+#~ msgid "Join the selected lines"
+#~ msgstr "चयनित पंक्तियों में हाशिया नहीं छोड़ें"
+
+#, fuzzy
+#~ msgid "Split the selected lines"
+#~ msgstr "चयनित पंक्तियों में हाशिया नहीं छोड़ें"
+
+#, fuzzy
+#~ msgid "Save the current document list as a new session"
+#~ msgstr "वर्तमान दस्तावेज़ को नये विंडो में ले जाएँ"
+
+#, fuzzy
+#~ msgid "Open the saved session manager"
+#~ msgstr "जीएडिट मैनुअल खोलें"
+
+#, fuzzy
+#~ msgid "Forward Search"
+#~ msgstr "कड़ी अग्रेषित करें"
+
+#~ msgid "Tags"
+#~ msgstr "टैग्स"
+
+#~ msgid "Select the group of tags you want to use"
+#~ msgstr "आप जिस समूह टैग का उपयोग करना चाहते हैं उसका चयन करें"
+
+#~ msgid "_Preview"
+#~ msgstr "पूर्वावलोकन (_P)"
+
+#~ msgid "Available Tag Lists"
+#~ msgstr "उपलब्ध टैग सूचियाँ"
+
+#~ msgid "Abbreviated form"
+#~ msgstr "संक्षिप्ताक्षर प्रपत्र"
+
+#~ msgid "Abbreviation"
+#~ msgstr "संक्षिप्ताक्षर"
+
+#~ msgid "Above"
+#~ msgstr "ऊपर"
+
+#~ msgid "Accessibility key character"
+#~ msgstr "सुगमता कुंजी वर्ण"
+
+#~ msgid "Acronym"
+#~ msgstr "संक्षिप्ताक्षर"
+
+#~ msgid "Align"
+#~ msgstr "पंक्तिबद्ध करें"
+
+#~ msgid "Alignment character"
+#~ msgstr "संरेखित वर्ण"
+
+#~ msgid "Alternative"
+#~ msgstr "वैकल्पिक"
+
+#~ msgid "Anchor"
+#~ msgstr "लंगर"
+
+#~ msgid "Anchor URI"
+#~ msgstr "लंगर URI"
+
+#~ msgid "Applet class file code"
+#~ msgstr "एप्पलेट वर्ग फ़ाइल कोड"
+
+#~ msgid "Applet class file code (deprecated)"
+#~ msgstr "एप्पलेट वर्ग फ़ाइल कोड (पदावनत)"
+
+#~ msgid "Array"
+#~ msgstr "सरणी"
+
+#~ msgid "Associated information"
+#~ msgstr "संयुक्त सूचना"
+
+#~ msgid "Author info"
+#~ msgstr "लेखक सूचना"
+
+#~ msgid "Axis related headers"
+#~ msgstr "अक्ष संबंधित शीर्षिका"
+
+#~ msgid "Background color"
+#~ msgstr "पृष्ठभूमि रंग"
+
+#~ msgid "Background color (deprecated)"
+#~ msgstr "पृष्ठभूमि रंग (पदावनत)"
+
+#~ msgid "Background texture tile"
+#~ msgstr "पृष्ठभूमि टेक्चर टाइल"
+
+#~ msgid "Background texture tile (deprecated)"
+#~ msgstr "पृष्ठभूमि टेक्चर टाइल (पदावनत)"
+
+#~ msgid "Base URI"
+#~ msgstr "आधार URI"
+
+#~ msgid "Base font"
+#~ msgstr "आधार फ़ॉन्ट"
+
+#~ msgid "Base font (deprecated)"
+#~ msgstr "आधार फ़ॉन्ट (पदावनत)"
+
+#~ msgid "Bold"
+#~ msgstr "गाढ़ा"
+
+#~ msgid "Border"
+#~ msgstr "किनारा"
+
+#~ msgid "Border (deprecated)"
+#~ msgstr "किनारा (पदावनत)"
+
+#~ msgid "Border color"
+#~ msgstr "किनारा रंग"
+
+#~ msgid "Cell rowspan"
+#~ msgstr "कोष्ठ रॉउसन"
+
+#~ msgid "Center"
+#~ msgstr "केंद्र"
+
+#~ msgid "Center (deprecated)"
+#~ msgstr "केंद्र (पदावनत)"
+
+#~ msgid "Character encoding of linked resource"
+#~ msgstr "कड़ीबद्ध संसाधन का वर्ण एन्कोडिंग"
+
+#~ msgid "Checked (state)"
+#~ msgstr "जाँचा गया (स्थिति)"
+
+#~ msgid "Checked state"
+#~ msgstr "जाँचा गयी स्थिति"
+
+#~ msgid "Citation"
+#~ msgstr "प्रशस्ति पत्र"
+
+#~ msgid "Cite reason for change"
+#~ msgstr "परिवर्तन के लिए तर्क दें"
+
+#~ msgid "Class implementation ID"
+#~ msgstr "वर्ग कार्यान्वयन ID"
+
+#~ msgid "Class list"
+#~ msgstr "टैग सूची"
+
+#~ msgid "Clear text flow control"
+#~ msgstr "पाठ त्रुटि नियंत्रण साफ करें"
+
+#~ msgid "Code content type"
+#~ msgstr "कोड सामग्री प्रकार"
+
+#~ msgid "Color of selected links"
+#~ msgstr "चयनित पंक्तियों का रंग"
+
+#~ msgid "Color of selected links (deprecated)"
+#~ msgstr "चयनित कड़ी का रंग (पदावनत)"
+
+#~ msgid "Column span"
+#~ msgstr "स्तंभ स्पैन"
+
+#~ msgid "Columns"
+#~ msgstr "स्तंभ"
+
+#~ msgid "Comment"
+#~ msgstr "टिप्पणी"
+
+#~ msgid "Computer code fragment"
+#~ msgstr "कंप्यूटर कोड फ्रैगमेंट"
+
+#~ msgid "Content scheme"
+#~ msgstr "विषय योजना"
+
+#~ msgid "Content type"
+#~ msgstr "विषय प्रकार"
+
+#~ msgid "Content type (deprecated)"
+#~ msgstr "विषय प्रकार (पदावनत)"
+
+#~ msgid "Coordinates"
+#~ msgstr "निर्देशांक"
+
+#~ msgid "DIV Style container"
+#~ msgstr "DIV शैली धारक"
+
+#~ msgid "DIV container"
+#~ msgstr "DIV धारक"
+
+#~ msgid "Date and time of change"
+#~ msgstr "परिवर्तन की तिथि व समय"
+
+#~ msgid "Declare flag"
+#~ msgstr "फ्लैग घोषित करें"
+
+#~ msgid "Defer attribute"
+#~ msgstr "गुण अंतर करें"
+
+#~ msgid "Definition description"
+#~ msgstr "परिभाषा वर्णन"
+
+#~ msgid "Definition list"
+#~ msgstr "परिभाषा सूची"
+
+#~ msgid "Definition term"
+#~ msgstr "परिभाषा पद"
+
+#~ msgid "Deleted text"
+#~ msgstr "मिटाया पाठ"
+
+#~ msgid "Direction"
+#~ msgstr "दिशा"
+
+#~ msgid "Directionality"
+#~ msgstr "दैशिकता"
+
+#~ msgid "Directionality (deprecated)"
+#~ msgstr "दैशिकता (पदावनत)"
+
+#~ msgid "Directory list"
+#~ msgstr "निर्देशिका सूची"
+
+#~ msgid "Disabled"
+#~ msgstr "निष्क्रिय"
+
+#~ msgid "Document base"
+#~ msgstr "दस्तावेज़ आधार"
+
+#~ msgid "Document body"
+#~ msgstr "दस्तावेज़ शरीर"
+
+#~ msgid "Document head"
+#~ msgstr "दस्तावेज़ शीर्ष"
+
+#~ msgid "Document title"
+#~ msgstr "दास्तावेज़ शीर्षक"
+
+#~ msgid "Document type"
+#~ msgstr "दस्तावेज़ प्रकार"
+
+#~ msgid "Element ID"
+#~ msgstr "तत्व ID"
+
+#~ msgid "Embedded object"
+#~ msgstr "अंतःस्थापित वस्तु"
+
+#~ msgid "Emphasis"
+#~ msgstr "बलाघात"
+
+#~ msgid "Encode type"
+#~ msgstr "एन्कोड प्रकार"
+
+#~ msgid "Figure"
+#~ msgstr "आकृति"
+
+#~ msgid "Font face (deprecated)"
+#~ msgstr "फ़ॉन्ट मुखरा (पदावनत)"
+
+#~ msgid "For label"
+#~ msgstr "लेबल के लिए"
+
+#~ msgid "Forced line break"
+#~ msgstr "जबरदस्ती पंक्ति अंतराल"
 
 # #-#-#-#-#  gnome-session.HEAD.hi.po (gnome-session 2.4)  #-#-#-#-#
 # gnome-session/gsm-client-row.c:50
@@ -778,1245 +847,914 @@ msgstr "जबरदस्ती पंक्ति अंतराल"
 # gnome-session/gsm-client-row.c:50
 # #-#-#-#-#  gnome-session.HEAD.hi.po (gnome-session VERSION)  #-#-#-#-#
 # gnome-session/gsm-client-row.c:50
-#: ../plugins/taglist/HTML.tags.xml.in.h:93
-msgid "Form"
-msgstr "प्रारूप"
+#~ msgid "Form"
+#~ msgstr "प्रारूप"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:94
-msgid "Form action handler"
-msgstr "प्रारूप क्रिया नियंत्रणकर्ता"
+#~ msgid "Form action handler"
+#~ msgstr "प्रारूप क्रिया नियंत्रणकर्ता"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:95
-msgid "Form control group"
-msgstr "प्रारूप नियंत्रण समूह"
+#~ msgid "Form control group"
+#~ msgstr "प्रारूप नियंत्रण समूह"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:96
-msgid "Form field label text"
-msgstr "प्रारूप क्षेत्र लेबल पाठ"
+#~ msgid "Form field label text"
+#~ msgstr "प्रारूप क्षेत्र लेबल पाठ"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:97
-msgid "Form input"
-msgstr "प्रारूप आगत"
+#~ msgid "Form input"
+#~ msgstr "प्रारूप आगत"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:98
-msgid "Form input type"
-msgstr "प्रारूप आगत प्रकार"
+#~ msgid "Form input type"
+#~ msgstr "प्रारूप आगत प्रकार"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:99
-msgid "Form method"
-msgstr "प्रारूप विधि"
+#~ msgid "Form method"
+#~ msgstr "प्रारूप विधि"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:100
-msgid "Forward link"
-msgstr "कड़ी अग्रेषित करें"
+#~ msgid "Forward link"
+#~ msgstr "कड़ी अग्रेषित करें"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:101
-msgid "Frame"
-msgstr "फ्रेम "
+#~ msgid "Frame"
+#~ msgstr "फ्रेम "
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:102
 #, fuzzy
-msgid "Frame border"
-msgstr "फ्रेमबार्डर"
+#~ msgid "Frame border"
+#~ msgstr "फ्रेमबार्डर"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:103
-msgid "Frame render parts"
-msgstr "फ्रेम रेंडर पार्ट"
+#~ msgid "Frame render parts"
+#~ msgstr "फ्रेम रेंडर पार्ट"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:104
-msgid "Frame source"
-msgstr "फ्रेम स्रोत"
+#~ msgid "Frame source"
+#~ msgstr "फ्रेम स्रोत"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:105
 #, fuzzy
-msgid "Frame spacing"
-msgstr "फ्रेमस्पेसिंग"
+#~ msgid "Frame spacing"
+#~ msgstr "फ्रेमस्पेसिंग"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:106
-msgid "Frame target"
-msgstr "फ्रेम लक्ष्य"
+#~ msgid "Frame target"
+#~ msgstr "फ्रेम लक्ष्य"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:107
-msgid "Frameborder"
-msgstr "फ्रेमबार्डर"
+#~ msgid "Frameborder"
+#~ msgstr "फ्रेमबार्डर"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:108
-msgid "Frameset"
-msgstr "फ्रेमसेट"
+#~ msgid "Frameset"
+#~ msgstr "फ्रेमसेट"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:109
-msgid "Frameset columns"
-msgstr "फ्रेमसेट स्तंभ"
+#~ msgid "Frameset columns"
+#~ msgstr "फ्रेमसेट स्तंभ"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:110
-msgid "Frameset rows"
-msgstr "फ्रेमसेट पंक्ति"
+#~ msgid "Frameset rows"
+#~ msgstr "फ्रेमसेट पंक्ति"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:111
-msgid "Framespacing"
-msgstr "फ्रेमस्पेसिंग"
+#~ msgid "Framespacing"
+#~ msgstr "फ्रेमस्पेसिंग"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:112
-msgid "Generic embedded object"
-msgstr "जेनेरिक एंबेडेड ऑब्जेक्ट"
+#~ msgid "Generic embedded object"
+#~ msgstr "जेनेरिक एंबेडेड ऑब्जेक्ट"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:113
-msgid "Generic metainformation"
-msgstr "जेनेरिक मेटाइनफोरमेशन"
+#~ msgid "Generic metainformation"
+#~ msgstr "जेनेरिक मेटाइनफोरमेशन"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:114
-msgid "Generic span"
-msgstr "जेनेरिक स्पैन"
+#~ msgid "Generic span"
+#~ msgstr "जेनेरिक स्पैन"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:115
-msgid "HREF URI"
-msgstr "HREF URI"
+#~ msgid "HREF URI"
+#~ msgstr "HREF URI"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:116
-msgid "HTML root element"
-msgstr "HTML रूट तत्व"
+#~ msgid "HTML root element"
+#~ msgstr "HTML रूट तत्व"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:117
-msgid "HTML version"
-msgstr "HTML संस्करण"
+#~ msgid "HTML version"
+#~ msgstr "HTML संस्करण"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:118
 #, fuzzy
-msgid "HTML — Special Characters"
-msgstr "HTML - विशेष वर्ण"
+#~ msgid "HTML — Special Characters"
+#~ msgstr "HTML - विशेष वर्ण"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:119
 #, fuzzy
-msgid "HTML — Tags"
-msgstr "HTML - टैग"
+#~ msgid "HTML — Tags"
+#~ msgstr "HTML - टैग"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:120
-msgid "HTTP header name"
-msgstr "HTTP शीर्षिका नाम"
+#~ msgid "HTTP header name"
+#~ msgstr "HTTP शीर्षिका नाम"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:121
 #, fuzzy
-msgid "Header cell IDs"
-msgstr "शीर्षिका कोष्ठ ID's"
+#~ msgid "Header cell IDs"
+#~ msgstr "शीर्षिका कोष्ठ ID's"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:122
-msgid "Heading"
-msgstr "शीर्षक"
+#~ msgid "Heading"
+#~ msgstr "शीर्षक"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:123
-msgid "Heading 1"
-msgstr "शीर्षक 1"
+#~ msgid "Heading 1"
+#~ msgstr "शीर्षक 1"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:124
-msgid "Heading 2"
-msgstr "शीर्षक 2"
+#~ msgid "Heading 2"
+#~ msgstr "शीर्षक 2"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:125
-msgid "Heading 3"
-msgstr "शीर्षक 3"
+#~ msgid "Heading 3"
+#~ msgstr "शीर्षक 3"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:126
-msgid "Heading 4"
-msgstr "शीर्षक 4"
+#~ msgid "Heading 4"
+#~ msgstr "शीर्षक 4"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:127
-msgid "Heading 5"
-msgstr "शीर्षक 5"
+#~ msgid "Heading 5"
+#~ msgstr "शीर्षक 5"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:128
-msgid "Heading 6"
-msgstr "शीर्षक 6"
+#~ msgid "Heading 6"
+#~ msgstr "शीर्षक 6"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:129
-msgid "Height"
-msgstr "ऊँचाई"
+#~ msgid "Height"
+#~ msgstr "ऊँचाई"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:130
-msgid "Horizontal rule"
-msgstr "क्षैतिज नियम"
+#~ msgid "Horizontal rule"
+#~ msgstr "क्षैतिज नियम"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:131
-msgid "Horizontal space"
-msgstr "क्षैतिज स्थान"
+#~ msgid "Horizontal space"
+#~ msgstr "क्षैतिज स्थान"
 
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:133
-msgid "Horizontal space (deprecated)"
-msgstr "क्षैतिज स्थान (पदावनत)"
+#~ msgid "Horizontal space (deprecated)"
+#~ msgstr "क्षैतिज स्थान (पदावनत)"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:134
 #, fuzzy
-msgid "I18N BiDi override"
-msgstr "I18N BiDi over-ride"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:135
-msgid "Image"
-msgstr "छवि"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:136
-msgid "Image map"
-msgstr "छवि नक़्शा"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:137
-msgid "Image map area"
-msgstr "छवि नक़्शा क्षेत्र"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:138
-msgid "Image map name"
-msgstr "छवि नक़्शा नाम"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:139
-msgid "Image source"
-msgstr "छवि स्रोत"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:140
-msgid "Inline frame"
-msgstr "अवैध फ़ाइल नाम"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:141
-msgid "Inline layer"
-msgstr "इनलाइन स्तर"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:142
-msgid "Inserted text"
-msgstr "तिथि/समय प्रविष्ट करें"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:143
-msgid "Instance definition"
-msgstr "उदाहरण परिभाषा"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:144
-msgid "Italic text"
-msgstr "इटालिक पाठ"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:145
-msgid "Java applet"
-msgstr "जावा एप्पलेट"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:147
-msgid "Java applet (deprecated)"
-msgstr "जावा एप्पलेट (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:148
-msgid "Label"
-msgstr "लेबल"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:149
-msgid "Language code"
-msgstr "भाषा कोड"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:150
-msgid "Large text style"
-msgstr "बड़ी पाठ शैली"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:151
-msgid "Layer"
-msgstr "स्तर"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:152
-msgid "Link color"
-msgstr "कड़ी रंग"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:154
-msgid "Link color (deprecated)"
-msgstr "कड़ी रंग (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:155
-msgid "List item"
-msgstr "सूची वस्तु"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:156
-msgid "List of MIME types for file upload"
-msgstr "फ़ाइल अपलोड के लिए MIME प्रकार की सूची"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:157
-msgid "List of supported character sets"
-msgstr "समर्थित वर्ण सेट की सूची"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:158
-msgid "Listing"
-msgstr "अनुसूचन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:159
-msgid "Local change to font"
-msgstr "फ़ॉन्ट में स्थानीय परिवर्तन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:160
-msgid "Long description link"
-msgstr "लंबा वर्णन कड़ी"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:161
-msgid "Long quotation"
-msgstr "लंबा उद्धरण"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:162
-msgid "Mail link"
-msgstr "डाक कड़ी"
-
-#. Supported in XHTML 1.0 Frameset DTD only.
-#: ../plugins/taglist/HTML.tags.xml.in.h:164
-msgid "Margin pixel height"
-msgstr "हाशिया पिक्सेल ऊंचाई"
-
-#. Supported in XHTML 1.0 Frameset DTD only.
-#: ../plugins/taglist/HTML.tags.xml.in.h:166
-msgid "Margin pixel width"
-msgstr "हाशिया पिक्सेल चौड़ाई"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:167
-msgid "Marquee"
-msgstr "Marquee"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:168
-msgid "Maximum length of text field"
-msgstr "पाठ क्षेत्र की अधिकतम लंबाई"
-
-#. Here I take some liberties: There's no mandatory attributes,
-#. but those are most common, and will likely be used.
-#: ../plugins/taglist/HTML.tags.xml.in.h:171
-msgid "Media-independent link"
-msgstr "मीडिया स्वतंत्र सूची"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:172
-msgid "Menu list"
-msgstr "मैनू सूची"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:174
-msgid "Menu list (deprecated)"
-msgstr "मेन्यू सूची (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:175
-msgid "Multi-line text field"
-msgstr "बहु पंक्ति पाठ क्षेत्र"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:176
-msgid "Multicolumn"
-msgstr "बहुकॉलम"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:177
-msgid "Multiple"
-msgstr "बहुमुखी"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:178
-msgid "Name"
-msgstr "नाम"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:179
-msgid "Named property value"
-msgstr "नामित संपत्ति मान"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:180
-msgid "Next ID"
-msgstr "अगला ID"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:181
-msgid "No URI"
-msgstr "कोई URI नहीं"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:182
-msgid "No embedded objects"
-msgstr "कोई अंतःस्थापित वस्तु नहीं"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:183
-msgid "No frames"
-msgstr "कोई फ्रेम नहीं"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:184
-msgid "No layers"
-msgstr "कोई स्तर नहीं"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:185
-msgid "No line break"
-msgstr "कोई पंक्ति टूटन नहीं"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:186
-msgid "No resize"
-msgstr "आकार मत बदलें"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:187
-msgid "No script"
-msgstr "कोई स्क्रिप्ट नहीं"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:188
-msgid "No shade"
-msgstr "कोई छायांकन नहीं"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:190
-msgid "No shade (deprecated)"
-msgstr "कोई छाया नहीं (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:191
-msgid "No word wrap"
-msgstr "कोई शब्द रैप नहीं"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:193
-msgid "No word wrap (deprecated)"
-msgstr "कोई शब्द लपेटना नहीं (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:194
-msgid "Non-breaking space"
-msgstr "बिना अंतराल स्थान"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:195
-msgid "Note"
-msgstr "नोट"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:196
-msgid "Object applet file"
-msgstr "वस्तु एप्पलेट फ़ाइल"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:198
-msgid "Object applet file (deprecated)"
-msgstr "वस्तु एप्पलेट फ़ाइल (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:199
-msgid "Object data reference"
-msgstr "वस्तु आंकड़ा संदर्भ"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:200
-msgid "Offset for alignment character"
-msgstr "पंक्तिबद्ध वर्ण के लिए ऑफसेट"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:201
-msgid "OnBlur event"
-msgstr "OnBlur घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:202
-msgid "OnChange event"
-msgstr "OnChange घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:203
-msgid "OnClick event"
-msgstr "OnClick घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:204
-msgid "OnDblClick event"
-msgstr "OnDblClick घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:205
-msgid "OnFocus event"
-msgstr "OnFocus घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:206
-msgid "OnKeyDown event"
-msgstr "OnKeyDown घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:207
-msgid "OnKeyPress event"
-msgstr "OnKeyPress घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:208
-msgid "OnKeyUp event"
-msgstr "OnKeyUp घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:209
-msgid "OnLoad event"
-msgstr "OnLoad घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:210
-msgid "OnMouseDown event"
-msgstr "OnMouseDown घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:211
-msgid "OnMouseMove event"
-msgstr "OnMouseMove घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:212
-msgid "OnMouseOut event"
-msgstr "OnMouseOut घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:213
-msgid "OnMouseOver event"
-msgstr "OnMouseOver घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:214
-msgid "OnMouseUp event"
-msgstr "OnMouseUp घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:215
-msgid "OnReset event"
-msgstr "OnReset घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:216
-msgid "OnSelect event"
-msgstr "OnSubmit घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:217
-msgid "OnSubmit event"
-msgstr "OnSubmit घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:218
-msgid "OnUnload event"
-msgstr "OnUnload घटना"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:219
-msgid "Option group"
-msgstr "विकल्प समूह"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:220
-msgid "Option selector"
-msgstr "फ़ॉन्ट चयनक"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:221
-msgid "Ordered list"
-msgstr "आदेश दी गई सूची"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:222
-msgid "Output media"
-msgstr "आउटपुट मीडिया"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:223
-msgid "Paragraph"
-msgstr "अनुच्छेद"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:224
-msgid "Paragraph class"
-msgstr "अनुच्छेद वर्ग"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:225
-msgid "Paragraph style"
-msgstr "अनुच्छेद शैली"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:226
-msgid "Preformatted listing"
-msgstr "पूर्वसंरूपित सूचन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:227
-msgid "Preformatted text"
-msgstr "पूर्वसंरूपित पाठ"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:228
-msgid "Profile metainfo dictionary"
-msgstr "प्रोफाइल मेटाइंफो शब्दकोश"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:229
-msgid "Prompt message"
-msgstr "प्रांप्ट संदेश"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:230
-msgid "Push button"
-msgstr "पुश बटन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:231
-msgid "Quote"
-msgstr "उद्धरण"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:232
-msgid "Range"
-msgstr "सीमा"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:233
-msgid "ReadOnly text and password"
-msgstr "सिर्फ पठनीय पाठ और कूटशब्द"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:234
-msgid "Reduced spacing"
-msgstr "घटा हुआ अंतरण"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:236
-msgid "Reduced spacing (deprecated)"
-msgstr "घटा हुआ अंतरण (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:237
-msgid "Reverse link"
-msgstr "विपरीत कड़ी"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:238
-msgid "Root"
-msgstr "रूट"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:239
-msgid "Rows"
-msgstr "पंक्ति"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:240
-msgid "Rulings between rows and columns"
-msgstr "कतार व स्तंभ के बीच रूलिंग"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:241
-msgid "Sample program output, scripts"
-msgstr "नमूना प्रोग्राम आउटपुट, स्क्रिप्ट"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:242
-msgid "Scope covered by header cells"
-msgstr "शीर्षिका कोष्ठ द्वारा कवर किया गया स्कोप"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:244
-msgid "Script language name"
-msgstr "भाषा नाम स्क्रिप्ट करें"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:245
-msgid "Script statements"
-msgstr "स्क्रिप्ट कथन"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:246
-msgid "Scrollbar"
-msgstr "स्क्रॉलबार"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:247
-msgid "Selectable option"
-msgstr "चयन योग्य विकल्प"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:248
-msgid "Selected"
-msgstr "चयनित"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:249
-msgid "Server-side image map"
-msgstr "सर्वर साइड छवि नक़्शा"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:250
-msgid "Shape"
-msgstr "आकार"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:251
-msgid "Short inline quotation"
-msgstr "छोटा इनलाइन उद्धरण"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:252
-msgid "Single line prompt"
-msgstr "एकल लाइन प्रांप्ट"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:253
-msgid "Size"
-msgstr "आकार"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:255
-msgid "Size (deprecated)"
-msgstr "आकार (पदावनत)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:256
-msgid "Small text style"
-msgstr "छोटा पाठ शैली"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:257
-msgid "Soft line break"
-msgstr "सॉफ्ट लाइन अंतराल"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:258
-msgid "Sound"
-msgstr "ध्वनि"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:259
-msgid "Source"
-msgstr "स्रोत"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:260
+#~ msgid "I18N BiDi override"
+#~ msgstr "I18N BiDi over-ride"
+
+#~ msgid "Image"
+#~ msgstr "छवि"
+
+#~ msgid "Image map"
+#~ msgstr "छवि नक़्शा"
+
+#~ msgid "Image map area"
+#~ msgstr "छवि नक़्शा क्षेत्र"
+
+#~ msgid "Image map name"
+#~ msgstr "छवि नक़्शा नाम"
+
+#~ msgid "Image source"
+#~ msgstr "छवि स्रोत"
+
+#~ msgid "Inline frame"
+#~ msgstr "अवैध फ़ाइल नाम"
+
+#~ msgid "Inline layer"
+#~ msgstr "इनलाइन स्तर"
+
+#~ msgid "Inserted text"
+#~ msgstr "तिथि/समय प्रविष्ट करें"
+
+#~ msgid "Instance definition"
+#~ msgstr "उदाहरण परिभाषा"
+
+#~ msgid "Italic text"
+#~ msgstr "इटालिक पाठ"
+
+#~ msgid "Java applet"
+#~ msgstr "जावा एप्पलेट"
+
+#~ msgid "Java applet (deprecated)"
+#~ msgstr "जावा एप्पलेट (पदावनत)"
+
+#~ msgid "Label"
+#~ msgstr "लेबल"
+
+#~ msgid "Language code"
+#~ msgstr "भाषा कोड"
+
+#~ msgid "Layer"
+#~ msgstr "स्तर"
+
+#~ msgid "Link color"
+#~ msgstr "कड़ी रंग"
+
+#~ msgid "Link color (deprecated)"
+#~ msgstr "कड़ी रंग (पदावनत)"
+
+#~ msgid "List item"
+#~ msgstr "सूची वस्तु"
+
+#~ msgid "List of MIME types for file upload"
+#~ msgstr "फ़ाइल अपलोड के लिए MIME प्रकार की सूची"
+
+#~ msgid "List of supported character sets"
+#~ msgstr "समर्थित वर्ण सेट की सूची"
+
+#~ msgid "Listing"
+#~ msgstr "अनुसूचन"
+
+#~ msgid "Local change to font"
+#~ msgstr "फ़ॉन्ट में स्थानीय परिवर्तन"
+
+#~ msgid "Long description link"
+#~ msgstr "लंबा वर्णन कड़ी"
+
+#~ msgid "Long quotation"
+#~ msgstr "लंबा उद्धरण"
+
+#~ msgid "Mail link"
+#~ msgstr "डाक कड़ी"
+
+#~ msgid "Margin pixel height"
+#~ msgstr "हाशिया पिक्सेल ऊंचाई"
+
+#~ msgid "Margin pixel width"
+#~ msgstr "हाशिया पिक्सेल चौड़ाई"
+
+#~ msgid "Marquee"
+#~ msgstr "Marquee"
+
+#~ msgid "Maximum length of text field"
+#~ msgstr "पाठ क्षेत्र की अधिकतम लंबाई"
+
+#~ msgid "Media-independent link"
+#~ msgstr "मीडिया स्वतंत्र सूची"
+
+#~ msgid "Menu list"
+#~ msgstr "मैनू सूची"
+
+#~ msgid "Menu list (deprecated)"
+#~ msgstr "मेन्यू सूची (पदावनत)"
+
+#~ msgid "Multi-line text field"
+#~ msgstr "बहु पंक्ति पाठ क्षेत्र"
+
+#~ msgid "Multicolumn"
+#~ msgstr "बहुकॉलम"
+
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgid "Named property value"
+#~ msgstr "नामित संपत्ति मान"
+
+#~ msgid "Next ID"
+#~ msgstr "अगला ID"
+
+#~ msgid "No URI"
+#~ msgstr "कोई URI नहीं"
+
+#~ msgid "No embedded objects"
+#~ msgstr "कोई अंतःस्थापित वस्तु नहीं"
+
+#~ msgid "No frames"
+#~ msgstr "कोई फ्रेम नहीं"
+
+#~ msgid "No layers"
+#~ msgstr "कोई स्तर नहीं"
+
+#~ msgid "No line break"
+#~ msgstr "कोई पंक्ति टूटन नहीं"
+
+#~ msgid "No script"
+#~ msgstr "कोई स्क्रिप्ट नहीं"
+
+#~ msgid "No shade"
+#~ msgstr "कोई छायांकन नहीं"
+
+#~ msgid "No shade (deprecated)"
+#~ msgstr "कोई छाया नहीं (पदावनत)"
+
+#~ msgid "No word wrap"
+#~ msgstr "कोई शब्द रैप नहीं"
+
+#~ msgid "No word wrap (deprecated)"
+#~ msgstr "कोई शब्द लपेटना नहीं (पदावनत)"
+
+#~ msgid "Non-breaking space"
+#~ msgstr "बिना अंतराल स्थान"
+
+#~ msgid "Note"
+#~ msgstr "नोट"
+
+#~ msgid "Object applet file"
+#~ msgstr "वस्तु एप्पलेट फ़ाइल"
+
+#~ msgid "Object applet file (deprecated)"
+#~ msgstr "वस्तु एप्पलेट फ़ाइल (पदावनत)"
+
+#~ msgid "Object data reference"
+#~ msgstr "वस्तु आंकड़ा संदर्भ"
+
+#~ msgid "Offset for alignment character"
+#~ msgstr "पंक्तिबद्ध वर्ण के लिए ऑफसेट"
+
+#~ msgid "OnBlur event"
+#~ msgstr "OnBlur घटना"
+
+#~ msgid "OnChange event"
+#~ msgstr "OnChange घटना"
+
+#~ msgid "OnClick event"
+#~ msgstr "OnClick घटना"
+
+#~ msgid "OnDblClick event"
+#~ msgstr "OnDblClick घटना"
+
+#~ msgid "OnFocus event"
+#~ msgstr "OnFocus घटना"
+
+#~ msgid "OnKeyDown event"
+#~ msgstr "OnKeyDown घटना"
+
+#~ msgid "OnKeyPress event"
+#~ msgstr "OnKeyPress घटना"
+
+#~ msgid "OnKeyUp event"
+#~ msgstr "OnKeyUp घटना"
+
+#~ msgid "OnLoad event"
+#~ msgstr "OnLoad घटना"
+
+#~ msgid "OnMouseDown event"
+#~ msgstr "OnMouseDown घटना"
+
+#~ msgid "OnMouseMove event"
+#~ msgstr "OnMouseMove घटना"
+
+#~ msgid "OnMouseOut event"
+#~ msgstr "OnMouseOut घटना"
+
+#~ msgid "OnMouseOver event"
+#~ msgstr "OnMouseOver घटना"
+
+#~ msgid "OnMouseUp event"
+#~ msgstr "OnMouseUp घटना"
+
+#~ msgid "OnReset event"
+#~ msgstr "OnReset घटना"
+
+#~ msgid "OnSelect event"
+#~ msgstr "OnSubmit घटना"
+
+#~ msgid "OnSubmit event"
+#~ msgstr "OnSubmit घटना"
+
+#~ msgid "OnUnload event"
+#~ msgstr "OnUnload घटना"
+
+#~ msgid "Option group"
+#~ msgstr "विकल्प समूह"
+
+#~ msgid "Option selector"
+#~ msgstr "फ़ॉन्ट चयनक"
+
+#~ msgid "Ordered list"
+#~ msgstr "आदेश दी गई सूची"
+
+#~ msgid "Output media"
+#~ msgstr "आउटपुट मीडिया"
+
+#~ msgid "Paragraph"
+#~ msgstr "अनुच्छेद"
+
+#~ msgid "Paragraph class"
+#~ msgstr "अनुच्छेद वर्ग"
+
+#~ msgid "Paragraph style"
+#~ msgstr "अनुच्छेद शैली"
+
+#~ msgid "Preformatted listing"
+#~ msgstr "पूर्वसंरूपित सूचन"
+
+#~ msgid "Preformatted text"
+#~ msgstr "पूर्वसंरूपित पाठ"
+
+#~ msgid "Profile metainfo dictionary"
+#~ msgstr "प्रोफाइल मेटाइंफो शब्दकोश"
+
+#~ msgid "Prompt message"
+#~ msgstr "प्रांप्ट संदेश"
+
+#~ msgid "Push button"
+#~ msgstr "पुश बटन"
+
+#~ msgid "Quote"
+#~ msgstr "उद्धरण"
+
+#~ msgid "Range"
+#~ msgstr "सीमा"
+
+#~ msgid "ReadOnly text and password"
+#~ msgstr "सिर्फ पठनीय पाठ और कूटशब्द"
+
+#~ msgid "Reduced spacing"
+#~ msgstr "घटा हुआ अंतरण"
+
+#~ msgid "Reduced spacing (deprecated)"
+#~ msgstr "घटा हुआ अंतरण (पदावनत)"
+
+#~ msgid "Reverse link"
+#~ msgstr "विपरीत कड़ी"
+
+#~ msgid "Root"
+#~ msgstr "रूट"
+
+#~ msgid "Rows"
+#~ msgstr "पंक्ति"
+
+#~ msgid "Rulings between rows and columns"
+#~ msgstr "कतार व स्तंभ के बीच रूलिंग"
+
+#~ msgid "Sample program output, scripts"
+#~ msgstr "नमूना प्रोग्राम आउटपुट, स्क्रिप्ट"
+
+#~ msgid "Scope covered by header cells"
+#~ msgstr "शीर्षिका कोष्ठ द्वारा कवर किया गया स्कोप"
+
+#~ msgid "Script language name"
+#~ msgstr "भाषा नाम स्क्रिप्ट करें"
+
+#~ msgid "Script statements"
+#~ msgstr "स्क्रिप्ट कथन"
+
+#~ msgid "Scrollbar"
+#~ msgstr "स्क्रॉलबार"
+
+#~ msgid "Selectable option"
+#~ msgstr "चयन योग्य विकल्प"
+
+#~ msgid "Selected"
+#~ msgstr "चयनित"
+
+#~ msgid "Server-side image map"
+#~ msgstr "सर्वर साइड छवि नक़्शा"
+
+#~ msgid "Shape"
+#~ msgstr "आकार"
+
+#~ msgid "Short inline quotation"
+#~ msgstr "छोटा इनलाइन उद्धरण"
+
+#~ msgid "Single line prompt"
+#~ msgstr "एकल लाइन प्रांप्ट"
+
+#~ msgid "Size"
+#~ msgstr "आकार"
+
+#~ msgid "Size (deprecated)"
+#~ msgstr "आकार (पदावनत)"
+
+#~ msgid "Soft line break"
+#~ msgstr "सॉफ्ट लाइन अंतराल"
+
+#~ msgid "Sound"
+#~ msgstr "ध्वनि"
+
+#~ msgid "Source"
+#~ msgstr "स्रोत"
+
 #, fuzzy
-msgid "Space-separated archive list"
-msgstr "स्थान से अलग अभिलेख सूची"
+#~ msgid "Space-separated archive list"
+#~ msgstr "स्थान से अलग अभिलेख सूची"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:261
-msgid "Spacer"
-msgstr "विभाजक"
+#~ msgid "Spacer"
+#~ msgstr "विभाजक"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:262
-msgid "Spacing between cells"
-msgstr "कोष्ठ के बीच में स्पेसिंग"
+#~ msgid "Spacing between cells"
+#~ msgstr "कोष्ठ के बीच में स्पेसिंग"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:263
-msgid "Spacing within cells"
-msgstr "कोष्ठ के अंदर अंतरण"
+#~ msgid "Spacing within cells"
+#~ msgstr "कोष्ठ के अंदर अंतरण"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:264
-msgid "Span"
-msgstr "स्पैन"
+#~ msgid "Span"
+#~ msgstr "स्पैन"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:265
-msgid "Square root"
-msgstr "वर्ग मूल"
+#~ msgid "Square root"
+#~ msgstr "वर्ग मूल"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:266
 #, fuzzy
-msgid "Standby load message"
-msgstr "स्टैंडबाई लोड संदेश"
+#~ msgid "Standby load message"
+#~ msgstr "स्टैंडबाई लोड संदेश"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:267
-msgid "Starting sequence number"
-msgstr "शृंखला संख्या को आरंभ कर रहा है"
+#~ msgid "Starting sequence number"
+#~ msgstr "शृंखला संख्या को आरंभ कर रहा है"
 
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:269
-msgid "Starting sequence number (deprecated)"
-msgstr "आरंभिक शृंखला संख्या (पदावनत)"
+#~ msgid "Starting sequence number (deprecated)"
+#~ msgstr "आरंभिक शृंखला संख्या (पदावनत)"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:270
-msgid "Strike-through text"
-msgstr "पाठ आर पार काटें"
+#~ msgid "Strike-through text"
+#~ msgstr "पाठ आर पार काटें"
 
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:272
-msgid "Strike-through text (deprecated)"
-msgstr "पाठ आर-पार काटें (पदावनत)"
+#~ msgid "Strike-through text (deprecated)"
+#~ msgstr "पाठ आर-पार काटें (पदावनत)"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:273
-msgid "Strike-through text style"
-msgstr "पाठ शैली आर-पार काट दें"
+#~ msgid "Strike-through text style"
+#~ msgstr "पाठ शैली आर-पार काट दें"
 
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:275
-msgid "Strike-through text style (deprecated)"
-msgstr "आर-पार कटा पाठ (पदावनत)"
+#~ msgid "Strike-through text style (deprecated)"
+#~ msgstr "आर-पार कटा पाठ (पदावनत)"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:276
-msgid "Strong emphasis"
-msgstr "ज्यादा बलाघात"
+#~ msgid "Strong emphasis"
+#~ msgstr "ज्यादा बलाघात"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:277
-msgid "Style info"
-msgstr "शैली सूचना"
+#~ msgid "Style info"
+#~ msgstr "शैली सूचना"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:278
-msgid "Subscript"
-msgstr "उपस्क्रिप्ट"
+#~ msgid "Subscript"
+#~ msgstr "उपस्क्रिप्ट"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:279
-msgid "Superscript"
-msgstr "अधिस्क्रिप्ट"
+#~ msgid "Superscript"
+#~ msgstr "अधिस्क्रिप्ट"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:280
-msgid "Tab order position"
-msgstr "टैब क्रम स्थिति"
+#~ msgid "Tab order position"
+#~ msgstr "टैब क्रम स्थिति"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:281
-msgid "Table"
-msgstr "सारणी"
+#~ msgid "Table"
+#~ msgstr "सारणी"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:282
-msgid "Table body"
-msgstr "सारणी शरीर"
+#~ msgid "Table body"
+#~ msgstr "सारणी शरीर"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:283
-msgid "Table caption"
-msgstr "सारणी शीर्षक"
+#~ msgid "Table caption"
+#~ msgstr "सारणी शीर्षक"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:284
-msgid "Table column group properties"
-msgstr "सारणी स्तंभ समूह गुण"
+#~ msgid "Table column group properties"
+#~ msgstr "सारणी स्तंभ समूह गुण"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:285
-msgid "Table column properties"
-msgstr "सारणी स्तंभ गुण"
+#~ msgid "Table column properties"
+#~ msgstr "सारणी स्तंभ गुण"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:286
-msgid "Table data cell"
-msgstr "सारणी आँकड़ा कोष्ठ"
+#~ msgid "Table data cell"
+#~ msgstr "सारणी आँकड़ा कोष्ठ"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:287
-msgid "Table footer"
-msgstr "सारणी पादिका"
+#~ msgid "Table footer"
+#~ msgstr "सारणी पादिका"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:288
-msgid "Table header"
-msgstr "सारणी शीर्ष"
+#~ msgid "Table header"
+#~ msgstr "सारणी शीर्ष"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:289
-msgid "Table header cell"
-msgstr "सारणी शीर्षिका कोष्ठ"
+#~ msgid "Table header cell"
+#~ msgstr "सारणी शीर्षिका कोष्ठ"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:290
-msgid "Table row"
-msgstr "सारणी पंक्ति"
+#~ msgid "Table row"
+#~ msgstr "सारणी पंक्ति"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:291
-msgid "Table summary"
-msgstr "सारणी सारांश"
+#~ msgid "Table summary"
+#~ msgstr "सारणी सारांश"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:292
 #, fuzzy
-msgid "Target — Blank"
-msgstr "लक्ष्य - रिक्त"
+#~ msgid "Target — Blank"
+#~ msgstr "लक्ष्य - रिक्त"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:293
 #, fuzzy
-msgid "Target — Parent"
-msgstr "लक्ष्य - जनक"
+#~ msgid "Target — Parent"
+#~ msgstr "लक्ष्य - जनक"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:294
 #, fuzzy
-msgid "Target — Self"
-msgstr "लक्ष्य - स्वयं"
+#~ msgid "Target — Self"
+#~ msgstr "लक्ष्य - स्वयं"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:295
 #, fuzzy
-msgid "Target — Top"
-msgstr "Target - शीर्ष"
+#~ msgid "Target — Top"
+#~ msgstr "Target - शीर्ष"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:296
-msgid "Teletype or monospace text style"
-msgstr "टेलीटाइप या मोनोस्पेस पाठ शैली"
+#~ msgid "Teletype or monospace text style"
+#~ msgstr "टेलीटाइप या मोनोस्पेस पाठ शैली"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:297
-msgid "Text"
-msgstr "पाठ"
+#~ msgid "Text"
+#~ msgstr "पाठ"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:298
-msgid "Text color"
-msgstr "पाठ रंग"
+#~ msgid "Text color"
+#~ msgstr "पाठ रंग"
 
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:300
-msgid "Text color (deprecated)"
-msgstr "पाठ रंग (पदावनत)"
+#~ msgid "Text color (deprecated)"
+#~ msgstr "पाठ रंग (पदावनत)"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:301
-msgid "Text entered by user"
-msgstr "उपयोक्ता द्वारा दाखिल पाठ"
+#~ msgid "Text entered by user"
+#~ msgstr "उपयोक्ता द्वारा दाखिल पाठ"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:302
-msgid "Title"
-msgstr "शीर्षक"
+#~ msgid "Title"
+#~ msgstr "शीर्षक"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:303
 #, fuzzy
-msgid "Top margin in pixels"
-msgstr "पिक्सेल में Topmargin"
+#~ msgid "Top margin in pixels"
+#~ msgstr "पिक्सेल में Topmargin"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:304
-msgid "URL"
-msgstr "URL"
+#~ msgid "URL"
+#~ msgstr "URL"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:305
-msgid "Underlined text style"
-msgstr "रेखांकित पाठ शैली"
+#~ msgid "Underlined text style"
+#~ msgstr "रेखांकित पाठ शैली"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:306
-msgid "Unordered list"
-msgstr "अक्रमब्ध सूची"
+#~ msgid "Unordered list"
+#~ msgstr "अक्रमब्ध सूची"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:307
-msgid "Use image map"
-msgstr "छवि नक़्शा का प्रयोग करें"
+#~ msgid "Use image map"
+#~ msgstr "छवि नक़्शा का प्रयोग करें"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:308
-msgid "Value"
-msgstr "मान"
+#~ msgid "Value"
+#~ msgstr "मान"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:309
-msgid "Value interpretation"
-msgstr "मान निर्वचन"
+#~ msgid "Value interpretation"
+#~ msgstr "मान निर्वचन"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:310
-msgid "Variable or program argument"
-msgstr "चर या प्रोग्राम तर्क"
+#~ msgid "Variable or program argument"
+#~ msgstr "चर या प्रोग्राम तर्क"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:311
-msgid "Vertical cell alignment"
-msgstr "लंबवत कोष्ठ पंक्तिबद्ध"
+#~ msgid "Vertical cell alignment"
+#~ msgstr "लंबवत कोष्ठ पंक्तिबद्ध"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:312
-msgid "Vertical space"
-msgstr "लंबवत स्थान"
+#~ msgid "Vertical space"
+#~ msgstr "लंबवत स्थान"
 
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:314
-msgid "Vertical space (deprecated)"
-msgstr "लंबवत स्थान (पदावनत)"
+#~ msgid "Vertical space (deprecated)"
+#~ msgstr "लंबवत स्थान (पदावनत)"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:315
-msgid "Visited link color"
-msgstr "देखा गया कड़ी रंग"
+#~ msgid "Visited link color"
+#~ msgstr "देखा गया कड़ी रंग"
 
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:317
-msgid "Visited link color (deprecated)"
-msgstr "देखा गया कड़ी रंग (पदावनत)"
+#~ msgid "Visited link color (deprecated)"
+#~ msgstr "देखा गया कड़ी रंग (पदावनत)"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:318
-msgid "Width"
-msgstr "चौड़ाई"
+#~ msgid "Width"
+#~ msgstr "चौड़ाई"
 
-#: ../plugins/taglist/HTML.tags.xml.in.h:319
 #, fuzzy
-msgid "XHTML 1.0 — Tags"
-msgstr "XHTML 1.0 - टैग"
+#~ msgid "XHTML 1.0 — Tags"
+#~ msgstr "XHTML 1.0 - टैग"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:1
-msgid "Bibliography (cite)"
-msgstr "ग्रंथसूची (साइट)"
+#~ msgid "Bibliography (cite)"
+#~ msgstr "ग्रंथसूची (साइट)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:2
-msgid "Bibliography (item)"
-msgstr "ग्रंथसूची (मद)"
+#~ msgid "Bibliography (item)"
+#~ msgstr "ग्रंथसूची (मद)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:3
-msgid "Bibliography (shortcite)"
-msgstr "ग्रंथसूची (शॉर्टसाइट)"
+#~ msgid "Bibliography (shortcite)"
+#~ msgstr "ग्रंथसूची (शॉर्टसाइट)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:4
-msgid "Bibliography (thebibliography)"
-msgstr "ग्रंथसूची (thebibliography)"
+#~ msgid "Bibliography (thebibliography)"
+#~ msgstr "ग्रंथसूची (thebibliography)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:5
-msgid "Brackets ()"
-msgstr "कोष्ठक ()"
+#~ msgid "Brackets ()"
+#~ msgstr "कोष्ठक ()"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:6
-msgid "Brackets <>"
-msgstr "कोष्ठक <>"
+#~ msgid "Brackets <>"
+#~ msgstr "कोष्ठक <>"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:7
-msgid "Brackets []"
-msgstr "कोष्ठक []"
+#~ msgid "Brackets []"
+#~ msgstr "कोष्ठक []"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:8
-msgid "Brackets {}"
-msgstr "कोष्ठक {}"
+#~ msgid "Brackets {}"
+#~ msgstr "कोष्ठक {}"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:10
-msgid "File input"
-msgstr "फ़ाइल टिप्पणी"
+#~ msgid "File input"
+#~ msgstr "फ़ाइल टिप्पणी"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:11
-msgid "Footnote"
-msgstr "पाद टिप्पणी"
+#~ msgid "Footnote"
+#~ msgstr "पाद टिप्पणी"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:12
 #, fuzzy
-msgid "Function cosine"
-msgstr "फंक्शन cosin"
+#~ msgid "Function cosine"
+#~ msgstr "फंक्शन cosin"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:13
-msgid "Function e^"
-msgstr "फंक्शन e^"
+#~ msgid "Function e^"
+#~ msgstr "फंक्शन e^"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:14
-msgid "Function exp"
-msgstr "फंक्शन एक्स"
+#~ msgid "Function exp"
+#~ msgstr "फंक्शन एक्स"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:15
-msgid "Function log"
-msgstr "फंक्शन लॉग"
+#~ msgid "Function log"
+#~ msgstr "फंक्शन लॉग"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:16
-msgid "Function log10"
-msgstr "फंक्शन लॉग log10"
+#~ msgid "Function log10"
+#~ msgstr "फंक्शन लॉग log10"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:17
-msgid "Function sine"
-msgstr "फंक्शन साइन"
+#~ msgid "Function sine"
+#~ msgstr "फंक्शन साइन"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:18
-msgid "Greek alpha"
-msgstr "युनानी अल्फा"
+#~ msgid "Greek alpha"
+#~ msgstr "युनानी अल्फा"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:19
-msgid "Greek beta"
-msgstr "युनानी बीटा"
+#~ msgid "Greek beta"
+#~ msgstr "युनानी बीटा"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:20
-msgid "Greek epsilon"
-msgstr "यूनानी एप्सिलोन"
+#~ msgid "Greek epsilon"
+#~ msgstr "यूनानी एप्सिलोन"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:21
-msgid "Greek gamma"
-msgstr "युनानी गामा"
+#~ msgid "Greek gamma"
+#~ msgstr "युनानी गामा"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:22
-msgid "Greek lambda"
-msgstr "ग्रीक लैंब्डा"
+#~ msgid "Greek lambda"
+#~ msgstr "ग्रीक लैंब्डा"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:23
-msgid "Greek rho"
-msgstr "युनानी rho"
+#~ msgid "Greek rho"
+#~ msgstr "युनानी rho"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:24
-msgid "Greek tau"
-msgstr "युनानी tau"
+#~ msgid "Greek tau"
+#~ msgstr "युनानी tau"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:25
-msgid "Header 0 (chapter)"
-msgstr "शीर्षिका 0 (अध्याय)"
+#~ msgid "Header 0 (chapter)"
+#~ msgstr "शीर्षिका 0 (अध्याय)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:26
-msgid "Header 0 (chapter*)"
-msgstr "Header 0 (chapter*)"
+#~ msgid "Header 0 (chapter*)"
+#~ msgstr "Header 0 (chapter*)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:27
-msgid "Header 1 (section)"
-msgstr "Header 1 (section)"
+#~ msgid "Header 1 (section)"
+#~ msgstr "Header 1 (section)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:28
-msgid "Header 1 (section*)"
-msgstr "Header 1 (section*)"
+#~ msgid "Header 1 (section*)"
+#~ msgstr "Header 1 (section*)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:29
-msgid "Header 2 (subsection)"
-msgstr "शीर्षिका 2 (उपखंड)"
+#~ msgid "Header 2 (subsection)"
+#~ msgstr "शीर्षिका 2 (उपखंड)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:30
-msgid "Header 2 (subsection*)"
-msgstr "शीर्षिका 2 (उपखंड*)"
+#~ msgid "Header 2 (subsection*)"
+#~ msgstr "शीर्षिका 2 (उपखंड*)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:31
-msgid "Header 3 (subsubsection)"
-msgstr "शीर्षिका 3 (उपखंड)"
+#~ msgid "Header 3 (subsubsection)"
+#~ msgstr "शीर्षिका 3 (उपखंड)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:32
-msgid "Header 3 (subsubsection*)"
-msgstr "शीर्षिका 3 (उपखंड*)"
+#~ msgid "Header 3 (subsubsection*)"
+#~ msgstr "शीर्षिका 3 (उपखंड*)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:33
-msgid "Header 4 (paragraph)"
-msgstr "शीर्षिका 4 (अनुच्छेद)"
+#~ msgid "Header 4 (paragraph)"
+#~ msgstr "शीर्षिका 4 (अनुच्छेद)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:34
-msgid "Header appendix"
-msgstr "शीर्षिका परिशिष्ट"
+#~ msgid "Header appendix"
+#~ msgstr "शीर्षिका परिशिष्ट"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:35
-msgid "Item"
-msgstr "वस्तु"
+#~ msgid "Item"
+#~ msgstr "वस्तु"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:36
-msgid "Item with label"
-msgstr "लेबल के साथ मद"
+#~ msgid "Item with label"
+#~ msgstr "लेबल के साथ मद"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:37
 #, fuzzy
-msgid "Latex — Tags"
-msgstr "Latex - टैग"
+#~ msgid "Latex — Tags"
+#~ msgstr "Latex - टैग"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:38
-msgid "List description"
-msgstr "वर्णन की सूची दें"
+#~ msgid "List description"
+#~ msgstr "वर्णन की सूची दें"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:39
-msgid "List enumerate"
-msgstr "सूची बड़ा करें"
+#~ msgid "List enumerate"
+#~ msgstr "सूची बड़ा करें"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:40
-msgid "List itemize"
-msgstr "मद रूप में सूची बनायें"
+#~ msgid "List itemize"
+#~ msgstr "मद रूप में सूची बनायें"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:41
-msgid "Maths (display)"
-msgstr "गणित (दिखाएँ)"
+#~ msgid "Maths (display)"
+#~ msgstr "गणित (दिखाएँ)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:42
-msgid "Maths (inline)"
-msgstr "गणित (इनलाइन)"
+#~ msgid "Maths (inline)"
+#~ msgstr "गणित (इनलाइन)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:43
-msgid "Operator fraction"
-msgstr "ऑपरेटर अंश"
+#~ msgid "Operator fraction"
+#~ msgstr "ऑपरेटर अंश"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:44
-msgid "Operator integral (display)"
-msgstr "ऑपरेटर इंटगरल (प्रदर्शन)"
+#~ msgid "Operator integral (display)"
+#~ msgstr "ऑपरेटर इंटगरल (प्रदर्शन)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:45
-msgid "Operator integral (inline)"
-msgstr "ऑपरेटर इंटगरल (इनलाइन)"
+#~ msgid "Operator integral (inline)"
+#~ msgstr "ऑपरेटर इंटगरल (इनलाइन)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:46
-msgid "Operator sum (display)"
-msgstr "ऑपरेटर योग (डिसप्ले)"
+#~ msgid "Operator sum (display)"
+#~ msgstr "ऑपरेटर योग (डिसप्ले)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:47
-msgid "Operator sum (inline)"
-msgstr "ऑपरेटर योग (इनलाइन)"
+#~ msgid "Operator sum (inline)"
+#~ msgstr "ऑपरेटर योग (इनलाइन)"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:48
-msgid "Reference label"
-msgstr "संदर्भ लेबल"
+#~ msgid "Reference label"
+#~ msgstr "संदर्भ लेबल"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:49
-msgid "Reference ref"
-msgstr "संदर्भ ref"
+#~ msgid "Reference ref"
+#~ msgstr "संदर्भ ref"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:50
-msgid "Symbol <<"
-msgstr "संकेत <<"
+#~ msgid "Symbol <<"
+#~ msgstr "संकेत <<"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:51
-msgid "Symbol <="
-msgstr "संकेत <="
+#~ msgid "Symbol <="
+#~ msgstr "संकेत <="
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:52
-msgid "Symbol >="
-msgstr "संकेत >="
+#~ msgid "Symbol >="
+#~ msgstr "संकेत >="
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:53
-msgid "Symbol >>"
-msgstr "संकेत >>"
+#~ msgid "Symbol >>"
+#~ msgstr "संकेत >>"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:54
-msgid "Symbol and"
-msgstr "संकेत और"
+#~ msgid "Symbol and"
+#~ msgstr "संकेत और"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:55
-msgid "Symbol const"
-msgstr "Symbol const"
+#~ msgid "Symbol const"
+#~ msgstr "Symbol const"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:56
-msgid "Symbol d-by-dt"
-msgstr "Symbol d-by-dt"
+#~ msgid "Symbol d-by-dt"
+#~ msgstr "Symbol d-by-dt"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:57
-msgid "Symbol d-by-dt-partial"
-msgstr "Symbol d-by-dt-आंशिक"
+#~ msgid "Symbol d-by-dt-partial"
+#~ msgstr "Symbol d-by-dt-आंशिक"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:58
-msgid "Symbol d2-by-dt2-partial"
-msgstr "Symbol d2-by-dt2-आंशिक"
+#~ msgid "Symbol d2-by-dt2-partial"
+#~ msgstr "Symbol d2-by-dt2-आंशिक"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:59
-msgid "Symbol dagger"
-msgstr "Symbol dagger"
+#~ msgid "Symbol dagger"
+#~ msgstr "Symbol dagger"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:60
 #, fuzzy
-msgid "Symbol em-dash ---"
-msgstr "Symbol hyphen ---"
+#~ msgid "Symbol em-dash ---"
+#~ msgstr "Symbol hyphen ---"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:61
 #, fuzzy
-msgid "Symbol en-dash --"
-msgstr "Symbol hyphen --"
+#~ msgid "Symbol en-dash --"
+#~ msgstr "Symbol hyphen --"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:62
-msgid "Symbol equiv"
-msgstr "Symbol equiv"
+#~ msgid "Symbol equiv"
+#~ msgstr "Symbol equiv"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:63
-msgid "Symbol infinity"
-msgstr "Symbol अनंत"
+#~ msgid "Symbol infinity"
+#~ msgstr "Symbol अनंत"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:64
-msgid "Symbol mathspace ,"
-msgstr "Symbol mathspace ,"
+#~ msgid "Symbol mathspace ,"
+#~ msgstr "Symbol mathspace ,"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:65
-msgid "Symbol mathspace ."
-msgstr "Symbol mathspace ."
+#~ msgid "Symbol mathspace ."
+#~ msgstr "Symbol mathspace ."
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:66
-msgid "Symbol mathspace _"
-msgstr "Symbol mathspace _"
+#~ msgid "Symbol mathspace _"
+#~ msgstr "Symbol mathspace _"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:67
-msgid "Symbol mathspace __"
-msgstr "Symbol mathspace __"
+#~ msgid "Symbol mathspace __"
+#~ msgstr "Symbol mathspace __"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:68
-msgid "Symbol simeq"
-msgstr "संकेत simeq"
+#~ msgid "Symbol simeq"
+#~ msgstr "संकेत simeq"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:69
-msgid "Symbol star"
-msgstr "संकेत तारा"
+#~ msgid "Symbol star"
+#~ msgstr "संकेत तारा"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:70
-msgid "Typeface bold"
-msgstr "टाइपफेस बोल्ड"
+#~ msgid "Typeface bold"
+#~ msgstr "टाइपफेस बोल्ड"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:71
-msgid "Typeface italic"
-msgstr "टाइपफेस इटालिक"
+#~ msgid "Typeface italic"
+#~ msgstr "टाइपफेस इटालिक"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:72
-msgid "Typeface slanted"
-msgstr "टाइपफेस झुका हुआ"
+#~ msgid "Typeface slanted"
+#~ msgstr "टाइपफेस झुका हुआ"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:73
-msgid "Typeface type"
-msgstr "टाइपफेस प्रकार"
+#~ msgid "Typeface type"
+#~ msgstr "टाइपफेस प्रकार"
 
-#: ../plugins/taglist/Latex.tags.xml.in.h:74
-msgid "Unbreakable text"
-msgstr "न टूटने वाला पाठ"
+#~ msgid "Unbreakable text"
+#~ msgstr "न टूटने वाला पाठ"
 
-#: ../plugins/taglist/taglist.plugin.desktop.in.in.h:1
 #, fuzzy
-msgid ""
-"Provides a method to easily insert commonly used tags/strings into a "
-"document without having to type them."
-msgstr ""
-"एक विधि प्रदान करता है कि दस्तावेज़ में सामान्यतः प्रयोग में आने वाले टैब/स्ट्रिंग को बिना "
-"टाइप किए आसानी से प्रविष्ट किया जा सकता है."
+#~ msgid ""
+#~ "Provides a method to easily insert commonly used tags/strings into a "
+#~ "document without having to type them."
+#~ msgstr ""
+#~ "एक विधि प्रदान करता है कि दस्तावेज़ में सामान्यतः प्रयोग में आने वाले टैब/स्ट्रिंग को बिना "
+#~ "टाइप किए आसानी से प्रविष्ट किया जा सकता है."
 
-#: ../plugins/taglist/taglist.plugin.desktop.in.in.h:2
-msgid "Tag list"
-msgstr "टैग सूची"
+#~ msgid "Tag list"
+#~ msgstr "टैग सूची"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:1
 #, fuzzy
-msgid "XSLT — Axes"
-msgstr "XSLT - अक्ष"
+#~ msgid "XSLT — Axes"
+#~ msgstr "XSLT - अक्ष"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:2
 #, fuzzy
-msgid "XSLT — Elements"
-msgstr "XSLT - तत्व"
+#~ msgid "XSLT — Elements"
+#~ msgstr "XSLT - तत्व"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:3
 #, fuzzy
-msgid "XSLT — Functions"
-msgstr "XSLT - प्रकार्य"
+#~ msgid "XSLT — Functions"
+#~ msgstr "XSLT - प्रकार्य"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:4
-msgid "ancestor"
-msgstr "पूर्वज"
+#~ msgid "ancestor"
+#~ msgstr "पूर्वज"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:5
-msgid "ancestor-or-self"
-msgstr "पूर्वज या स्वयं"
+#~ msgid "ancestor-or-self"
+#~ msgstr "पूर्वज या स्वयं"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:6
-msgid "attribute"
-msgstr "गुण"
+#~ msgid "attribute"
+#~ msgstr "गुण"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:7
-msgid "child"
-msgstr "संतति"
+#~ msgid "child"
+#~ msgstr "संतति"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:8
-msgid "descendant"
-msgstr "उत्तराधिकारी"
+#~ msgid "descendant"
+#~ msgstr "उत्तराधिकारी"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:9
-msgid "descendant-or-self"
-msgstr "descendant-or-self"
+#~ msgid "descendant-or-self"
+#~ msgstr "descendant-or-self"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:10
-msgid "following"
-msgstr "अनुसरण कर रहा है"
+#~ msgid "following"
+#~ msgstr "अनुसरण कर रहा है"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:11
-msgid "following-sibling"
-msgstr "सिबलिंग का अनुसरण कर रहा है"
+#~ msgid "following-sibling"
+#~ msgstr "सिबलिंग का अनुसरण कर रहा है"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:12
-msgid "namespace"
-msgstr "नेमस्पेस"
+#~ msgid "namespace"
+#~ msgstr "नेमस्पेस"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:13
-msgid "parent"
-msgstr "जनक"
+#~ msgid "parent"
+#~ msgstr "जनक"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:14
-msgid "preceding"
-msgstr "preceding"
+#~ msgid "preceding"
+#~ msgstr "preceding"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:15
-msgid "preceding-sibling"
-msgstr "preceding-sibling"
+#~ msgid "preceding-sibling"
+#~ msgstr "preceding-sibling"
 
-#: ../plugins/taglist/XSLT.tags.xml.in.h:16
-msgid "self"
-msgstr "स्वयं"
+#~ msgid "self"
+#~ msgstr "स्वयं"
 
-#: ../plugins/taglist/XUL.tags.xml.in.h:1
 #, fuzzy
-msgid "XUL — Tags"
-msgstr "XUL - टैग"
+#~ msgid "XUL — Tags"
+#~ msgstr "XUL - टैग"
