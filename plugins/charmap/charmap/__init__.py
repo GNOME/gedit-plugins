@@ -54,7 +54,7 @@ class CharmapPlugin(GObject.Object, Gedit.WindowActivatable):
         self.create_charmap_panel()
 
         self.side_panel_item = Tepl.PanelItem.new(self.panel,
-            "GeditCharmapPanel", _("Character Map"), None)
+            "GeditCharmapPanel", _("Character Map"), None, 0)
         side_panel = self.window.get_side_panel()
         Tepl.Panel.add(side_panel, self.side_panel_item)
 
