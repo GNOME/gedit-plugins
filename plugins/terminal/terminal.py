@@ -338,11 +338,14 @@ class TerminalPlugin(GObject.Object, Gedit.WindowActivatable):
         self._panel.show()
 
         bottom = self.window.get_bottom_panel()
-        bottom.add_titled(self._panel, "GeditTerminalPanel", _("Terminal"))
+        self.panel_item = Tepl.PanelItem.new(self._panel, "GeditTerminalPanel",
+            _("Terminal"), None, 0)
+        bottom.add(self.panel_item)
 
     def do_deactivate(self):
         bottom = self.window.get_bottom_panel()
-        bottom.remove(self._panel)
+        bottom.remove(self.panel_item)
+        self.panel_item = None
 
     def do_update_state(self):
         pass
