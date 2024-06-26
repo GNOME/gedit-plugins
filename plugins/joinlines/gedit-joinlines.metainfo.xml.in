@@ -4,7 +4,7 @@
   <id>gedit-joinlines</id>
   <extends>org.gnome.gedit.desktop</extends>
   <name>Join/Split Lines</name>
-  <summary>Join or split multiple lines through Ctrl+J and Ctrl+Shift+J</summary>
+  <summary>Join several lines or split long ones.</summary>
   <url type="homepage">https://gedit-technology.github.io/apps/gedit/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gedit-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>

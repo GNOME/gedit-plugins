@@ -3,8 +3,8 @@
 <component type="addon">
   <id>gedit-charmap</id>
   <extends>org.gnome.gedit.desktop</extends>
-  <name>Charmap</name>
-  <summary>Select characters from a character map</summary>
+  <name>Character Map</name>
+  <summary>Insert special characters just by clicking on them.</summary>
   <url type="homepage">https://gedit-technology.github.io/apps/gedit/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gedit-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>

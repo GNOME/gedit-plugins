@@ -3,8 +3,8 @@
 <component type="addon">
   <id>gedit-terminal</id>
   <extends>org.gnome.gedit.desktop</extends>
-  <name>Terminal</name>
-  <summary>A simple terminal widget accessible from the bottom panel</summary>
+  <name>Embedded Terminal</name>
+  <summary>Embed a terminal in the bottom panel.</summary>
   <url type="homepage">https://gedit-technology.github.io/apps/gedit/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gedit-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>

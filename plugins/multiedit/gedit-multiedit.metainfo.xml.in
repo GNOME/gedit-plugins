@@ -3,8 +3,8 @@
 <component type="addon">
   <id>gedit-multiedit</id>
   <extends>org.gnome.gedit.desktop</extends>
-  <name>Multi edit</name>
-  <summary>Edit document in multiple places at once</summary>
+  <name>Multi Edit</name>
+  <summary>Edit document in multiple places at once.</summary>
   <url type="homepage">https://gedit-technology.github.io/apps/gedit/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gedit-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>

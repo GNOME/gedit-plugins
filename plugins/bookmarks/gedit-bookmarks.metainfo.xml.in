@@ -4,7 +4,7 @@
   <id>gedit-bookmarks</id>
   <extends>org.gnome.gedit.desktop</extends>
   <name>Bookmarks</name>
-  <summary>Easy document navigation with bookmarks</summary>
+  <summary>Easy document navigation with bookmarks.</summary>
   <url type="homepage">https://gedit-technology.github.io/apps/gedit/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gedit-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>
