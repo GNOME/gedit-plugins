@@ -1,9 +1,6 @@
 install_subdir(
   'textsize',
-  install_dir: join_paths(
-    pkglibdir,
-    'plugins',
-  )
+  install_dir: get_option('libdir') / 'gedit/plugins',
 )
 
 textsize_plugin_in = configure_file(
@@ -19,10 +16,7 @@ textsize_plugin = custom_target(
   output: 'textsize.plugin',
   command: msgfmt_plugin_cmd,
   install: true,
-  install_dir: join_paths(
-    pkglibdir,
-    'plugins',
-  )
+  install_dir: get_option('libdir') / 'gedit/plugins',
 )
 
 textsize_metainfo = i18n.merge_file(
