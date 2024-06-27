@@ -18,24 +18,3 @@ textsize_plugin = custom_target(
   install: true,
   install_dir: get_option('libdir') / 'gedit/plugins',
 )
-
-textsize_metainfo = i18n.merge_file(
-  input: 'gedit-textsize.metainfo.xml.in',
-  output: 'gedit-textsize.metainfo.xml',
-  po_dir: join_paths(srcdir, 'po'),
-  type: 'xml',
-  install: true,
-  install_dir: appstreamdir,
-)
-
-if appstream_util.found()
-  test(
-    'validate-gedit-textsize.metainfo.xml',
-    appstream_util,
-    args: [
-      'validate-relax',
-      '--nonet',
-      textsize_metainfo.full_path(),
-    ]
-  )
-endif
