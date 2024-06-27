@@ -12,7 +12,6 @@ option('plugin_multiedit', type: 'boolean')
 option('plugin_sessionsaver', type: 'boolean')
 option('plugin_smartspaces', type: 'boolean')
 option('plugin_terminal', type: 'boolean')
-option('plugin_textsize', type: 'boolean')
 option('plugin_wordcompletion', type: 'boolean')
 
 # For developers. Disabling the option speeds up the install.

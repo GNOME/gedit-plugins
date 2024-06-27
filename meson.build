@@ -56,7 +56,6 @@ python_plugins = [
   'multiedit',
   'sessionsaver',
   'terminal',
-  'textsize',
 ]
 
 enabled_c_plugins = []
