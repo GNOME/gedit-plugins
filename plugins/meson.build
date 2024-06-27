@@ -25,6 +25,10 @@ configure_file(
   )
 )
 
-foreach plugin_name : enabled_plugins
+foreach plugin_name : enabled_c_plugins
+  subdir(plugin_name)
+endforeach
+
+foreach plugin_name : enabled_python_plugins
   subdir(plugin_name)
 endforeach

@@ -40,40 +40,49 @@ configure_file(
 )
 
 # Options
-enabled_plugins = []
-disabled_plugins = []
-extra_languages = []
-all_plugins = {
-  'bookmarks': {'language': 'c'},
-  'bracketcompletion': {'language': 'python'},
-  'charmap': {'language': 'python'},
-  'codecomment': {'language': 'python'},
-  'colorpicker': {'language': 'python'},
-  'drawspaces': {'language': 'c'},
-  'git': {'language': 'python'},
-  'joinlines': {'language': 'python'},
-  'multiedit': {'language': 'python'},
-  'sessionsaver': {'language': 'python'},
-  'smartspaces': {'language': 'c'},
-  'terminal': {'language': 'python'},
-  'textsize': {'language': 'python'},
-  'wordcompletion': {'language': 'c'},
-}
+c_plugins = [
+  'bookmarks',
+  'drawspaces',
+  'smartspaces',
+  'wordcompletion',
+]
+python_plugins = [
+  'bracketcompletion',
+  'charmap',
+  'codecomment',
+  'colorpicker',
+  'git',
+  'joinlines',
+  'multiedit',
+  'sessionsaver',
+  'terminal',
+  'textsize',
+]
 
-foreach plugin_name, plugin_metadata : all_plugins
-  if get_option('plugin_@0@'.format(plugin_name))
-    enabled_plugins += plugin_name
+enabled_c_plugins = []
+disabled_c_plugins = []
+enabled_python_plugins = []
+disabled_python_plugins = []
 
-    plugin_language = plugin_metadata.get('language')
-    if plugin_language != 'c'
-      extra_languages += plugin_language
-    endif
+foreach plugin_name : c_plugins
+  if get_option('plugin_' + plugin_name)
+    enabled_c_plugins += plugin_name
   else
-    disabled_plugins += plugin_name
+    disabled_c_plugins += plugin_name
   endif
 endforeach
 
-if 'python' in extra_languages
+enable_python = false
+foreach plugin_name : python_plugins
+  if get_option('plugin_' + plugin_name)
+    enabled_python_plugins += plugin_name
+    enable_python = true
+  else
+    disabled_python_plugins += plugin_name
+  endif
+endforeach
+
+if enable_python
   python3 = python.find_installation('python3')
 endif
 
@@ -96,30 +105,14 @@ gnome.post_install(
 
 # Summary message
 
-summary = [
-  'Configuration:',
-  '',
-  '        gedit-plugins version @0@'.format(meson.project_version()),
-  '',
-  '        Prefix: @0@'.format(get_option('prefix')),
-  '        User documentation: @0@'.format(get_option('user_documentation')),
-  '',
-  '        Enabled plugins:'
-]
+enabled_c_plugins_description = enabled_c_plugins.length() > 0 ? enabled_c_plugins : '(None)'
+disabled_c_plugins_descripiton = disabled_c_plugins.length() > 0 ? disabled_c_plugins : '(None)'
+enabled_python_plugins_description = enabled_python_plugins.length() > 0 ? enabled_python_plugins : '(None)'
+disabled_python_plugins_description = disabled_python_plugins.length() > 0 ? disabled_python_plugins : '(None)'
 
-foreach plugin_name : enabled_plugins
-  summary += '                ' + plugin_name
-endforeach
-
-summary += [
-  '',
-  '        Disabled plugins:'
-]
-
-foreach plugin_name : disabled_plugins
-  summary += '                ' + plugin_name
-endforeach
-
-summary += ''
-
-message('\n'.join(summary))
+summary('Prefix', get_option('prefix'))
+summary('User documentation', get_option('user_documentation'))
+summary('Enabled', enabled_c_plugins_description, section: 'C plugins')
+summary('Disabled', disabled_c_plugins_descripiton, section: 'C plugins')
+summary('Enabled', enabled_python_plugins_description, section: 'Python plugins')
+summary('Disabled', disabled_python_plugins_description, section: 'Python plugins')
