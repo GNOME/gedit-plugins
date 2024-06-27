@@ -11,7 +11,6 @@ gedit_help_sources = [
   'multi-edit.page',
   'session-saver.page',
   'terminal.page',
-  'text-size.page',
   'word-completion.page',
 ]
 
