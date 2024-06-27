@@ -14,13 +14,10 @@ python = import('python')
 root_include_dir = include_directories('.')
 srcdir = meson.current_source_dir()
 
-libdir = get_option('prefix') / get_option('libdir')
-datadir = get_option('prefix') / get_option('datadir')
 pkglibdir = get_option('prefix') / get_option('libdir') / 'gedit'
 pkgdatadir = get_option('prefix') / get_option('datadir') / 'gedit'
 appstreamdir = get_option('prefix') / get_option('datadir') / 'metainfo'
 glibdir = get_option('prefix') / get_option('datadir') / 'glib-2.0'
-localedir = get_option('prefix') / get_option('datadir') / 'locale'
 
 # Dependencies in common for all plugins
 
