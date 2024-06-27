@@ -6,22 +6,23 @@
 # Maxim Dziumanenko <dziumanenko@gmail.com>, 2004-2008.
 # wanderlust <wanderlust@ukr.net>, 2009.
 # Mykola Tkach <Stuartlittle1970@gmail.com>, 2013.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gedit-plugins/issues\n"
-"POT-Creation-Date: 2020-11-05 19:52+0000\n"
-"PO-Revision-Date: 2020-11-06 09:26+0200\n"
+"Report-Msgid-Bugs-To: https://gedit-technology.github.io/apps/gedit/reporting"
+"-bugs.html\n"
+"POT-Creation-Date: 2024-06-26 18:17+0000\n"
+"PO-Revision-Date: 2024-06-27 23:34+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language-Team: Ukrainian\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.11.70\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: plugins/bookmarks/bookmarks.plugin.desktop.in.in:5
 #: plugins/bookmarks/gedit-bookmarks.metainfo.xml.in:6
@@ -30,8 +31,9 @@ msgstr "Закладки"
 
 #: plugins/bookmarks/bookmarks.plugin.desktop.in.in:6
 #: plugins/bookmarks/gedit-bookmarks.metainfo.xml.in:7
-msgid "Easy document navigation with bookmarks"
-msgstr "Проста навігація документом за допомогою закладок"
+#| msgid "Easy document navigation with bookmarks"
+msgid "Easy document navigation with bookmarks."
+msgstr "Проста навігація документом за допомогою закладок."
 
 #: plugins/bookmarks/gedit-bookmarks-app-activatable.c:141
 msgid "Toggle Bookmark"
@@ -51,29 +53,20 @@ msgid "Bracket Completion"
 msgstr "Доповнення дужок"
 
 #: plugins/bracketcompletion/bracketcompletion.plugin.desktop.in.in:7
+#: plugins/bracketcompletion/gedit-bracketcompletion.metainfo.xml.in:7
 msgid "Automatically adds closing brackets."
 msgstr "Автоматичне додавання завершальних дужок."
 
-#: plugins/bracketcompletion/gedit-bracketcompletion.metainfo.xml.in:7
-msgid "Automatically add a closing bracket when you insert one"
-msgstr "Автоматично додає завершальну дужку, коли ви вводите початкову"
-
-#: plugins/charmap/charmap/__init__.py:56
+#: plugins/charmap/charmap/__init__.py:57
 #: plugins/charmap/charmap.plugin.desktop.in.in:6
+#: plugins/charmap/gedit-charmap.metainfo.xml.in:6
 msgid "Character Map"
 msgstr "Таблиця символів"
 
 #: plugins/charmap/charmap.plugin.desktop.in.in:7
+#: plugins/charmap/gedit-charmap.metainfo.xml.in:7
 msgid "Insert special characters just by clicking on them."
 msgstr "Вставлення спеціальних символів клацанням на їхніх кнопках."
-
-#: plugins/charmap/gedit-charmap.metainfo.xml.in:6
-msgid "Charmap"
-msgstr "Таблиця символів"
-
-#: plugins/charmap/gedit-charmap.metainfo.xml.in:7
-msgid "Select characters from a character map"
-msgstr "Виберіть символи з карти символів"
 
 #: plugins/codecomment/codecomment.plugin.desktop.in.in:6
 #: plugins/codecomment/gedit-codecomment.metainfo.xml.in:6
@@ -81,6 +74,7 @@ msgid "Code Comment"
 msgstr "Коментування коду"
 
 #: plugins/codecomment/codecomment.plugin.desktop.in.in:7
+#: plugins/codecomment/gedit-codecomment.metainfo.xml.in:7
 msgid "Comment out or uncomment a selected block of code."
 msgstr "Коментування позначеного блоку коду та зняття коментування з нього."
 
@@ -92,15 +86,13 @@ msgstr "_Коментувати код"
 msgid "U_ncomment Code"
 msgstr "_Розкоментувати код"
 
-#: plugins/codecomment/gedit-codecomment.metainfo.xml.in:7
-msgid "Comment or uncomment blocks of code"
-msgstr "Коментування блоків коду та зняття коментування з них"
-
 #: plugins/colorpicker/colorpicker.plugin.desktop.in.in:6
+#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:6
 msgid "Color Picker"
 msgstr "Піпетка"
 
 #: plugins/colorpicker/colorpicker.plugin.desktop.in.in:7
+#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:7
 msgid "Pick a color from a dialog and insert its hexadecimal representation."
 msgstr ""
 "Виберіть колір з діалогового вікна або вкажіть його шістнадцяткове "
@@ -114,229 +106,16 @@ msgstr "Ви_брати колір…"
 msgid "Pick Color"
 msgstr "Вибрати колір"
 
-#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:6
-msgid "Color picker"
-msgstr "Піпетка"
-
-#: plugins/colorpicker/gedit-colorpicker.metainfo.xml.in:7
-msgid "Select and insert a color from a dialog (for HTML, CSS, PHP)"
-msgstr "Виберіть і вставте колір з діалогового вікна (для HTML, CSS, PHP)"
-
-#: plugins/colorschemer/colorschemer.plugin.desktop.in.in:6
-#: plugins/colorschemer/gedit-colorschemer.metainfo.xml.in:6
-#: plugins/colorschemer/schemer/__init__.py:50
-#: plugins/colorschemer/schemer.ui:20
-msgid "Color Scheme Editor"
-msgstr "Редактор схем кольорів"
-
-#: plugins/colorschemer/colorschemer.plugin.desktop.in.in:7
-msgid "Source code color scheme editor"
-msgstr "Редактор схем кольорів підсвічування коду"
-
-#: plugins/colorschemer/gedit-colorschemer.metainfo.xml.in:7
-msgid "Create and edit the color scheme used for syntax highlighting"
-msgstr "Створіть і редагуйте схему кольорів для підсвічування синтаксису"
-
-#: plugins/colorschemer/schemer/schemer.py:271
-#: plugins/colorschemer/schemer/schemer.py:318
-msgid "There was a problem saving the scheme"
-msgstr "Маємо проблем зі збереженням схеми"
-
-#: plugins/colorschemer/schemer/schemer.py:272
-msgid ""
-"You have chosen to create a new scheme\n"
-"but the Name or ID you are using is being used already.\n"
-"\n"
-"Please make sure to choose a Name and ID that are not already in use.\n"
-msgstr ""
-"Ви наказали програмі створити схему,\n"
-"але вказали вже використану назву або ідентифікатор.\n"
-"\n"
-"Будь ласка, переконайтеся, що вибрано назву та ідентифікатор, які є "
-"унікальними для цієї схеми.\n"
-
-#: plugins/colorschemer/schemer/schemer.py:319
-msgid ""
-"You do not have permission to overwrite the scheme you have chosen.\n"
-"Instead a copy will be created.\n"
-"\n"
-"Please make sure to choose a Name and ID that are not already in use.\n"
-msgstr ""
-"У вас немає належних прав доступу для перезапису вибраної вами схеми.\n"
-"Замість перезапису, буде створено копію.\n"
-"\n"
-"Будь ласка, переконайтеся, що вами вибрано унікальну назву та ідентифікатор, "
-"які ще не використано для інших схем.\n"
-
-#. there must have been some conflict, since it opened the wrong file
-#: plugins/colorschemer/schemer/schemer.py:378
-msgid "There was a problem opening the file"
-msgstr "Маємо проблему з відкриттям файла"
-
-#: plugins/colorschemer/schemer/schemer.py:379
-msgid "You appear to have schemes with the same IDs in different directories\n"
-msgstr ""
-"Здається, у вас є схеми із однаковими ідентифікаторами у різних каталогах\n"
-
-#: plugins/colorschemer/schemer.ui:137 plugins/colorschemer/schemer.ui:138
-msgid "Bold"
-msgstr "Напівжирний"
-
-#: plugins/colorschemer/schemer.ui:160 plugins/colorschemer/schemer.ui:161
-msgid "Italic"
-msgstr "Курсив"
-
-#: plugins/colorschemer/schemer.ui:183 plugins/colorschemer/schemer.ui:184
-msgid "Underline"
-msgstr "Підкреслення"
-
-#: plugins/colorschemer/schemer.ui:206 plugins/colorschemer/schemer.ui:207
-msgid "Strikethrough"
-msgstr "Перекреслення"
-
-#: plugins/colorschemer/schemer.ui:243
-msgid "Pick the background color"
-msgstr "Виберіть колір тла"
-
-#: plugins/colorschemer/schemer.ui:259
-msgid "Pick the foreground color"
-msgstr "Виберіть колір тексту"
-
-#: plugins/colorschemer/schemer.ui:270
-msgid "_Background"
-msgstr "Т_ло"
-
-#: plugins/colorschemer/schemer.ui:288
-msgid "_Foreground"
-msgstr "_Текст"
-
-#: plugins/colorschemer/schemer.ui:341
-msgid "_Clear"
-msgstr "О_чистити"
-
-#: plugins/colorschemer/schemer.ui:383
-msgid "Name"
-msgstr "Назва"
-
-#: plugins/colorschemer/schemer.ui:408
-msgid "ID"
-msgstr "Ід."
-
-#: plugins/colorschemer/schemer.ui:433
-msgid "Description"
-msgstr "Опис"
-
-#: plugins/colorschemer/schemer.ui:459
-msgid "Author"
-msgstr "Автор"
-
-#: plugins/colorschemer/schemer.ui:503
-msgid "Sample"
-msgstr "Зразок"
-
-#: plugins/commander/commander/appactivatable.py:56
-msgid "Commander Mode"
-msgstr "Командний інтерпретатор"
-
-#: plugins/commander/commander.plugin.desktop.in.in:6
-#: plugins/commander/gedit-commander.metainfo.xml.in:6
-msgid "Commander"
-msgstr "Командувач"
-
-#: plugins/commander/commander.plugin.desktop.in.in:7
-#: plugins/commander/gedit-commander.metainfo.xml.in:7
-msgid "Command line interface for advanced editing"
-msgstr "Інтерпретатор командного рядка для розширення можливостей редагування"
-
 #: plugins/drawspaces/drawspaces.plugin.desktop.in.in:5
+#: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:6
 msgid "Draw Spaces"
 msgstr "Візуалізація пробілів"
 
 #: plugins/drawspaces/drawspaces.plugin.desktop.in.in:6
-msgid "Draw spaces and tabs"
-msgstr "Візуалізація пробілів і табуляцій"
-
-#: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:6
-msgid "Draw spaces"
-msgstr "Візуалізація пробілів"
-
 #: plugins/drawspaces/gedit-drawspaces.metainfo.xml.in:7
-msgid "Draw Spaces and Tabs"
-msgstr "Візуалізація пробілів і табуляцій"
-
-#: plugins/findinfiles/dialog.ui:7 plugins/findinfiles/dialog.vala:53
-#: plugins/findinfiles/findinfiles.plugin.desktop.in.in:5
-#: plugins/findinfiles/gedit-findinfiles.metainfo.xml.in:6
-msgid "Find in Files"
-msgstr "Знайти у файлах"
-
-#: plugins/findinfiles/dialog.ui:23 plugins/findinfiles/dialog.vala:58
-#: plugins/findinfiles/result-panel.vala:63
-msgid "_Close"
-msgstr "З_акрити"
-
-#: plugins/findinfiles/dialog.ui:39
-msgctxt "label of the find button"
-msgid "_Find"
-msgstr "З_найти"
-
-#: plugins/findinfiles/dialog.ui:72
-msgctxt "label on the left of the GtkEntry containing text to search"
-msgid "F_ind:"
-msgstr "З_найти:"
-
-#: plugins/findinfiles/dialog.ui:99
-msgid "_In:"
-msgstr "_У:"
-
-#: plugins/findinfiles/dialog.ui:115
-msgid "Select a _folder"
-msgstr "Вибрати _теку"
-
-#: plugins/findinfiles/dialog.ui:130
-msgid "_Match case"
-msgstr "Враховувати _регістр"
-
-#: plugins/findinfiles/dialog.ui:146
-msgid "Match _entire word only"
-msgstr "Збігається _ціле слово"
-
-#: plugins/findinfiles/dialog.ui:162
-msgid "Re_gular expression"
-msgstr "_Формальний вираз"
-
-#: plugins/findinfiles/findinfiles.plugin.desktop.in.in:6
-msgid "Find text in all files of a folder."
-msgstr "Пошук тексту в усіх файлах певної теки."
-
-#: plugins/findinfiles/gedit-findinfiles.metainfo.xml.in:7
-msgid "Find text in all files of a folder"
-msgstr "Пошук тексту в усіх файлах певної теки"
-
-#: plugins/findinfiles/plugin.vala:159
-msgid "Find in Files…"
-msgstr "Знайти у файлах…"
-
-#: plugins/findinfiles/result-panel.vala:127
-msgid "hit"
-msgid_plural "hits"
-msgstr[0] "відповідник"
-msgstr[1] "відповідники"
-msgstr[2] "відповідників"
-msgstr[3] "відповідник"
-
-#: plugins/findinfiles/result-panel.vala:196
-msgid "No results found"
-msgstr "Нічого не знайдено"
-
-#: plugins/findinfiles/result-panel.vala:207
-msgid "File"
-msgstr "Файл"
-
-#. The stop button is showed in the bottom-left corner of the TreeView
-#: plugins/findinfiles/result-panel.vala:218
-msgid "Stop the search"
-msgstr "Припинити пошук"
+#| msgid "Draw spaces and tabs"
+msgid "Draw spaces and tabs."
+msgstr "Візуалізація пробілів і табуляцій."
 
 #: plugins/git/gedit-git.metainfo.xml.in:6
 #: plugins/git/git.plugin.desktop.in.in:6
@@ -344,16 +123,10 @@ msgid "Git"
 msgstr "Git"
 
 #: plugins/git/gedit-git.metainfo.xml.in:7
-msgid ""
-"Use git information to display which lines and files changed since last "
-"commit"
-msgstr ""
-"Використання даних git для показу рядків і файлів, які було змінено з часу "
-"останнього внеску до сховища"
-
 #: plugins/git/git.plugin.desktop.in.in:7
-msgid "Highlight lines that have been changed since the last commit"
-msgstr "Підсвічування рядків, які було змінено з часу останнього внеску"
+#| msgid "Highlight lines that have been changed since the last commit"
+msgid "Highlight lines that have been changed since the last commit."
+msgstr "Підсвічування рядків, які було змінено з часу останнього внеску."
 
 #: plugins/joinlines/gedit-joinlines.metainfo.xml.in:6
 #: plugins/joinlines/joinlines.plugin.desktop.in.in:6
@@ -361,12 +134,10 @@ msgid "Join/Split Lines"
 msgstr "Об'єднати/роз’єднати рядки"
 
 #: plugins/joinlines/gedit-joinlines.metainfo.xml.in:7
-msgid "Join or split multiple lines through Ctrl+J and Ctrl+Shift+J"
-msgstr "Об'єднання або поділ рядків за допомогою Ctrl+J і Ctrl+Shift+J"
-
 #: plugins/joinlines/joinlines.plugin.desktop.in.in:7
-msgid "Join several lines or split long ones"
-msgstr "Об'єднання декількох рядків або поділ довгих рядків"
+#| msgid "Join several lines or split long ones"
+msgid "Join several lines or split long ones."
+msgstr "Об'єднання декількох рядків або поділ довгих рядків."
 
 #: plugins/joinlines/joinlines.py:111
 msgid "_Join Lines"
@@ -377,22 +148,20 @@ msgid "_Split Lines"
 msgstr "_Роз’єднати рядки"
 
 #: plugins/multiedit/gedit-multiedit.metainfo.xml.in:6
-msgid "Multi edit"
+#: plugins/multiedit/multiedit.plugin.desktop.in.in:6
+msgid "Multi Edit"
 msgstr "Мультиредагування"
 
 #: plugins/multiedit/gedit-multiedit.metainfo.xml.in:7
 #: plugins/multiedit/multiedit.plugin.desktop.in.in:7
-msgid "Edit document in multiple places at once"
-msgstr "Редагування декількох місць документа одночасно"
+#| msgid "Edit document in multiple places at once"
+msgid "Edit document in multiple places at once."
+msgstr "Редагування декількох місць документа одночасно."
 
 #: plugins/multiedit/multiedit/appactivatable.py:44
 #: plugins/multiedit/multiedit/viewactivatable.py:1351
 msgid "Multi Edit Mode"
 msgstr "Режим мультиредагування"
-
-#: plugins/multiedit/multiedit.plugin.desktop.in.in:6
-msgid "Multi Edit"
-msgstr "Мультиредагування"
 
 #: plugins/multiedit/multiedit/viewactivatable.py:317
 msgid "Added edit point…"
@@ -471,8 +240,9 @@ msgid "Session Saver"
 msgstr "Зберігач сеансів"
 
 #: plugins/sessionsaver/sessionsaver.plugin.desktop.in.in:7
-msgid "Save and restore your working sessions"
-msgstr "Збереження і відновлення ваших робочих сеансів"
+#| msgid "Save and restore your working sessions"
+msgid "Save and restore your working sessions."
+msgstr "Збереження і відновлення ваших робочих сеансів."
 
 #: plugins/sessionsaver/sessionsaver/ui/sessionsaver.ui:8
 msgid "Save session"
@@ -492,41 +262,20 @@ msgid "Smart Spaces"
 msgstr "Кмітливі пробіли"
 
 #: plugins/smartspaces/gedit-smartspaces.metainfo.xml.in:7
-msgid "Allow to unindent like if you were using tabs while you’re using spaces"
-msgstr ""
-"Уможливлюють скасовування відступів у випадках, коли ви використовували "
-"табуляції, а потім перейшли на пробіли"
-
 #: plugins/smartspaces/smartspaces.plugin.desktop.in.in:6
 msgid "Forget you’re not using tabulations."
 msgstr "Забудьте, що ви не використовуєте табуляції."
 
-#: plugins/synctex/gedit-synctex.metainfo.xml.in:6
-#: plugins/synctex/synctex.plugin.desktop.in.in:6
-msgid "SyncTeX"
-msgstr "SyncTeX"
-
-#: plugins/synctex/gedit-synctex.metainfo.xml.in:7
-msgid "Synchronize between LaTeX and PDF with gedit and evince"
-msgstr "Синхронізація коду LaTeX із PDF у gedit та evince"
-
-#: plugins/synctex/synctex.plugin.desktop.in.in:7
-msgid "Synchronize between LaTeX and PDF with gedit and evince."
-msgstr "Синхронізація коду LaTeX із PDF у gedit та evince."
-
-#: plugins/synctex/synctex/synctex.py:342
-msgid "Forward Search"
-msgstr "Пошук вперед"
-
 #: plugins/terminal/gedit-terminal.metainfo.xml.in:6
-#: plugins/terminal/terminal.py:313
-msgid "Terminal"
-msgstr "Термінал"
+#: plugins/terminal/terminal.plugin.desktop.in.in:6
+msgid "Embedded Terminal"
+msgstr "Вбудований термінал"
 
 #: plugins/terminal/gedit-terminal.metainfo.xml.in:7
-msgid "A simple terminal widget accessible from the bottom panel"
-msgstr ""
-"Простий віджет-термінал, доступ до якого можна отримати з нижньої панелі"
+#: plugins/terminal/terminal.plugin.desktop.in.in:7
+#| msgid "Embed a terminal in the bottom pane."
+msgid "Embed a terminal in the bottom panel."
+msgstr "Вбудовування термінала до нижньої панелі."
 
 #: plugins/terminal/org.gnome.gedit.plugins.terminal.gschema.xml:16
 msgid "Whether to silence terminal bell"
@@ -685,26 +434,24 @@ msgstr "Шрифт"
 msgid "A Pango font name. Examples are “Sans 12” or “Monospace Bold 14”."
 msgstr "Назва шрифту Pango. Наприклад, «Sans 12» або «Monospace Bold 14»."
 
-#: plugins/terminal/terminal.plugin.desktop.in.in:6
-msgid "Embedded Terminal"
-msgstr "Вбудований термінал"
+#: plugins/terminal/terminal.py:342
+msgid "Terminal"
+msgstr "Термінал"
 
-#: plugins/terminal/terminal.plugin.desktop.in.in:7
-msgid "Embed a terminal in the bottom pane."
-msgstr "Вбудовування термінала до нижньої панелі."
-
-#: plugins/terminal/terminal.py:334
+#: plugins/terminal/terminal.py:365
 msgid "C_hange Directory"
 msgstr "З_мінити каталог"
 
 #: plugins/textsize/gedit-textsize.metainfo.xml.in:6
-msgid "Text size"
+#: plugins/textsize/textsize.plugin.desktop.in.in:6
+msgid "Text Size"
 msgstr "Розмір шрифту"
 
 #: plugins/textsize/gedit-textsize.metainfo.xml.in:7
 #: plugins/textsize/textsize.plugin.desktop.in.in:7
-msgid "Easily increase and decrease the text size"
-msgstr "Спрощене збільшення або зменшення розміру шрифту"
+#| msgid "Easily increase and decrease the text size"
+msgid "Easily increase and decrease the text size."
+msgstr "Спрощене збільшення або зменшення розміру шрифту."
 
 #: plugins/textsize/textsize/__init__.py:53
 msgid "_Normal size"
@@ -718,114 +465,6 @@ msgstr "_Менший шрифт"
 msgid "_Larger Text"
 msgstr "_Більший шрифт"
 
-#: plugins/textsize/textsize.plugin.desktop.in.in:6
-msgid "Text Size"
-msgstr "Розмір шрифту"
-
-#: plugins/translate/gedit-translate.metainfo.xml.in:5
-#: plugins/translate/translate.plugin.desktop.in.in:6
-msgid "Translate"
-msgstr "Переклад"
-
-#: plugins/translate/gedit-translate.metainfo.xml.in:6
-#: plugins/translate/translate.plugin.desktop.in.in:7
-msgid "Translates text into different languages"
-msgstr "Перекладає текст різними мовами"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:5
-msgid "Where translation output is shown"
-msgstr "Де буде показано виведений переклад"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:6
-msgid ""
-"If true, output of the translation is inserted in the document window if not "
-"in the Output Translate Window."
-msgstr ""
-"Якщо має значення «true», виведений переклад буде вставлено до вікна "
-"документа, якщо немає вікна виведення перекладу."
-
-#. Translators: You can adjust the default pair for users in your locale.
-#. https://wiki.apertium.org/wiki/List_of_language_pairs lists valid pairs, in
-#. the format apertium-xxx-yyy. For this translation, use ASCII apostrophes and
-#. | as the delimiter. Language pair values must be in the format 'xxx|yyy' -
-#. You must keep this format 'xxx|yyy', or things will break!
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:16
-msgid "'eng|spa'"
-msgstr "'eng|ukr'"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:17
-msgid "Language pair used"
-msgstr "Використана пара мов"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:18
-msgid "Language pair used to translate from one language to another"
-msgstr "Пара мов, яку буде використано для перекладу"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:24
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:25
-msgid "Apertium server end point"
-msgstr "Кінцева точка сервера Apertium"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:31
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:32
-msgid "API key for remote web service"
-msgstr "Ключ до програмного інтерфейсу вебслужби"
-
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:38
-#: plugins/translate/org.gnome.gedit.plugins.translate.gschema.xml:39
-msgid "Remote web service to use"
-msgstr "Вебслужба, якою слід скористатися"
-
-#: plugins/translate/translate/__init__.py:88
-#, python-brace-format
-msgid "Translations powered by {0}"
-msgstr "Переклад надано {0}"
-
-#: plugins/translate/translate/__init__.py:91
-msgid "Translate Console"
-msgstr "Консоль перекладу"
-
-#: plugins/translate/translate/__init__.py:166
-#, python-brace-format
-msgid "Translate selected text [{0}]"
-msgstr "Перекласти позначений текст [{0}]"
-
-#: plugins/translate/translate/preferences.py:84
-msgid "API Key"
-msgstr "Ключ до програмного інтерфейсу"
-
-#: plugins/translate/translate/services/yandex.py:65
-#| msgid ""
-#| "You need to obtain a free API key at <a href='https://tech.yandex.com/"
-#| "translate/'>https://tech.yandex.com/translate/</a>"
-msgid ""
-"You need to obtain an API key at <a href='https://tech.yandex.com/"
-"translate/'>https://tech.yandex.com/translate/</a>"
-msgstr ""
-"Вам слід отримати ключ до програмного інтерфейсу на <a "
-"href='https://tech.yandex.com/translate/'>https://tech.yandex.com/translate/"
-"</a>"
-
-#: plugins/translate/translate/ui/preferences.ui:23
-msgid "Translation languages:"
-msgstr "Мови перекладу:"
-
-#: plugins/translate/translate/ui/preferences.ui:60
-msgid "Where to output translation:"
-msgstr "Де буде показано виведений переклад:"
-
-#: plugins/translate/translate/ui/preferences.ui:75
-msgid "Same document window"
-msgstr "У вікні програми"
-
-#: plugins/translate/translate/ui/preferences.ui:90
-msgid "Translate console (bottom panel)"
-msgstr "Консоль перекладу (нижня панель)"
-
-#: plugins/translate/translate/ui/preferences.ui:157
-msgid "Translation service:"
-msgstr "Служба перекладу:"
-
 #: plugins/wordcompletion/gedit-word-completion-configure.ui:18
 msgid "Interactive completion"
 msgstr "Інтерактивне доповнення"
@@ -835,14 +474,17 @@ msgid "Minimum word size:"
 msgstr "Мінімальний розмір слова:"
 
 #: plugins/wordcompletion/gedit-wordcompletion.metainfo.xml.in:6
-msgid "Word completion"
+#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:5
+msgid "Word Completion"
 msgstr "Завершення слів"
 
 #: plugins/wordcompletion/gedit-wordcompletion.metainfo.xml.in:7
-msgid ""
-"Propose automatic completion using words already present in the document"
+#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:6
+#| msgid ""
+#| "Propose automatic completion using words already present in the document"
+msgid "Auto-completion using words already present in open documents."
 msgstr ""
-"Пропонує автоматичне доповнення слів на основі поточного вмісту документа."
+"Автоматичне доповнення на основі слів, які вже є у відкрити документах."
 
 #: plugins/wordcompletion/gedit-word-completion-plugin.c:181
 msgid "Document Words"
@@ -864,13 +506,297 @@ msgstr "Мінімальний розмір слова"
 msgid "The minimum word size to complete."
 msgstr "Мінімальний розмір слова для доповнення."
 
-#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:5
-msgid "Word Completion"
-msgstr "Завершення слів"
+#~ msgid "Automatically add a closing bracket when you insert one"
+#~ msgstr "Автоматично додає завершальну дужку, коли ви вводите початкову"
 
-#: plugins/wordcompletion/wordcompletion.plugin.desktop.in.in:6
-msgid "Word completion using the completion framework"
-msgstr "Доповнення слів на основі бібліотеки автоматичного доповнення"
+#~ msgid "Charmap"
+#~ msgstr "Таблиця символів"
+
+#~ msgid "Select characters from a character map"
+#~ msgstr "Виберіть символи з карти символів"
+
+#~ msgid "Comment or uncomment blocks of code"
+#~ msgstr "Коментування блоків коду та зняття коментування з них"
+
+#~ msgid "Color picker"
+#~ msgstr "Піпетка"
+
+#~ msgid "Select and insert a color from a dialog (for HTML, CSS, PHP)"
+#~ msgstr "Виберіть і вставте колір з діалогового вікна (для HTML, CSS, PHP)"
+
+#~ msgid "Color Scheme Editor"
+#~ msgstr "Редактор схем кольорів"
+
+#~ msgid "Source code color scheme editor"
+#~ msgstr "Редактор схем кольорів підсвічування коду"
+
+#~ msgid "Create and edit the color scheme used for syntax highlighting"
+#~ msgstr "Створіть і редагуйте схему кольорів для підсвічування синтаксису"
+
+#~ msgid "There was a problem saving the scheme"
+#~ msgstr "Маємо проблем зі збереженням схеми"
+
+#~ msgid ""
+#~ "You have chosen to create a new scheme\n"
+#~ "but the Name or ID you are using is being used already.\n"
+#~ "\n"
+#~ "Please make sure to choose a Name and ID that are not already in use.\n"
+#~ msgstr ""
+#~ "Ви наказали програмі створити схему,\n"
+#~ "але вказали вже використану назву або ідентифікатор.\n"
+#~ "\n"
+#~ "Будь ласка, переконайтеся, що вибрано назву та ідентифікатор, які є "
+#~ "унікальними для цієї схеми.\n"
+
+#~ msgid ""
+#~ "You do not have permission to overwrite the scheme you have chosen.\n"
+#~ "Instead a copy will be created.\n"
+#~ "\n"
+#~ "Please make sure to choose a Name and ID that are not already in use.\n"
+#~ msgstr ""
+#~ "У вас немає належних прав доступу для перезапису вибраної вами схеми.\n"
+#~ "Замість перезапису, буде створено копію.\n"
+#~ "\n"
+#~ "Будь ласка, переконайтеся, що вами вибрано унікальну назву та "
+#~ "ідентифікатор, які ще не використано для інших схем.\n"
+
+#~ msgid "There was a problem opening the file"
+#~ msgstr "Маємо проблему з відкриттям файла"
+
+#~ msgid ""
+#~ "You appear to have schemes with the same IDs in different directories\n"
+#~ msgstr ""
+#~ "Здається, у вас є схеми із однаковими ідентифікаторами у різних "
+#~ "каталогах\n"
+
+#~ msgid "Bold"
+#~ msgstr "Напівжирний"
+
+#~ msgid "Italic"
+#~ msgstr "Курсив"
+
+#~ msgid "Underline"
+#~ msgstr "Підкреслення"
+
+#~ msgid "Strikethrough"
+#~ msgstr "Перекреслення"
+
+#~ msgid "Pick the background color"
+#~ msgstr "Виберіть колір тла"
+
+#~ msgid "Pick the foreground color"
+#~ msgstr "Виберіть колір тексту"
+
+#~ msgid "_Background"
+#~ msgstr "Т_ло"
+
+#~ msgid "_Foreground"
+#~ msgstr "_Текст"
+
+#~ msgid "_Clear"
+#~ msgstr "О_чистити"
+
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgid "ID"
+#~ msgstr "Ід."
+
+#~ msgid "Description"
+#~ msgstr "Опис"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Sample"
+#~ msgstr "Зразок"
+
+#~ msgid "Commander Mode"
+#~ msgstr "Командний інтерпретатор"
+
+#~ msgid "Commander"
+#~ msgstr "Командувач"
+
+#~ msgid "Command line interface for advanced editing"
+#~ msgstr ""
+#~ "Інтерпретатор командного рядка для розширення можливостей редагування"
+
+#~ msgid "Draw spaces"
+#~ msgstr "Візуалізація пробілів"
+
+#~ msgid "Draw Spaces and Tabs"
+#~ msgstr "Візуалізація пробілів і табуляцій"
+
+#~ msgid "Find in Files"
+#~ msgstr "Знайти у файлах"
+
+#~ msgid "_Close"
+#~ msgstr "З_акрити"
+
+#~ msgctxt "label of the find button"
+#~ msgid "_Find"
+#~ msgstr "З_найти"
+
+#~ msgctxt "label on the left of the GtkEntry containing text to search"
+#~ msgid "F_ind:"
+#~ msgstr "З_найти:"
+
+#~ msgid "_In:"
+#~ msgstr "_У:"
+
+#~ msgid "Select a _folder"
+#~ msgstr "Вибрати _теку"
+
+#~ msgid "_Match case"
+#~ msgstr "Враховувати _регістр"
+
+#~ msgid "Match _entire word only"
+#~ msgstr "Збігається _ціле слово"
+
+#~ msgid "Re_gular expression"
+#~ msgstr "_Формальний вираз"
+
+#~ msgid "Find text in all files of a folder."
+#~ msgstr "Пошук тексту в усіх файлах певної теки."
+
+#~ msgid "Find text in all files of a folder"
+#~ msgstr "Пошук тексту в усіх файлах певної теки"
+
+#~ msgid "Find in Files…"
+#~ msgstr "Знайти у файлах…"
+
+#~ msgid "hit"
+#~ msgid_plural "hits"
+#~ msgstr[0] "відповідник"
+#~ msgstr[1] "відповідники"
+#~ msgstr[2] "відповідників"
+#~ msgstr[3] "відповідник"
+
+#~ msgid "No results found"
+#~ msgstr "Нічого не знайдено"
+
+#~ msgid "File"
+#~ msgstr "Файл"
+
+#~ msgid "Stop the search"
+#~ msgstr "Припинити пошук"
+
+#~ msgid ""
+#~ "Use git information to display which lines and files changed since last "
+#~ "commit"
+#~ msgstr ""
+#~ "Використання даних git для показу рядків і файлів, які було змінено з "
+#~ "часу останнього внеску до сховища"
+
+#~ msgid "Join or split multiple lines through Ctrl+J and Ctrl+Shift+J"
+#~ msgstr "Об'єднання або поділ рядків за допомогою Ctrl+J і Ctrl+Shift+J"
+
+#~ msgid "Multi edit"
+#~ msgstr "Мультиредагування"
+
+#~ msgid ""
+#~ "Allow to unindent like if you were using tabs while you’re using spaces"
+#~ msgstr ""
+#~ "Уможливлюють скасовування відступів у випадках, коли ви використовували "
+#~ "табуляції, а потім перейшли на пробіли"
+
+#~ msgid "SyncTeX"
+#~ msgstr "SyncTeX"
+
+#~ msgid "Synchronize between LaTeX and PDF with gedit and evince"
+#~ msgstr "Синхронізація коду LaTeX із PDF у gedit та evince"
+
+#~ msgid "Synchronize between LaTeX and PDF with gedit and evince."
+#~ msgstr "Синхронізація коду LaTeX із PDF у gedit та evince."
+
+#~ msgid "Forward Search"
+#~ msgstr "Пошук вперед"
+
+#~ msgid "A simple terminal widget accessible from the bottom panel"
+#~ msgstr ""
+#~ "Простий віджет-термінал, доступ до якого можна отримати з нижньої панелі"
+
+#~ msgid "Text size"
+#~ msgstr "Розмір шрифту"
+
+#~ msgid "Translate"
+#~ msgstr "Переклад"
+
+#~ msgid "Translates text into different languages"
+#~ msgstr "Перекладає текст різними мовами"
+
+#~ msgid "Where translation output is shown"
+#~ msgstr "Де буде показано виведений переклад"
+
+#~ msgid ""
+#~ "If true, output of the translation is inserted in the document window if "
+#~ "not in the Output Translate Window."
+#~ msgstr ""
+#~ "Якщо має значення «true», виведений переклад буде вставлено до вікна "
+#~ "документа, якщо немає вікна виведення перекладу."
+
+#~ msgid "'eng|spa'"
+#~ msgstr "'eng|ukr'"
+
+#~ msgid "Language pair used"
+#~ msgstr "Використана пара мов"
+
+#~ msgid "Language pair used to translate from one language to another"
+#~ msgstr "Пара мов, яку буде використано для перекладу"
+
+#~ msgid "Apertium server end point"
+#~ msgstr "Кінцева точка сервера Apertium"
+
+#~ msgid "API key for remote web service"
+#~ msgstr "Ключ до програмного інтерфейсу вебслужби"
+
+#~ msgid "Remote web service to use"
+#~ msgstr "Вебслужба, якою слід скористатися"
+
+#, python-brace-format
+#~ msgid "Translations powered by {0}"
+#~ msgstr "Переклад надано {0}"
+
+#~ msgid "Translate Console"
+#~ msgstr "Консоль перекладу"
+
+#, python-brace-format
+#~ msgid "Translate selected text [{0}]"
+#~ msgstr "Перекласти позначений текст [{0}]"
+
+#~ msgid "API Key"
+#~ msgstr "Ключ до програмного інтерфейсу"
+
+#~| msgid ""
+#~| "You need to obtain a free API key at <a href='https://tech.yandex.com/"
+#~| "translate/'>https://tech.yandex.com/translate/</a>"
+#~ msgid ""
+#~ "You need to obtain an API key at <a href='https://tech.yandex.com/"
+#~ "translate/'>https://tech.yandex.com/translate/</a>"
+#~ msgstr ""
+#~ "Вам слід отримати ключ до програмного інтерфейсу на <a href='https://tech."
+#~ "yandex.com/translate/'>https://tech.yandex.com/translate/</a>"
+
+#~ msgid "Translation languages:"
+#~ msgstr "Мови перекладу:"
+
+#~ msgid "Where to output translation:"
+#~ msgstr "Де буде показано виведений переклад:"
+
+#~ msgid "Same document window"
+#~ msgstr "У вікні програми"
+
+#~ msgid "Translate console (bottom panel)"
+#~ msgstr "Консоль перекладу (нижня панель)"
+
+#~ msgid "Translation service:"
+#~ msgstr "Служба перекладу:"
+
+#~ msgid "Word completion"
+#~ msgstr "Завершення слів"
+
+#~ msgid "Word completion using the completion framework"
+#~ msgstr "Доповнення слів на основі бібліотеки автоматичного доповнення"
 
 #~ msgid "Join lines/ Split lines"
 #~ msgstr "Об'єднати рядки/Розділити рядки"
