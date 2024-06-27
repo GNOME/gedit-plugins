@@ -19,10 +19,7 @@ configure_file(
   output: 'gpdefs.py',
   configuration: gpdefs_py,
   install: true,
-  install_dir: join_paths(
-    pkglibdir,
-    'plugins',
-  )
+  install_dir: get_option('libdir') / 'gedit/plugins',
 )
 
 foreach plugin_name : enabled_c_plugins
