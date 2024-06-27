@@ -11,13 +11,13 @@ msgfmt_plugin_cmd = [
 plugin_in = configuration_data()
 plugin_in.set('VERSION', meson.project_version())
 
-gpdefs_py = configuration_data()
-gpdefs_py.set('GETTEXT_PACKAGE', meson.project_name())
+gpdefs_config_data = configuration_data()
+gpdefs_config_data.set('GETTEXT_PACKAGE', meson.project_name())
 
 configure_file(
   input: 'gpdefs.py.in',
   output: 'gpdefs.py',
-  configuration: gpdefs_py,
+  configuration: gpdefs_config_data,
   install: true,
   install_dir: get_option('libdir') / 'gedit/plugins',
 )
