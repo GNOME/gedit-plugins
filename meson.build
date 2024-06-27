@@ -10,27 +10,29 @@ pkg = import('pkgconfig')
 python = import('python')
 
 # Paths
-root_include_dir = include_directories('.')
 
+root_include_dir = include_directories('.')
 srcdir = meson.current_source_dir()
 
-libdir = join_paths(get_option('prefix'), get_option('libdir'))
-datadir = join_paths(get_option('prefix'), get_option('datadir'))
-
-pkglibdir = join_paths(libdir, 'gedit')
-pkgdatadir = join_paths(datadir, 'gedit')
-
-appstreamdir = join_paths(datadir, 'metainfo')
-glibdir = join_paths(datadir, 'glib-2.0')
-localedir = join_paths(datadir, 'locale')
+libdir = get_option('prefix') / get_option('libdir')
+datadir = get_option('prefix') / get_option('datadir')
+pkglibdir = get_option('prefix') / get_option('libdir') / 'gedit'
+pkgdatadir = get_option('prefix') / get_option('datadir') / 'gedit'
+appstreamdir = get_option('prefix') / get_option('datadir') / 'metainfo'
+glibdir = get_option('prefix') / get_option('datadir') / 'glib-2.0'
+localedir = get_option('prefix') / get_option('datadir') / 'locale'
 
 # Dependencies in common for all plugins
+
 libpeas_dep = dependency('libpeas-1.0')
 gedit_dep = dependency('gedit', version: '>= 48')
+
+# Find programs
 
 appstream_util = find_program('appstream-util', required: false)
 
 # config.h
+
 config_data = configuration_data()
 config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 
@@ -39,7 +41,8 @@ configure_file(
   configuration: config_data,
 )
 
-# Options
+# Enabled/disabled C/Python plugins
+
 c_plugins = [
   'bookmarks',
   'drawspaces',
@@ -72,19 +75,21 @@ foreach plugin_name : c_plugins
   endif
 endforeach
 
-enable_python = false
 foreach plugin_name : python_plugins
   if get_option('plugin_' + plugin_name)
     enabled_python_plugins += plugin_name
-    enable_python = true
   else
     disabled_python_plugins += plugin_name
   endif
 endforeach
 
-if enable_python
+# Enable Python 3
+
+if enabled_python_plugins.length() > 0
   python3 = python.find_installation('python3')
 endif
+
+# Go to subdirs
 
 subdir('po')
 subdir('plugins')
@@ -93,10 +98,12 @@ if get_option('user_documentation')
   subdir('help')
 endif
 
+# Post-install
+
 meson.add_install_script(
   'build-aux/meson/post_install.py',
-  libdir,
-  datadir
+  get_option('prefix') / get_option('libdir'),
+  get_option('prefix') / get_option('datadir'),
 )
 
 gnome.post_install(
