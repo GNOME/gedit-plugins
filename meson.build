@@ -31,12 +31,12 @@ gedit_dep = dependency('gedit', version: '>= 48')
 appstream_util = find_program('appstream-util', required: false)
 
 # config.h
-config_h = configuration_data()
-config_h.set_quoted('GETTEXT_PACKAGE', meson.project_name())
+config_data = configuration_data()
+config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 
 configure_file(
   output: 'config.h',
-  configuration: config_h
+  configuration: config_data,
 )
 
 # Options
